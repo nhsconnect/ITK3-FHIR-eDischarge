@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Industry suggests various techniques for the creation of user stories. Care Connect extends this slightly to help make the creation of user stories more rele...">
+<meta name="keywords" content="userstories,  engage, explore, care connect process, process, introduction, user, story, tutorial, actor, primary, secondary, need, justification, acceptance, feature, epic">
+<title>How To Write A Care Connect User Story | ITK3 Distribution</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 Distribution | FHIR&reg;</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="How To Write A Care Connect User Story">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+
+
+    <p style="font-size:16px;">
+    <img src="images/logo.png" height="100x"  alt="NHS Digital Logo"/>
+    </p>
+
+
+    <li class="sidebarTitle">ITK3 Distribution 2.0.0-alpha.0</li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_the_journey.html">The Journey</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_messaging_provide.html">Providing a Messaging Solution</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_guide_versioning.html">Guide Versioning</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_release_notes.html">Release Notes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_glossary.html">Glossary</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Messaging Architecture</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_bundle_structures.html">Bundle Structures</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_interactions.html">Interactions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_messages.html">Messages</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_hand_spec.html">Handling Specification</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_snd&rec_req.html">Sender & Receiver Requirements</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_error_codes.html">Error Codes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_resource_referencing.html">Resource Referencing</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Work Flow</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="workflow_overview.html">Overview</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Case Studies</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage.html">Case Study Overview</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Design & Build</a>
+        <ul>
+            
+            
+            
+            <li><a href="design.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_exchange_patterns.html">Exchange Patterns</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_security.html">Security</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Build</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="build_data_mapping.html">Data Mapping</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_constructing_coded_structures.html">Constructing Clinical Coded Structures</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Test</a>
+        <ul>
+            
+            
+            
+            <li><a href="test.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_data.html">Test Data</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Assure</a>
+        <ul>
+            
+            
+            
+            <li><a href="assure.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_end_to_end.html">End To End</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Deploy</a>
+        <ul>
+            
+            
+            
+            <li><a href="deploy.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_security.html">Security</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Help & Support</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="support_communications.html">Communication Channels</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Where Else Can I Look?</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="support_community.html">Community</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_fhirtools.html">FHIR Tools</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_referencedocumentation.html"></a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Tags</a>
+        <ul>
+            
+            
+            
+            <li><a href="tag_overview.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_fhir.html">FHIR&reg;</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_user_stories.html">User Stories</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_casestudies.html">Case Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_design.html">Design</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_development.html">Development</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_support.html">Support</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+             
+
+<div class="post-header">
+   <h1 class="post-title-main">How To Write A Care Connect User Story</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Industry suggests various techniques for the creation of user stories. Care Connect extends this slightly to help make the creation of user stories more relevant to the creation of system interfaces.</div>
+   
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+<!-- removed h3 and h4 from toc KGM 10/JULY/2017 -->
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <p>Given a clinical scenario, it is possible to derive several user stories that are suitable for mapping by considering the story from the perspective of the end users that will benefit from the final interface.
+A user story in its simplest form is made up of three elements.</p>
+
+<table style="margin-left:auto;margin-right:auto;"><tr><td><b>Actor</b></td><td><b>Requirement</b></td><td><b>Justification</b></td></tr></table>
+
+<p>This simplicity makes the user story easy to understand and share across consumers with differing roles. To support Connect, this is supported with additional content such as the acceptance criteria (which is normally included as part of a user story) and secondary actors (which are not typically considered to be part of a user story).</p>
+<h2 id="actor">Actor</h2>
+<p>This end user is caller the “Actor” of the story. The catalogue does not consider personas but instead refers to roles. For example, a reconciliation process could be expressed from the perspective of a doctor, a pharmacist, or a pharmacy technician. While the requirements could be the same for each of these roles, there may be subtle differences that affect the requirement or differences in the associated processes that lead to additional stories being required. In this case, additional stories may be required for a pharmacy technician discussing the need to have the reconciliation validated. While some roles existing in multiple care settings (for example a pharmacist may work in hospital services or community services), others are unique and obviously work within a single care setting (for example a general practitioner). For consistency and removal of any ambiguity though we typically define a care setting if possible even if the author considers it obvious.</p>
+<ul>
+  <li><em>As a patient, I want to…</em></li>
+  <li><em>As a pharmacist (hospital services pharmacy), I want to…</em></li>
+  <li><em>As a general practitioner (primary care general practice), I want to…</em></li>
+</ul>
+
+<p>On occasion, it may not be possible to clearly identify the role with the need that is being supported. This may be due to a lack of clarity or it may be such a generic activity that it would be excessive to duplicate the requirement for every possible role. In these circumstances, it is reasonable to refer to Care Setting or an abstract role such as a “Health Care Professional”.</p>
+<ul>
+  <li><em>As social care, I want to review my patient’s end of life care…</em></li>
+  <li><em>As a health care professional, I want to view a trend of results over time…</em></li>
+  <li><em>As hospital services accident and emergency, I want to see all patients currently admitted to the emergency department…</em></li>
+</ul>
+
+<p>It is expected that as understanding evolves, so will the definition of the role. It is more important to express the need however as a reminder so that discussion around the story can continue and the story can be refined.</p>
+<h2 id="secondary-actor">Secondary Actor</h2>
+<p>Along with the Actor (Primary Actor), Care Connect user stories also consider a “Secondary Actor”. This isn’t traditionally how a user story is defined but from the perspective of interoperability it is useful to consider who the secondary actor is to clarify the source or destination of the associated method. When presenting the user story, the secondary actor will often be omitted. If the secondary actor cannot be identified, it may suggest that the story is not actually an interoperability story at all.</p>
+
+<p>For example, consider the following user story</p>
+<ul>
+  <li><em>As a health care professional, I want a consolidated view of the patient’s current medications.</em></li>
+</ul>
+
+<p>Given that a single data source is not clear, it suggests further refinement to fully implement. So, this story may be better expressed as several more granular stories:</p>
+<ul>
+  <li><em>As a health care professional (hospital services) I wish to view current medication from primary care general practice…</em></li>
+  <li><em>As a health care professional (hospital services) I wish to view current medication from mental health services…</em></li>
+  <li><em>As a health care professional (hospital services) I wish to view current medication from community dental services…</em></li>
+</ul>
+
+<p>This begins to better specify the need for multiple interfaces at some point which may (or may not) be serviced by their own ITK3 Distribution. Finally, the original story remains valid as a story in this context because it provides additional detail that influences how each of the interfaces are built. Here the need for a consolidated view means that the interfaces will need to be developed to send and receive structured data. This technical requirement is being expressed in a way that would be more easily understood by a non-technical audience. This technical detail, once understood would be written into the acceptance criteria of each of the user stories to facilitate the development of the consolidated user interface.</p>
+<h2 id="requirement">Requirement</h2>
+<p>The requirement forms the crux of the user story. This is the requirement expressed from the perspective of a user’s need or user’s goal. While the granularity of a story can vary, a good example should be something that doesn’t have strong dependencies on other stories and something that can be measured and tested.</p>
+
+<p>Given the technical nature of interoperability, it is often tempting to think of stories in terms of the developer or the API. Ultimately, it must be remembered that the interface exists to provide clinical benefit and it shouldn’t a vehicle to demonstrate the technical proficiency of the developer or an organisation.
+Consider the example:</p>
+
+<ul>
+  <li><em>As a developer, I want to receive result messages in a structured format</em></li>
+</ul>
+
+<p>A better way of phrasing this would be:</p>
+
+<ul>
+  <li><em>As a health care professional, I want to view results in a single consolidated view</em></li>
+</ul>
+
+<p>Which defers the solution to a design and development stage while presenting the requirement based on a clinical need.</p>
+<h2 id="justification">Justification</h2>
+<p>Given that a specific requirement, there should also be a reason the user wishes to do that. It is possible that the same requirement can be expressed by different users for different reasons. This ultimately influences the acceptance criteria that would then be associated to the story.</p>
+
+<p>It’s possible to see in the following story examples that two requirements have different justifications. In these examples, the implication of the justification is very significant in how a solution may be delivered, how the story is triggered and what the implication of the story is to the GP receiving the discharge.</p>
+<ul>
+  <li><em>I want to discharge and refer a patient back to their GP because the patient cannot be contacted following a referral.</em></li>
+  <li><em>I want to discharge and refer a patient back to their GP because the patient has stated that they do not want and more appointments on their cancer care pathway.</em></li>
+</ul>
+
+<h2 id="acceptance-criteria">Acceptance Criteria</h2>
+<p>The acceptance criteria associated to each of the user stories help to bridge the gap between the clinical requirement and the technical solution. Upon the initial creation of the story, it is expected that acceptance criteria are limited to outcomes that are visible to the clinicians (actors) associated to the story. As conversation continues between development and the client, the criteria can include more technical expectations that wouldn’t necessarily be understood by the clinical audience.</p>
+<h2 id="organising-user-stories">Organising User Stories</h2>
+<p>To help organise user stories, features may be used to group related stories in a way that presents all the user needs that need to be expressed to fully support an area of functionality. The use of Epics and Themes is avoided because this aligns very closely to the agile development process called Scrum which is not the intention of this catalogue to align with a development methodology.</p>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_userstories.html" class="btn btn-default navbar-btn cursorNorm" role="button">userstories</a>
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
+                    <br/>
+                    &copy;2017 NHS Digital<br />
+                     Site last generated: Aug 3, 2017 <br />
+                    cc6ef1f2cb70388927ec4c2050e64ebc93ba7e43<br/>
+                    <br/>
+                    <!-- OGL Licence -->
+                    <div class="open-government-licence">
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></img></a>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99659472-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+
+
+</body>
+
+</html>
