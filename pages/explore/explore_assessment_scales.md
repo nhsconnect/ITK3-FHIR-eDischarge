@@ -23,7 +23,7 @@ The Assessment scales section carries information about assessment scales used, 
 
 
 
-##  Example Assessment Scales Section ##
+## Example Assessment Scales Section Example ##
 
 <script src="https://gist.github.com/unicorn150161/6b5bc959453d9ea6a1495032ea06f36b.js"></script>
 

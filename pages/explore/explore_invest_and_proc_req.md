@@ -15,7 +15,7 @@ The Investigations and procedures requested section carries information about in
 - **Investigations requested** - This includes a name or description of the investigation requested and the date requested.
 - **Procedures requested** - These are the diagnostic procedures that have actually been requested (and the date requested).
 
-##  Investigations and Procedures Requested Section ##
+##  Example Investigations and Procedures Requested Section ##
 
 
 <script src="https://gist.github.com/unicorn150161/9558b17ac3f46625880757cf54bb031c.js"></script>
@@ -24,13 +24,7 @@ The Investigations and procedures requested section carries information about in
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-XXXXXXXXXXXXXXX
-
- 
-See constructing coded clinical structures - [Procedures](xxxxx.html)
-
-
-{% include custom/messaging_overview.svg %}
+- The ITK3 FHIR eDischarge does not currently support coded investigations and procedures requested.
 
 
 
