@@ -9,8 +9,8 @@ summary: "Gives information about the Allergies and adverse reactions section"
 
 {% include custom/section.warnbanner.html %}
 
-## Allergies and Adverse Reactions Content##
-The Allergies and adverse reactions section carries information about the patient's allergies and adverse reactions such as:
+## Allergies and Adverse Reactions Section Content##
+The Allergies and adverse reactions section carries information about the patient's allergies and adverse reactions, items in bold are subheadings and should be formatted as such in any html sent:
 
 <ul>
 <li><b>Causative agent</b> - The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</li>

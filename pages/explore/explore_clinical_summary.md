@@ -10,7 +10,8 @@ summary: "Gives information about the Clinical summary section"
 {% include custom/section.warnbanner.html %}
 
 ## Clinical Summary Section Content##
-The Clinical summary section carries a narrative summary of the episode. Where possible, very brief.
+The Clinical summary section carries a narrative summary of the episode. Where possible, very brief,items in bold are subheadings and should be formatted as such in any html sent:
+**Clincal summary**
 This may include interpretation of findings and results; differential diagnoses, opinion and specific action(s). Planned actions will be recorded under ‘plan’.
 
 ##  Example Clinical Summary Section ##

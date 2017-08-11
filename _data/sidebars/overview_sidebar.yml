@@ -104,10 +104,10 @@ entries:
           url: /explore_information_given.html
           output: web
         - title: Investigations and procedures requested
-          url: /explore_Invest_and_proc_req.html
+          url: /explore_invest_and_proc_req.html
           output: web
         - title: Investigation results
-          url: /explore_Invest_results.html
+          url: /explore_invest_results.html
           output: web
         - title: Legal information 
           url: /explore_legal_info.html
