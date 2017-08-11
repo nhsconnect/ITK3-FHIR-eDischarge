@@ -1,6 +1,6 @@
 entries:
-- title: ITK3 Distribution 
-  product: ITK3 Distribution
+- title: ITK3 FHIR eDischarge 
+  product: ITK3 FHIR eDischarge
   version: 2.0.0-alpha.0
   levels: one
   folders:
@@ -41,8 +41,8 @@ entries:
     - title: Interactions
       url: /explore_interactions.html
       output: web
-    - title: Messages
-      url: /explore_messages.html
+    - title: Document Profiles
+      url: /explore_document_profiles.html
       output: web
     - title: Handling Specification
       url: /explore_hand_spec.html
@@ -50,7 +50,6 @@ entries:
     - title: Sender & Receiver Requirements
       url: /explore_snd&rec_req.html
       output: web
-
     - title: Error Codes
       url: /explore_error_codes.html
       output: web
@@ -67,15 +66,101 @@ entries:
           url: /workflow_overview.html
           output: web
      
+  - title: Section Headings
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore_headings.html
+      output: web
+      type: homepage
+      subfolders:
+      - title: A to D
+        url: /explore_admission_details.html
+        output: web
+        subfolderitems:
+        - title: Admission details
+          url: /explore_admission_details.html
+          output: web
+        - title: Allergies and adverse reactions
+          url: /explore_allergies_and_adverse_reactions.html
+          output: web
+        - title: Assessment scales
+          url: /explore_assessment_scales.html
+          output: web
+        - title: Clinical summary
+          url: /explore_clinical_summary.html
+          output: web
+        - title: Diagnosis
+          url: /explore_diagnosis.html
+          output: web
+        - title: Discharge details
+          url: /explore_discharge_details.html
+          output: web
+      - title: I to L
+ #       url: /explore_admission_details.html
+        output: web
+        subfolderitems:
+        - title: Information given
+          url: /explore_information_given.html
+          output: web
+        - title: Investigations and procedures requested
+          url: /explore_Invest_and_proc_req.html
+          output: web
+        - title: Investigation results
+          url: /explore_Invest_results.html
+          output: web
+        - title: Legal information 
+          url: /explore_legal_info.html
+          output: web
+      - title: M to P
+        url: /explore_admission_details.html
+        output: web
+        subfolderitems:
+        - title: Medications and medical devices
+          url: /explore_medication.html
+          output: web
+        - title: Participation in research
+          url: /explore_part_research.html
+          output: web
+        - title: Patient and carer concerns
+          url: /explore_pat_care_concerns.html
+          output: web
+        - title: Person completing record
+          url: /explore_per_com_record.html
+          output: web
+        - title: Plan and requested actions
+          url: /explore_plan_req_actions.html
+          output: web
+        - title: Person completing record
+          url: /explore_per_com_record.html
+          output: web
+        - title: Procedures
+          url: /explore_procedures.html
+          output: web
+      - title: Q to T
+        url: /explore_admission_details.html
+        output: web
+        subfolderitems:
+        - title: Referral details
+          url: /explore_referral.html
+          output: web
+        - title: Safety alerts
+          url: /explore_safety_alerts.html
+          output: web
+        - title: Social context
+          url: /explore_social_context.html
+          output: web
+        - title: Special requirements
+          url: /explore_special_req.html
+          output: web
 
-  - title: Case Studies
+
+
+
+  - title: Case Study Overview
+    url: /engage_case_studies.html
     output: web
     folderitems:
-
-    - title: Case Study Overview
-      url: /engage_case_studies.html
-      output: web
-
  #  - title: Engagement Approach
       url: /engage.html
       output: web, pdf

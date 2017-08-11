@@ -1,8 +1,8 @@
 ---
-title: "API"
-tagName: api
+title: "Messaging"
+tagName: messaging
 search: exclude
-permalink: tag_api.html
+permalink: tag_messaging.html
 sidebar: overview_sidebar
 folder: tags
 ---
