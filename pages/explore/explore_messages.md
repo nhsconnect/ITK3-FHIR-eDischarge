@@ -4,7 +4,7 @@ keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: explore_messages.html
-summary: "ITK3 Distribution Messages"
+summary: "ITK Distribution Messages"
 ---
 
 {% include custom/search.warnbanner.html %}

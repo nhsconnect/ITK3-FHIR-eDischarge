@@ -185,8 +185,8 @@
 				<text x="4.75" y="558.29" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Local Decision</text>			</g>
 		</g>
 		<g id="shape1-48" v:mID="1" v:groupContext="shape" transform="translate(161.575,-242.362)">
-			<title>ITK3 Messaging Solution</title>
-			<desc>ITK3 Messaging Solution</desc>
+			<title>ITK Messaging Solution</title>
+			<desc>ITK Messaging Solution</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -264,8 +264,8 @@
 		</a>
 		<a xlink:href="..\explore.html">
 			<g id="shape8-68" v:mID="8" v:groupContext="shape" transform="translate(199.843,-118.346)">
-				<title>ITK3 Messaging Solution Documentation</title>
-				<desc>ITK3 Messaging Solution Documentation</desc>
+				<title>ITK Messaging Solution Documentation</title>
+				<desc>ITK Messaging Solution Documentation</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>

@@ -4,10 +4,10 @@ keywords: test, pattern, security
 tags: [test, security]
 sidebar: foundations_sidebar
 permalink: test_security.html
-summary: "The security page shows how to establish initial security credentials (where necessary) with the ITK3 Messaging Solution provided"
+summary: "The security page shows how to establish initial security credentials (where necessary) with the ITK Messaging Solution provided"
 ---
 
-{% include important.html content="The ITK3 Messaging Solution security described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK3 Messaging Solutions." %}
+{% include important.html content="The ITK Messaging Solution security described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK Messaging Solutions." %}
 
 # Security within Test #
 
@@ -34,9 +34,9 @@ The following non-exhaustive list describes common security patterns and links t
 Depending on the chosen end usage, channel and network will influence the chosen security choice.
 
 
-# ITK3 Messaging Solution Considerations #
+# ITK Messaging Solution Considerations #
 
-Other ITK3 Messaging Solution considerations are shown below. Please click on the parts of the ITK3 Messaging Solution process to continue your ITK3 Messaging Solution creation journey.
+Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
 {% include custom/provide_messaging.svg %}
 

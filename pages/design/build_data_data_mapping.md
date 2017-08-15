@@ -4,15 +4,15 @@ keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_data_mapping.html
-summary: "Mapping of system data to ITK3 Message and Document resources"
+summary: "Mapping of system data to ITK Message and Document resources"
 ---
 
-{% include important.html content="The ITK3 Messaging Solution data mapping described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK3 Messaging Solutions." %}
+{% include important.html content="The ITK Messaging Solution data mapping described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK Messaging Solutions." %}
 
-## What is ITK3 Messaging Solution Data Mapping? ##
+## What is ITK Messaging Solution Data Mapping? ##
 
-Any ITK3 Messaging Solution will require some mapping to the FHIR resources included in the message bundle. This section only concerns mapping to the Bundle and MessageBundle profiles, the payload specification will need to be consulted for payload mapping information.
-The sender of the ITK3 eDischarge will need to either create Bundle and MessageHeader data items or source from them from its own data store. When it sources from its own data store then a mapping will need to be done. Some data items such as UUIDs for identifiers for example will always need to be created by a sending systems. 
+Any ITK Messaging Solution will require some mapping to the FHIR resources included in the message bundle. This section only concerns mapping to the Bundle and MessageBundle profiles, the payload specification will need to be consulted for payload mapping information.
+The sender of the ITK eDischarge will need to either create Bundle and MessageHeader data items or source from them from its own data store. When it sources from its own data store then a mapping will need to be done. Some data items such as UUIDs for identifiers for example will always need to be created by a sending systems. 
 
 ## Existing Systems ##
 
@@ -84,9 +84,9 @@ The table below illustrates V2 MSH mapping to FHIR MessageHeader resource.
 
 </table>
 
-## ITK3 Messaging Solution Mapping ##
+## ITK Messaging Solution Mapping ##
 
-Other ITK3 Messaging Solution considerations are shown below. Please click on the parts of the ITK3 Messaging Solution process to continue your ITK3 Messaging Solution creation journey.
+Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
 {% include custom/provide_messaging.svg %}
 

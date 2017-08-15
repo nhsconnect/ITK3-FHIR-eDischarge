@@ -15,7 +15,7 @@ This section has been included to show the types of exchange patterns and how th
 
 The exchange patterns are complimentary, each having it's strengths and weaknesses. The best solution will probably to use a combination of pattern.
 
-**Note: for ITK3 only Messaging or Documents can be used.  **
+**Note: for ITK only Messaging or Documents can be used.  **
 
 ## RESTful API
 
@@ -145,7 +145,7 @@ For example a Referral Request will typically contain supporting information suc
     </tr>
     <tr>
         <td>
-            ITK3 eDischargeHeader
+            ITK eDischargeHeader
         </td>
     </tr>
     <tr>

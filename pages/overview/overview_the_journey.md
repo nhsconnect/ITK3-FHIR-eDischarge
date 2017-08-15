@@ -4,7 +4,7 @@ keywords: development,overview
 tags: [explanation]
 sidebar: overview_sidebar
 permalink: overview_the_journey.html
-summary: The journey outlines the approach of developing FHIR ITK3 Messaging Solutions and the journey taken to define and mature the ITK3 Messaging Solution.
+summary: The journey outlines the approach of developing FHIR ITK Messaging Solutions and the journey taken to define and mature the ITK Messaging Solution.
 ---
 
 {% include important.html content="All phases outlined below are indicative and subject to on-going review." %}
@@ -12,15 +12,15 @@ summary: The journey outlines the approach of developing FHIR ITK3 Messaging Sol
 
 # The Journey ##
 
-The Journey is a guide from imagination and exploring to developing local FHIR ITK3 Messaging Solutions using NHS Digital message profiles all the way to deploying a live FHIR ITK3 Messaging Solution.  
+The Journey is a guide from imagination and exploring to developing local FHIR ITK Messaging Solutions using NHS Digital message profiles all the way to deploying a live FHIR ITK Messaging Solution.  
 
 {% include custom/messaging_overview.svg %}
 
-The above steps outline a complete ITK3 Messaging Solution journey.
+The above steps outline a complete ITK Messaging Solution journey.
 
 ## Profile journey ##
 
-The current site focuses on a typical ITK3 Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
+The current site focuses on a typical ITK Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
 
 <img src="images/roadmap/messaging-focus.png" style="width:100%;max-width: 100%;">
 
@@ -28,7 +28,7 @@ Please see the explanation of the complete development roadmap below.
 
 ## How this fits into the wider journey? ##
 
-The current site focuses on a typical FHIR ITK3 Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
+The current site focuses on a typical FHIR ITK Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
 
 <img src="images/roadmap/guide-focus.png" style="width:100%;max-width: 100%;">
 

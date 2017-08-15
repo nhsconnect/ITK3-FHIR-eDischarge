@@ -151,7 +151,7 @@
 			<text x="12.49" y="775.49" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK-MessageHeader-1</text>		</g>
 		<g id="shape10-35" v:mID="10" v:groupContext="shape" transform="translate(370.402,-816.521)">
 			<title>Rectangle.10</title>
-			<desc>Extension-ITK3-MessageHandling-1</desc>
+			<desc>Extension-ITK-MessageHandling-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -160,7 +160,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="12.22" dy="1.2em" class="st11">MessageHandling</tspan>-1</text>		</g>
 		<g id="shape11-39" v:mID="11" v:groupContext="shape" transform="translate(370.402,-754.159)">
 			<title>Rectangle.11</title>
@@ -210,7 +210,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape15-55" v:mID="15" v:groupContext="shape" transform="translate(368.984,-688.962)">
 			<title>Rectangle.15</title>
-			<desc>Extension-ITK3-CaresettingType-1</desc>
+			<desc>Extension-ITK-CaresettingType-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -219,7 +219,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="15.56" dy="1.2em" class="st11">CaresettingType</tspan>-1</text>		</g>
 		<g id="shape16-59" v:mID="16" v:groupContext="shape" v:layerMember="0" transform="translate(343.472,-778.962)">
 			<title>Dynamic connector.16</title>
@@ -602,7 +602,7 @@
 		</g>
 		<g id="shape48-189" v:mID="48" v:groupContext="shape" transform="translate(218.039,-518.883)">
 			<title>Rectangle.48</title>
-			<desc>ITK3-Document-Bundle-1</desc>
+			<desc>ITK-Document-Bundle-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -611,7 +611,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="63.0709" cy="1035.34" width="126.15" height="69.4215"/>
 			<rect x="0" y="1000.62" width="126.142" height="69.4215" class="st6"/>
-			<text x="6.38" y="1013.63" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK3-Document-Bundle-1  </text>		</g>
+			<text x="6.38" y="1013.63" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK-Document-Bundle-1  </text>		</g>
 		<g id="shape49-192" v:mID="49" v:groupContext="shape" transform="translate(61.1619,-40.2685)">
 			<title>Rectangle.49</title>
 			<desc>Key</desc>
@@ -764,7 +764,7 @@
 			<text x="35.99" y="884.62" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Composition</text>		</g>
 		<g id="shape62-233" v:mID="62" v:groupContext="shape" transform="translate(217.331,-167.092)">
 			<title>Rectangle.62</title>
-			<desc>ITK3-EDIS-Composition-1</desc>
+			<desc>ITK-EDIS-Composition-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -773,7 +773,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="63.7795" cy="909.033" width="127.56" height="322.028"/>
 			<rect x="0" y="748.019" width="127.559" height="322.028" class="st6"/>
-			<text x="5.98" y="761.02" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK3-EDIS-Composition-1</text>		</g>
+			<text x="5.98" y="761.02" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK-EDIS-Composition-1</text>		</g>
 		<g id="shape63-236" v:mID="63" v:groupContext="shape" transform="translate(403.709,-493.371)">
 			<title>Rectangle.63</title>
 			<desc>Extension</desc>
@@ -797,7 +797,7 @@
 		</g>
 		<g id="shape65-245" v:mID="65" v:groupContext="shape" transform="translate(403.709,-493.371)">
 			<title>Rectangle.65</title>
-			<desc>Extension-ITK3-DataEnterer-1</desc>
+			<desc>Extension-ITK-DataEnterer-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -806,7 +806,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="25.29" dy="1.2em" class="st11">DataEnterer</tspan>-1</text>		</g>
 		<g id="shape66-249" v:mID="66" v:groupContext="shape" transform="translate(403.709,-438.096)">
 			<title>Rectangle.66</title>
@@ -822,7 +822,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape67-252" v:mID="67" v:groupContext="shape" transform="translate(403.709,-437.499)">
 			<title>Rectangle.67</title>
-			<desc>Extension-ITK3-Informant-1</desc>
+			<desc>Extension-ITK-Informant-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -831,7 +831,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="31.13" dy="1.2em" class="st11">Informant</tspan>-1</text>		</g>
 		<g id="shape71-256" v:mID="71" v:groupContext="shape" v:layerMember="0" transform="translate(355.52,-394.513)">
 			<title>Dynamic connector.71</title>
@@ -865,7 +865,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape70-271" v:mID="70" v:groupContext="shape" transform="translate(404.417,-380.807)">
 			<title>Rectangle.70</title>
-			<desc>Extension-ITK3-InformationRecipient-1</desc>
+			<desc>Extension-ITK-InformationRecipient-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -874,7 +874,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="6.39" dy="1.2em" class="st11">InformationRecipient</tspan>-1</text>		</g>
 		<g id="shape72-275" v:mID="72" v:groupContext="shape" transform="translate(404.417,-324.71)">
 			<title>Rectangle.72</title>
@@ -890,7 +890,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape73-278" v:mID="73" v:groupContext="shape" transform="translate(404.417,-324.71)">
 			<title>Rectangle.73</title>
-			<desc>Extension-ITK3-Participant-1</desc>
+			<desc>Extension-ITK-Participant-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -899,7 +899,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="28.62" dy="1.2em" class="st11">Participant</tspan>-1</text>		</g>
 		<g id="shape74-282" v:mID="74" v:groupContext="shape" transform="translate(404.417,-267.465)">
 			<title>Rectangle.74</title>
@@ -915,7 +915,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape75-285" v:mID="75" v:groupContext="shape" transform="translate(404.417,-266.868)">
 			<title>Rectangle.75</title>
-			<desc>Extension-ITK3-Performer-1</desc>
+			<desc>Extension-ITK-Performer-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -924,7 +924,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="30.02" dy="1.2em" class="st11">Performer</tspan>-1</text>		</g>
 		<g id="shape76-289" v:mID="76" v:groupContext="shape" v:layerMember="0" transform="translate(355.52,-397.702)">
 			<title>Dynamic connector.76</title>
@@ -958,7 +958,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape79-304" v:mID="79" v:groupContext="shape" transform="translate(404.417,-209.907)">
 			<title>Rectangle.79</title>
-			<desc>Extension-ITK3-Authorization-1</desc>
+			<desc>Extension-ITK-Authorization-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -967,7 +967,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="23.06" dy="1.2em" class="st11">Authorization</tspan>-1</text>		</g>
 		<g id="shape80-308" v:mID="80" v:groupContext="shape" transform="translate(404.417,-152.095)">
 			<title>Rectangle.80</title>
@@ -983,7 +983,7 @@
 			<text x="34.73" y="1034.86" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension</text>		</g>
 		<g id="shape81-311" v:mID="81" v:groupContext="shape" transform="translate(404.417,-151.498)">
 			<title>Rectangle.81</title>
-			<desc>Extension-ITK3-CaresettingType-1</desc>
+			<desc>Extension-ITK-CaresettingType-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -992,7 +992,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1054.87" width="113.39" height="30.36"/>
 			<rect x="0" y="1039.69" width="113.386" height="30.36" class="st10"/>
-			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK3-<tspan
+			<text x="20.85" y="1052.69" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Extension-ITK-<tspan
 						x="15.56" dy="1.2em" class="st11">CaresettingType</tspan>-1</text>		</g>
 		<g id="shape82-315" v:mID="82" v:groupContext="shape" v:layerMember="0" transform="translate(355.52,-291.559)">
 			<title>Dynamic connector.82</title>
@@ -1150,7 +1150,7 @@
 			<text x="41.41" y="1046.2" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Device</text>		</g>
 		<g id="shape96-373" v:mID="96" v:groupContext="shape" transform="translate(71.3465,-384.237)">
 			<title>Rectangle.96</title>
-			<desc>ITK3-Device-1</desc>
+			<desc>ITK-Device-1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
 				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
@@ -1159,7 +1159,7 @@
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="56.6929" cy="1060.48" width="113.39" height="19.1339"/>
 			<rect x="0" y="1050.91" width="113.386" height="19.1339" class="st6"/>
-			<text x="24.74" y="1063.91" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK3-Device-1</text>		</g>
+			<text x="24.74" y="1063.91" class="st5" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>ITK-Device-1</text>		</g>
 		<g id="shape97-376" v:mID="97" v:groupContext="shape" v:layerMember="0" transform="translate(224.417,-412.992)">
 			<title>Dynamic connector.97</title>
 			<v:userDefs>

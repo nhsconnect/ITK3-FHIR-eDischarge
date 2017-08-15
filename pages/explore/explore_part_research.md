@@ -26,7 +26,7 @@ of treatment and follow up, and contact number for adverse events or queries.
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK3 FHIR eDischarge does not currently support coded participation in research information.
+- The ITK FHIR eDischarge does not currently support coded participation in research information.
 
 
 

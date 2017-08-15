@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title></title>
-        <description>The ITK3 eDischarge messaging components support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined messaging components</description>
+        <description>The ITK eDischarge messaging components support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined messaging components</description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 15 Aug 2017 09:23:02 +0100</pubDate>
-        <lastBuildDate>Tue, 15 Aug 2017 09:23:02 +0100</lastBuildDate>
+        <pubDate>Tue, 15 Aug 2017 14:05:02 +0100</pubDate>
+        <lastBuildDate>Tue, 15 Aug 2017 14:05:02 +0100</lastBuildDate>
         <generator>Jekyll v3.4.3</generator>
         
     </channel>
