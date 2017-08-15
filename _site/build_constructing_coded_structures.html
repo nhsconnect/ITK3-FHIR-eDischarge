@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Constructing coded clinical structures">
+<meta name="keywords" content="design,  design, build,">
+<title>Data Mapping | ITK3 eDischarge</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Data Mapping">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+
+
+    <p style="font-size:16px;">
+    <img src="images/logo.png" height="100x"  alt="NHS Digital Logo"/>
+    </p>
+
+
+    <li class="sidebarTitle">ITK3 FHIR eDischarge 2.0.0-alpha.0</li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_the_journey.html">The Journey</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_messaging_provide.html">Providing a Messaging Solution</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_guide_versioning.html">Guide Versioning</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_release_notes.html">Release Notes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_glossary.html">Glossary</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Messaging Architecture</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_bundle_structures.html">Bundle Structures</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_interactions.html">Interactions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_document_profiles.html">Document Profiles</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_hand_spec.html">Handling Specification</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_snd&rec_req.html">Sender & Receiver Requirements</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_error_codes.html">Error Codes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_resource_referencing.html">Resource Referencing</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Work Flow</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="workflow_overview.html">Overview</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Section Headings</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_headings.html">Overview</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">A to H</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_admission_details.html">Admission details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_allergies_and_adverse_reactions.html">Allergies and adverse reactions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_assessment_scales.html">Assessment scales</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_clinical_summary.html">Clinical summary</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_diagnosis.html">Diagnosis</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_discharge_details.html">Discharge details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_gp_practice.html">GP Practice</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">I to L</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_information_given.html">Information given</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_invest_results.html">Investigation results</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_legal_info.html">Legal information</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">M to P</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_medication.html">Medications and medical devices</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_part_research.html">Participation in research</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_patient_demographics.html">Patient demographics</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_pat_care_concerns.html">Patient and carer concerns</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_per_com_record.html">Person completing record</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_plan_req_actions.html">Plan and requested actions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_per_com_record.html">Person completing record</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_procedures.html">Procedures</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Q to T</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_referral.html">Referral details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_safety_alerts.html">Safety alerts</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_social_context.html">Social context</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_special_req.html">Special requirements</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Case Study Overview</a>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Design & Build</a>
+        <ul>
+            
+            
+            
+            <li><a href="design.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_exchange_patterns.html">Exchange Patterns</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_security.html">Security</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Build</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="build_data_mapping.html">Data Mapping</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="active"><a href="build_constructing_coded_structures.html">Constructing Clinical Coded Structures</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Test</a>
+        <ul>
+            
+            
+            
+            <li><a href="test.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_data.html">Test Data</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Assure</a>
+        <ul>
+            
+            
+            
+            <li><a href="assure.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_end_to_end.html">End To End</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Deploy</a>
+        <ul>
+            
+            
+            
+            <li><a href="deploy.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_security.html">Security</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Help & Support</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="support_communications.html">Communication Channels</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Where Else Can I Look?</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="support_community.html">Community</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_fhirtools.html">FHIR Tools</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_referencedocumentation.html"></a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Tags</a>
+        <ul>
+            
+            
+            
+            <li><a href="tag_overview.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_fhir.html">FHIR&reg;</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_user_stories.html">User Stories</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_casestudies.html">Case Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_design.html">Design</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_development.html">Development</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_support.html">Support</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+             
+
+<div class="post-header">
+   <h1 class="post-title-main">Data Mapping</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Constructing coded clinical structures</div>
+   
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+<!-- removed h3 and h4 from toc KGM 10/JULY/2017 -->
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The ITK3 Messaging Solution data mapping described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK3 Messaging Solutions.</div>
+
+<h2 id="what-is-a-coded-clinical-structure">What is a Coded Clinical Structure</h2>
+
+<p>A coded clinical structure is a FHIR resource or resources populated with the elements required to define a discreet clinical concept or group of concepts, for example a allergy or a list of allergies. The ITK3 eDischarge Bundles do not contain any such structures and the relevant payload specification should be consulted for more information.</p>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        <a href="tag_design.html" class="btn btn-default navbar-btn cursorNorm" role="button">design</a>
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
+                    <br/>
+                    &copy;2017 NHS Digital<br />
+                     Site last generated: Aug 15, 2017 <br />
+                    3742e978f97c579e1b682297255c38f8fab3b42e<br/>
+                    <br/>
+                    <!-- OGL Licence -->
+                    <div class="open-government-licence">
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></img></a>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99659472-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+
+
+</body>
+
+</html>

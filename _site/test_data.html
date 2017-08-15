@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The test data expected to be delivered by ">
+<meta name="keywords" content="testsecurity,  test, pattern, security">
+<title>Test Data | ITK3 eDischarge</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Test Data">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+
+
+    <p style="font-size:16px;">
+    <img src="images/logo.png" height="100x"  alt="NHS Digital Logo"/>
+    </p>
+
+
+    <li class="sidebarTitle">ITK3 FHIR eDischarge 2.0.0-alpha.0</li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_the_journey.html">The Journey</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_messaging_provide.html">Providing a Messaging Solution</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_guide_versioning.html">Guide Versioning</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_release_notes.html">Release Notes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_glossary.html">Glossary</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Messaging Architecture</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_bundle_structures.html">Bundle Structures</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_interactions.html">Interactions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_document_profiles.html">Document Profiles</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_hand_spec.html">Handling Specification</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_snd&rec_req.html">Sender & Receiver Requirements</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_error_codes.html">Error Codes</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_resource_referencing.html">Resource Referencing</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Work Flow</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="workflow_overview.html">Overview</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Section Headings</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_headings.html">Overview</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">A to H</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_admission_details.html">Admission details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_allergies_and_adverse_reactions.html">Allergies and adverse reactions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_assessment_scales.html">Assessment scales</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_clinical_summary.html">Clinical summary</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_diagnosis.html">Diagnosis</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_discharge_details.html">Discharge details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_gp_practice.html">GP Practice</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">I to L</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_information_given.html">Information given</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_invest_results.html">Investigation results</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_legal_info.html">Legal information</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">M to P</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_medication.html">Medications and medical devices</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_part_research.html">Participation in research</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_patient_demographics.html">Patient demographics</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_pat_care_concerns.html">Patient and carer concerns</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_per_com_record.html">Person completing record</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_plan_req_actions.html">Plan and requested actions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_per_com_record.html">Person completing record</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_procedures.html">Procedures</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Q to T</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="explore_referral.html">Referral details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_safety_alerts.html">Safety alerts</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_social_context.html">Social context</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_special_req.html">Special requirements</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Case Study Overview</a>
+        <ul>
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Design & Build</a>
+        <ul>
+            
+            
+            
+            <li><a href="design.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_exchange_patterns.html">Exchange Patterns</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_security.html">Security</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Build</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="build_data_mapping.html">Data Mapping</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_constructing_coded_structures.html">Constructing Clinical Coded Structures</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Test</a>
+        <ul>
+            
+            
+            
+            <li><a href="test.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_patterns.html">Patterns / Topology</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="test_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="test_data.html">Test Data</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Assure</a>
+        <ul>
+            
+            
+            
+            <li><a href="assure.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_security.html">Security</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="assure_end_to_end.html">End To End</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Deploy</a>
+        <ul>
+            
+            
+            
+            <li><a href="deploy.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_access.html">Access</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="deploy_security.html">Security</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Help & Support</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="support_communications.html">Communication Channels</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Where Else Can I Look?</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="support_community.html">Community</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_fhirtools.html">FHIR Tools</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="support_referencedocumentation.html"></a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Tags</a>
+        <ul>
+            
+            
+            
+            <li><a href="tag_overview.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_fhir.html">FHIR&reg;</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_user_stories.html">User Stories</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_casestudies.html">Case Studies</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_design.html">Design</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_development.html">Development</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_support.html">Support</a></li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+             
+
+<div class="post-header">
+   <h1 class="post-title-main">Test Data</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">The test data expected to be delivered by </div>
+   
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+<!-- removed h3 and h4 from toc KGM 10/JULY/2017 -->
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The ITK3 Messaging Solution test data described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK3 Messaging Solution.</div>
+
+<h2 id="test-data-within-test">Test Data within Test</h2>
+
+<p>The test data allows the testing of the ITK3 Messaging Solution at the individual response level.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Provided as an overview</div>
+
+<h2 id="itk3-messaging-solution-considerations">ITK3 Messaging Solution Considerations</h2>
+
+<p>Other ITK3 Messaging Solution considerations are shown below. Please click on the parts of the ITK3 Messaging Solution process to continue your API creation journey.</p>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated by Microsoft Visio 11.0, SVG Export, v1.0 provide_messaging.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="6.78679in" height="7.91206in" viewBox="0 0 488.649 569.668" xml:space="preserve" color-interpolation-filters="sRGB" class="st14">
+	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)" />
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26" />
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#bfbfbf;stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st2 {visibility:visible}
+		.st3 {fill:#cdcdcd;fill-opacity:0.5;stroke:#cdcdcd;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.5;stroke-width:0.25}
+		.st4 {fill:#ffffff;stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st5 {fill:#000000;font-family:Arial;font-size:2.50001em}
+		.st6 {fill:url(#grad30-18);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st7 {fill:url(#grad30-24);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st8 {fill:#7f7f7f;stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st9 {fill:#000000;font-family:Arial;font-size:0.833336em}
+		.st10 {fill:url(#grad30-46);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st11 {fill:#000000;font-family:Arial;font-size:1.99999em}
+		.st12 {font-size:1em}
+		.st13 {fill:#92d050;stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st14 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad30-18" v:fillPattern="30" v:foreground="#85ca39" v:background="#92d050" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#85ca39;stop-opacity:1" />
+			<stop offset="1" style="stop-color:#92d050;stop-opacity:1" />
+		</linearGradient>
+		<linearGradient id="grad30-24" v:fillPattern="30" v:foreground="#f0f0f0" v:background="#ffffff" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#f0f0f0;stop-opacity:1" />
+			<stop offset="1" style="stop-color:#ffffff;stop-opacity:1" />
+		</linearGradient>
+		<linearGradient id="grad30-46" v:fillPattern="30" v:foreground="#717171" v:background="#7f7f7f" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#717171;stop-opacity:1" />
+			<stop offset="1" style="stop-color:#7f7f7f;stop-opacity:1" />
+		</linearGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+			<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26" />
+		</v:userDefs>
+		<title>Page-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394" v:shadowOffsetY="-8.50394" />
+		<g id="group10-1" transform="translate(18.25,-19.69)" v:mID="10" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<title>Sheet.10</title>
+			<g id="shape3-2" v:mID="3" v:groupContext="shape" transform="translate(45.9068,-136.216)">
+				<title>Circle.3</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<path d="M0 386.31 A183.355 183.355 0 0 1 366.71 386.31 A183.355 183.355 0 1 1 -0 386.31 Z" class="st1" />
+			</g>
+			<g id="shape2-4" v:mID="2" v:groupContext="shape" transform="translate(56.4692,-147.554)">
+				<title>Circle.2</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<g id="shadow2-5" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<path d="M0 397.77 A171.895 171.895 0 1 1 343.79 397.77 A171.895 171.895 0 1 1 0 397.77 Z" class="st3" />
+				</g>
+				<path d="M0 397.77 A171.895 171.895 0 1 1 343.79 397.77 A171.895 171.895 0 1 1 0 397.77 Z" class="st4" />
+			</g>
+			<g id="shape15-8" v:mID="15" v:groupContext="shape">
+				<title>Rectangle</title>
+				<desc>Key:</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="225.354" cy="535.29" width="450.71" height="68.758" />
+				<g id="shadow15-9" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<rect x="0" y="500.911" width="450.709" height="68.758" class="st3" />
+				</g>
+				<rect x="0" y="500.911" width="450.709" height="68.758" class="st1" />
+				<text x="4" y="544.29" class="st5" v:langID="2057"><v:paragraph /><v:tabList />Key:</text>			</g>
+			<g id="shape16-13" v:mID="16" v:groupContext="shape" transform="translate(69.6386,-19.995)">
+				<title>Circle.16</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<g id="shadow16-14" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<path d="M0 555.51 A14.1587 14.1587 0 0 1 28.32 555.51 A14.1587 14.1587 0 1 1 0 555.51 Z" class="st3" />
+				</g>
+				<path d="M0 555.51 A14.1587 14.1587 0 0 1 28.32 555.51 A14.1587 14.1587 0 1 1 0 555.51 Z" class="st6" />
+			</g>
+			<g id="shape17-19" v:mID="17" v:groupContext="shape" transform="translate(194,-18.8782)">
+				<title>Circle.17</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<g id="shadow17-20" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<path d="M0 554.94 A14.7317 14.7317 0 0 1 29.46 554.94 A14.7317 14.7317 0 1 1 0 554.94 Z" class="st3" />
+				</g>
+				<path d="M0 554.94 A14.7317 14.7317 0 0 1 29.46 554.94 A14.7317 14.7317 0 1 1 0 554.94 Z" class="st7" />
+			</g>
+			<g id="shape18-25" v:mID="18" v:groupContext="shape" transform="translate(327.577,-19.5227)">
+				<title>Circle.18</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<g id="shadow18-26" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<path d="M0 555.26 A14.4094 14.4094 0 0 1 28.82 555.26 A14.4094 14.4094 0 1 1 0 555.26 Z" class="st3" />
+				</g>
+				<path d="M0 555.26 A14.4094 14.4094 0 0 1 28.82 555.26 A14.4094 14.4094 0 1 1 0 555.26 Z" class="st8" />
+			</g>
+			<g id="shape19-29" v:mID="19" v:groupContext="shape" transform="translate(109.309,-19.995)">
+				<title>Rectangle.19</title>
+				<desc>Provided</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="35.8768" cy="555.83" width="71.76" height="27.6764" />
+				<g id="shadow19-30" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<rect x="0" y="541.992" width="71.7537" height="27.6764" class="st3" />
+				</g>
+				<rect x="0" y="541.992" width="71.7537" height="27.6764" class="st6" />
+				<text x="16.14" y="558.83" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Provided</text>			</g>
+			<g id="shape20-35" v:mID="20" v:groupContext="shape" transform="translate(236.868,-18.3355)">
+				<title>Rectangle.20</title>
+				<desc>Explained</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="37.9904" cy="555.015" width="75.99" height="29.3069" />
+				<g id="shadow20-36" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<rect x="0" y="540.362" width="75.9808" height="29.3069" class="st3" />
+				</g>
+				<rect x="0" y="540.362" width="75.9808" height="29.3069" class="st7" />
+				<text x="16.03" y="558.02" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Explained</text>			</g>
+			<g id="shape21-41" v:mID="21" v:groupContext="shape" transform="translate(370.096,-18.9176)">
+				<title>Rectangle.21</title>
+				<desc>Local Decision</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="37.2693" cy="555.293" width="74.54" height="28.7506" />
+				<g id="shadow21-42" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1" transform="matrix(1,0,0,1,1.44,1.44)" class="st2">
+					<rect x="0" y="540.918" width="74.5386" height="28.7506" class="st3" />
+				</g>
+				<rect x="0" y="540.918" width="74.5386" height="28.7506" class="st10" />
+				<text x="4.75" y="558.29" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Local Decision</text>			</g>
+		</g>
+		<g id="shape1-48" v:mID="1" v:groupContext="shape" transform="translate(161.575,-242.362)">
+			<title>ITK3 Messaging Solution</title>
+			<desc>ITK3 Messaging Solution</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+			<v:textRect cx="88.5827" cy="481.086" width="155.02" height="132.874" />
+			<path d="M0 481.09 A88.5827 88.5827 0 0 1 177.17 481.09 A88.5827 88.5827 0 1 1 0 481.09 Z" class="st4" />
+			<text x="30.55" y="473.89" class="st11" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Messaging<v:newlineChar /><tspan x="45.22" dy="1.2em" class="st12">Solution</tspan></text>		</g>
+		<g id="shape22-52" v:mID="22" v:groupContext="shape" transform="translate(95.6693,-432.283)">
+			<title>Endpoint</title>
+			<desc>Endpoint</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+			<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+			<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st8" />
+			<text x="26.32" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Endpoint</text>		</g>
+		<g id="shape14-55" v:mID="14" v:groupContext="shape" transform="translate(304.724,-432.283)">
+			<title>Transform</title>
+			<desc>Transform</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+			<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+			<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st8" />
+			<text x="23.28" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Transform</text>		</g>
+		<g id="shape5-58" v:mID="5" v:groupContext="shape" transform="translate(364.961,-340.157)">
+			<title>Traffic Management</title>
+			<desc>Traffic Management</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+			<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+			<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st8" />
+			<text x="32.17" y="520.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Traffic<v:newlineChar /><tspan x="16.88" dy="1.2em" class="st12">Management</tspan></text>		</g>
+		<a xlink:href="..\explore_messaging_versioning">
+			<g id="shape6-62" v:mID="6" v:groupContext="shape" transform="translate(364.961,-233.858)">
+				<title>Versioning</title>
+				<desc>Versioning</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st13" />
+				<text x="22.44" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Versioning</text>			</g>
+		</a>
+		<a xlink:href="..\engage.html">
+			<g id="shape7-65" v:mID="7" v:groupContext="shape" transform="translate(297.638,-148.819)">
+				<title>Engage</title>
+				<desc>Engage</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st13" />
+				<text x="28.82" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Engage</text>			</g>
+		</a>
+		<a xlink:href="..\explore.html">
+			<g id="shape8-68" v:mID="8" v:groupContext="shape" transform="translate(199.843,-118.346)">
+				<title>ITK3 Messaging Solution Documentation</title>
+				<desc>ITK3 Messaging Solution Documentation</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st13" />
+				<text x="21.88" y="514.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Messaging<v:newlineChar /><tspan x="27.99" dy="1.2em" class="st12">Solution<v:newlineChar /></tspan><tspan x="12.43" dy="1.2em" class="st12">Documentation</tspan></text>			</g>
+		</a>
+		<g id="shape9-73" v:mID="9" v:groupContext="shape" transform="translate(92.126,-144.567)">
+			<title>Report &#38; Monitor</title>
+			<desc>Report &#38; Monitor</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+			<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+			<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st8" />
+			<text x="26.33" y="520.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Report &#38; <tspan x="29.39" dy="1.2em" class="st12">Monitor</tspan></text>		</g>
+		<a xlink:href="..\design_patterns">
+			<g id="shape11-77" v:mID="11" v:groupContext="shape" transform="translate(39.685,-238.11)">
+				<title>Patterns / Topology</title>
+				<desc>Patterns / Topology</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4" />
+				<text x="24.66" y="520.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Patterns / <tspan x="25.49" dy="1.2em" class="st12">Topology</tspan></text>			</g>
+		</a>
+		<a xlink:href="design_access.html">
+			<g id="shape12-81" v:mID="12" v:groupContext="shape" transform="translate(29.7638,-345.827)">
+				<title>Access</title>
+				<desc>Access</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4" />
+				<text x="29.95" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Access</text>			</g>
+		</a>
+		<a xlink:href="..\design_security.html" xlink:title="Security">
+			<g id="shape4-84" v:mID="4" v:groupContext="shape" transform="translate(200.551,-464.173)">
+				<title>Security</title>
+				<desc>Security</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(14):26" />
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26" />
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26" />
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" />
+				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945" />
+				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4" />
+				<text x="28" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Security</text>			</g>
+		</a>
+	</g>
+</svg>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
+                    <br/>
+                    &copy;2017 NHS Digital<br />
+                     Site last generated: Aug 15, 2017 <br />
+                    3742e978f97c579e1b682297255c38f8fab3b42e<br/>
+                    <br/>
+                    <!-- OGL Licence -->
+                    <div class="open-government-licence">
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></img></a>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99659472-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+ 
+
+
+</body>
+
+</html>
