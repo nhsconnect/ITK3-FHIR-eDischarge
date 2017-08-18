@@ -12,11 +12,13 @@ summary: "Resource referencing explained."
 ## Overview ##
 This section details the reference between resources.
 
-## ITK Send Payload Bundle Referencing Diagram ##
+## ITK eDischarge FHIR Document Profile Referencing ##
 
-The diagram shows the referencing between the profiles in the bundle which make up the Send Payload Message.
+The diagram shows the referencing between the profiles in the bundle which make up the ITK eDischarge FHIR Document.
 
-<img src="images/explore/send_payload_message.png" style="width: 75%;max-width: 75%;"> 
+When using ITK3 there is an outer bundle structure which is called the [ITK3 send payload bundle structure](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_messages.html#itk-send-payload-bundle-diagram) for use with ITK3.
+
+<img src="images/explore/eDischarge_message_bundle.png" style="width: 75%;max-width: 75%;"> 
 
 
 
