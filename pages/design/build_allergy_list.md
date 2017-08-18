@@ -98,7 +98,7 @@ The allergies list is a “Snapshot” of the known allergies at a point in time
 ## How the Allergy Record is constructed ##
 The allergy record is constructed as a single list. The diagram below shows the Resources used and relationship between the Resources.
 
-<img src="images/build/allergy_basic_structure.png" style="width:80%;max-width: 80%;">
+<img src="images/build/allergy_basic_structure.png" style="width:50%;max-width: 50%;">
 
 
 Each allergy in the list will use the FHIR list resource Flag element to indicate the context of the allergy (For example addition,new etc). The Flag resource will use the common extension to reference the allergy resource.
