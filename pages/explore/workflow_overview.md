@@ -11,4 +11,4 @@ summary: "Overview of work flow."
 
 ## Overview ##
 
-There is no work flow associated with ITK eDischarge messaging, please refer to the payload specification for any associated work flow information.
+**TO DO**

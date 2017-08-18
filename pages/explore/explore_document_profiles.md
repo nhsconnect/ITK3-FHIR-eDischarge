@@ -22,7 +22,6 @@ The Bundle consists of the following FHIR Resource Profiles.
 - **ITK-Medication-List-1** - An NHS Digital profile for recording a snapshot of the list of Medications for the patient.
 - **CareConnect-MedicationStatement-1** - A CareConnect Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.
 - **CareConnect-Medication-1** - A CareConnect Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.
-- **CareConnect-MedicationOrder-1** - A CareConnect Profile for medication orders. The MedicationOrder Resource represents an order for both supply of the medication and the instructions for administration of the medication to a patient.
 - **CareConnect-Medication-Flag-1** - A CareConnect Profile for medication flags. The Flag Resource carries prospective warnings of potential issues related to the patient's medications.
 - **ITK-Allergies-List-1** - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.
 - **CareConnect-AllergyIntolerance-1** - A careConnect Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.

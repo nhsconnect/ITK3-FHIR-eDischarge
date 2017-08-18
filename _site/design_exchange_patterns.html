@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The Exchange Patterns introduce the three ways of exchanging FHIR Resources using RESTful API, messaging and documents.">
+<meta name="description" content="The Exchange Patterns introduce the messaging and documents.">
 <meta name="keywords" content="designbuild,  design, build">
 <title>Exchange Patterns | ITK eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -295,6 +295,12 @@
                     
                     
                     
+                    
+                    
+                    <li><a href="workflow_encounter.html">Encounter</a></li>
+                    
+                    
+                    
                 </ul>
             </li>
             
@@ -353,6 +359,12 @@
                     
                     
                     <li><a href="explore_discharge_details.html">Discharge details</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_distribution_list.html">Distribution list</a></li>
                     
                     
                     
@@ -463,7 +475,7 @@
                     
                     
                     
-                    <li><a href="explore_referral.html">Referral details</a></li>
+                    <li><a href="explore_referral_details.html">Referral details</a></li>
                     
                     
                     
@@ -497,11 +509,12 @@
         
     
     <li>
-        <a href="#">Case Study Overview</a>
+        <a href="#">Example Scenarios</a>
         <ul>
             
             
             
+            <li><a href="engage_richard_smith.html">Richard Smith</a></li>
             
             
             
@@ -531,7 +544,7 @@
             
             
             
-            <li class="active"><a href="design_exchange_patterns.html">Exchange Patterns</a></li>
+            <li><a href="design_access.html">Access</a></li>
             
             
             
@@ -542,68 +555,55 @@
             
             
             
+            
+            
+            
+            <li><a href="build_data_mapping.html">Data Mapping</a></li>
+            
+            
+            
             <li class="subfolders">
-                <a href="#">Build</a>
+                <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
                     
                     
                     
-                    <li><a href="build_data_mapping.html">Data Mapping</a></li>
+                    <li><a href="build_overview.html">Overview</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_constructing_coded_structures.html">Constructing Clinical Coded Structures</a></li>
+                    <li><a href="build_medication_lists.html">Medication Lists</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_allergy_lists.html">Allergy Lists</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_conditions.html">Conditions</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_procedures.html">Procedures</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="build_observations.html">Observations</a></li>
                     
                     
                     
                 </ul>
             </li>
-            
-            
-            
-            
-        </ul>
-     </li>
-       
-        
-    
-    <li>
-        <a href="#">Test</a>
-        <ul>
-            
-            
-            
-            <li><a href="test.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="test_patterns.html">Patterns / Topology</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="test_access.html">Access</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="test_security.html">Security</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="test_data.html">Test Data</a></li>
             
             
             
@@ -815,7 +815,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The Exchange Patterns introduce the three ways of exchanging FHIR Resources using RESTful API, messaging and documents.</div>
+    <div class="summary">The Exchange Patterns introduce the messaging and documents.</div>
    
 
    
@@ -852,96 +852,11 @@ $('#toc').on('click', 'a', function() {
 <div class="alert alert-danger" role="alert">
 <i class="fa fa-exclamation-circle"></i> <b>Warning:</b> This site is provided for information only and is intended for those engaged with NHS Digital on the development of  ITK 3 FHIR messaging and document solutions. It is advised not to develop against these specifications until a formal announcement has been made.</div>
 
-<h2 id="exchange-paradigms">Exchange Paradigms</h2>
+<h2 id="exchange-patterns">Exchange Patterns</h2>
 
 <p>This section has been included to show the types of exchange patterns and how these ways of exchanging FHIR resources relates to Information Sharing Patterns.</p>
 
 <p>The exchange patterns are complimentary, each having it’s strengths and weaknesses. The best solution will probably to use a combination of pattern.</p>
-
-<p>**Note: for ITK only Messaging or Documents can be used.  **</p>
-
-<h2 id="restful-api">RESTful API</h2>
-
-<p>Manipulate data held in a remote system while avoiding direct coupling to remote procedures.</p>
-
-<p>Many web services use messages to form their own domain-specific APIs. These messages incorporate common logical commands like Create, Read (i.e. Get), Update, or Delete (CRUD). Also across the health and social care domain, we have many common entities such as Patient, Practitioner, Organisation, etc. For example, many systems will implement an API that allows you to search for Patients by their NHS Number, maybe called GetPatient, QueryPatient, CreatePatient, etc.</p>
-
-<p>Rather than implementing a system specific API, we could utilise standards defined in the HTTP specification (i.e. GET, POST, etc) and standarise how we return the payload.</p>
-
-<p>So rather than a wide variety of GetPatient, QueryPatient we have:</p>
-
-<table width="60%">
-    <tr>
-        <td>
-            <b>GET Request</b>
-        </td>
-        <td>
-            <b>Response (server)</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            URI
-        </td>
-        <td>
-            FHIR Resource <br /> E.g. Patient
-        </td>
-    </tr>
-</table>
-
-<table width="60%">
-    <tr>
-        <td>
-            <b>POST/PUT Request</b>
-        </td>
-        <td>
-            <b>Response (server)</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            URI + FHIR Resource <br /> Patient
-        </td>
-        <td>
-            FHIR Resource <br /> E.g. OperationOutcome
-        </td>
-    </tr>
-</table>
-
-<table width="60%">
-    <tr>
-        <td>
-            <b>DELETE Request</b>
-        </td>
-        <td>
-            <b>Response (server)</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            URI
-        </td>
-        <td>
-            FHIR Resource <br /> E.g. OperationOutcome
-        </td>
-    </tr>
-</table>
-
-<p>This type of interface may also be called as <strong>ResourceAPI</strong> and is useful for real time applications and mobile/web based access.</p>
-
-<p><strong>Benefits</strong></p>
-<ul>
-  <li>Mobile and web application friendly, can be reused for messaging simplifying interfacing.</li>
-  <li>Quick to develop</li>
-  <li>Real Time Systems</li>
-  <li>Uses modern web technologies</li>
-  <li>Can be used with modern security and consent technologies (<a href="https://oauth.net/2/">OAuth2</a>, <a href="http://openid.net/what-is-openid/">OpenID</a>, <a href="http://docs.smarthealthit.org/">SMART on FHIR</a>)</li>
-</ul>
-
-<p><strong>Concerns</strong></p>
-<ul>
-  <li>Less suitable for large transfers of data between organisations and large systems.</li>
-</ul>
 
 <h3 id="information-sharing-patterns">Information Sharing Patterns</h3>
 
@@ -1153,8 +1068,8 @@ To store resources in the Repository
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2017 NHS Digital<br />
-                     Site last generated: Aug 15, 2017 <br />
-                    6bd1e238bb2d82ad6b107301ad0d709542503afa<br/>
+                     Site last generated: Aug 18, 2017 <br />
+                    facd73e2d8f7a71c569a113466c11bab65eecf70<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

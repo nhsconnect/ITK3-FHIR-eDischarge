@@ -38,7 +38,7 @@ Below is a list of patterns. If you require more detail please go to [developer.
 
 # Patterns and ITK eDischarge Based ITK Messaging Solutions  #
 
-Considering the design pattern / topology influences how any exposed ITK eDischarge based ITK Messaging Solutions can be used and work within a system. ITK Messaging Solutions help to expose information to all design patterns allowing great user experiences to be created quickly, securely and consistantly. This implementation guide concentrates on [Case Studies](/engage_case_studies.html) to expose and demonstrate how design pattern can use ITK eDischarge ITK Messaging Solutions to interoperate with other systems, patterns, and level of digital maturity within and between organisations.
+Considering the design pattern / topology influences how any exposed ITK eDischarge based ITK Messaging Solutions can be used and work within a system. ITK Messaging Solutions help to expose information to all design patterns allowing great user experiences to be created quickly, securely and consistantly. 
 
 # ITK Messaging Solutions Considerations #
 

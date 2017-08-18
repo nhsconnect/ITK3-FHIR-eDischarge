@@ -61,11 +61,12 @@ entries:
         url: /workflow.html
         output: web
         subfolderitems:
-
         - title: Overview
           url: /workflow_overview.html
           output: web
-     
+        - title: Encounter
+          url: /workflow_encounter.html
+          output: web
   - title: Section Headings
     output: web,pdf
     folderitems:
@@ -95,6 +96,9 @@ entries:
           output: web
         - title: Discharge details
           url: /explore_discharge_details.html
+          output: web
+        - title: Distribution list
+          url: /explore_distribution_list.html
           output: web
         - title: GP Practice
           url: /explore_gp_practice.html
@@ -148,7 +152,7 @@ entries:
         output: web
         subfolderitems:
         - title: Referral details
-          url: /explore_referral.html
+          url: /explore_referral_details.html
           output: web
         - title: Safety alerts
           url: /explore_safety_alerts.html
@@ -160,29 +164,14 @@ entries:
           url: /explore_special_req.html
           output: web
 
-
-
-
-  - title: Case Study Overview
-    url: /engage_case_studies.html
+  - title: Example Scenarios
+    url: /engage_scenario.html
     output: web
     folderitems:
- #  - title: Engagement Approach
-      url: /engage.html
+    - title: Richard Smith
+      url: /engage_richard_smith.html
       output: web, pdf
       type: homepage
-
-#      subfolders:
-#      - title: Case Studies
-#        output: web
-#        subfolderitems:
-
-#        - title: Case Study Overview
-#          url: /engage_case_studies.html
-#          output: web
-#        - title: Test Case Study
-#          url: /engage_test_case_study.html
-#          output: web
 
   - title: Design & Build
     output: web
@@ -193,46 +182,56 @@ entries:
     - title: Patterns / Topology
       url: /design_patterns.html
       output: web
-    - title: Exchange Patterns
-      url: /design_exchange_patterns.html
+    - title: Access
+      url: /design_access.html
       output: web
     - title: Security
       url: /design_security.html
       output: web
+    - title: Data Mapping
+      url: /build_data_mapping.html
+      output: web
       subfolders:
-      - title: Build
+      - title: Constructing Clinical Coded Structures
+        url: /build_constructing_coded_structures.html
         output: web
         subfolderitems:
-          - title: Data Mapping
-            url: /build_data_mapping.html
-            output: web
-          - title: Constructing Clinical Coded Structures
-            url: /build_constructing_coded_structures.html
-            output: web
- #         - title: Medication Lists
- #          url: /build_medication_lists.html
- #           output: web
- #        - title: Allergy Lists
- #           url: /build_allergy_lists.html
- #           output: web
-  - title: Test
-    output: web
-    folderitems:
-    - title: Overview
-      url: /test.html
-      output: web
-    - title: Patterns / Topology
-      url: /test_patterns.html
-      output: web
-    - title: Access
-      url: /test_access.html
-      output: web
-    - title: Security
-      url: /test_security.html
-      output: web
-    - title: Test Data
-      url: /test_data.html
-      output: web
+        - title: Overview
+          url: /build_overview.html
+          output: web
+        - title: Medication Lists
+          url: /build_medication_lists.html
+          output: web
+        - title: Allergy Lists
+          url: /build_allergy_lists.html
+          output: web
+        - title: Conditions
+          url: /build_conditions.html
+          output: web
+        - title: Procedures
+          url: /build_procedures.html
+          output: web
+        - title: Observations
+          url: /build_observations.html
+          output: web
+#  - title: Test
+#    output: web
+#    folderitems:
+#    - title: Overview
+#      url: /test.html
+#      output: web
+#    - title: Patterns / Topology
+#      url: /test_patterns.html
+#      output: web
+#    - title: Access
+#      url: /test_access.html
+#      output: web
+#    - title: Security
+#      url: /test_security.html
+#      output: web
+#    - title: Test Data
+#      url: /test_data.html
+#      output: web
 
   - title: Assure
     output: web
