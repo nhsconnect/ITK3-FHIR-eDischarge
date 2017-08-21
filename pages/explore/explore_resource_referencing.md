@@ -20,6 +20,20 @@ When using ITK3 there is an outer bundle structure which is called the [ITK3 sen
 
 <img src="images/explore/eDischarge_message_bundle.png" style="width: 75%;max-width: 75%;"> 
 
+## Patient Referencing Diagram ##
+
+The diagram shows the referencing for the Patient resource.
+
+
+<img src="images/explore/patient_referencing.png" style="width: 75%;max-width: 75%;"> 
+
+
+## Encounter Referencing Diagram ##
+
+The diagram shows the referencing for the Encounter resource.
+
+<img src="images/explore/encounter_referencing.png" style="width: 75%;max-width: 75%;"> 
+
 
 
 ## Practitioner and Organization Referencing Diagram ##
