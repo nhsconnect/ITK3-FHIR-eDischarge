@@ -64,6 +64,17 @@ The diagram shows the referencing for the List resource for Allergies.
 
 <img src="images/explore/allergy_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## AllergyIntolerance Referencing Diagram ##
+
+The diagram shows the referencing for the AllergyIntolerance resource.
+
+<img src="images/explore/allergyIntolerance_referencing.png" style="width: 75%;max-width: 75%;"> 
+
+
+
+
+
+
 ## Practitioner and Organization Referencing Diagram ##
 
 The diagram shows the referencing between organization, practitioner and practitionerRole.
