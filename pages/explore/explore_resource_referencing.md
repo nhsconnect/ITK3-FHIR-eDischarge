@@ -34,11 +34,39 @@ The diagram shows the referencing for the Encounter resource.
 
 <img src="images/explore/encounter_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## List (Medication) Referencing Diagram ##
 
+The diagram shows the referencing for the List resource for Medication.
+
+<img src="images/explore/medication_list_referencing.png" style="width: 75%;max-width: 75%;"> 
+
+## MedicationStatement Referencing Diagram ##
+
+The diagram shows the referencing for the MedicationStatement resource.
+
+<img src="images/explore/medicationStatement_referencing.png" style="width: 75%;max-width: 75%;">
+
+## Medication Referencing Diagram ##
+
+The diagram shows the referencing for the Medication resource.
+
+<img src="images/explore/medication_referencing.png" style="width: 75%;max-width: 75%;">  
+
+## Flag (Medication) Referencing Diagram ##
+
+The diagram shows the referencing for the Flag resource for Medication.
+
+<img src="images/explore/medication_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
+
+## List (Allergy) Referencing Diagram ##
+
+The diagram shows the referencing for the List resource for Allergies.
+
+<img src="images/explore/allergy_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
 ## Practitioner and Organization Referencing Diagram ##
 
-The diagram shows the referencing between organization, practitioner and practitionerRole which applies to all the message in the ITK eDischarge specification.
+The diagram shows the referencing between organization, practitioner and practitionerRole.
 
 
 <img src="images/explore/org_pra_references.png" style="width: 75%;max-width: 75%;"> 
