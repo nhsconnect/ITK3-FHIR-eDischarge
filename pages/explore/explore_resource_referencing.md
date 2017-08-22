@@ -85,6 +85,13 @@ The diagram shows the referencing for the Flag resource for Allergies.
 The diagram shows the referencing for the Condition resource.
 
 <img src="images/explore/condition_referencing.png" style="width: 75%;max-width: 75%;"> 
+
+## Procedure ##
+
+The diagram shows the referencing for the Procedure resource.
+
+<img src="images/explore/procedure_referencing.png" style="width: 75%;max-width: 75%;"> 
+
 XX
 
 ## Practitioner and Organization ##
