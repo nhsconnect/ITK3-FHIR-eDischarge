@@ -12,6 +12,10 @@ summary: "Resource referencing explained."
 ## Overview ##
 This section details the reference between resources.
 
+The diagrams only go to one level due to the complexity and size of the message.Below is the key to the diagrams.
+
+<img src="images/explore/key.png" style="width: 75%;max-width: 75%;">
+
 ## ITK eDischarge FHIR Document Profile Referencing ##
 
 The diagram shows the referencing between the profiles in the bundle which make up the ITK eDischarge FHIR Document.
@@ -50,7 +54,7 @@ The diagram shows the referencing for the MedicationStatement resource.
 
 The diagram shows the referencing for the Medication resource.
 
-<img src="images/explore/medication_referencing.png" style="width: 75%;max-width: 75%;">  
+<img src="images/explore/medication_referencing.png" style="width: 50%;max-width: 50%;">  
 
 ## Flag (Medication) Referencing Diagram ##
 
