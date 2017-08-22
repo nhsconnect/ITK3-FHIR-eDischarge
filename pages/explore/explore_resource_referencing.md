@@ -92,6 +92,12 @@ The diagram shows the referencing for the Procedure resource.
 
 <img src="images/explore/procedure_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## Observation ##
+
+The diagram shows the referencing for the Observation resource.
+
+<img src="images/explore/observation_referencing.png" style="width: 75%;max-width: 75%;"> 
+
 XX
 
 ## Practitioner and Organization ##
