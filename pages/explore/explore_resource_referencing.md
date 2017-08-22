@@ -80,7 +80,11 @@ The diagram shows the referencing for the Flag resource for Allergies.
 
 <img src="images/explore/allergy_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## Condition ##
 
+The diagram shows the referencing for the Condition resource.
+
+<img src="images/explore/condition_referencing.png" style="width: 75%;max-width: 75%;"> 
 XX
 
 ## Practitioner and Organization ##
