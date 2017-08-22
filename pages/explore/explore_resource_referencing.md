@@ -24,7 +24,7 @@ When using ITK3 there is an outer bundle structure which is called the [ITK3 sen
 
 <img src="images/explore/eDischarge_message_bundle.png" style="width: 75%;max-width: 75%;"> 
 
-## Patient Referencing Diagram ##
+## Patient ##
 
 The diagram shows the referencing for the Patient resource.
 
@@ -32,54 +32,58 @@ The diagram shows the referencing for the Patient resource.
 <img src="images/explore/patient_referencing.png" style="width: 75%;max-width: 75%;"> 
 
 
-## Encounter Referencing Diagram ##
+## Encounter ##
 
 The diagram shows the referencing for the Encounter resource.
 
 <img src="images/explore/encounter_referencing.png" style="width: 75%;max-width: 75%;"> 
 
-## List (Medication) Referencing Diagram ##
+## List (Medication) ##
 
 The diagram shows the referencing for the List resource for Medication.
 
 <img src="images/explore/medication_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
-## MedicationStatement Referencing Diagram ##
+## MedicationStatement ##
 
 The diagram shows the referencing for the MedicationStatement resource.
 
 <img src="images/explore/medicationStatement_referencing.png" style="width: 75%;max-width: 75%;">
 
-## Medication Referencing Diagram ##
+## Medication ##
 
 The diagram shows the referencing for the Medication resource.
 
 <img src="images/explore/medication_referencing.png" style="width: 50%;max-width: 50%;">  
 
-## Flag (Medication) Referencing Diagram ##
+## Flag (Medication) ##
 
 The diagram shows the referencing for the Flag resource for Medication.
 
 <img src="images/explore/medication_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
 
-## List (Allergy) Referencing Diagram ##
+## List (Allergy) ##
 
 The diagram shows the referencing for the List resource for Allergies.
 
 <img src="images/explore/allergy_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
-## AllergyIntolerance Referencing Diagram ##
+## AllergyIntolerance ##
 
 The diagram shows the referencing for the AllergyIntolerance resource.
 
 <img src="images/explore/allergyIntolerance_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## Flag (Allergy) ##
+
+The diagram shows the referencing for the Flag resource for Allergies.
+
+<img src="images/explore/allergy_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
 
 
+XX
 
-
-
-## Practitioner and Organization Referencing Diagram ##
+## Practitioner and Organization ##
 
 The diagram shows the referencing between organization, practitioner and practitionerRole.
 
