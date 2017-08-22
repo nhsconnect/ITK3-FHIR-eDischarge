@@ -16,7 +16,7 @@ The diagrams only go to one level due to the complexity and size of the message.
 
 <img src="images/explore/key.png" style="width: 75%;max-width: 75%;">
 
-## ITK eDischarge FHIR Document Profile Referencing ##
+## ITK eDischarge FHIR Document ##
 
 The diagram shows the referencing between the profiles in the bundle which make up the ITK eDischarge FHIR Document.
 
@@ -97,8 +97,6 @@ The diagram shows the referencing for the Procedure resource.
 The diagram shows the referencing for the Observation resource.
 
 <img src="images/explore/observation_referencing.png" style="width: 75%;max-width: 75%;"> 
-
-XX
 
 ## Practitioner and Organization ##
 
