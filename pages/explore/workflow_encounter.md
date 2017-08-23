@@ -29,6 +29,9 @@ The encounter can be referenced by the following resources:
 - Observation
 - Procedure
 
+## Example Encounter ##
+
+<script src="https://gist.github.com/IOPS-DEV/66bff9022f16f8341ec1f7b77391ac23.js"></script>
 
 
 

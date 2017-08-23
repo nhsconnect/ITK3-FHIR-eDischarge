@@ -15,11 +15,11 @@ A coded clinical structure is a FHIR resource or resources populated with the el
 
 ## Coded structures supported by ITK eDischarge ##
 
-- **[Medication list](build_medication_list.html)**
-- **[Allergy list](build_allergy_list.html)**
-- **[Condition](build_condition.html)**
-- **[Procedure](build_procedure.html)**
-- **[Observation](build_observation.html)**
+- **[Medication list](build_medication_lists.html)**
+- **[Allergy list](build_allergy_lists.html)**
+- **[Condition](build_conditions.html)**
+- **[Procedure](build_procedures.html)**
+- **[Observation](build_observations.html)**
 
 
 

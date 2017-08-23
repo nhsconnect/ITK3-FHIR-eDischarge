@@ -10,6 +10,6 @@ summary: Summary release notes of the versions released in ITK eDischarge Implem
 {% include custom/search.warnbanner.html %}
 
   
-## 2.0.0-alpha.0 ##
+## 2.0.0-alpha.1 ##
 First version published using Jekyll
 
