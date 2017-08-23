@@ -12,9 +12,7 @@ summary: "The structures of the bundle used for ITK FHIR Documents"
 
 ## Bundle structure for ITK3 and MESH  ##
 
-
-
-<a href="(https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_bundle_structures.html" target="_blank">ITK3 bundle structure</a>
+<a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_bundle_structures.html" target="_blank">ITK3 bundle structure</a>
 
 {% include custom/messaging_overview.svg %}
 
