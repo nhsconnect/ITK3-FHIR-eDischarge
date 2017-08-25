@@ -20,7 +20,7 @@ Including the stage of the disease where relevant.
 
 This section example includes a reference to a coded diagnosis.
 
-<script src="https://gist.github.com/unicorn150161/897af00a4e0a141f4caa33da5430f5a2.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/6903725738cefc330a8964316f0a5e9d.js"></script>
 
 ## Coded Resources ##
 

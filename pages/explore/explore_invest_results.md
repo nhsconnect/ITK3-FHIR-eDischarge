@@ -17,7 +17,7 @@ The Investigation results section carries information about investigation result
 ## Example Investigation Results Section ##
 
 
-<script src="https://gist.github.com/unicorn150161/907ce647bacac8ffa2ed16e72f484a60.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/72e6cca3707440c2299d7655b60a7b23.js"></script>
 
 ## Coded Resources ##
 

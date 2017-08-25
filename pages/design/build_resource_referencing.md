@@ -3,7 +3,7 @@ title: Resource referencing
 keywords: resource
 tags: [development,fhir,profiles]
 sidebar: overview_sidebar
-permalink: explore_resource_referencing.html
+permalink: build_resource_referencing.html
 summary: "Resource referencing explained."
 ---
 

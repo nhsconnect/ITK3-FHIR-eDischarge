@@ -20,7 +20,7 @@ of treatment and follow up, and contact number for adverse events or queries.
 
 ##  Example Participation in Research Section ##
 
-<script src="https://gist.github.com/unicorn150161/62c941a3f1a553f5f72664f22331b269.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/9cd8f422a7c1e323ed42ac424a5830db.js"></script>
 
 ## Coded Resources ##
 

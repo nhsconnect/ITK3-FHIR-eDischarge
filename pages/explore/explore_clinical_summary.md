@@ -16,7 +16,7 @@ This may include interpretation of findings and results; differential diagnoses,
 
 ##  Example Clinical Summary Section ##
 
-<script src="https://gist.github.com/unicorn150161/e361aef28eeeb059e75c36e341718d33.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/77620f7d132b195c42b5f2fee5f39172.js"></script>
 
 ## Coded Resources ##
 

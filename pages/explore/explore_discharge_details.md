@@ -27,7 +27,7 @@ place of residence.
 
 ##  Example Discharge Section ##
 
-<script src="https://gist.github.com/unicorn150161/1efd8ec1fdec4263665bc61bc261abdd.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/8af6e4182fad6c0ce91e46e6d17563b5.js"></script>
 
 ## Coded Resources ##
 

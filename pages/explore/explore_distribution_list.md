@@ -44,7 +44,7 @@ This example shows a recipient practitioner entry.
 
 This example shows a recipient patient entry.
 
-<script src="https://gist.github.com/unicorn150161/1d719278e4f08e06d595ac228c00f677.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/af79cf398178936f11f5eb5c5d45c13c.js"></script>
 
 ## Example Distribution List Entry Using RelatedPerson Resource ##
 

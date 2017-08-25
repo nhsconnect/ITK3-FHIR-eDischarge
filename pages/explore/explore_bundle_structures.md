@@ -4,7 +4,7 @@ keywords:  messaging, bundles
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: explore_bundle_structures.html
-summary: "The structures of the bundle used for ITK FHIR Documents"
+summary: "The structure of the bundle used for ITK FHIR Documents"
 ---
 
 {% include custom/search.warnbanner.html %}

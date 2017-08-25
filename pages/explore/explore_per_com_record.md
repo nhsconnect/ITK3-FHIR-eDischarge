@@ -21,7 +21,7 @@ The Person completing record section carries information about the person who co
 
 ## Example Person Completing Record Section ##
 
-<script src="https://gist.github.com/unicorn150161/e9688bc6cffeb7d13faf97e5c69a9284.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/4eceababbca389067cde4aefd2d61cde.js"></script>
 
 ## Coded Resources ##
 

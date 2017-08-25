@@ -31,7 +31,7 @@ The Medications and medical devices section carries information about the patien
 
 ## Example Medications and Medical Devices Section ##
 
-<script src="https://gist.github.com/unicorn150161/b73c89265028e089b6aa9e6f5d5b87b9.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/0a5596bdf4ab2c880eacb409e44c09df.js"></script>
 
 ## Coded Resources ##
 

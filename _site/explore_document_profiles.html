@@ -278,20 +278,13 @@
             
             
             
-            
-            
-            
-            <li><a href="explore_resource_referencing.html">Resource Referencing</a></li>
-            
-            
-            
             <li class="subfolders">
                 <a href="#">Work Flow</a>
                 <ul>
                     
                     
                     
-                    <li><a href="workflow_overview.html">Overview</a></li>
+                    <li><a href="explore_workflow_overview.html">Overview</a></li>
                     
                     
                     
@@ -559,6 +552,13 @@
             
             
             <li><a href="build_data_mapping.html">Data Mapping</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_resource_referencing.html">Resource Referencing</a></li>
             
             
             
@@ -859,25 +859,67 @@ $('#toc').on('click', 'a', function() {
 <p>The Bundle consists of the following FHIR Resource Profiles.</p>
 
 <ul>
-  <li><strong>ITK-Document-Bundle-1</strong> - An NHS Digital Bundle Profile to represent a container to collect a combination of the ITK FHIR Document resources.</li>
-  <li><strong>ITK-EDIS-Composition-1</strong> - An NHS Digital Profile for eDischarge FHIR Documents.</li>
-  <li><strong>CareConnect-ITK-Encounter-1</strong> - A CareConnect derived NHS Digital Profile for encounter. The encounter resource represents an encounter between a care professional and the patient (or patient’s record).</li>
-  <li><strong>ITK-Medication-List-1</strong> - An NHS Digital Profile for recording a snapshot of the list of Medications for the patient.</li>
-  <li><strong>CareConnect-MedicationStatement-1</strong> - A CareConnect Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.</li>
-  <li><strong>CareConnect-Medication-1</strong> - A CareConnect Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.</li>
-  <li><strong>ITK-Medication-Flag-1</strong> - An NHS Digital Profile for medication flags. The Flag Resource carries prospective warnings of potential issues related to the patient’s medications.</li>
-  <li><strong>ITK-Allergies-List-1</strong> - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.</li>
-  <li><strong>CareConnect-AllergyIntolerance-1</strong> - A careConnect Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.</li>
-  <li><strong>ITK-Allergy-Flag-1</strong> - An NHS Digital profile used to record prospective warnings of potential issues related to the patient’s allergies.</li>
-  <li><strong>CareConnect-ITK-Condition-1</strong> -	A CareConnect derived NHS Digital Profile for conditions. The Condition resource records detailed information about conditions or diagnoses recognised by a clinician.</li>
-  <li><strong>CareConnect-ITK-Procedure-1</strong> - A CareConnect derived NHS Digital Profile for procedures. The Procedure resource is used to record an action that is or was performed on a patient.</li>
-  <li><strong>CareConnect-ITK-Observation-1</strong> - A CareConnect dervived NHS Digital Profile for observation. The Observation resource is used for tracking the current and historical observations that have been made for a patient.</li>
-  <li><strong>CareConnect-Patient-1</strong> - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.</li>
-  <li><strong>CareConnect-Practitioner-1</strong> - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.</li>
-  <li><strong>ITK-RelatedPerson-1</strong> - An NHS Digital profile which carries information for a person with a relationship with the patient.</li>
-  <li><strong>CareConnect-Organization-1</strong> - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.</li>
-  <li><strong>CareConnect-Location-1</strong> - A CareConnect Profile for Location. The Location resource provides information and details on the physical location and the services provided.</li>
-  <li><strong>ITK-Device-1</strong> - An NHS Digital profile which identifies an instance of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1">ITK-Document-Bundle-1</a></strong> - An NHS Digital Bundle Profile to represent a container to collect a combination of the ITK FHIR Document resources.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1">ITK-EDIS-Composition-1</a></strong> - An NHS Digital Profile for eDischarge FHIR Documents.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1">CareConnect-ITK-Encounter-1</a></strong> - A CareConnect derived NHS Digital Profile for encounter. The encounter resource represents an encounter between a care professional and the patient (or patient’s record).</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Medication-List-1">ITK-Medication-List-1</a></strong> - An NHS Digital Profile for recording a snapshot of the list of Medications for the patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1">CareConnect-MedicationStatement-1</a></strong> - A CareConnect Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1">CareConnect-Medication-1</a></strong> - A CareConnect Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Medication-Flag-1">ITK-Medication-Flag-1</a></strong> - An NHS Digital Profile for medication flags. The Flag Resource carries prospective warnings of potential issues related to the patient’s medications.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Allergies-List-1">ITK-Allergies-List-1</a></strong> - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1">CareConnect-AllergyIntolerance-1</a></strong> - A careConnect Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Allergy-Flag-1">ITK-Allergy-Flag-1</a></strong> - An NHS Digital profile used to record prospective warnings of potential issues related to the patient’s allergies.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1">CareConnect-ITK-Condition-1</a></strong> -	A CareConnect derived NHS Digital Profile for conditions. The Condition resource records detailed information about conditions or diagnoses recognised by a clinician.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Procedure">CareConnect-ITK-Procedure-1</a></strong> - A CareConnect derived NHS Digital Profile for procedures. The Procedure resource is used to record an action that is or was performed on a patient.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Observation-1">CareConnect-ITK-Observation-1</a></strong> - A CareConnect dervived NHS Digital Profile for observation. The Observation resource is used for tracking the current and historical observations that have been made for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">CareConnect-Patient-1</a></strong> - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a></strong> - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-RelatedPerson-1">ITK-RelatedPerson-1</a></strong> - An NHS Digital profile which carries information for a person with a relationship with the patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a></strong> - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1">CareConnect-Location-1</a></strong> - A CareConnect Profile for Location. The Location resource provides information and details on the physical location and the services provided.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Device-1">ITK-Device-1</a></strong> - An NHS Digital profile which identifies an instance of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.</li>
+</ul>
+
+<h2 id="profile-extensions">Profile Extensions</h2>
+
+<ul>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Authorization-1">Extension-ITK-Authorization-1</a></strong> - An NHS Digital extension to Composition resource to allow the details of the person who authorised the document.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-CareSettingType-1">Extension-ITK-CareSettingType-1</a></strong> - An NHS Digital extension to Composition resource to allow the details care setting type that the document was sent from.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-DataEnterer-1">Extension-ITK-DataEnterer-1</a></strong> An NHS Digital extension to Composition resource to allow the details of a person who entered the information contained in the document.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Informant-1">Extension-ITK-Informant-1</a></strong> - An NHS Digital extension to Composition resource to allow the details of the person who informed the author about information contained in the document.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-InformationRecipient-1">Extension-ITK-InformationRecipient-1</a></strong> - An NHS Digital extension to Composition resource to allow the details of the person or organization who/which is a recipient of the document.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Participant-1">Extension-ITK-Participant-1</a></strong> - An NHS Digital extension to Composition resource to allow the details of the person who participated in the document where this is not explicitly modelled.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Performer-1">Extension-ITK-Performer-1</a></strong> - An NHS Digital extension to Composition resource to allow the details of the person who performed items within the document.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1">Extension-CareConnect-NHSCommunication-1</a></strong> - A CareConnect extension to Patient and Practitioner resources to carry language information suitable for NHS use.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1">Extension-CareConnect-MainLocation-1</a></strong> - A CareConnect extension to the Location resource to allow the main location to be carried/indicated.</li>
+  <li><strong><a href="http://hl7.org/fhir/StructureDefinition/organization-period">organization-period</a></strong> - An HL7 common extension to the Organization resource allow the periods of time to be associated with the organization.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1">Extension-CareConnect-EncounterTransport-1</a></strong> - A CareConnect extension to the Encounter resource to allow transportation information to be carried.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid">Extension-coding-sctdescid</a></strong> -  A CareConnect extension used in resources that use SNOMED CT to allow the SNOMED description identifier to be carried.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementReasonEnded-1">Extension-CareConnect-MedicationStatementReasonEnded-1</a></strong> - A CareConnect extension to the MedicationStatement resource allow information about why the medication was ended to be carried.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementQuantity-1">Extension-CareConnect-MedicationStatementQuantity-1</a></strong> - A CareConnect extension to the MedicationStatement resource to allow indication of the amount of medication to supply per dispense.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementLastIssueDate-1">Extension-CareConnect-MedicationStatementLastIssueDate-1</a></strong> - A CareConnect extension to the MedicationStatement resource to allow the last issue date of the medication to be carried.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1">Extension-CareConnect-MedicationRepeatInformation-1</a></strong> - A CareConnect extension to the MedicationStatement resource to allow the specific repeat information of a medication item.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationFlag-1">Extension-CareConnect-MedicationFlag-1</a></strong> - A CareConnect extension to the MedicationStatement resource to specify the flags related to the patient’s medications.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RegistrationDetails-1">Extension-CareConnect-RegistrationDetails-1</a></strong> - A CareConnect extension to the Patient resource to carry the additional registration information for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1">Extension-CareConnect-EthnicCategory-1</a></strong> - A CareConnect extension to the Patient resource to carry the ethnic category for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1">Extension-CareConnect-ReligiousAffiliation-1</a></strong> - A CareConnect extension to the Patient resource to carry the religious affiliation for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ResidentialStatus-1">Extension-CareConnect-ResidentialStatus-1</a></strong> - A CareConnect extension to the Patient resource to carry the residential status for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-TreatmentCategory-1">Extension-CareConnect-TreatmentCategory-1</a></strong> - A CareConnect extension to the Patient resource to carry the treatment category for a patient.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">Extension-CareConnect-NHSNumberVerificationStatus-1</a></strong> - A CareConnect extension to the Patient resource to carry the verification status of the patient NHS number.</li>
+  <li><strong><a href="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor">patient-cadavericDonor</a></strong> - A HL7 common extension to the Patient resource which uses a Flag indicating whether the patient authorized the donation of body parts after death.</li>
+  <li><strong><a href="http://hl7.org/fhir/StructureDefinition/patient-birthTime">patient-birthTime</a></strong> - A HL7 common extension to the patient resource which allows the time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ConditionEpisode-1">Extension-CareConnect-ConditionEpisode-1</a></strong> - A CareConnect extension to the Condition resource for the episodicity status of a condition.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ConditionRelationship-1">Extension-CareConnect-ConditionRelationship-1</a></strong> -  A CareConnect extension to the Condition resource for a reference to another related condition (target) whose relationship is defined by the relationship type code.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReasonCondition-1">Extension-CareConnect-ReasonCondition-1</a></strong> -  A CareConnect extension to the Procedure resource for the reason why a procedure was added/performed/given. This may be due to a Condition, may be coded entity of some type, or may simply be present as text.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1">Extension-CareConnect-DateRecorded-1</a></strong> - A CareConnect extension to the Procedure resource for the date that the Procedure was recorded.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MedicationFlagAssociation-1">Extension-ITK-MedicationFlagAssociation-1</a></strong> - An NHS Digital extension to the Flag Resource to allow a relationship to the associated Medication.</li>
+  <li><strong><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-AllergyFlagAssociation-1">Extension-ITK-AllergyFlagAssociation-1</a></strong> - An NHS Digital extension to the Flag Resource to allow a relationship to the associated Allergy.</li>
+  <li><strong><a href="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter">encounter-associatedEncounter</a></strong> - A CareConnect extension to the AllergyIntolerance resource to the encounter associated with the allergy.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEndDate-1">Extension-CareConnect-AllergyIntoleranceEndDate-1</a></strong> - A CareConnect extension to the allergyIntolerance resource for the date that the allergy was no longer valid.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1">Extension-CareConnect-Evidence-1</a></strong> - A CareConnect extension to the allergyIntolerance resource to support a reference to results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProbabilityOfRecurrence-1">Extension-CareConnect-ProbabilityOfRecurrence-1</a></strong> - A CareConnect extension to the allergyIntolerance resource to constrained to support representation of the probability of the reaction (allergic, adverse, intolerant) occurring.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyCertainty-1">Extension-CareConnect-AllergyCertainty-1</a></strong> - A CareConnect extension to the allergyIntolerance resource to support a coded certainty of the allergy/intolerance.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergySeverity-1">Extension-CareConnect-AllergySeverity-1</a></strong> - A CareConnect extension to the allergyIntolerance resource</li>
 </ul>
 
 <h2 id="itk-edischarge-fhir-document-profile-referencing">ITK eDischarge FHIR Document Profile Referencing</h2>
@@ -1141,8 +1183,8 @@ $('#toc').on('click', 'a', function() {
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2017 NHS Digital<br />
-                     Site last generated: Aug 23, 2017 <br />
-                    4344e9bb1879a96ccff958667da1b919f509e8af<br/>
+                     Site last generated: Aug 25, 2017 <br />
+                    0de7bd05ee94fa968cce4b536181c5a67b77747d<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

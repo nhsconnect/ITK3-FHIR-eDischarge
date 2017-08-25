@@ -21,7 +21,7 @@ emergency, maternity, transfer, etc.
 
 ##  Example Admission Details Section ##
 
-<script src="https://gist.github.com/unicorn150161/d5c160a331e626db261084cbd99372ee.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/063615bfb87522015e0c37ef7f06d4fd.js"></script>
 
 ## Coded Resources ##
 

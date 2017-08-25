@@ -48,7 +48,7 @@ Email address of the patient.</ul>
 
 ## Example Patient Demographics Using Patient Resource ##
 
-<script src="https://gist.github.com/unicorn150161/fd0943e08264ac10d3e2710fc50f23be.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/af79cf398178936f11f5eb5c5d45c13c.js"></script>
 
 
 

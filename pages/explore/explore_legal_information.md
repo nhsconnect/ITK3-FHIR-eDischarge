@@ -37,7 +37,7 @@ lacks competency.</li>
 
 ## Example Legal Information Section ##
 
-<script src="https://gist.github.com/unicorn150161/947e9c72c55fa3e3dff94dcdf77edaab.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/407d219b7bcc5f70343690974d11e6b5.js"></script>
 
 ## Coded Resources ##
 

@@ -30,7 +30,7 @@ understands the information provided about diagnosis, prognosis and treatment.
 ##  Example Information Given Sections ##
 
 
-<script src="https://gist.github.com/unicorn150161/dc222fea74c8cbaeb99dfa426643ac9c.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/e71ebe4dbcaf89da92e719307cc56aeb.js"></script>
 
 ## Coded Resources ##
 

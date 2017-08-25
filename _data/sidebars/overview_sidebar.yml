@@ -53,16 +53,13 @@ entries:
     - title: Error Codes
       url: /explore_error_codes.html
       output: web
-    - title: Resource Referencing
-      url: /explore_resource_referencing.html
-      output: web
       subfolders:
       - title: Work Flow
         url: /workflow.html
         output: web
         subfolderitems:
         - title: Overview
-          url: /workflow_overview.html
+          url: /explore_workflow_overview.html
           output: web
         - title: Encounter
           url: /workflow_encounter.html
@@ -190,6 +187,9 @@ entries:
       output: web
     - title: Data Mapping
       url: /build_data_mapping.html
+      output: web
+    - title: Resource Referencing
+      url: /build_resource_referencing.html
       output: web
       subfolders:
       - title: Constructing Clinical Coded Structures

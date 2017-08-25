@@ -31,7 +31,7 @@ The Allergies and adverse reactions section carries information about the patien
 
 ### Allergy to Penicillin ###
 
-<script src="https://gist.github.com/unicorn150161/23480eebe86e002e82aa5df412cdb2ae.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/c02f9626ad71d2230cd51ded6d031bb2.js"></script>
 
 ## Coded Resources ##
 
