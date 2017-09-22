@@ -26,18 +26,6 @@ Note: the examples of section html in this specification show only example html 
 
 <img src="images/explore/section_description.png" style="width:90%;max-width: 90%;"/>
  
-## Overview of eDischarge Sections and Coded profiles ##
-This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text. 
-
-
-<img src="images/explore/eDIS_composition_overview.png" style="height:90%;max-height: 90%;"/>
-
-
-
-The text sections are carried in the FHIR composition resource. 
-This is profiled as the [ITK-EDIS-Compostion](http://FHIRxxxxxxxxxxxx)
-
-
 ## Headings Used By eDischarge ##
 
 - [Admission details](explore_admission_details.html)
@@ -64,7 +52,16 @@ This is profiled as the [ITK-EDIS-Compostion](http://FHIRxxxxxxxxxxxx)
 - [Social context](explore_social_context.html)
 - [Special requirements](explore_special_req.html)
 
+## Overview of eDischarge Sections and Coded profiles ##
+This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text. 
 
+
+<img src="images/explore/eDIS_composition_overview.png" style="height:90%;max-height: 90%;"/>
+
+
+
+The text sections are carried in the FHIR composition resource. 
+This is profiled as the [ITK-EDIS-Compostion](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1)
 
 
 {% include custom/section.warnbanner.html %}
