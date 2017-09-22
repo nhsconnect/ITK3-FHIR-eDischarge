@@ -17,21 +17,21 @@ After a short wait, Richard starts to feel worse and his wife goes to speak to t
 
 ## The Inpatient Stay ##
 
-The Inpatient stay is carried in the [Encounter Resource](http:\\xxxx)
+The Inpatient stay is carried in the [Encounter Resource](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1)
 
 **Named Participants**
 
-- Patient - **Richard Smith** - [Patient Resource](http:\\xxxx)
-- Patient's wife - **Joy Smith** - [RelatedPerson Resource](http:\\xxxx)
-- Consultant - **Mr Abacus** - [Practitioner Resource](http:\\xxxx)
-- Discharging clinician (Document Author) - **Dr Paul Rastall** - [Practitioner Resource](http:\\xxxx)
-- Patient's GP (Document recipient) - **Dr John Lorenzo** - [Practitioner Resource](http:\\xxxx)
-- Community Nurse (Document recipient) - **Mrs Angela Jones** - [Practitioner Resource](http:\\xxxx)
+- Patient - **Richard Smith** - [Patient Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
+- Patient's wife - **Joy Smith** - [RelatedPerson Resource](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-RelatedPerson-1)
+- Consultant - **Mr Abacus** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- Discharging clinician (Document Author) - **Dr Paul Rastall** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- Patient's GP (Document recipient) - **Dr John Lorenzo** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- Community Nurse (Document recipient) - **Mrs Angela Jones** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 **Named Organisations**
 
-- Patient's GP Practice - **MGP Medical Centre** - [Organization Resource](http:\\xxxx)
-- Discharging Hospital - **Leeds Teaching Hospitals NHS Trust** - [Practitioner Resource](http:\\xxxx)
+- Patient's GP Practice - **MGP Medical Centre** - [Organization Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Discharging Hospital - **Leeds Teaching Hospitals NHS Trust** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 Richard is admitted to the ward on the 12th Feb where, during triage, the nurse asks if he has any allergies and what medication he is on. Richard's wife has brought his medication with her so is able to show the nurse the medication. Richard tells the nurse he has an allergy to Penicillin which causes a rash. The nurse asks if he gets any swelling, to which Richard replies "no". Richard's Summary Care Record confirms what he told the nurse. Richard is given a TIMI assessment and a full blood test.
 
