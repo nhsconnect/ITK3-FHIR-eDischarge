@@ -854,14 +854,19 @@ An exemplar style-sheet for rendering ITK FHIR documents is available called <a 
 
 <h2 id="gp-practice-section-content">GP Practice Section Content</h2>
 
-<p>The GP Practice section is rendered from the careProvider reference in the patient resource which uses Practitioner and Organization resources to the carry information about the patient’s GP practice and GP. Items in bold are subheadings and should be formatted as such when rendered:</p>
+<p>The GP Practice section is rendered from the careProvider reference in the patient resource. The resources used are:</p>
+
+<ul>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a></strong> - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.</li>
+  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a></strong> - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.</li>
+</ul>
+
+<p>The GP Practice section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered:</p>
 
 <ul>
 <li><b>GP name</b></li>
-This is rendered from the practitioner resource 
 <li><b>GP practice details</b></li>
 <li><b>GP practice identifier</b></li>
-These are rendered from the organization resource
 </ul>
 
 <h2 id="example-gp-practice-using-organization-resource">Example GP Practice Using Organization Resource</h2>
@@ -905,7 +910,7 @@ These are rendered from the organization resource
                     <br/>
                     &copy;2017 NHS Digital<br />
                      Site last generated: Sep 26, 2017 <br />
-                    7d6df524342469802bfbba8713b759e0d296ce51<br/>
+                    3d539d6d7fc5f97456fdab8c223c3e310efe7618<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

@@ -17,12 +17,12 @@ This section details the design approach using FHIR resources to support the AoM
 The medication list is a “Snapshot” of the medication at a point in time (for example on discharge from hospital). It is not a master list of the patient’s medications. Other lists of medications for the patient may exist on other systems. 
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the medication list.
+The FHIR resources are profiled to create the medication list as below:
 
-- **List** profiled as [ITK-Medication-List-1](http:\\xxxx)
-- **MedicationStatement** profiled as [Careconnect-ITK-MedicationStatement-1](http:\\xxxx)
-- **Medication** profiled as [Careconnect-ITK-Medication-1](http:\\xxxx)
-- **Flag** profiled as [Careconnect-ITK-Medication-Flag-1](http:\\xxxx)
+- **[ITK-Medication-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Medication-List-1)** - An NHS Digital Profile for recording a snapshot of the list of Medications for the patient.
+- **[CareConnect-MedicationStatement-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1)** - A CareConnect Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.
+- **[CareConnect-Medication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1)** - A CareConnect Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.
+- **[CareConnect-ITK-Medication-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-Flag-1)** - An NHS Digital Profile for medication flags. The Flag Resource carries prospective warnings of potential issues related to the patient's medications.
 
 ## List ##
 This resource acts as a container for the medication. The following is a example of the elements which can be used:

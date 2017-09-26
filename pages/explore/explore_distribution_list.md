@@ -12,14 +12,14 @@ summary: "A list of recipients of the document"
 ## Distribution List Section Content ##
 The Distribution list section is rendered from the Information Recipient Extension which references a number of resources for document recipients. The resources used are:
 
-- **Practitioner**
-- **Organization**
-- **RelatedPerson**
-- **Patient**
+- **[CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)** - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.
+- **[CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)** - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.
+- **[ITK-RelatedPerson-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-RelatedPerson-1)** - An NHS Digital profile which carries information for a person with a relationship with the patient.
+- **[CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)** - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.
 
-This is a standard extension for all ITK FHIR documents and therefore not all recipient type may be applicable to all document types. However receiving systems should be capable of rendering information from all the above resource types.
+This is a standard extension for all ITK FHIR documents and therefore not all recipient types may be applicable to all document types. However receiving systems should be capable of rendering information from all the above resource types.
 
-The Recipient list section must be rendered in a similar format to other sections . The  The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered: 
+The Recipient list section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered: 
 
 - **Recipient name** 
 - **Job role**
@@ -90,7 +90,7 @@ This example shows a Distribution list section when rendered using the NHS Digit
 <td>GP Practice</td>
 <td>071234567811</td>
 <tr>
-</table>			
+			
 
 
 		

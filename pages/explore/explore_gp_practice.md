@@ -11,14 +11,17 @@ summary: "Gives information about the patient's GP Practice"
 
 ## GP Practice Section Content##
 
-The GP Practice section is rendered from the careProvider reference in the patient resource which uses Practitioner and Organization resources to the carry information about the patient's GP practice and GP. Items in bold are subheadings and should be formatted as such when rendered: 
+The GP Practice section is rendered from the careProvider reference in the patient resource. The resources used are: 
 
+- **[CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)** - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.
+- **[CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)** - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.
+
+The GP Practice section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered:
+ 
 <ul>
 <li><b>GP name</b></li>
-This is rendered from the practitioner resource 
 <li><b>GP practice details</b></li>
 <li><b>GP practice identifier</b></li>
-These are rendered from the organization resource
 </ul>
 
 

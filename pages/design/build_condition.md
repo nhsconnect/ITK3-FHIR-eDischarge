@@ -16,7 +16,7 @@ This section details the design approach using FHIR resources to support the AoM
 ## Resources Used for Profile Design ##
 The following FHIR resources are profiled to create the condition.
 
-- **Condition** profiled as [CareConnect-Condition-1](http:\\xxxx)
+- **[CareConnect-ITK-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1)** -	A CareConnect derived NHS Digital Profile for conditions. The Condition resource records detailed information about conditions or diagnoses recognised by a clinician.
 
 ## Condition ##
 This resource is used to record detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.The following is a example of the elements that can be used: 

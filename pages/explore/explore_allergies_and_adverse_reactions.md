@@ -41,7 +41,7 @@ This text section should be linked to the following FHIR Resources to provide th
 - AllergyIntolerance
 - Flag
  
-See constructing coded clinical structures - [Allergy Lists](design_allergy_lists.html)
+See constructing coded clinical structures - [Allergy Lists](build_allergy_lists.html)
 
 
 {% include custom/messaging_overview.svg %}

@@ -14,9 +14,9 @@ This section details the design approach using FHIR resources to support the AoM
 
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the condition.
+The FHIR resources are profiled to create the condition as follows:
 
-- **Procedure** profiled as [CareConnect-ITK-Procedure-1](http:\\xxxx)
+- **[CareConnect-ITK-Procedure-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Procedure)** - A CareConnect derived NHS Digital Profile for procedures. The Procedure resource is used to record an action that is or was performed on a patient.
 
 ## Procedure ##
 This resource is used to record detailed information about a procedure.The following is a example of the elements that can be used: 

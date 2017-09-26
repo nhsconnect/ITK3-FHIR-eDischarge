@@ -28,7 +28,7 @@ This text section should be linked to the following FHIR Resources to provide th
 
 - Procedures
  
-See constructing coded clinical structures - [Procedures](design_procedures.html)
+See constructing coded clinical structures - [Procedures](build_procedures.html)
 
 
 {% include custom/messaging_overview.svg %}

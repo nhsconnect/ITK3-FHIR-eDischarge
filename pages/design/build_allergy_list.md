@@ -20,11 +20,11 @@ It is important to distinguish between two kinds of allergic reaction / adverse 
 The eDischarge only records the first type of Allergic Response or Adverse Reaction i.e. the allergic event not the propensity. However there is an extension which has been added to allow recording of the probability of recurrence of the reaction (allergic, adverse, intolerant) occurring. 
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the allergy list.
+The FHIR resources are profiled to create the allergy list as below:
 
-- **List** profiled as [ITK-Allergy-List-1](http:\\xxxx)
-- **AllergyIntolerance** profiled as [CareConnect-AllergyIntolerance-1](http:\\xxxx)
-- **Flag** profiled as [ITK-Allergy-Flag-1](http:\\xxxx)
+- **[ITK-Allergies-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Allergies-List-1)** - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.
+- **[CareConnect-AllergyIntolerance-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1)** - A careConnect Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
+- **[ITK-Allergy-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Allergy-Flag-1)** - An NHS Digital profile used to record prospective warnings of potential issues related to the patient's allergies.
 
 ## List ##
 This resource acts as a container for the allergies. The following is a example of the main elements used:

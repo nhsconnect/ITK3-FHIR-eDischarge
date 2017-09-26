@@ -14,9 +14,9 @@ This section details the design approach using FHIR resources to support the AoM
 
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the observation.
+The FHIR resources are profiled to create the observation as follows:
 
-- **Observation** profiled as [CareConnect-Observation-1](http:\\xxxx)
+- **[CareConnect-ITK-Observation-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Observation-1 )** - A CareConnect dervived NHS Digital Profile for observation. The Observation resource is used for tracking the current and historical observations that have been made for a patient.
 
 ## Observation ##
 This resource is used to record information tracking the current and historical observations that have been made for a patient.The following is a example of the elements that can be used: 
@@ -33,7 +33,7 @@ This resource is used to record information tracking the current and historical 
 
 **Observation Example**
 
-To Follow.
+<script src="https://gist.github.com/IOPS-DEV/c01035964aa03df1438a6f2e87448989.js"></script>
 
 
  

@@ -11,7 +11,11 @@ summary: "Gives information about the patient"
 
 ## Patient Demographics Section Content##
 
-The Patient demographics section is rendered from the patient resource. Items in bold are subheadings and should be formatted as such when rendered: 
+The Patient demographics section is rendered from the patient resource.The resource used is:
+ 
+- **[CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)** - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.
+
+Items in bold are subheadings and should be formatted as such when rendered: 
 
 <ul>
 <li><b>Patient name</b></li>

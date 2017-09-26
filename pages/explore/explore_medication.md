@@ -42,7 +42,7 @@ This text section should be linked to the following FHIR Resources to provide th
 - MedicationOrder
 - Flag
  
-See constructing coded clinical structures - [Medication Lists](design_medication_lists.html)
+See constructing coded clinical structures - [Medication Lists](build_medication_lists.html)
 
 
 {% include custom/messaging_overview.svg %}
