@@ -14,7 +14,9 @@ This section details the reference between resources.
 
 The diagrams only go to one level due to the complexity and size of the message.Below is the key to the diagrams.
 
-<img src="images/explore/key.png" style="width: 75%;max-width: 75%;">
+<img src="images/explore/key.png" style="width: 75%;max-width: 75%;"> 
+
+
 
 ## ITK eDischarge FHIR Document ##
 
