@@ -27,7 +27,7 @@ github_editme_path: /edit/develop/
 #twitter_username: twitter_username
 #twitter_site_hashtags: twitter_site_hashtags
 
-fhir_profile_baseurl: https://fhir-test.hl7.org.uk/StructureDefinition/
+fhir_profile_baseurl: https://fhir.nhs.uk/StructureDefinition/
 fhir_profile_ext:
 
 host: 127.0.0.1
@@ -42,7 +42,7 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: careconnect@interopen.org
+feedback_email: interoperabilityteam@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -102,9 +102,9 @@ description: "The ITK eDischarge messaging components support the delivery of ca
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://nhsconnect.github.io/ITK-Distribution
+url: https://nhsconnect.github.io/ITK-FHIR-eDischarge
 
-repository: nhsconnect/ITK-Distribution
+repository: nhsconnect/ITK-FHIR-eDischarge
 
 gist:
   noscript: false
