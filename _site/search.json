@@ -994,6 +994,18 @@
 
 	{
 		
+		"title": "Resource Definitions",
+		"tags": "support",
+		"keywords": "support, communications, community, tools, server, api, hl7, gp connect, interopen, resources, profiles",
+		"url": "support_referencedocumentation.html",
+		"summary": "Resource definitions published by HL7, INTEROpen  for reference or download.",
+		"content": ""
+		
+	}
+	,
+
+	{
+		
 		"title": "Organisations",
 		"tags": "support",
 		"keywords": "support, communications, community, hl7, endeavour, nhs digital, nhs england, code4health, forore",
