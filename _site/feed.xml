@@ -5,8 +5,8 @@
         <description>The ITK eDischarge messaging components support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined messaging components</description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 02 Oct 2017 13:34:53 +0100</pubDate>
-        <lastBuildDate>Mon, 02 Oct 2017 13:34:53 +0100</lastBuildDate>
+        <pubDate>Tue, 03 Oct 2017 09:18:05 +0100</pubDate>
+        <lastBuildDate>Tue, 03 Oct 2017 09:18:05 +0100</lastBuildDate>
         <generator>Jekyll v3.4.3</generator>
         
     </channel>

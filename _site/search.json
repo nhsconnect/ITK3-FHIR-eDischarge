@@ -497,12 +497,12 @@
 
 	{
 		
-		"title": "Diagnosis Section",
+		"title": "Diagnoses Section",
 		"tags": "fhirmessagingsections",
 		"keywords": "messaging, sections",
-		"url": "explore_diagnosis.html",
-		"summary": "Gives information about the Diagnosis section",
-		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the AoMRC documentation such be consulted for further information regarding Section headings and content <a href=\"http://www.aomrc.org.uk\">www.aomrc.org.uk</a> </div>\n\n<h2 id=\"diagnosis-section-content\">Diagnosis Section Content</h2>\n<p>The Diagnosis section carries information about Diagnosis such as:</p>\n\n<p>Confirmed diagnosis; active diagnosis being treated.\nIncluding the stage of the disease where relevant.</p>\n\n<h2 id=\"example-diagnosis-section\">Example Diagnosis Section</h2>\n\n<p>This section example includes a reference to a coded diagnosis.</p>\n\n<script src=\"https://gist.github.com/IOPS-DEV/6903725738cefc330a8964316f0a5e9d.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>Condition</li>\n</ul>\n\n<p>See constructing coded clinical structures - <a href=\"build_conditions.html\">Condition</a></p>\n\n"
+		"url": "explore_diagnoses.html",
+		"summary": "Gives information about the Diagnoses section",
+		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the AoMRC documentation such be consulted for further information regarding Section headings and content <a href=\"http://www.aomrc.org.uk\">www.aomrc.org.uk</a> </div>\n\n<h2 id=\"diagnoses-section-content\">Diagnoses Section Content</h2>\n<p>The Diagnoses section carries information about Diagnoses such as:</p>\n\n<p>Confirmed diagnoses; active diagnoses being treated.\nIncluding the stage of the disease where relevant.</p>\n\n<h2 id=\"example-diagnoses-section\">Example Diagnoses Section</h2>\n\n<p>This section example includes a reference to a coded diagnosis.</p>\n\n<script src=\"https://gist.github.com/IOPS-DEV/6903725738cefc330a8964316f0a5e9d.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>Condition</li>\n</ul>\n\n<p>See constructing coded clinical structures - <a href=\"build_conditions.html\">Condition</a></p>\n\n"
 		
 	}
 	,
@@ -996,10 +996,10 @@
 		
 		"title": "Resource Definitions",
 		"tags": "support",
-		"keywords": "support, communications, community, tools, server, api, hl7, gp connect, interopen, resources, profiles",
+		"keywords": "support, communications, community, tools, hl7, interopen, resources, profiles",
 		"url": "support_referencedocumentation.html",
-		"summary": "Resource definitions published by HL7, INTEROpen  for reference or download.",
-		"content": ""
+		"summary": "Resource definitions published by HL7, NHS Digital for reference or download.",
+		"content": " [NHS Digital FHIR Server](https://fhir.nhs.uk)\n\n\n\n\n\n"
 		
 	}
 	,

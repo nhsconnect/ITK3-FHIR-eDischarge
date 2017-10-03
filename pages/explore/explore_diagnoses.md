@@ -1,22 +1,22 @@
 ---
-title: Diagnosis Section
+title: Diagnoses Section
 keywords:  messaging, sections
 tags: [fhir,messaging,sections]
 sidebar: foundations_sidebar
-permalink: explore_diagnosis.html
-summary: "Gives information about the Diagnosis section"
+permalink: explore_diagnoses.html
+summary: "Gives information about the Diagnoses section"
 ---
 
 {% include custom/section.warnbanner.html %}
 
-## Diagnosis Section Content##
-The Diagnosis section carries information about Diagnosis such as:
+## Diagnoses Section Content##
+The Diagnoses section carries information about Diagnoses such as:
 
-Confirmed diagnosis; active diagnosis being treated.
+Confirmed diagnoses; active diagnoses being treated.
 Including the stage of the disease where relevant.
 
 
-##  Example Diagnosis Section ##
+##  Example Diagnoses Section ##
 
 This section example includes a reference to a coded diagnosis.
 

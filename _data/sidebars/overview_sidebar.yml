@@ -88,8 +88,8 @@ entries:
         - title: Clinical summary
           url: /explore_clinical_summary.html
           output: web
-        - title: Diagnosis
-          url: /explore_diagnosis.html
+        - title: Diagnoses
+          url: /explore_diagnoses.html
           output: web
         - title: Discharge details
           url: /explore_discharge_details.html
