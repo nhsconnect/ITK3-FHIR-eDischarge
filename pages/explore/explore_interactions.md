@@ -41,8 +41,9 @@ The sending hospital system will construct an eDischarge (inpatient discharge su
 
 Dependent on system set up the following interactions may be utilised.
 
-- [RSP-ITK-Infrastructure-Acknowledgement-Response-1](https://nhsconnect.github.io/ITK-FHIR-Messaging-Distribution/explore_interactions.html#rsp-itk-infrastructure-acknowledgement-response-1-interaction)
-- [RSP-ITK-Business-Acknowledgement-Response-1](https://nhsconnect.github.io/ITK-FHIR-Messaging-Distribution/explore_interactions.html#rsp-itk-business-acknowledgement-response-1-interactions)
+
+- <a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_interactions.html#rsp-itk-infrastructure-acknowledgement-response-1-interaction" target="_blank">RSP-ITK-Infrastructure-Acknowledgement-Response-1</a>
+- <a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_interactions.html#rsp-itk-business-acknowledgement-response-1-interactions" target="_blank">RSP-ITK-Business-Acknowledgement-Response-1</a>
 
 ## eDischarge (inpatient discharge summary) ITK FHIR Document Interactions Diagram  ##
 
