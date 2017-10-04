@@ -10,7 +10,7 @@ summary: The journey outlines the approach of developing FHIR ITK Messaging Solu
 {% include important.html content="All phases outlined below are indicative and subject to on-going review." %}
 
 
-# The Journey ##
+## What is the Journey ? ##
 
 The Journey is a guide from imagination and exploring to developing local FHIR ITK Messaging Solutions using NHS Digital message profiles all the way to deploying a live FHIR ITK Messaging Solution.  
 
@@ -26,11 +26,11 @@ The current site focuses on a typical ITK Messaging Solution Developer's Journey
 
 Please see the explanation of the complete development roadmap below.
 
-## How this fits into the wider journey? ##
+## How this fits into the wider journey ##
 
 The current site focuses on a typical FHIR ITK Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
 
-<img src="images/roadmap/guide-focus.png" style="width:100%;max-width: 100%;">
+<img src="images/roadmap/guide-focus.png" style="heigh:80%;max-height: 80%;">
 
 NHS Digital is contributing to progressing the profile development, the testing process and invitations are open for the INTEROPen community and other interested parties to get involved and progress the wider developer ecosystem.
 

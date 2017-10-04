@@ -47,7 +47,7 @@ Dependent on system set up the following interactions may be utilised.
 
 ## eDischarge (inpatient discharge summary) ITK FHIR Document Interactions Diagram  ##
 
-The diagram shows the eDischarge (inpatient discharge summary) Document Interactions:
+The diagram shows the eDischarge (inpatient discharge summary) Document Interactions: Note: The use of the ITK infrastructure interactions are dependant on system configuration.  
 
 
 <img src="images/explore/ITK-eDischarge-FHIRInteractions.png" style="width:75%;max-width: 75%;">

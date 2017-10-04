@@ -10,9 +10,9 @@ summary: "Overview of the Messaging Architecture section"
 {% include custom/search.warnbanner.html %}
 {% include custom/messaging_overview.svg %}
 
-## Pre-Requisites for FHIR ITK Messaging Solutions ##
+## Pre-Requisites for FHIR ITK3 Messaging Solutions ##
 
-## ITK Messaging Requirements ##
+## ITK3 Messaging Requirements ##
 
 - SHALL support HL7 FHIR version STU3
 - When using ITK and MESH SHALL Implement ITK Sender and/or Receiver Responsibilities as per [ITK Sender and Receiver Requirements ](..\explore_snd&rec_req.html)
