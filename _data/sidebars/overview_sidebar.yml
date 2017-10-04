@@ -138,9 +138,6 @@ entries:
         - title: Plan and requested actions
           url: /explore_plan_req_actions.html
           output: web
-        - title: Person completing record
-          url: /explore_per_com_record.html
-          output: web
         - title: Procedures
           url: /explore_procedures.html
           output: web
