@@ -30,12 +30,9 @@ This resource is used to record detailed information about a procedure.The follo
 - outcome - the result of procedure
 
 
-**Condition Example**
+**Procedure Example**
 
 <script src="https://gist.github.com/IOPS-DEV/8744f772a7e09e862fbb8714c1647e0a.js"></script>
-
-
-
 
  
 {% include custom/provide_messaging.svg %}
