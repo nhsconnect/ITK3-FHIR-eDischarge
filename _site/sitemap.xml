@@ -148,6 +148,9 @@
 <loc>http://localhost:4005/explore_headings.html</loc>
 </url>
 <url>
+<loc>http://localhost:4005/explore_individual_reqs.html</loc>
+</url>
+<url>
 <loc>http://localhost:4005/explore_information_given.html</loc>
 </url>
 <url>
@@ -187,7 +190,7 @@
 <loc>http://localhost:4005/explore_procedures.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/explore_referral_details.html</loc>
+<loc>http://localhost:4005/explore_referrer_details.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/explore_safety_alerts.html</loc>
@@ -197,9 +200,6 @@
 </url>
 <url>
 <loc>http://localhost:4005/explore_social_context.html</loc>
-</url>
-<url>
-<loc>http://localhost:4005/explore_special_req.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/explore_workflow_overview.html</loc>

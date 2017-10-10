@@ -104,7 +104,10 @@ entries:
  #       url: /explore_admission_details.html
         output: web
         subfolderitems:
-        - title: Information given
+        - title: Individual requirements
+          url: /explore_individual_reqs.html
+          output: web
+        - title: Information and advice given
           url: /explore_information_given.html
           output: web
         - title: Investigations and procedures requested
@@ -129,7 +132,7 @@ entries:
         - title: Patient demographics
           url: /explore_patient_demographics.html
           output: web
-        - title: Patient and carer concerns
+        - title: Patient and carer concerns,expectations and wishes
           url: /explore_pat_care_concerns.html
           output: web
         - title: Person completing record
@@ -145,8 +148,8 @@ entries:
         url: /explore_admission_details.html
         output: web
         subfolderitems:
-        - title: Referral details
-          url: /explore_referral_details.html
+        - title: Referrer details
+          url: /explore_referrer_details.html
           output: web
         - title: Safety alerts
           url: /explore_safety_alerts.html
@@ -154,9 +157,7 @@ entries:
         - title: Social context
           url: /explore_social_context.html
           output: web
-        - title: Special requirements
-          url: /explore_special_req.html
-          output: web
+
 
   - title: Example Scenarios
     url: /engage_scenario.html

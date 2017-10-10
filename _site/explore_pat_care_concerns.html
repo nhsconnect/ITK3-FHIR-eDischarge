@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Gives information about the Patient and carer concerns section">
+<meta name="description" content="Gives information about the Patient and carer concerns, expectations and wishes section">
 <meta name="keywords" content="fhirmessagingsections,  messaging, sections">
-<title>Patient and Carer Concerns Section | ITK eDischarge</title>
+<title>Patient and Carer Concerns, Expectations and Wishes Section | ITK eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -131,7 +131,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Patient and Carer Concerns Section">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Patient and Carer Concerns, Expectations and Wishes Section">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -378,7 +378,13 @@
                     
                     
                     
-                    <li><a href="explore_information_given.html">Information given</a></li>
+                    <li><a href="explore_individual_reqs.html">Individual requirements</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="explore_information_given.html">Information and advice given</a></li>
                     
                     
                     
@@ -429,7 +435,7 @@
                     
                     
                     
-                    <li class="active"><a href="explore_pat_care_concerns.html">Patient and carer concerns</a></li>
+                    <li class="active"><a href="explore_pat_care_concerns.html">Patient and carer concerns,expectations and wishes</a></li>
                     
                     
                     
@@ -462,7 +468,7 @@
                     
                     
                     
-                    <li><a href="explore_referral_details.html">Referral details</a></li>
+                    <li><a href="explore_referrer_details.html">Referrer details</a></li>
                     
                     
                     
@@ -475,12 +481,6 @@
                     
                     
                     <li><a href="explore_social_context.html">Social context</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_special_req.html">Special requirements</a></li>
                     
                     
                     
@@ -801,7 +801,7 @@
              
 
 <div class="post-header">
-   <h1 class="post-title-main">Patient and Carer Concerns Section</h1>
+   <h1 class="post-title-main">Patient and Carer Concerns, Expectations and Wishes Section</h1>
 </div>
 
 
@@ -809,7 +809,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Gives information about the Patient and carer concerns section</div>
+    <div class="summary">Gives information about the Patient and carer concerns, expectations and wishes section</div>
    
 
    
@@ -843,8 +843,8 @@ $('#toc').on('click', 'a', function() {
 <div class="alert alert-warning" role="alert">
 <i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
 
-<h2 id="patient-and-carer-concerns-section-content">Patient and Carer Concerns Section Content</h2>
-<p>The Patient and carer concerns section carries information about the concern of the patient or their representative. Items in bold are subheadings and should be formatted as such in any html sent:</p>
+<h2 id="patient-and-carer-concerns-expectations-and-wishes-section-content">Patient and Carer Concerns, Expectations and Wishes Section Content</h2>
+<p>The Patient and carer concerns, expectations and wishes section carries information about the concern of the patient or their representative. Items in bold are subheadings and should be formatted as such in any html sent:</p>
 
 <ul>
   <li><strong>Patient’s and carer’s concerns, expectations and wishes</strong></li>
@@ -852,7 +852,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Description of the concerns, wishes or goals of the patient, patient representative or carer. This could be the carer giving information if the patient is not competent, or the parent of a young child</p>
 
-<h2 id="example-patient-and-carer-concerns-section">Example Patient and Carer Concerns Section</h2>
+<h2 id="example-patient-and-carer-concerns-expectations-and-wishes-section">Example Patient and Carer Concerns, Expectations and Wishes Section</h2>
 
 <script src="https://gist.github.com/IOPS-DEV/cd418195a1684f2148936dec94a40842.js"></script>
 
@@ -861,7 +861,7 @@ $('#toc').on('click', 'a', function() {
 <p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>
 
 <ul>
-  <li>The ITK FHIR eDischarge does not currently support coded Patient and carer concerns information.</li>
+  <li>The ITK FHIR eDischarge does not currently support coded patient and carer concerns, expectations and wishes information.</li>
 </ul>
 
 
@@ -894,8 +894,8 @@ $('#toc').on('click', 'a', function() {
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2017 NHS Digital<br />
-                     Site last generated: Oct 5, 2017 <br />
-                    7352c7f81342a0a061b2d029394dd9d31a0507c6<br/>
+                     Site last generated: Oct 10, 2017 <br />
+                    642ed31c4c5f60bae8ba8a8fb73cf4e4172e2b85<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

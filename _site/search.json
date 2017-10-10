@@ -593,12 +593,24 @@
 
 	{
 		
-		"title": "Information Given Section",
+		"title": "Individual Requirements Section",
+		"tags": "fhirmessagingsections",
+		"keywords": "messaging, sections",
+		"url": "explore_individual_reqs.html",
+		"summary": "Gives information about the Individual requirements section",
+		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"individual-requirements-content\">Individual Requirements Content</h2>\n<p>The Individual requirements section carries information about the individual requirements of the patient,items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul><li>Individual requirements - Eg level of language (literacy); preferred language (interpreter required)/ambulance required/other transport arrangements required/any other special requirements.</li>\nIncludes:\n<ul><li>preferred language</li>\n<li>interpreter required</li>\n<li>advocate required</li>\n<li>transport required, etc.</li>Individual\n</ul></ul>\n\n<h2 id=\"example-individual-requirements-section\">Example Individual Requirements Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/497e71d591b9041c318dc4c88517287b.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded individual requirements information.</li>\n</ul>\n\n"
+		
+	}
+	,
+
+	{
+		
+		"title": "Information and Advice Given Section",
 		"tags": "fhirmessagingsections",
 		"keywords": "messaging, sections",
 		"url": "explore_information_given.html",
-		"summary": "Gives information about the Information given section",
-		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"information-given-section-content\">Information Given Section Content</h2>\n<p>The Information given section carries information and advice given, items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<p><strong>Information and advice given</strong></p>\n\n<p>This includes:</p>\n\n<ul>\n  <li>what information</li>\n  <li>to whom it was given.</li>\n</ul>\n\n<p>The oral or written information or advice given to the patient, carer, other\nauthorised representative, care professional or other third party. May include advice\nabout actions related to medicines or other ongoing care activities on an\n‘information prescription’.\nState here if there are concerns about the extent to which the patient and/or carer\nunderstands the information provided about diagnosis, prognosis and treatment.</p>\n\n<h2 id=\"example-information-given-sections\">Example Information Given Sections</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/e71ebe4dbcaf89da92e719307cc56aeb.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded information given.</li>\n</ul>\n\n"
+		"summary": "Gives information about the Information and advice given section",
+		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"information-and-advice-given-section-content\">Information and Advice Given Section Content</h2>\n<p>The Information and advice given section carries information and advice given, items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<p><strong>Information and advice given</strong></p>\n\n<p>This includes:</p>\n\n<ul>\n  <li>what information</li>\n  <li>to whom it was given.</li>\n</ul>\n\n<p>The oral or written information or advice given to the patient, carer, other\nauthorised representative, care professional or other third party. May include advice\nabout actions related to medicines or other ongoing care activities on an\n‘information prescription’.\nState here if there are concerns about the extent to which the patient and/or carer\nunderstands the information provided about diagnosis, prognosis and treatment.</p>\n\n<h2 id=\"example-information-and-advice-given-section\">Example Information and Advice Given Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/e71ebe4dbcaf89da92e719307cc56aeb.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded information and advice given.</li>\n</ul>\n\n"
 		
 	}
 	,
@@ -689,12 +701,12 @@
 
 	{
 		
-		"title": "Patient and Carer Concerns Section",
+		"title": "Patient and Carer Concerns, Expectations and Wishes Section",
 		"tags": "fhirmessagingsections",
 		"keywords": "messaging, sections",
 		"url": "explore_pat_care_concerns.html",
-		"summary": "Gives information about the Patient and carer concerns section",
-		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"patient-and-carer-concerns-section-content\">Patient and Carer Concerns Section Content</h2>\n<p>The Patient and carer concerns section carries information about the concern of the patient or their representative. Items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul>\n  <li><strong>Patient’s and carer’s concerns, expectations and wishes</strong></li>\n</ul>\n\n<p>Description of the concerns, wishes or goals of the patient, patient representative or carer. This could be the carer giving information if the patient is not competent, or the parent of a young child</p>\n\n<h2 id=\"example-patient-and-carer-concerns-section\">Example Patient and Carer Concerns Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/cd418195a1684f2148936dec94a40842.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded Patient and carer concerns information.</li>\n</ul>\n\n"
+		"summary": "Gives information about the Patient and carer concerns, expectations and wishes section",
+		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"patient-and-carer-concerns-expectations-and-wishes-section-content\">Patient and Carer Concerns, Expectations and Wishes Section Content</h2>\n<p>The Patient and carer concerns, expectations and wishes section carries information about the concern of the patient or their representative. Items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul>\n  <li><strong>Patient’s and carer’s concerns, expectations and wishes</strong></li>\n</ul>\n\n<p>Description of the concerns, wishes or goals of the patient, patient representative or carer. This could be the carer giving information if the patient is not competent, or the parent of a young child</p>\n\n<h2 id=\"example-patient-and-carer-concerns-expectations-and-wishes-section\">Example Patient and Carer Concerns, Expectations and Wishes Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/cd418195a1684f2148936dec94a40842.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded patient and carer concerns, expectations and wishes information.</li>\n</ul>\n\n"
 		
 	}
 	,
@@ -749,12 +761,12 @@
 
 	{
 		
-		"title": "Referral Details Section",
+		"title": "Referrer Details Section",
 		"tags": "fhirmessagingsections",
 		"keywords": "messaging, sections",
-		"url": "explore_referral_details.html",
-		"summary": "Gives information about the Referral details section",
-		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"referral-details-section-content\">Referral Details Section Content</h2>\n<p>The Referral details section carries a narrative summary of the episode. Where possible, very brief,items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul>\n  <li><strong>Referrer details</strong> - Name, designation, organisation and contact details of referrer. If not an individual, this could be, eg, GP surgery, department, specialty, subspecialty, educational institution, mental health etc. Also needs to include self-referral.</li>\n</ul>\n\n<h2 id=\"example-referral-details-section\">Example Referral Details Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/324006a867ea11a33997dcb6148b289a.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support a coded Referral details.</li>\n</ul>\n\n"
+		"url": "explore_referrer_details.html",
+		"summary": "Gives information about the Referrer details section",
+		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"referrer-details-section-content\">Referrer Details Section Content</h2>\n<p>The Referrer details section carries a narrative summary of the episode. Where possible, very brief,items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul>\n  <li><strong>Referrer details</strong> - Name, designation, organisation and contact details of referrer. If not an individual, this could be, eg, GP surgery, department, specialty, subspecialty, educational institution, mental health etc. Also needs to include self-referral.</li>\n</ul>\n\n<h2 id=\"example-referrer-details-section\">Example Referrer Details Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/324006a867ea11a33997dcb6148b289a.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded referrer details.</li>\n</ul>\n\n"
 		
 	}
 	,
@@ -791,18 +803,6 @@
 		"url": "explore_social_context.html",
 		"summary": "Gives information about the Social context section",
 		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"social-context-section-content\">Social Context Section Content</h2>\n<p>The Social context section carries information about the social context of the patient,items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul>\n  <li><strong>Household composition</strong> - Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.</li>\n  <li><strong>Lives alone</strong> - Yes/no/don’t know (Y/N/DK).</li>\n  <li><strong>Occupational history</strong> - The current and/or previous relevant occupation(s) of the patient/individual. This may include educational history.</li>\n</ul>\n\n<h2 id=\"example-social-context-section\">Example Social Context Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/73932c1d2ee99e5fd832bcbfa1922092.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded Social context information.</li>\n</ul>\n\n"
-		
-	}
-	,
-
-	{
-		
-		"title": "Special Requirements Section",
-		"tags": "fhirmessagingsections",
-		"keywords": "messaging, sections",
-		"url": "explore_special_req.html",
-		"summary": "Gives information about the Special requirements section",
-		"content": "\n<div class=\"alert alert-warning\" role=\"alert\">\n<i class=\"fa fa-warning\"></i> <b>Important:</b> The latest version of the PRSB documentation such be consulted for further information regarding Section headings and content <a href=\"http://theprsb.org/\" target=\"_blank\">http://theprsb.org</a>  </div>\n\n<h2 id=\"special-requirements-content\">Special Requirements Content</h2>\n<p>The Special requirements section carries information about the special requirements of the patient,items in bold are subheadings and should be formatted as such in any html sent:</p>\n\n<ul><li>Special requirements - Eg level of language (literacy); preferred language (interpreter required)/ambulance required/other transport arrangements required/any other special requirements.</li>\nIncludes:\n<ul><li>preferred language</li>\n<li>interpreter required</li>\n<li>advocate required</li>\n<li>transport required, etc.</li>\n</ul></ul>\n\n<h2 id=\"example-special-requirements-section\">Example Special Requirements Section</h2>\n\n<script src=\"https://gist.github.com/IOPS-DEV/497e71d591b9041c318dc4c88517287b.js\"></script>\n\n<h2 id=\"coded-resources\">Coded Resources</h2>\n\n<p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>\n\n<ul>\n  <li>The ITK FHIR eDischarge does not currently support coded Special requirements information.</li>\n</ul>\n\n"
 		
 	}
 	,
