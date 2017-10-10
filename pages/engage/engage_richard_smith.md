@@ -19,7 +19,7 @@ After a short wait, Richard starts to feel worse and his wife goes to speak to t
 
 The Inpatient stay is carried in the [Encounter Resource](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1)
 
-**Named Participants**
+## Named Participants ##
 
 - Patient - **Richard Smith** - [Patient Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Patient's wife - **Joy Smith** - [RelatedPerson Resource](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-RelatedPerson-1)
@@ -28,7 +28,7 @@ The Inpatient stay is carried in the [Encounter Resource](https://fhir.nhs.uk/ST
 - Patient's GP (Document recipient) - **Dr John Lorenzo** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 - Community Nurse (Document recipient) - **Mrs Angela Jones** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
-**Named Organisations**
+## Named Organisations ##
 
 - Patient's GP Practice - **MGP Medical Centre** - [Organization Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 - Discharging Hospital - **Leeds Teaching Hospitals NHS Trust** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
@@ -43,3 +43,6 @@ In the afternoon Dr Paul Rastall discharges Richard and completes and sends an e
 
 Richard's wife arrives with their neighbour Peter, who has kindly agreed to pick him up from the hospital and take him home.
 
+## Example Instance of Scenario ##
+
+<script src="https://gist.github.com/IOPS-DEV/4c7978a769e995660c41c2c8479b9255.js"></script>
