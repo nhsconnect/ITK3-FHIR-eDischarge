@@ -292,9 +292,6 @@ entries:
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web
-    - title: User Stories
-      url: /tag_user_stories.html
-      output: web
     - title: Case Studies
       url: /tag_casestudies.html
       output: web
