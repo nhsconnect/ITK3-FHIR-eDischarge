@@ -100,12 +100,6 @@
 <loc>http://localhost:4005/engage_case_studies.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/engage_userstories.html</loc>
-</url>
-<url>
-<loc>http://localhost:4005/engage_using_profiles.html</loc>
-</url>
-<url>
 <loc>http://localhost:4005/explore.html</loc>
 </url>
 <url>
@@ -203,9 +197,6 @@
 </url>
 <url>
 <loc>http://localhost:4005/explore_workflow_overview.html</loc>
-</url>
-<url>
-<loc>http://localhost:4005/howtouserstory.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/</loc>
