@@ -342,7 +342,7 @@
 	{
 		
 		"title": "Case Study Overview",
-		"tags": "userstoriescasestudies",
+		"tags": "casestudies",
 		"keywords": "engage,process, introduction",
 		"url": "engage.html",
 		"summary": "These pages assist with requirements gathering and mapping stages of a FHIR ITK Messaging Solution development process.",
@@ -1190,18 +1190,6 @@
 		"tags": "",
 		"keywords": "",
 		"url": "tag_support.html",
-		"summary": "",
-		"content": "{% include taglogic.html %}\n"
-		
-	}
-	,
-
-	{
-		
-		"title": "User Stories",
-		"tags": "",
-		"keywords": "",
-		"url": "tag_user_stories.html",
 		"summary": "",
 		"content": "{% include taglogic.html %}\n"
 		
