@@ -262,6 +262,9 @@
 <loc>http://localhost:4005/tag_noccprofile.html</loc>
 </url>
 <url>
+<loc>http://localhost:4005/tag_document.html</loc>
+</url>
+<url>
 <loc>http://localhost:4005/tag_engage.html</loc>
 </url>
 <url>
@@ -293,6 +296,9 @@
 </url>
 <url>
 <loc>http://localhost:4005/tag_support.html</loc>
+</url>
+<url>
+<loc>http://localhost:4005/tag_user_stories.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/tag_workflow.html</loc>

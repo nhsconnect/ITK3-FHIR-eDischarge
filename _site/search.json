@@ -1066,6 +1066,18 @@
 
 	{
 		
+		"title": "Documents",
+		"tags": "",
+		"keywords": "",
+		"url": "tag_document.html",
+		"summary": "",
+		"content": "{% include taglogic.html %}\n"
+		
+	}
+	,
+
+	{
+		
 		"title": "Engage",
 		"tags": "",
 		"keywords": "",
@@ -1190,6 +1202,18 @@
 		"tags": "",
 		"keywords": "",
 		"url": "tag_support.html",
+		"summary": "",
+		"content": "{% include taglogic.html %}\n"
+		
+	}
+	,
+
+	{
+		
+		"title": "User Stories",
+		"tags": "",
+		"keywords": "",
+		"url": "tag_user_stories.html",
 		"summary": "",
 		"content": "{% include taglogic.html %}\n"
 		

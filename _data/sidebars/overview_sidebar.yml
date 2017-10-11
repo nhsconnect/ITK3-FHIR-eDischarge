@@ -301,6 +301,12 @@ entries:
     - title: Development
       url: /tag_development.html
       output: web
+    - title: Document
+      url: /tag_document.html
+      output: web
+    - title: Messaging
+      url: /tag_messaging.html
+      output: web
     - title: Support
       url: /tag_support.html
       output: web
