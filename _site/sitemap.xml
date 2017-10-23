@@ -112,9 +112,6 @@
 <loc>http://localhost:4005/explore_assessment_scales.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/explore_bundle_structures.html</loc>
-</url>
-<url>
 <loc>http://localhost:4005/explore_clinical_summary.html</loc>
 </url>
 <url>
@@ -130,13 +127,7 @@
 <loc>http://localhost:4005/explore_document_profiles.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/explore_error_codes.html</loc>
-</url>
-<url>
 <loc>http://localhost:4005/explore_gp_practice.html</loc>
-</url>
-<url>
-<loc>http://localhost:4005/explore_hand_spec.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/explore_headings.html</loc>
@@ -190,10 +181,10 @@
 <loc>http://localhost:4005/explore_safety_alerts.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/explore_snd&rec_req.html</loc>
+<loc>http://localhost:4005/explore_social_context.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/explore_social_context.html</loc>
+<loc>http://localhost:4005/explore_transport.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/explore_workflow_overview.html</loc>

@@ -35,23 +35,14 @@ entries:
       url: /explore.html
       output: web
       type: homepage
-    - title: Bundle Structures
-      url: /explore_bundle_structures.html
+    - title: Transport
+      url: /explore_transport.html
       output: web
     - title: Interactions
       url: /explore_interactions.html
       output: web
     - title: Document Profiles
       url: /explore_document_profiles.html
-      output: web
-    - title: Handling Specification
-      url: /explore_hand_spec.html
-      output: web
-    - title: Sender & Receiver Requirements
-      url: /explore_snd&rec_req.html
-      output: web
-    - title: Error Codes
-      url: /explore_error_codes.html
       output: web
       subfolders:
       - title: Work Flow
@@ -173,15 +164,6 @@ entries:
     folderitems:
     - title: Overview
       url: /design.html
-      output: web
-    - title: Patterns / Topology
-      url: /design_patterns.html
-      output: web
-    - title: Access
-      url: /design_access.html
-      output: web
-    - title: Security
-      url: /design_security.html
       output: web
     - title: Data Mapping
       url: /build_data_mapping.html
