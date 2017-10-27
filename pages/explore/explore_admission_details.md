@@ -1,7 +1,7 @@
 ---
 title: Admission Details Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_admission_details.html
 summary: "Gives information about the Admission details section"

@@ -1,7 +1,7 @@
 ---
 title: Person Completing Record Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_per_com_record.html
 summary: "Gives information about the Person completing record section"

@@ -1,7 +1,7 @@
 ---
 title: Assessment Scales Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_assessment_scales.html
 summary: "Gives information about the Assessment scales section"

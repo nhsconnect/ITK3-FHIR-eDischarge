@@ -1,7 +1,7 @@
 ---
 title: Distribution List Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_distribution_list.html
 summary: "A list of recipients of the document"

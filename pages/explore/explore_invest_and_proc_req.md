@@ -1,7 +1,7 @@
 ---
 title: Investigations and Procedures Requested Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_invest_and_proc_req.html
 summary: "Gives information about Investigations and procedures requested section"

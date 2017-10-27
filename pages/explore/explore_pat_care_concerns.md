@@ -1,7 +1,7 @@
 ---
 title: Patient and Carer Concerns, Expectations and Wishes Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_pat_care_concerns.html
 summary: "Gives information about the Patient and carer concerns, expectations and wishes section"

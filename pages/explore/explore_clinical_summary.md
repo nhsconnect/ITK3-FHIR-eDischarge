@@ -1,7 +1,7 @@
 ---
 title: Clinical Summary Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_clinical_summary.html
 summary: "Gives information about the Clinical summary section"

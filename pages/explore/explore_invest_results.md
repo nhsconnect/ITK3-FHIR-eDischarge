@@ -1,7 +1,7 @@
 ---
 title: Investigation Results Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_invest_results.html
 summary: "Gives information about Investigation Results section"

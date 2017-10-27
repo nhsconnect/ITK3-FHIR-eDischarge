@@ -1,7 +1,7 @@
 ---
 title: Patient Demographics Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_patient_demographics.html
 summary: "Gives information about the patient"

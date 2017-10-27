@@ -1,7 +1,7 @@
 ---
 title: Participation in Research Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_part_research.html
 summary: "Gives information about the Participation in research section"

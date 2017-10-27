@@ -1,7 +1,7 @@
 ---
 title: Safety alerts Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_safety_alerts.html
 summary: "Gives information about the Safety alerts section"
@@ -23,6 +23,6 @@ The Safety alerts section carries safety alerts associated with the patient,item
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support a coded Referral details.
+- The ITK FHIR eDischarge does not currently support a coded safety alerts.
 
 

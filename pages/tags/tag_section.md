@@ -1,8 +1,8 @@
 ---
-title: "Sections"
-tagName: sections
+title: "Section"
+tagName: section
 search: exclude
-permalink: tag_sections.html
+permalink: tag_section.html
 sidebar: overview_sidebar
 folder: tags
 ---

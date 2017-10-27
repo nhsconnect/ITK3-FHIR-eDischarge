@@ -1,7 +1,7 @@
 ---
 title: Medications and Medical Devices Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_medication.html
 summary: "Gives information about the Medications and medical devices section"

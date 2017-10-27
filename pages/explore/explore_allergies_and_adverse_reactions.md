@@ -1,7 +1,7 @@
 ---
 title: Allergies and Adverse Reactions Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_allergies_and_adverse_reactions.html
 summary: "Gives information about the Allergies and adverse reactions section"

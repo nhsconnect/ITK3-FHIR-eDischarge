@@ -1,7 +1,7 @@
 ---
 title: Diagnoses Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_diagnoses.html
 summary: "Gives information about the Diagnoses section"

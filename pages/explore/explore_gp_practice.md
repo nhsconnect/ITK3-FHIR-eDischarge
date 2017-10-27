@@ -1,7 +1,7 @@
 ---
 title: GP Practice Section
 keywords:  messaging, sections
-tags: [fhir,messaging,sections]
+tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
 permalink: explore_gp_practice.html
 summary: "Gives information about the patient's GP Practice"
