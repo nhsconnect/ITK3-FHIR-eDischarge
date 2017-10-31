@@ -25,6 +25,6 @@ The following four key principles should be considered during the deploying:
 
 Other ITK Messaging Solution considerations are shown below. Please click on the parts of the API process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 
 

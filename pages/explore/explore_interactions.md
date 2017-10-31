@@ -9,7 +9,7 @@ summary: "ITK eDischarge Interactions"
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/messaging_overview.svg %}
+
 
 ## ITK eDischarge Interactions Overview ##
 This section provides ITK eDischarge implementers with the information required to utilise the ITK eDischarge Interactions.

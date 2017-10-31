@@ -23,6 +23,6 @@ The Test section contains descriptions of approaches and suggestions for buildin
 
 The following diagram explains the elements of ITK Messaging Solutions allowing the development of the message solution:
 
-{% include custom/provide_messaging.svg %}
+
 
 

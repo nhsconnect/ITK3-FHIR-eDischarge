@@ -44,5 +44,5 @@ Considering the design pattern / topology influences how any exposed ITK eDischa
 
 Other ITK Messaging Solutions consideration are shown below. Please click on the parts of the ITK Messaging Solutions process to continue your ITK Messaging Solutions creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

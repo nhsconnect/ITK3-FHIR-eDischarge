@@ -42,6 +42,6 @@ This resource is used to record detailed information about a condition, problem,
 
 
  
-{% include custom/provide_messaging.svg %}
+
 
 

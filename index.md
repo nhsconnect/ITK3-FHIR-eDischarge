@@ -38,18 +38,4 @@ This guide has been created to support the adoption of NHS Digital defined FHIR 
 
 The above steps outline a complete journey from imagination and exploring to developing local ITK Messaging Solutions using NHS Digital Messages, all the way to deploying a live ITK Messaging Solution.
 
-# ITK FHIR eDischarge Focus #
-
-The current site focuses on a typical FHIR ITK Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
-
-<img src="images/roadmap/guide-focus.png" style="width:100%;max-width: 100%;">
-
-
-# Resource Roadmap #
-
-The [ITK eDischarge journey](overview_message_journey.html) outlines the development roadmap for FHIR Messaging using the ITK eDischarge outlined messaging within this site. Note: This roadmap would include components from other NHS Digital specifications for example ITK eDischarge message components, CareConnect profiles etc.
-
-<img src="images/roadmap/messaging_roadmap-online.png" style="width:100%;max-width: 100%;">
-
-The above roadmap illustrates the steps necessary to create, test and verify the messaging components as well as some of the supporting tooling which might be necessary to build to provide viable ITK Messaging Solutions. The roadmap is not intended to be complete but to promote discussion, extension and engagement from interested parties.
 

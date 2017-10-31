@@ -26,7 +26,7 @@ The Design & Build section contains descriptions of approaches and suggestions f
 The following diagram explains the elements of ITK Messaging Solutions allowing the development of ITK Messaging Solutions:
 
 
-{% include custom/provide_messaging.svg %}
+
 
 
 

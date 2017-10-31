@@ -25,5 +25,5 @@ Access at the Test stage of Messaging solution development needs careful conside
 
 Other ITK Messaging Solution consideration are shown below. Please click on the parts of the ITK Messaging Solution process to continue your API creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

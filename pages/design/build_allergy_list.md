@@ -120,6 +120,6 @@ Example to show a allergy list.
 
 
  
-{% include custom/provide_messaging.svg %}
+
 
 

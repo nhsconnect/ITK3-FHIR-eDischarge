@@ -24,5 +24,5 @@ Assurance of systems in an end to end system level manner is an important stage 
 
 Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

@@ -73,4 +73,3 @@ This is profiled as the [ITK-EDIS-Compostion](https://fhir.nhs.uk/STU3/Structure
 {% include custom/section.warnbanner.html %}
 
 
-{% include custom/messaging_overview.svg %}

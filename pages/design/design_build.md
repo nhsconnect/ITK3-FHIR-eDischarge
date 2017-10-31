@@ -13,6 +13,6 @@ summary: "The Access page shows developers and users of the ITK Messaging Soluti
 
 The following diagram explains the elements of the ITK Messaging Solution ITK Components allowing the development of the complete ITK Messaging Solution:
 
-{% include custom/provide_messaging.svg %}
+
 
 

@@ -38,5 +38,5 @@ Depending on the chosen end usage, channel and network will influence the chosen
 
 Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

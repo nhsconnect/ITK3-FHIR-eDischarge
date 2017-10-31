@@ -55,6 +55,6 @@ For more information on the wider design decisions involved in providing safe ac
 
 Other ITK Messaging Solution consideration are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 
 

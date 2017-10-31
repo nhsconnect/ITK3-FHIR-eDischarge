@@ -20,5 +20,5 @@ The test data allows the testing of the ITK Messaging Solution at the individual
 
 Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your API creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

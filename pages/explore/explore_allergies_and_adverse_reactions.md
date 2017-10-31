@@ -44,7 +44,7 @@ This text section should be linked to the following FHIR Resources to provide th
 See constructing coded clinical structures - [Allergy Lists](build_allergy_lists.html)
 
 
-{% include custom/messaging_overview.svg %}
+
 
 
 

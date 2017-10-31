@@ -32,7 +32,7 @@ The same choice of testing your design pattern will need to meet your Assurance 
 
 Other ITK Messaging Solutions considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 
 
 

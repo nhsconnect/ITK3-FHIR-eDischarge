@@ -20,5 +20,5 @@ The Assure section contains descriptions of approaches and suggestions for build
 
 The following diagram explains the elements of ITK Messaging Solutions allowing a the development of ITK Messaging Solutions:
 
-{% include custom/provide_messaging.svg %}
+
 

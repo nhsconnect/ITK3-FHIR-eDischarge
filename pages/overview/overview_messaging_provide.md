@@ -19,14 +19,5 @@ The diagram below explains the parts involved in providing ITK Messaging Solutio
 
 {% include custom/provide_messaging.svg %}
 
-Please see the explanation of the complete development roadmap.
-
-## Approach to developing a ITK Messaging Solution ##
-
-The current site focuses on a typical ITK Messaging Solution Developer's Journey as highlighted by the green boxes below in the developer journey:
-
-<img src="images/roadmap/guide-focus.png" style="width:100%;max-width: 100%;"> 
-
-Please see the explanation of the complete development roadmap.
 
 

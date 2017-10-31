@@ -8,7 +8,7 @@ summary: "Overview of the work flow section"
 ---
 
 {% include custom/search.warnbanner.html %}
-{% include custom/messaging_overview.svg %}
+
 
 
 ## ITK Work Flow For eDischarge ##

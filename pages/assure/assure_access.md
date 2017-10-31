@@ -24,5 +24,5 @@ Access at the Assure stage of ITK Messaging Solution development needs finalisat
 
 Other ITK Messaging Solution considerations are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 

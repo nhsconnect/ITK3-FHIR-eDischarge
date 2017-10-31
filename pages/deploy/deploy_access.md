@@ -30,5 +30,5 @@ In previous phases the following concepts need to have been encountered and reso
 
 Other ITK Messaging Solution consideration are shown below. Please click on the parts of the API process to continue your ITK Messaging Solution creation journey.
 
-{% include custom/provide_messaging.svg %}
+
 
