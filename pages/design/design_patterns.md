@@ -36,13 +36,9 @@ Below is a list of patterns. If you require more detail please go to [developer.
 - Registry Repository
 - Publish Subscribe
 
-# Patterns and ITK eDischarge Based ITK Messaging Solutions  #
+# Patterns and ITK Outpatient letter Based ITK Messaging Solutions  #
 
-Considering the design pattern / topology influences how any exposed ITK eDischarge based ITK Messaging Solutions can be used and work within a system. ITK Messaging Solutions help to expose information to all design patterns allowing great user experiences to be created quickly, securely and consistantly. 
-
-# ITK Messaging Solutions Considerations #
-
-Other ITK Messaging Solutions consideration are shown below. Please click on the parts of the ITK Messaging Solutions process to continue your ITK Messaging Solutions creation journey.
+Considering the design pattern / topology influences how any exposed ITK Outpatient letter based ITK Messaging Solutions can be used and work within a system. ITK Messaging Solutions help to expose information to all design patterns allowing great user experiences to be created quickly, securely and consistantly. 
 
 
 

@@ -51,10 +51,6 @@ For more information on the wider design decisions involved in providing safe ac
 
 - [Safe, legal and secure](https://developer.nhs.uk/library/save-legal-secure/) guide from developer.nhs.uk provides an overview of some design decisions and considerations to consider when implementing APIs. 
 
-## ITK Messaging Solution Considerations ##
-
-Other ITK Messaging Solution consideration are shown below. Please click on the parts of the ITK Messaging Solution process to continue your ITK Messaging Solution creation journey.
-
 
 
 

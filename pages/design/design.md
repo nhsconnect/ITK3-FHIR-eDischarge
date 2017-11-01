@@ -21,12 +21,6 @@ The Design & Build section contains descriptions of approaches and suggestions f
 | Security | The security of the FHIR payload, access and data at rest are all important design decisions while building an ITK Messaging Solution.The specification for the payload should also be consulted as well as this specification. | 
 | Build | A look at some tools and techniques to help build ITK Messaging Solutions using the interactions and Resources defined in Explore | 
 
-## Providing a ITK Messaging Solution  ##
-
-The following diagram explains the elements of ITK Messaging Solutions allowing the development of ITK Messaging Solutions:
-
-
-
 
 
 

@@ -40,10 +40,3 @@ For more information on the wider design decisions involved in providing safe ac
 
 {% include custom/contribute.html content="Provide design patterns and API usage case studies by getting in touch with careconnect@interopen.org "%}
 
-# API Considerations #
-
-Other API consideration are shown below. Please click on the parts of the API process to continue your API creation journey.
-
-
-
-{% include custom/contribute.html content="Get in involved and contribute to the above API considerations careconnect@interopen.org"%}

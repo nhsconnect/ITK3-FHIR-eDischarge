@@ -17,3 +17,7 @@ The Journey is a guide from imagination and exploring to developing local FHIR I
 {% include custom/messaging_overview.svg %}
 
 The above steps outline a complete ITK Messaging Solution journey.
+
+
+
+
