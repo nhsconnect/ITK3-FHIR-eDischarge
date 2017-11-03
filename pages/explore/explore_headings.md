@@ -22,7 +22,7 @@ This section lists the following
  
 ## Typical Text Section Content ##
 This diagram shows a typical text section.
-Note: the examples of section html in this specification show only example html format such as tables. This is a exemplar format. There is no mandated format for the section html. 
+Note: the examples of section HTML in this specification show only example html format such as tables. This is an exemplar format. There is no mandated format for the section HTML. 
 
 <img src="images/explore/section_description.png" style="width:90%;max-width: 90%;"/>
  
@@ -67,7 +67,7 @@ This diagram illustrates the sections used in eDischarge and which sections allo
 
 
 The text sections are carried in the FHIR composition resource. 
-This is profiled as the [ITK-EDIS-Compostion](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1)
+This is profiled as the [ITK-EDIS-Composition](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1)
 
 
 {% include custom/section.warnbanner.html %}
