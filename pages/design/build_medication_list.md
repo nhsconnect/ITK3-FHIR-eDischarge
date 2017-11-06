@@ -25,19 +25,19 @@ The FHIR resources are profiled to create the medication list as below:
 - **[CareConnect-ITK-Medication-Flag-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-Flag-1)** - An NHS Digital Profile for medication flags. The Flag Resource carries prospective warnings of potential issues related to the patient's medications.
 
 ## List ##
-This resource acts as a container for the medication. The following is a example of the elements which can be used:
+This resource acts as a container for the medication. The following is an example of the elements which can be used:
 
 - identifier - uniquely identifies this list of medication (UUIDs)
 - status - active, completed, stopped etc
-- subject - reference to the patient whose medication list this is
-- encounter - reference to the context in which the list was created (the inpatient stay)
+- subject - a reference to the patient whose medication list this is
+- encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
 - entry - a reference to the MedicationStatement resource entry
 - flag - the type of medication entry (additional, discontinued etc.)
 
 ## MedicationStatement ##
-A record of a medication that is being consumed by a patient.The following is a example of the elements that can be used:
+A record of a medication that is being consumed by a patient.The following is an example of the elements that can be used:
 
 - identifier - uniquely identifies this medication statement (UUID)
 - clinicStatus - should always be active
@@ -60,7 +60,7 @@ The Medication resource allows for medications to be characterized by the form o
 - batch - 	Identifies a single production run 
  
 ## How the Medication Record is Constructed ##
-The medication record is constructed as a single list. The diagram below shows the Resources used and relationship between the Resources.
+The medication record is constructed as a single list. The diagram below shows the Resources used and the relationship between the Resources.
 
 <img src="images/build/medication_basic_structure.png" style="width:50%;max-width: 50%;">
 
