@@ -56,7 +56,7 @@ This resource details the actual allergy or adverse reaction. The following is a
 This resource is used to flag to users and systems that an allergy or adverse reaction exists. The following is an example of the main elements used: 
 - identifier - uniquely identifies this flag (UUID) 
 - category - of the flag
-- subject - who the flag is about in this case its always the patient
+- subject - who the flag is about, in this case, its always the patient
 - period - when the flag is active
 - encounter - alert relevant during the encounter
 - author - flag creator (practitioner, device, organization etc)
