@@ -7,5 +7,5 @@ permalink: assure.html
 summary: "These pages assist with requirements gathering and mapping stages of a ITK Messaging Solution development process."
 ---
 
-This page is currently under construction.
+<img src="images/under_construction.jpg" style="width:10%;max-width: 10%;">
 
