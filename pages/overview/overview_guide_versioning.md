@@ -36,6 +36,6 @@ These labels will be taken from the GDS development process stages, and will be 
  - **Beta**: APIs that are still under active development and subject to change, but that are likely to progress into a live API
  - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing before becoming live
  - **Live**: Release live APIs
- - **Discontinued**: APIs which have been discontinued and should not be used for new development".
+ - **Discontinued**: APIs which have been discontinued and should not be used for new development.
 
 
