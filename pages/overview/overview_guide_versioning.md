@@ -29,14 +29,13 @@ For examples: 1.0.0-alpha.1 is a valid pre-release version.
 
 ## Pre-release Labels ##
 
-The following pre-release labels will be used across all products:
+These labels will be taken from the GDS development process stages, and will be one of:
 
-| Pre-release Label | Lifecycle | Description |
-|-------------------|-----------|-------------|
-| `alpha` | &nbsp; | Complete enough for internal testing. |
-| `beta` | early | Complete enough for external testing. |
-| `beta` | late | Complete enough for external testing. Usually feature complete. |
-| `rc` | &nbsp; | Almost ready for final release. No new feature enhancements. |
+ - **Experimental**: Early development/POC version of an API for early sight during discovery
+ - **Alpha**: Initial test APIs, likely to change substantially, or be discontinued as the project develops
+ - **Beta**: APIs that are still under active development and subject to change, but that are likely to progress into a live API
+ - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing before becoming live
+ - **Live**: Release live APIs
+ - **Discontinued**: APIs which have been discontinued and should not be used for new development".
 
-> rc = Release Candidate. 
 
