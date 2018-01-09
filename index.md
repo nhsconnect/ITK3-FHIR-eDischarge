@@ -20,9 +20,9 @@ The Transfer Of Care eDischarge  Specification supports the following care commu
 
 **eDischarge (inpatient discharge summary) Document** – An ITK FHIR Document containing Transfer of Care information supporting an inpatient discharge typically between an acute hospital and GP practice.
    
-FHIR Messaging components specified within this site have been developed by NHS Digital and use some of the CareConnect profiles created in collaboration with the INTEROPen community. 
+FHIR Messaging components specified within this site have been developed by NHS Digital and use CareConnect profiles created in collaboration with the INTEROPen community.
 
-The INTEROPen vision is to create a library of nationally defined HL7® FHIR® resources and interaction patterns that implementers can adopt to simplify integration and interoperability within UK health and social care.
+The INTEROPen vision is to create a library of nationally defined HL7® FHIR® resources and interaction patterns that implementers can adopt to simplify integration and interoperability within England’s health and social care systems.
 
 Find out more on the [INTEROPen website](http://interopen.org/).
 
@@ -32,10 +32,5 @@ This documentation provides a FHIR document implmentation of the work done by th
 
 # Using this guide #
 
-This guide has been created to support the adoption of NHS Digital defined FHIR Messages. As such the site is structured around stakeholders involved in building FHIR ITK Messaging Solutions including  ITK Messaging Solution users, developers and architects.  
-
-{% include custom/messaging_overview.svg %}
-
-The above steps outline a complete journey from imagination and exploring to developing local ITK Messaging Solutions using NHS Digital Messages, all the way to deploying a live ITK Messaging Solution.
-
+This guide has been created to support the adoption of NHS Digital defined FHIR Messages. This site has been developed with input from stakeholders such as ITK3 Messaging Solution users, developers and architects.  
 
