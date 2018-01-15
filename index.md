@@ -26,7 +26,7 @@ The INTEROPen vision is to create a library of nationally defined HL7® FHIR® r
 
 Find out more on the [INTEROPen website](http://interopen.org/).
 
-This documentation provides a FHIR document implmentation of the work done by the Academy of Medical Royal Colleges (AoMRC) in defining headings for clinical documents.
+This documentation provides a FHIR document implementation of the work done by the Academy of Medical Royal Colleges (AoMRC) in defining headings for clinical documents.
  
 {% include custom/section.warnbanner.html %}
 
