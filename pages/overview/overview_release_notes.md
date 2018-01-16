@@ -9,7 +9,9 @@ summary: Summary release notes of the versions released in ITK eDischarge Implem
 
 {% include custom/search.warnbanner.html %}
 
-  
+## 2.1.0-alpha ##
+This version of the Transfer Of Care eDischarge specification has been changed to align the the ITK3 Messaging Distribution specification version 2.1.0-beta.
+
 ## 2.0.0-alpha.1 ##
 First version published using Jekyll
 
