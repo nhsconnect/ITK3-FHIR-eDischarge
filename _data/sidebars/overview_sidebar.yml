@@ -1,6 +1,6 @@
 entries:
-- title: ITK FHIR eDischarge 
-  product: ITK FHIR eDischarge
+- title: ITK 3 eDischarge 
+  product: ITK 3 eDischarge
   version: 2.1.0-alpha
   levels: one
   folders:

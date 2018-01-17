@@ -2,10 +2,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: ITK eDischarge | FHIR&reg;
+topnav_title: ITK 3 eDischarge | FHIR&reg;
 # this appears on the top navigation bar next to the home button
 
-site_title: ITK eDischarge 
+site_title: ITK 3 eDischarge 
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
@@ -96,7 +96,7 @@ sidebars:
 - appointments_sidebar
 - tasks_sidebar
 
-description: "The ITK eDischarge messaging components support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined messaging components"
+description: "The ITK 3 eDischarge messaging components support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined messaging components"
 # the description is used in the feed.xml file
 
 sitemap: true
