@@ -32,5 +32,5 @@ This documentation provides a FHIR document implementation of the work done by t
 
 # Using this guide #
 
-This guide has been created to support the adoption of NHS Digital defined FHIR Messages. This site has been developed with input from stakeholders such as ITK3 Messaging Solution users, developers and architects.  
+This guide has been created to support the adoption of NHS Digital defined FHIR Messages. This site has been developed with input from stakeholders such as ITK 3 Messaging Solution users, developers and architects.  
 

@@ -81,7 +81,7 @@ The Bundle consists of the following FHIR Resource Profiles.
 
 The diagram shows the referencing between the profiles in the bundle which make up the ITK eDischarge FHIR Document.
 
-When using ITK3 there is an outer bundle structure which is called the [ITK3 send payload bundle structure](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_messages.html#itk-send-payload-bundle-diagram) for use with ITK3. 
+When using ITK 3 there is an outer bundle structure which is called the [ITK3 send payload bundle structure](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_messages.html#itk-send-payload-bundle-diagram) for use with ITK 3. 
 
 This diagram only goes to one level due to the complexity and size of the document profile.Below is the key to the diagram.
 
