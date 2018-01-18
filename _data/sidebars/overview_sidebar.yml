@@ -1,6 +1,6 @@
 entries:
-- title: ITK 3 eDischarge 
-  product: ITK 3 eDischarge
+- title: ITK3 eDischarge 
+  product: ITK3 eDischarge
   version: 2.1.0-alpha
   levels: one
   folders:
@@ -38,9 +38,9 @@ entries:
     - title: Transport
       url: /explore_transport.html
       output: web
-    - title: Interactions
-      url: /explore_interactions.html
-      output: web
+#    - title: Interactions
+#      url: /explore_interactions.html
+#      output: web
     - title: Document Profiles
       url: /explore_document_profiles.html
       output: web
@@ -55,6 +55,13 @@ entries:
         - title: Encounter
           url: /workflow_encounter.html
           output: web
+  - title: Message Definitions
+    url: /explore_message_definitions.html
+    output: web
+    folderitems:
+    - title: Overview
+      url: /explore_defs_overview.html
+      output: web        
   - title: Section Headings
     output: web,pdf
     folderitems:
