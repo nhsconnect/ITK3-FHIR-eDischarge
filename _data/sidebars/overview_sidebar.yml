@@ -55,7 +55,7 @@ entries:
         - title: Encounter
           url: /workflow_encounter.html
           output: web
-  - title: Message Definitions
+  - title: Message Definitionss
     url: /explore_message_definitions.html
     output: web
     folderitems:
