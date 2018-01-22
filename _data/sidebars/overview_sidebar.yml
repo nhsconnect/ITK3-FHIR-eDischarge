@@ -62,7 +62,7 @@ entries:
     - title: Overview
       url: /explore_defs_overview.html
       output: web
-     - title: eDischarge
+    - title: eDischarge
       url: /explore_eDischarge_def.html
       output: web 
   - title: Section Headings
