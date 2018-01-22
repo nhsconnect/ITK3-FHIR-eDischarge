@@ -19,8 +19,7 @@ This is the MessageDefinition instance for the ITK3 Message Distribution eDischa
 
 Note: This instance is generic instance provided for information and development purposes and is not used within the message header handling specification. The payload specification should be consulted for the payload message definition.  
 
-<script src="https://gist.github.com/IOPS-DEV/ComingSoon.js"></script>
-
+<script src="https://gist.github.com/IOPS-DEV/53e791f3ee442a22f910b39f60d21fff.js"></script>
 ---
 
 
