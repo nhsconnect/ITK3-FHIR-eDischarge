@@ -10,7 +10,7 @@ summary: "Gives information about the Assessment scales section"
 {% include custom/section.warnbanner.html %}
 
 ## Assessment Scales Section Content##
-The Assessment scales section carries information about assessment scales used, items in bold are subheadings and should be formatted as such in any html sent:
+The Assessment scales section carries information about assessment scales used, subheadings should be formatted as such in any html sent:
 
 <table width="100%">
 <tr>
