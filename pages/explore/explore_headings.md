@@ -30,7 +30,7 @@ Note: the examples of section HTML in this specification show only example html 
 
 <table>
 <tr>
-<th width="40%">Section Name</th><thwidth="20%">SNOMED Concept</th><th width="20%">Associated Coded Profiles</th><th width="20%">Conformance</th></tr>
+<th width="40%">Section Name</th><th width="20%">SNOMED Concept</th><th width="20%">Associated Coded Profiles</th><th width="20%">Conformance</th></tr>
 <tr><td><a href="explore_admission_details.html">Admission details</a></td><td>886781000000108</td><td>1</td><td>O</td></tr>
 <tr><td><a href="explore_allergies_and_adverse_reactions.html">Allergies and adverse reactions</a></td><td>886921000000105</td><td>3</td><td>M</td></tr>
 <tr><td><a href="explore_assessment_scales.html">Assessment scales</a></td><td>887141000000103</td><td>0</td><td>O</td></tr>
