@@ -34,8 +34,8 @@ The Allergies and adverse reactions section carries information about the patien
 <li>severity of the reaction</li>
 <li>certainty</li>
 <li>evidence (eg, results of investigations).</li>
-</td>
 </ul>
+</td>
 <td>x</td>
 <td>x</td>
 </tr>
