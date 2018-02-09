@@ -12,12 +12,45 @@ summary: "Gives information about the Admission details section"
 ## Admission Details Section Content##
 The Admission details section carries information about the patient's admission, items in bold are subheadings and should be formatted as such in any html sent:
 
-- **Admission method** How the patient was admitted to hospital. Eg: elective,
-emergency, maternity, transfer, etc.
-- **Source of admission** Where the patient was immediately prior to admission, eg, usual place of residence, temporary place of residence, penal establishment. National code.
-- **Patient location** This is the physical location of the patient. For inpatient, eg, hospital ward, bed, theatre. For ambulatory care, eg, health centre, clinic, resource centre, patient’s home.
-- **Date of admission** Date patient admitted to hospital.
-- **Time of admission** Time patient admitted to hospital.
+<table>
+<tr>
+<th>Sub-section</th>
+<th>Description</th>
+<th>Cardinally</th>
+<th>Conformance</th>
+</tr>
+<tr>
+<td>Admission method</td>
+<td>How the patient was admitted to hospital. Eg: elective,
+emergency, maternity, transfer, etc.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Source of admission</td>
+<td>Where the patient was immediately prior to admission, eg, usual place of residence, temporary place of residence, penal establishment. National code.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Patient location</td>
+<td>This is the physical location of the patient. For inpatient, eg, hospital ward, bed, theatre. For ambulatory care, eg, health centre, clinic, resource centre, patient’s home.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Date of admission</td> 
+<td>Date patient admitted to hospital.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Time of admission</td> 
+<td>Time patient admitted to hospital.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 ##  Example Admission Details Section ##
 
