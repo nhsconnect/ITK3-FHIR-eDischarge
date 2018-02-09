@@ -14,8 +14,8 @@ The Admission details section carries information about the patient's admission,
 
 <table width="100%">
 <tr>
-<th width="30%">Sub-section</th>
-<th width="40%">Description</th>
+<th width="20%">Sub-section</th>
+<th width="50%">Description</th>
 <th width="15%">Cardinally</th>
 <th width="15%">Conformance</th>
 </tr>
