@@ -10,10 +10,22 @@ summary: "Gives information about the Diagnoses section"
 {% include custom/section.warnbanner.html %}
 
 ## Diagnoses Section Content##
-The Diagnoses section carries information about Diagnoses such as:
+The Diagnoses section carries information about Diagnoses subheadings should be formatted as such in any html sent:
 
-Confirmed diagnoses; active diagnoses being treated.
-Including the stage of the disease where relevant.
+<table width="100%">
+<tr>
+<th width="20%">Sub-section</th>
+<th width="50%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Confirmed diagnoses; active diagnoses being treated.
+Including the stage of the disease where relevant.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 
 ##  Example Diagnoses Section ##
