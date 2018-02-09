@@ -12,7 +12,7 @@ summary: "Gives information about the Admission details section"
 ## Admission Details Section Content##
 The Admission details section carries information about the patient's admission, items in bold are subheadings and should be formatted as such in any html sent:
 
-<table>
+<table width="100%">
 <tr>
 <th>Sub-section</th>
 <th>Description</th>
