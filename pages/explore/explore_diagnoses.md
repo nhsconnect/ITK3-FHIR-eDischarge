@@ -20,7 +20,8 @@ The Diagnoses section carries information about Diagnoses subheadings should be 
 <th width="15%">Conformance</th>
 </tr>
 <tr>
-<td>Confirmed diagnoses; active diagnoses being treated.
+<td>Confirmed diagnoses</td>
+<td>active diagnoses being treated.
 Including the stage of the disease where relevant.</td>
 <td>x</td>
 <td>x</td>
