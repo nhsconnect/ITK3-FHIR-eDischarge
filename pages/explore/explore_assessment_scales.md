@@ -23,13 +23,14 @@ The Assessment scales section carries information about assessment scales used, 
 <tr>
 <td>Assessment scales</td> 
 <td>Assessment scales used,eg:
+
 <ul>
 <li>New York Heart Failure scale</li>
 <li>Activities of Daily Living(ADL)</li>
 <li>cognitive function, mood assessment scales</li>
 <li>developmental scales</li>
 <li>MUST (nutrition)</li>
-<li>BPI (pain)<li>
+<li>BPI (pain)</li>
 </ul>
 </td>
 <td>x</td>
