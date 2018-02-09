@@ -27,7 +27,7 @@ The Allergies and adverse reactions section carries information about the patien
 </tr>
 <tr>
 <td>Description of the reaction</td>
-<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:<br/>
+<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:
 <ul>
 <li>manifestation, eg, skin rash</li>
 <li>type of reaction (allergic, adverse, intolerance)</li>
