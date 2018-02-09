@@ -12,18 +12,59 @@ summary: "Gives information about the Discharge details section"
 ## Discharge Details Section Content##
 The Discharge details section carries details of the patient's discharge, items in bold are subheadings and should be formatted as such in any html sent:
 
-
-- **Discharging consultant** - The consultant responsible for the patient at time of discharge.
-- **Discharging specialty/department** - The specialty/department responsible for the patient at the time of discharge.
-- **Expected date of discharge** -  The date the patient is currently expected to be discharged from hospital.
-- **Date of discharge** - Time of discharge Electronic environment only.
-- **Discharge method** - The method of discharge from hospital. National codes:
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Discharging consultant</td>
+<td>The consultant responsible for the patient at time of discharge.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Discharging specialty/department</td>
+<td>The specialty/department responsible for the patient at the time of discharge.<td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Expected date of discharge</td>
+<td>The date the patient is currently expected to be discharged from hospital.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Date of discharge</td>
+<td>Time of discharge Electronic environment only.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Discharge method</td>
+<td>The method of discharge from hospital. National codes:
 eg, patient discharged on clinical advice or with clinical consent; patient discharged
-him/herself or was discharged by a relative or advocate, patient died, stillbirth.
-- **Discharge destination** -  The destination of the patient on discharge from hospital. National codes.
+him/herself or was discharged by a relative or advocate, patient died, stillbirth.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Discharge destination</td>
+<td>The destination of the patient on discharge from hospital. National codes.</td>
 Eg NHS-run care home.
-- **Discharge address Address** - to which patient discharged. Only completed where this is not the usual
-place of residence.
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Discharge address Address to which patient discharged. Only completed where this is not the usual
+place of residence.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 ##  Example Discharge Section ##
 

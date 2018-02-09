@@ -14,8 +14,8 @@ The Clinical summary section carries a narrative summary of the episode. Where p
 
 <table width="100%">
 <tr>
-<th width="20%">Sub-section</th>
-<th width="50%">Description</th>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
 <th width="15%">Cardinally</th>
 <th width="15%">Conformance</th>
 </tr>

@@ -14,8 +14,8 @@ The Assessment scales section carries information about assessment scales used, 
 
 <table width="100%">
 <tr>
-<th width="20%">Sub-section</th>
-<th width="50%">Description</th>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
 <th width="15%">Cardinally</th>
 <th width="15%">Conformance</th>
 </tr>
