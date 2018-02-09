@@ -27,14 +27,15 @@ The Allergies and adverse reactions section carries information about the patien
 </tr>
 <tr>
 <td>Description of the reaction</td>
-<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:
-<td>
+<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:</br>
+<ul>
 <li>manifestation, eg, skin rash</li>
 <li>type of reaction (allergic, adverse, intolerance)</li>
 <li>severity of the reaction</li>
 <li>certainty</li>
-<li>evidence (eg, results of investigations).</li></td>
+<li>evidence (eg, results of investigations).</li>
 </td>
+</ul>
 <td>x</td>
 <td>x</td>
 </tr>
