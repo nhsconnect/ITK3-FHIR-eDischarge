@@ -19,9 +19,9 @@ The Assessment scales section carries information about assessment scales used, 
 <th width="15%">Cardinally</th>
 <th width="15%">Conformance</th>
 </tr>
-<tr>
-<td>Assessment scales 
 
+<tr>
+<td>Assessment scales</td> 
 <td>Assessment scales used,eg:</td>
 <ul>
 <li>New York Heart Failure scale</li>
