@@ -12,19 +12,45 @@ summary: "Gives information about the Allergies and adverse reactions section"
 ## Allergies and Adverse Reactions Section Content##
 The Allergies and adverse reactions section carries information about the patient's allergies and adverse reactions, items in bold are subheadings and should be formatted as such in any html sent:
 
-<ul>
-<li><b>Causative agent</b> - The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</li>
-<li><b>Description of the reaction</b> - A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:</li>
-<ul>
+<table width="100%">
+<tr>
+<th width="20%">Sub-section</th>
+<th width="50%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Causative agent</td>
+<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Description of the reaction</td>
+<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. This may include:
+<td>
 <li>manifestation, eg, skin rash</li>
 <li>type of reaction (allergic, adverse, intolerance)</li>
 <li>severity of the reaction</li>
 <li>certainty</li>
-<li>evidence (eg, results of investigations).</li>
-</ul>
-<li><b>Probability of recurrence</b> - Probability of the reaction (allergic, adverse, intolerant) occurring.</li>
-<li><b>Date first experienced</b> - When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</li>
-</ul>
+<li>evidence (eg, results of investigations).</li></td>
+</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Probability of recurrence</td>
+<td>Probability of the reaction (allergic, adverse, intolerant) occurring.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Date first experienced<td>
+<td>When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 
 ##  Example Allergies and Adverse Reactions Sections ##
