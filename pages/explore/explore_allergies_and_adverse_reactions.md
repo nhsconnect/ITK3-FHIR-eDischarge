@@ -46,7 +46,7 @@ The Allergies and adverse reactions section carries information about the patien
 <td>x</td>
 </tr>
 <tr>
-<td>Date first experienced<td>
+<td>Date first experienced</td>
 <td>When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</td>
 <td>x</td>
 <td>x</td>
