@@ -59,7 +59,8 @@ Eg NHS-run care home.
 <td>x</td>
 </tr>
 <tr>
-<td>Discharge address Address to which patient discharged. Only completed where this is not the usual
+<td>Discharge address</td> 
+<td>Address to which patient discharged. Only completed where this is not the usual
 place of residence.</td>
 <td>x</td>
 <td>x</td>
