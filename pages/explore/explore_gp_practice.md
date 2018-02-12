@@ -17,13 +17,34 @@ The GP Practice section is rendered from the careProvider reference in the patie
 - **[CareConnect-PractitionerRole-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1)** - A CareConnect Profile for a practitioner role.The PractitionerRole resource represents a specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.
 - **[CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)** - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.
 
-The GP Practice section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered:
+The GP Practice section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Subheadings should be formatted as such in any html sent:
  
-<ul>
-<li><b>GP name</b></li>
-<li><b>GP practice details</b></li>
-<li><b>GP practice identifier</b></li>
-</ul>
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>GP name</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>GP practice details</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>GP practice identifier</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 The PractitionerRole resource is included to allow identification of the practitioner in the role of GP. 
 

@@ -19,12 +19,41 @@ The Distribution list section is rendered from the Information Recipient Extensi
 
 This is a standard extension for all ITK FHIR documents and therefore not all recipient types may be applicable to all document types. However receiving systems should be capable of rendering information from all the above resource types.
 
-The Recipient list section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered: 
+The Recipient list section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Subheadings should be formatted as such in any html sent:
+: 
 
-- **Recipient name** 
-- **Job role**
-- **Phone**
-- **Email**
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Recipient name</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Job role</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<tr>
+</tr>
+<td>Phone</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 ## Example Distribution List Entry Using Organization Resource ##
 
