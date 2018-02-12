@@ -29,7 +29,7 @@ Includes:
 <li>interpreter required</li>
 <li>advocate required</li>
 <li>transport required, etc.</li>Individual
-</ul></ul></td>
+</ul></td>
 <td>x</td>
 <td>x</td>
 </tr>
