@@ -12,13 +12,28 @@ summary: "Gives information about the Individual requirements section"
 ## Individual Requirements Content ##
 The Individual requirements section carries information about the individual requirements of the patient,items in bold are subheadings and should be formatted as such in any html sent:
 
-<ul><li>Individual requirements - Eg level of language (literacy); preferred language (interpreter required)/ambulance required/other transport arrangements required/any other special requirements.</li>
+
+ 
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Individual requirements</td>
+<td>Eg level of language (literacy); preferred language (interpreter required)/ambulance required/other transport arrangements required/any other special requirements.
 Includes:
 <ul><li>preferred language</li>
 <li>interpreter required</li>
 <li>advocate required</li>
 <li>transport required, etc.</li>Individual
-</ul></ul>
+</ul></ul></td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 ##  Example Individual Requirements Section ##
 
