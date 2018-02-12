@@ -54,14 +54,14 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 <tr>
 <td>Discharge destination</td>
 <td>The destination of the patient on discharge from hospital. National codes.</td>
-Eg NHS-run care home.
+
 <td>x</td>
 <td>x</td>
 </tr>
 <tr>
 <td>Discharge address</td> 
 <td>Address to which patient discharged. Only completed where this is not the usual
-place of residence.</td>
+place of residence.Eg NHS-run care home.</td>
 <td>x</td>
 <td>x</td>
 </tr>
