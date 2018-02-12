@@ -20,7 +20,7 @@ The Information and advice given section carries information and advice given. S
 <th width="15%">Conformance</th>
 </tr>
 <tr>
-<td>Information and advice given
+<td>Information and advice given</td>
 <td>This includes:
 
 <ul><li>what information</li>
