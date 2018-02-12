@@ -10,22 +10,33 @@ summary: "Gives information about the Information and advice given section"
 {% include custom/section.warnbanner.html %}
 
 ## Information and Advice Given Section Content##
-The Information and advice given section carries information and advice given, items in bold are subheadings and should be formatted as such in any html sent:
+The Information and advice given section carries information and advice given. Subheadings should be formatted as such in any html sent:
 
-**Information and advice given**
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Information and advice given
+<td>This includes:
 
-This includes:
-
-- what information
-- to whom it was given.
+<ul><li>what information</li>
+<li>to whom it was given</li>
+</ul>
 
 The oral or written information or advice given to the patient, carer, other
 authorised representative, care professional or other third party. May include advice
 about actions related to medicines or other ongoing care activities on an
 ‘information prescription’.
 State here if there are concerns about the extent to which the patient and/or carer
-understands the information provided about diagnosis, prognosis and treatment.
-
+understands the information provided about diagnosis, prognosis and treatment.</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</table>
 
 ##  Example Information and Advice Given Section ##
 
