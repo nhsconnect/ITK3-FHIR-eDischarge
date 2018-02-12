@@ -27,7 +27,7 @@ The Discharge details section carries details of the patient's discharge, items 
 </tr>
 <tr>
 <td>Discharging specialty/department</td>
-<td>The specialty/department responsible for the patient at the time of discharge.<td>
+<td>The specialty/department responsible for the patient at the time of discharge.</td>
 <td>x</td>
 <td>x</td>
 </tr>
