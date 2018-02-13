@@ -60,8 +60,7 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_defs_overview.html
-#      url: /explore_defs_overview.html
+      url: /explore_defs_overview.html
       output: web
     - title: eDischarge
       url: /explore_eDischarge_def.html
