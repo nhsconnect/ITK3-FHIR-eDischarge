@@ -29,7 +29,7 @@ The Admission details section carries information about the patient's admission,
 <td>Admission method</td>
 <td>How the patient was admitted to hospital. Eg: elective, emergency, maternity, transfer, etc.</td>
 <td>1..1</td>
-<td>MMandatory</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Source of admission</td>
