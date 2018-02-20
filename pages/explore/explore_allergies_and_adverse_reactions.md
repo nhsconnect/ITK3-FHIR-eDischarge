@@ -51,6 +51,7 @@ The Allergies and adverse reactions section carries information about the patien
 <td>1..1</td>
 <td>Required</td>
 </tr>
+<tr>
 <td>Certainty</td>
 <td>The certainty of the reaction</td>
 <td>1..1</td>
