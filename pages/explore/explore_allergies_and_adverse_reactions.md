@@ -37,50 +37,48 @@ The Allergies and adverse reactions section carries information about the patien
 </ul>
 </td>
 <td>1..1</td>
-<td>M</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Date recorded</td>
 <td>When the reaction was recorded</td>
-<td>M</td>
 <td>1..1</td>
-</tr>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Severity</td>
 <td>The severity of the reaction</td>
-<td>O</td>
-<td>0..1</td>
+<td>1..1</td>
+<td>Required</td>
 </tr>
 <td>Certainty</td>
 <td>The certainty of the reaction</td>
-<td>O</td>
-<td>0..1</td>
+<td>Required</td>
+<td>1..1</td>
 </tr>
 <tr>
 <td>Evidence</td>
-<td>xxxxxxxxxxxxx</td>
-<td>O</td>
-<td>0..1</td>
+<td>Evidence to support the assertion that there is/ has been an allergy or adverse reaction</td>
+<td>Required</td>
+<td>1..1</td>
 </tr>
-<tr>
 <tr>
 <td>Probability of recurrence</td>
 <td>Probability of the reaction (allergic, adverse, intolerant) occurring.</td>
 <td>0..1</td>
-<td>O</td>
+<td>Optional</td>
 </tr>
 <tr>
 <td>Date first experienced</td>
 <td>When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</td>
-<td>O</td>
 <td>0..1</td>
+<td>Optional</td>
 </tr>
 <tr>
 <td>Comment</td>
-<td>XXXXXXXXXXXXXXX</td>
-<td>O</td>
+<td>Any comments related to the allergy or adverse reaction</td>
 <td>0..1</td>
+<td>Optional</td>
 </tr>
 </table>
 
