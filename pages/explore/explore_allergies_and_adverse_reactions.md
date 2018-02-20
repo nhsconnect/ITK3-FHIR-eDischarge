@@ -22,8 +22,8 @@ The Allergies and adverse reactions section carries information about the patien
 <tr>
 <td>Causative agent</td>
 <td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>M</td>
 </tr>
 <tr>
 <td>Description of the reaction</td>
@@ -36,20 +36,51 @@ The Allergies and adverse reactions section carries information about the patien
 <li>evidence (eg, results of investigations).</li>
 </ul>
 </td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>M</td>
 </tr>
+<tr>
+<td>Date recorded</td>
+<td>When the reaction was recorded</td>
+<td>M</td>
+<td>1..1</td>
+</tr>
+</tr>
+<tr>
+<td>Severity</td>
+<td>The severity of the reaction</td>
+<td>O</td>
+<td>0..1</td>
+</tr>
+<td>Certainty</td>
+<td>The certainty of the reaction</td>
+<td>O</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>xxxxxxxxxxxxx</td>
+<td>O</td>
+<td>0..1</td>
+</tr>
+<tr>
 <tr>
 <td>Probability of recurrence</td>
 <td>Probability of the reaction (allergic, adverse, intolerant) occurring.</td>
-<td>x</td>
-<td>x</td>
+<td>0..1</td>
+<td>O</td>
 </tr>
 <tr>
 <td>Date first experienced</td>
 <td>When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</td>
-<td>x</td>
-<td>x</td>
+<td>O</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>XXXXXXXXXXXXXXX</td>
+<td>O</td>
+<td>0..1</td>
 </tr>
 </table>
 
