@@ -58,7 +58,7 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 <td>Mandatory</td>
 </tr>
 <tr>
-<td rowspan="3">comprising:</td>
+<td colspan="3">comprising:</td>
 </tr>
 <tr>
 <td>Discharge type</td> 
