@@ -38,7 +38,6 @@ The Admission details section carries information about the patient's admission,
 <td>M</td>
 </tr>
 <tr>
-<tr>
 <td>Dat/Time of admission</td> 
 <td>Date and time patient admitted to hospital.</td>
 <td>1.1</td>
