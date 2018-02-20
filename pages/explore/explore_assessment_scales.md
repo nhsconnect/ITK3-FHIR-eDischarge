@@ -33,8 +33,8 @@ The Assessment scales section carries information about assessment scales used, 
 <li>BPI (pain)</li>
 </ul>
 </td>
-<td>0</td>
 <td>0..*</td>
+<td>O</td>
 </tr>
 </table>
 
