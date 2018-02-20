@@ -23,25 +23,25 @@ The Admission details section carries information about the patient's admission,
 <td>Reason for admission</td>
 <td>The health problems and issues experienced by the patient that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall,  a specific procedure, intervention, investigation or treatment, non compliance with treatment.</td>
 <td>1..1</td>
-<td>M</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Admission method</td>
 <td>How the patient was admitted to hospital. Eg: elective, emergency, maternity, transfer, etc.</td>
 <td>1..1</td>
-<td>M</td>
+<td>MMandatory</td>
 </tr>
 <tr>
 <td>Source of admission</td>
 <td>Where the patient was immediately prior to admission, eg, usual place of residence, temporary place of residence, penal establishment. National code.</td>
 <td>1..1</td>
-<td>M</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Date/Time of admission</td> 
 <td>Date and time patient admitted to hospital.</td>
 <td>1.1</td>
-<td>M</td>
+<td>Mandatory</td>
 </tr>
 </table>
 

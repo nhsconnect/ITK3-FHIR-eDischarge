@@ -34,7 +34,7 @@ The Assessment scales section carries information about assessment scales used, 
 </ul>
 </td>
 <td>0..*</td>
-<td>O</td>
+<td>Optional</td>
 </tr>
 </table>
 
