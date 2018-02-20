@@ -54,6 +54,7 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 <tr>
 <td>Discharge destination</td>
 <td>Discharge destination comprising:
+<table>
 <tr>
 <td>Discharge type</td> 
 <td>The destination of the patient on discharge from hospital. National codes e.g.. NHS-run care home.
@@ -71,18 +72,7 @@ place of residence.Eg NHS-run care home.</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
-</tr>
-<tr>
-
-
-
-
-
-
-
-
-
-
+</table>
 </tr>
 </table>
 
