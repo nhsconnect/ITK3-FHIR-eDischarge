@@ -53,7 +53,8 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 </tr>
 <tr>
 <td>Discharge destination</td>
-<td>Discharge destination comprising:
+<td>Discharge destination comprising:</td>
+</tr>
 <table>
 <tr>
 <td>Discharge type</td> 
@@ -73,7 +74,6 @@ place of residence.Eg NHS-run care home.</td>
 <td>Mandatory</td>
 </tr>
 </table>
-</tr>
 </table>
 
 ##  Example Discharge Section ##
