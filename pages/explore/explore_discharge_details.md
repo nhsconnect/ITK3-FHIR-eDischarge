@@ -74,6 +74,7 @@ place of residence.Eg NHS-run care home.</td>
 <td>Mandatory</td>
 </tr>
 </table>
+
 </table>
 
 ##  Example Discharge Section ##
