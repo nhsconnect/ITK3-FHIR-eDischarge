@@ -58,7 +58,7 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 <td>Mandatory</td>
 </tr>
 <tr>
-<td colspan="3">comprising:</td>
+<td colspan="4">comprising:</td>
 </tr>
 <tr>
 <td>Discharge type</td> 
@@ -77,7 +77,6 @@ place of residence.Eg NHS-run care home.</td>
 </tr>
 </table>
 
-</table>
 
 ##  Example Discharge Section ##
 
