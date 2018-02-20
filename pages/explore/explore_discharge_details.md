@@ -22,48 +22,63 @@ The Discharge details section carries details of the patient's discharge, items 
 <tr>
 <td>Discharging consultant</td>
 <td>The consultant responsible for the patient at time of discharge.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Discharging specialty/department</td>
 <td>The specialty/department responsible for the patient at the time of discharge.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 <tr>
-<td>Expected date of discharge</td>
-<td>The date the patient is currently expected to be discharged from hospital.</td>
-<td>x</td>
-<td>x</td>
+<td>Discharge location</td>
+<td>The ward or unit the patient was in immediately prior to discharge.</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 <tr>
-<td>Date of discharge</td>
-<td>Time of discharge Electronic environment only.</td>
-<td>x</td>
-<td>x</td>
+<td>Date/time of discharge</td>
+<td>The actual date of discharge</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Discharge method</td>
 <td>The method of discharge from hospital. National codes:
 eg, patient discharged on clinical advice or with clinical consent; patient discharged
 him/herself or was discharged by a relative or advocate, patient died, stillbirth.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Discharge destination</td>
-<td>The destination of the patient on discharge from hospital. National codes.</td>
-
-<td>x</td>
-<td>x</td>
-</tr>
-<tr>
+<td>Discharge destination comprising:
+<td>Discharge type</td> 
+<td>The destination of the patient on discharge from hospital. National codes e.g.. NHS-run care home.
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
 <td>Discharge address</td> 
 <td>Address to which patient discharged. Only completed where this is not the usual
 place of residence.Eg NHS-run care home.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+
+
+
+
+
+
+
+
+
+
 </tr>
 </table>
 
