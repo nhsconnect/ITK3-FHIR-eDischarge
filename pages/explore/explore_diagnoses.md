@@ -23,8 +23,8 @@ The Diagnoses section carries information about Diagnoses subheadings should be 
 <td>Confirmed diagnoses</td>
 <td>active diagnoses being treated.
 Including the stage of the disease where relevant.</td>
-<td>x</td>
-<td>x</td>
+<td>1..*</td>
+<td>Mandatory</td>
 </tr>
 </table>
 

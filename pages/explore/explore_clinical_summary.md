@@ -22,8 +22,8 @@ The Clinical summary section carries a narrative summary of the episode. Where p
 <tr>
 <td>Clincal summary</td>
 <td>This may include interpretation of findings and results; differential diagnoses, opinion and specific action(s). Planned actions will be recorded under ‘plan’.</td>
-<td>x</td>
-<td>x</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 </table>
 
