@@ -23,7 +23,7 @@ The Allergies and adverse reactions section carries information about the patien
 <td>Causative agent</td>
 <td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
 <td>1..1</td>
-<td>M</td>
+<td>Mandatory</td>
 </tr>
 <tr>
 <td>Description of the reaction</td>
@@ -53,14 +53,14 @@ The Allergies and adverse reactions section carries information about the patien
 </tr>
 <td>Certainty</td>
 <td>The certainty of the reaction</td>
-<td>Required</td>
 <td>1..1</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>Evidence</td>
 <td>Evidence to support the assertion that there is/ has been an allergy or adverse reaction</td>
-<td>Required</td>
 <td>1..1</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>Probability of recurrence</td>
