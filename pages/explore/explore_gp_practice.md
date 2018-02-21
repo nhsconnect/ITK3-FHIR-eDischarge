@@ -27,22 +27,23 @@ The GP Practice section must be rendered in a similar format to other sections. 
 <th width="15%">Conformance</th>
 </tr>
 <tr>
+<td>GP practice identifier</td>
+<td>The identifier of the registered GP Practice.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
 <td>GP name</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>Where the patient or patient's representative offers the name of a GP as their usual GP.</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>GP practice details</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
-</tr>
-<tr>
-<td>GP practice identifier</td>
-<td>x</td>
-<td>x</td>
-<td>x</td>
+<td>Name and address of the patient's registered GP Practice.
+</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
 </table>
 
