@@ -36,44 +36,41 @@ The Allergies and adverse reactions section carries information about the patien
 <li>evidence (eg, results of investigations).</li>
 </ul>
 </td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Date recorded</td>
-<td>When the reaction was recorded</td>
-<td>1..1</td>
-<td>Mandatory</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>Severity</td>
-<td>The severity of the reaction</td>
-<td>1..1</td>
+<td>A description of the severity of the reaction.</td>
+<td>0..1</td>
 <td>Required</td>
 </tr>
 <tr>
 <td>Certainty</td>
-<td>The certainty of the reaction</td>
-<td>1..1</td>
+<td>A description of the certainty that the stated causative agent caused the allergic or adverse reaction.
+</td>
+<td>0..1</td>
 <td>Required</td>
 </tr>
 <tr>
 <td>Evidence</td>
-<td>Evidence to support the assertion that there is/ has been an allergy or adverse reaction</td>
-<td>1..1</td>
+<td>Results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests
+</td>
+<td>0..1</td>
 <td>Required</td>
 </tr>
 <tr>
 <td>Probability of recurrence</td>
-<td>Probability of the reaction (allergic, adverse, intolerant) occurring.</td>
+<td>Probability of the reaction (allergic, adverse, intolerant) occurring.
+</td>
 <td>0..1</td>
-<td>Optional</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>Date first experienced</td>
 <td>When the reaction was first experienced. May be a date or partial date (eg, year) or free text (eg, during childhood).</td>
 <td>0..1</td>
-<td>Optional</td>
+<td>Required</td>
 </tr>
 <tr>
 <td>Comment</td>
