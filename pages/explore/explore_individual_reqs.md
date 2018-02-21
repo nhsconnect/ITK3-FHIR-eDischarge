@@ -22,16 +22,11 @@ The Individual requirements section carries information about the individual req
 <th width="15%">Conformance</th>
 </tr>
 <tr>
-<td>Individual requirements</td>
-<td>Eg level of language (literacy); preferred language (interpreter required)/ambulance required/other transport arrangements required/any other special requirements.
-Includes:
-<ul><li>preferred language</li>
-<li>interpreter required</li>
-<li>advocate required</li>
-<li>transport required, etc.</li>Individual
-</ul></td>
-<td>x</td>
-<td>x</td>
+<td>Individual requirement</td>
+<td>Individual requirements that a person has. These may be communication, cultural, cognitive or mobility needs.
+</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
 </table>
 
