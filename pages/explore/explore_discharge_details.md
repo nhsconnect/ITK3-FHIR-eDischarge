@@ -73,7 +73,6 @@ him/herself or was discharged by a relative or advocate, patient died, stillbirt
 place of residence.Eg NHS-run care home.</td>
 <td>1..1</td>
 <td>Mandatory</td>
-</td>
 </tr>
 </table>
 
