@@ -11,29 +11,71 @@ summary: "Gives information about the Legal information section"
 
 ## Legal Information Section Content ##
 
-<ul><li><b>Consent for treatment record</b> - Whether consent has been obtained for the treatment. May include where record of record consent is located or record of consent.</li>
-<li><b>Mental capacity assessment</b> - Whether an assessment of the mental capacity of the (adult) patient has been undertaken, if so who carried it out, when and the outcome of the assessment. Also record best interests decision if patient lacks capacity.</li>
-<li><b>Advance decisions about treatment</b> - Three items:</li>
-<ol><li>whether there are written documents, completed and signed when a person is
-legally competent, that explain a person’s medical wishes in advance, allowing
-someone else to make treatment decisions on his or her behalf late in the disease
-process</li>
-<li>location of these documents</li>
-<li>may be copy of the document itself.</li></ol>
-<li><b>Lasting or enduring power of attorney or similar</b> - Record of individual involved in healthcare decision on behalf of the patient if the patient lacks capacity. This includes:</li>
-<ul><li>whether there is a person with lasting or enduring power of attorney, Independent Mental Capacity Advocate (IMCA), court appointed deputy</li>
-<li>name and contact details for person.</li>
-</ul>
-<li><b>Organ and tissue donation</b> - Two data items:</li>
-<ol><li>has the person given consent for organ and/or tissue donation (yes/no)?</li>
-<li>the location of the relevant information/documents.</li>
-</ol>
-<li><b>Consent relating to child</b> -  Consideration of age and competency, including Gillick competency.Record of person with parental responsibility or appointed guardian where child
-lacks competency.</li>
-<li><b>Consent to information sharing</b> - Record of consent to information sharing, including any restrictions on  sharing information with others, eg, family members, other healthcare professionals. Also use of identifiable information for research purposes.
-</li>
-<li><b>Safeguarding issues</b> - Any legal matters relating to safeguarding of a vulnerable child or adult, eg, child protection plan, child in need, protection of vulnerable adult.</li>
-</ul>
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Consent for treatment record</td>
+<td>Whether consent has been obtained for the treatment. May include where record of consent is located or record of consent.
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Consent for information sharing</td>
+<td>This is a record of consent for information sharing. Where consent has been not been obtained or sought, the reason why must be provided. Include best interests decision where person lacks capacity.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Consent relating to child</td>
+<td>"Consideration of age and competency, applying Gillick competency or Fraser guidelines.
+Record of person with parental responsibility or appointed guardian where child lacks competency. Record if there is disagreement between patient and parent. 
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Mental capacity assessment</td>
+<td>Whether an assessment of the mental capacity of the (adult) person has been undertaken, if so, what capacity the decision relates to, who carried it out, when and the outcome of the assessment. Also record best interests decision if person lacks capacity.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr> 
+<td>Lasting power of attorney for personal welfare  or court-appointed deputy (or equivalent)</td>
+<td>Record of one or more people who have been given power (LPA) by the person when they had capacity to make decisions about their health and welfare should they lose capacity to make those decisions. To be valid, an LPA must have been registered with the Court of Protection. If life-sustaining treatment is being considered the LPA document must state specifically that the attorney has been given power to consent to or refuse life-sustaining treatment. Details of any person (deputy) appointed by the court to make decisions about the person’s health and welfare. A deputy does not have the power to refuse life-sustaining treatment.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr> 
+<td>Advance decision to refuse treatment (ADRT)</td>
+<td>A record of an advance decision to refuse one or more specific types of future treatment, made by a person who had capacity at the time of recording the decision. The decision only applies when the person no longer has the capacity to consent to or refuse the specific treatment being considered. An ADRT must be in writing, signed and witnessed. If the ADRT is refusing life-sustaining treatment it must state specifically that the treatment is refused even if the person’s life is at risk.
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr> 
+<td>Safeguarding issues</td>
+<td>Any legal matters relating to safeguarding of a vulnerable child or adult, e.g., child protection plan, protection of vulnerable adult.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr> 
+<td>Organ and tissue donation</td> 
+<td>Whether the person has given consent for organ and/or tissue donation or opted out of automatic donation where applicable. The location of the relevant information/documents.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+</table>
+
+ 
+
+
+
 
 ## Example Legal Information Section ##
 
