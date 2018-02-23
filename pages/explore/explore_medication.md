@@ -76,7 +76,12 @@ The Medications and medical devices section carries information about the patien
 <tr>
 <td>Medication change</td>
 <td>Where a change is made to the medication, ie, one drug stopped and another started, or, eg, dose, frequency or route is changed.</td>
-<li><b>Reason for medication change</b> - Reason for change in medication, eg, sub-therapeutic dose, patient intolerant.</li>
+<td>0..1</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Reason for medication change</td>
+<td>Reason for change in medication, eg, sub-therapeutic dose, patient intolerant.</td>
 <li><b>Medical devices</b> - The record of dietary supplements, dressings and equipment that the patient is currently taking or using.</li></ul>
 </td>
 </tr>
