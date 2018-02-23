@@ -56,7 +56,8 @@ The Medications and medical devices section carries information about the patien
 <td>required</td>
 </tr>
 <tr>
-<li><b>Do not discontinue warning</b> - To be used on a case-by-case basis if it is vital not to discontinue a medicine in a specific patient scenario.</td>
+<td>Do not discontinue warning</td>
+<td>To be used on a case-by-case basis if it is vital not to discontinue a medicine in a specific patient scenario.</td>
 <li><b>Reason for medication</b> - Reason for medication being prescribed, where known.</li>
 <li><b>Medication recommendations</b> - Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</li>
 <li><b>Medication change</b> - Where a change is made to the medication, ie, one drug stopped and another started, or, eg, dose, frequency or route is changed.</li>
