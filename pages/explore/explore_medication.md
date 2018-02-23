@@ -51,9 +51,7 @@ The Medications and medical devices section carries information about the patien
 </tr>
 <tr>
 <td>Additional instructions</td>
-<tr>Allows for:</tr>
-<td>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>d>
-<td></td>
+<td>Allows for: requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>
 <td></td>
 </tr>
 <tr>r
