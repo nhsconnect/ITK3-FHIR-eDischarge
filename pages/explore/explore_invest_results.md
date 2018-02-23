@@ -25,10 +25,9 @@ The Investigation results section carries information about investigation result
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
-<table>
+</table>
 
 ## Example Investigation Results Section ##
-
 
 <script src="https://gist.github.com/IOPS-DEV/72e6cca3707440c2299d7655b60a7b23.js"></script>
 
