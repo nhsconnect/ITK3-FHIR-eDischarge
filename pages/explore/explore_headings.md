@@ -94,7 +94,7 @@ Note: the examples of section HTML in this specification show only example html 
 		<td>
 			<a href="explore_distribution_list.html">Distribution list</a>
 		</td>
-		<td>N/A</td>
+		<td>887261000000109</td>
     	<td>1..1</td>
 		<td>Mandatory</td>
 		<td>0</td>
@@ -103,7 +103,7 @@ Note: the examples of section HTML in this specification show only example html 
 		<td>
 			<a href="explore_gp_practice.html">GP Practice</a>
 		</td>
-		<td>N/A</td>
+		<td>886711000000101</td>
     	<td>0..1</td>
 		<td>Optional</td>
 		<td>0</td>
@@ -175,7 +175,7 @@ Note: the examples of section HTML in this specification show only example html 
 		<td>
 			<a href="explore_patient_demographics.html">Patient demographics</a>
 		</td>
-		<td>N/A</td>
+		<td>886731000000109</td>
     	<td>1..1</td>
 		<td>Mandatory</td>
 		<td>0</td>
