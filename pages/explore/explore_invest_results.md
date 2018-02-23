@@ -10,9 +10,22 @@ summary: "Gives information about Investigation Results section"
 {% include custom/section.warnbanner.html %}
 
 ## Investigation Results Section Content ##
-The Investigation results section carries information about investigation results for the patient, items in bold are subheadings and should be formatted as such in any html sent:
+The Investigation results section carries information about investigation results for the patient, subheadings should be formatted as such in any html sent:
 
-- **Investigation results** The result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date), and plans for acting upon investigation results.
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Investigation results</td>
+<td>The result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date), and plans for acting upon investigation results.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<table>
 
 ## Example Investigation Results Section ##
 
