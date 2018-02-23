@@ -52,10 +52,12 @@ The Medications and medical devices section carries information about the patien
 <tr>
 <td>Additional instructions</td>
 <tr>Allows for:</tr>
-<td>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>
-<li>additional information about specific medicines, eg, where specific brand required</li>
-<li>patient requirements, eg, unable to swallow tablets.</li></ul>
-<li><b>Do not discontinue warning</b> - To be used on a case-by-case basis if it is vital not to discontinue a medicine in a specific patient scenario.</li>
+<td>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>d>
+<td></td>
+<td></td>
+</tr>
+<tr>r
+<li><b>Do not discontinue warning</b> - To be used on a case-by-case basis if it is vital not to discontinue a medicine in a specific patient scenario.</td>
 <li><b>Reason for medication</b> - Reason for medication being prescribed, where known.</li>
 <li><b>Medication recommendations</b> - Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</li>
 <li><b>Medication change</b> - Where a change is made to the medication, ie, one drug stopped and another started, or, eg, dose, frequency or route is changed.</li>
