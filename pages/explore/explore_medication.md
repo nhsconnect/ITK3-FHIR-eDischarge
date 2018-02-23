@@ -10,14 +10,48 @@ summary: "Gives information about the Medications and medical devices section"
 {% include custom/section.warnbanner.html %}
 
 ## Medications and Medical Devices Section Content ##
-The Medications and medical devices section carries information about the patient's medication , items in bold are subheadings and should be formatted as such in any html sent:
+The Medications and medical devices section carries information about the patient's medication , subheadings should be formatted as such in any html sent:
 
-<ul><li><b>Medication name,</b> - May be generic name or brand name (as appropriate).</li>
-<li><b>Medication form</b> - Eg capsule, drops, tablet, lotion etc.</li>
-<li><b>Route</b> - Medication administration description (oral, IM, IV, etc): may include method of administration (eg, by infusion, via nebuliser, via NG tube) and/or site of use (eg, ‘to wound’, ‘to left eye’, etc).</li>
-<li><b>Dose</b> - This is a record of the total amount of the active ingredient(s) to be given at each administration. It should include, eg, units of measurement, number of tablets, volume/concentration of liquid, number of drops, etc.</li>
-<li><b>Medication frequency</b> - Frequency of taking or administration of the therapeutic agent or medication.</li>
-<li><b>Additional instructions</b> - Allows for:</li>
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Medication name</td>
+<td>May be generic name or br>and name (as appropriate).</td
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Medication form<td>
+<td>Eg capsule, drops, tablet, lotion etc.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Route</td>
+<td>Medication administration description (oral, IM, IV, etc): may include method of administration (eg, by infusion, via nebuliser, via NG tube) and/or site of use (eg, ‘to wound’, ‘to left eye’, etc).</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Dose</td>
+<td>This is a record of the total amount of the active ingredient(s) to be given at each administration. It should include, eg, units of measurement, number of tablets, volume/concentration of liquid, number of drops, etc.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Medication frequency</td>
+<td>Frequency of taking or administration of the therapeutic agent or medication.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Additional instructions
+Allows for:
 <ul><li>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</li>
 <li>additional information about specific medicines, eg, where specific brand required</li>
 <li>patient requirements, eg, unable to swallow tablets.</li></ul>
@@ -27,6 +61,9 @@ The Medications and medical devices section carries information about the patien
 <li><b>Medication change</b> - Where a change is made to the medication, ie, one drug stopped and another started, or, eg, dose, frequency or route is changed.</li>
 <li><b>Reason for medication change</b> - Reason for change in medication, eg, sub-therapeutic dose, patient intolerant.</li>
 <li><b>Medical devices</b> - The record of dietary supplements, dressings and equipment that the patient is currently taking or using.</li></ul>
+</td>
+</tr>
+</table>
 
 
 ## Example Medications and Medical Devices Section ##
