@@ -10,7 +10,7 @@ summary: "Gives information about the Discharge details section"
 {% include custom/section.warnbanner.html %}
 
 ## Discharge Details Section Content##
-The Discharge details section carries details of the patient's discharge, items in bold are subheadings and should be formatted as such in any html sent:
+The Discharge details section carries details of the patient's discharge, subheadings should be formatted as such in any html sent:
 
 <table width="100%">
 <tr>

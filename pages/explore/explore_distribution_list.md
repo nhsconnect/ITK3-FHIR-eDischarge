@@ -10,17 +10,9 @@ summary: "A list of recipients of the document"
 
 
 ## Distribution List Section Content ##
-The Distribution list section is rendered from the Information Recipient Extension which references a number of resources for document recipients. The resources used are:
 
-- **[CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)** - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.
-- **[CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)** - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.
-- **[ITK-RelatedPerson-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-RelatedPerson-1)** - An NHS Digital profile which carries information for a person with a relationship with the patient.
-- **[CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)** - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.
 
-This is a standard extension for all ITK FHIR documents and therefore not all recipient types may be applicable to all document types. However receiving systems should be capable of rendering information from all the above resource types.
-
-The Recipient list section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Subheadings should be formatted as such in any html sent:
-: 
+The Distribution list section carries a list of recipients of the document subheadings should be formatted as such in any html sent:
 
 <table width="100%">
 <tr>
