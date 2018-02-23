@@ -91,7 +91,6 @@ The Medications and medical devices section carries information about the patien
 <td>0..1</td>
 <td>Required</td>
 </tr>
-<tr>
 </table>
 
 
