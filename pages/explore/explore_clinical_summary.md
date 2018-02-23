@@ -10,7 +10,7 @@ summary: "Gives information about the Clinical summary section"
 {% include custom/section.warnbanner.html %}
 
 ## Clinical Summary Section Content##
-The Clinical summary section carries a narrative summary of the episode. Where possible, very brief, subheadings should be formatted as such in any html sent:
+The Clinical summary section carries a narrative summary of the episode, where possible very brief. Subheadings should be formatted as such in any html sent:
 
 <table width="100%">
 <tr>
