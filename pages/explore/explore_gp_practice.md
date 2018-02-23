@@ -6,7 +6,7 @@ sidebar: foundations_sidebar
 permalink: explore_gp_practice.html
 summary: "Gives information about the patient's GP Practice"
 ---
-{% include custom/non_text_section.warnbanner.html %}
+{% include custom/section.warnbanner.html %}
 
 
 ## GP Practice Section Content##

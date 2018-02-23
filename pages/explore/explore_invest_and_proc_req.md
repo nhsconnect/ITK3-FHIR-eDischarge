@@ -10,7 +10,9 @@ summary: "Gives information about Investigations and procedures requested sectio
 {% include custom/section.warnbanner.html %}
 
 ## Investigations and Procedures Requested Section Content##
-The Investigations and procedures requested section carries information about investigations and procedures that have been requested for the patient, items in bold are subheadings and should be formatted as such in any html sent:
+The Investigations and procedures requested section carries information about investigations and procedures that have been requested for the patient, subheadings and should be formatted as such in any html sent:
+
+
 
 - **Investigations requested** - This includes a name or description of the investigation requested and the date requested.
 - **Procedures requested** - These are the diagnostic procedures that have actually been requested (and the date requested).

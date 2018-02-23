@@ -6,7 +6,7 @@ sidebar: foundations_sidebar
 permalink: explore_patient_demographics.html
 summary: "Gives information about the patient"
 ---
-{% include custom/non_text_section.warnbanner.html %}
+{% include custom/section.warnbanner.html %}
 
 
 ## Patient Demographics Section Content##

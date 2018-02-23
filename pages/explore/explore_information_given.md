@@ -33,8 +33,8 @@ about actions related to medicines or other ongoing care activities on an
 ‘information prescription’.
 State here if there are concerns about the extent to which the patient and/or carer
 understands the information provided about diagnosis, prognosis and treatment.</td>
-<td>x</td>
-<td>x</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
 </table>
 

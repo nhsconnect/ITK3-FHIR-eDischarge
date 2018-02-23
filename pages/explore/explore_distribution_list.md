@@ -6,7 +6,7 @@ sidebar: foundations_sidebar
 permalink: explore_distribution_list.html
 summary: "A list of recipients of the document"
 ---
-{% include custom/non_text_section.warnbanner.html %}
+{% include custom/section.warnbanner.html %}
 
 
 ## Distribution List Section Content ##
