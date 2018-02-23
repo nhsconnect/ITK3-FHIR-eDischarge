@@ -22,7 +22,7 @@ The Medications and medical devices section carries information about the patien
 
 <tr>
 <td>Medication name</td>
-<td>May be generic name or br>and name (as appropriate).</td>
+<td>May be generic name or brand name (as appropriate).</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
