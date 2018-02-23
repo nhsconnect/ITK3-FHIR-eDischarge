@@ -62,7 +62,12 @@ The Medications and medical devices section carries information about the patien
 <td>Required</td>
 </tr>
 <tr>
-<li><b>Reason for medication</b> - Reason for medication being prescribed, where known.</li>
+<td>Reason for medication</td>
+<td>Reason for medication being prescribed, where known.</td>
+<td>0..1</td>
+<td>Required</td>
+</tr>
+<tr>
 <li><b>Medication recommendations</b> - Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</li>
 <li><b>Medication change</b> - Where a change is made to the medication, ie, one drug stopped and another started, or, eg, dose, frequency or route is changed.</li>
 <li><b>Reason for medication change</b> - Reason for change in medication, eg, sub-therapeutic dose, patient intolerant.</li>
