@@ -26,7 +26,7 @@ The Medications and medical devices section carries information about the patien
 <td>Mandatory</td>
 </tr>
 <tr>
-<td>Medication form<td>
+<td>Medication form</td>
 <td>Eg capsule, drops, tablet, lotion etc.</td>
 <td>1..1</td>
 <td>Mandatory</td>
