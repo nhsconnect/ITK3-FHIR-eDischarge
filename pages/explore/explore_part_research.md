@@ -21,7 +21,7 @@ This is to flag participation in a clinical trial.Subheadings should be formatte
 </tr>
 <tr>
 <td>Participation in research</td>
-<td.This may include whether participation in a trial has been offered, refused or
+<td>This may include whether participation in a trial has been offered, refused or
 accepted, the name of the trial, drug/intervention tested, enrolment date, duration
 of treatment and follow up, and contact number for adverse events or queries.</td>
 <td>1..1</td>
