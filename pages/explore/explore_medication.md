@@ -82,9 +82,16 @@ The Medications and medical devices section carries information about the patien
 <tr>
 <td>Reason for medication change</td>
 <td>Reason for change in medication, eg, sub-therapeutic dose, patient intolerant.</td>
-<li><b>Medical devices</b> - The record of dietary supplements, dressings and equipment that the patient is currently taking or using.</li></ul>
-</td>
+<td>0..1</td>
+<td>Required</td>
 </tr>
+<tr>
+<td>Medical devices</td>
+<td>The record of dietary supplements, dressings and equipment that the patient is currently taking or using.</td>
+<td>0..1</td>
+<td>Required</td>
+</tr>
+<tr>
 </table>
 
 
