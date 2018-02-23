@@ -10,13 +10,24 @@ summary: "Gives information about the Participation in research section"
 {% include custom/section.warnbanner.html %}
 
 ## Participation in Research Section Content##
-This is to flag participation in a clinical trial.Items in bold are subheadings and should be formatted as such in any html sent:
+This is to flag participation in a clinical trial.Subheadings should be formatted as such in any html sent:
 
-- **Participation in research**
-
-This may include whether participation in a trial has been offered, refused or
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Participation in research</td>
+<td.This may include whether participation in a trial has been offered, refused or
 accepted, the name of the trial, drug/intervention tested, enrolment date, duration
-of treatment and follow up, and contact number for adverse events or queries. 
+of treatment and follow up, and contact number for adverse events or queries.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+</table> 
 
 ##  Example Participation in Research Section ##
 
