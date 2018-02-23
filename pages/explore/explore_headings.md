@@ -195,7 +195,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>887231000000104</td>
     	<td>1..1</td>
-		<td>M</td>
+		<td>Mandatory</td>
 		<td>0</td>
 	</tr>
 	<tr>
