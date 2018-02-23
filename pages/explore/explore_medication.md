@@ -50,9 +50,9 @@ The Medications and medical devices section carries information about the patien
 <td>Mandatory</td>
 </tr>
 <tr>
-<td>Additional instructions
+<td>Additional instructions</td>
 Allows for:
-<ul><li>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</li>
+<td>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>
 <li>additional information about specific medicines, eg, where specific brand required</li>
 <li>patient requirements, eg, unable to swallow tablets.</li></ul>
 <li><b>Do not discontinue warning</b> - To be used on a case-by-case basis if it is vital not to discontinue a medicine in a specific patient scenario.</li>
