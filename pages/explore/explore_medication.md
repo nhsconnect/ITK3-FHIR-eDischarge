@@ -51,7 +51,7 @@ The Medications and medical devices section carries information about the patien
 </tr>
 <tr>
 <td>Additional instructions</td>
-Allows for:
+<tr>Allows for:</tr>
 <td>requirements for adherence support, eg, compliance aids, prompts and packaging requirements</td>
 <li>additional information about specific medicines, eg, where specific brand required</li>
 <li>patient requirements, eg, unable to swallow tablets.</li></ul>
