@@ -47,6 +47,10 @@ The Patient demographics section contains information about the patient, sub hea
 <tr>
 <td>NHS number</td>
 <td>The unique identifier for a patient within the NHS in England and Wales.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
 <td>Other identifier</td>
 <td>Country specific or local identifier, eg, Community Health Index (CHI) in Scotland.
 Two data items:type of identifier and identifier</td>
