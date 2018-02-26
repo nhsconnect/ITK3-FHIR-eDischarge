@@ -43,6 +43,7 @@ The Person completing record section carries information about the person who co
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
+<tr>
 <td>Date completed</td>
 <td></td>
 <td>1..1</td>
