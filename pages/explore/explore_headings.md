@@ -101,7 +101,7 @@ Note: the examples of section HTML in this specification show only example html 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_gp_practice.html">GP Practice</a>
+			<a href="explore_gp_practice.html">GP practice</a>
 		</td>
 		<td>886711000000101</td>
     	<td>0..1</td>

@@ -11,7 +11,7 @@ summary: "Gives information about the patient's GP Practice"
 
 ## GP Practice Section Content##
 
-The GP Practice section contains details of the patients GP practice, subheadings should be rendered as such in any html sent:
+The GP practice section contains details of the patients GP practice, subheadings should be rendered as such in any html sent:
  
 <table width="100%">
 <tr>

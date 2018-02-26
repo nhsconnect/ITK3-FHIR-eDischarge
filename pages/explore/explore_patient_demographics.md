@@ -11,16 +11,28 @@ summary: "Gives information about the patient"
 
 ## Patient Demographics Section Content##
 
-The Patient demographics section is rendered from the patient resource.The resource used is:
- 
-- **[CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)** - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.
+The Patient demographics section contains information about the patient, sub headings should be rendered as such in any html sent.
 
-Items in bold are subheadings and should be formatted as such when rendered: 
-
-<ul>
-<li><b>Patient name</b></li>
-The full name of the patient.
-Also patient preferred name: the name by which a patient wishes to be addressed.
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Patient name</td>
+<td>The full name of the patient.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Patient preferred name</td>
+<td>The name by which a patient wishes to be addressed.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
 <li><b>Date of birth</b></li>
 The date of birth of the patient.
 <li><b>Patient sex</b></li>
