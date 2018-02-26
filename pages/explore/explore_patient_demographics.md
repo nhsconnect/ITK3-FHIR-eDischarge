@@ -71,7 +71,7 @@ Two data items:type of identifier and identifier</td>
 </tr>
 <tr>
 <td>Patient telephone number</td>
-<td>Telephone contact details of the person. To include, eg, mobile, work and home number if available.<td>
+<td>Telephone contact details of the person. To include, eg, mobile, work and home number if available.</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
