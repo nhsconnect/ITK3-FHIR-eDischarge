@@ -26,7 +26,11 @@ The Plan and requested actions section carries information about planned and req
 <li>status - requested, planned or completed.</li> 
 <li>When action requested for - requested date, time, or period - as relevant.</li>                                                       <li>suggested strategies - suggested strategies for potential problems.</li>
 <li>outcome expectations, including patient’s expectations.</li>
+</ol>
 </td>
+<td>1..1</td>
+<td>Mandatory</td>
+
 </tr>
 </table>
 
