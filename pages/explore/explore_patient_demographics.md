@@ -33,34 +33,59 @@ The Patient demographics section contains information about the patient, sub hea
 <td>Mandatory</td>
 </tr>
 <tr>
-<li><b>Date of birth</b></li>
-The date of birth of the patient.
-<li><b>Patient sex</b></li>
-Sex at birth. Determines how the individual will be treated clinically.
-<li><b>Gender</b></li>
-As the patient wishes to portray themselves.
-<li><b>Ethnicity</b></li>
-The ethnicity of a person as specified by the person.
-<li><b>NHS number</b></li>
-The unique identifier for a patient within the NHS in England and Wales.
-<li><b>Other identifier</b></li>
-Country specific or local identifier, eg, Community Health Index (CHI) in Scotland.
-Two data items:
-<ol>
-<li>type of identifier</li>
-<li>identifier</li>
-</ol>
-<li><b>Patient address</b></li>
-Patient usual place of residence.
-<li><b>Patient telephone number</b></li>
-Telephone contact details of the person. To include, eg, mobile, work and home number if available.
-Two data items:
-<ol><li>type</li>
-<li>number</li>
-</ol>
-<li><b>Patient email address</b></li>
-Email address of the patient.</ul>
-
+<td>Date of birth</td>
+<td>The date of birth of the patient.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>As the patient wishes to portray themselves.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>NHS number</td>
+<td>The unique identifier for a patient within the NHS in England and Wales.</td>
+<td>Other identifier</td>
+<td>Country specific or local identifier, eg, Community Health Index (CHI) in Scotland.
+Two data items:type of identifier and identifier</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Patient address</td>
+<td>Patient usual place of residence.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Patient email address</td>
+<td>Email address of the patient</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Patient telephone number</td>
+<td>Telephone contact details of the person. To include, eg, mobile, work and home number if available.<td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Relevant contacts</td>
+<td>"Include the most important contacts including:<br/>
+Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependants, informal carers etc.<br/>
+Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, key worker, Independent Mental Capacity Advocate (IMCA) etc. Name, relationship, role (if formal role), contact details and availability, e.g. out of hours.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Communication preferences</td>
+<td>Preferred contact method, eg, sign language, letter, phone, etc. Also preferred written communication format, eg, large print, braille.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+</table>
 
 ## Example Patient Demographics Using Patient Resource ##
 
