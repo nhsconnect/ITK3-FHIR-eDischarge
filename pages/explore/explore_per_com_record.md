@@ -10,14 +10,45 @@ summary: "Gives information about the Person completing record section"
 {% include custom/section.warnbanner.html %}
 
 ## Person Completing Record Section Content##
-The Person completing record section carries information about the person who completed the record. Items in bold are subheadings and should be formatted as such in any html sent:
+The Person completing record section carries information about the person who completed the record.Subheadings  should be formatted as such in any html sent.
 
-- **Name** 
-- **Designation or role**
-- **Grade**
-- **Specialty**
-- **Date completed**
-
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Name</td>
+<td></td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Designation or role</td>
+<td></td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Grade</td>
+<td></td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Specialty</td>
+<td></td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<td>Date completed</td>
+<td></td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+</table> 
 
 ## Example Person Completing Record Section ##
 
