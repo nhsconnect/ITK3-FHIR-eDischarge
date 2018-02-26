@@ -10,18 +10,25 @@ summary: "Gives information about the Plan and requested actions section"
 {% include custom/section.warnbanner.html %}
 
 ## Plan and Requested Actions Content ##
-The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc, items in bold are subheadings and should be formatted as such in any html sent:
+The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc, subheadings should be formatted as such in any html sent:
 
-<ul><li><b>Actions</b> - Including planned investigations, procedures and treatment for a patient’s identified conditions and priorities:</li>
-<ul><li>person responsible - name and designation/department/hospital/patient/etc responsible for carrying out the proposed action, and where action should take place</li>
-<li>action – requested, planned or completed</li>
-<li>When action requested for – requested date, time, or period – as relevant</li>
-<li>suggested strategies – suggested strategies for potential problems, eg, telephone
-contact for advice.</li>
-</ul>
-<li><b>Agreed with patient or legitimate patient representative</b> - Indicates whether the patient or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments if any (yes/no).</li>
-
-</ul>
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Actions</td>
+<td>Including planned investigations, procedures, Interventions and treatment for a patient’s identified conditions and priorities. For each action the following should be identified: 
+<ol><li>person responsible - name and designation / department / hospital / patient etc or role (eg GP) responsible for carrying out the proposed action, and where action should take place.</li>
+<li>status - requested, planned or completed.</li> 
+<li>When action requested for - requested date, time, or period - as relevant.</li>                                                       <li>suggested strategies - suggested strategies for potential problems.</li>
+<li>outcome expectations, including patient’s expectations.</li>
+</td>
+</tr>
+</table>
 
 ##  Example Plan and Requested Actions Section ##
 
