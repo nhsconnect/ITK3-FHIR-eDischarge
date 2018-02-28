@@ -12,7 +12,20 @@ summary: "Gives information about the Referrer details section"
 ## Referrer Details Section Content##
 The Referrer details section carries a narrative summary of the episode. Where possible, very brief,items in bold are subheadings and should be formatted as such in any html sent:
 
-- **Referrer details** - Name, designation, organisation and contact details of referrer. If not an individual, this could be, eg, GP surgery, department, specialty, subspecialty, educational institution, mental health etc. Also needs to include self-referral.
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Referrer details</td>
+<td>Name, designation, organisation and contact details of referrer. If not an individual, this could be, eg, GP surgery, department, specialty, subspecialty, educational institution, mental health etc. Also needs to include self-referral.</td>
+<td>0..1</td>
+<td>Optional</td>
+</tr>
+</table>
 
 ##  Example Referrer Details Section ##
 
