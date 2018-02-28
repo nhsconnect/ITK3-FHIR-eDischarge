@@ -26,7 +26,6 @@ The Procedures section carries information about the procedures that have been p
 <td>Mandatory</td>
 </tr>
 <tr>
-</
 td>Complications related to procedure</td>
 <td>Details of any intra-operative complications encountered during the procedure, arising during the patient’s stay in the recovery unit or directly attributable to the procedure. The intent is to be plain text and/or images but use codes wherever possible.</td>
 <td>1..1</td>
