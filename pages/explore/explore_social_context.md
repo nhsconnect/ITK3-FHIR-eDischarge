@@ -21,7 +21,7 @@ The Social context section carries information about the social context of the p
 </tr>
 <tr>
 <td>Household composition</td>
-<td>Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.>/td>
+<td>Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
