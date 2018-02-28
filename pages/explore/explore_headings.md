@@ -42,7 +42,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>886781000000108</td>
 	    <td>0..1</td>
-		<td>Optional</td>	
+		<td>Required</td>	
 		<td>1</td>
 	</tr>
 	<tr>
@@ -52,7 +52,7 @@ Note: the examples of section HTML in this specification show only example html 
 		<td>886921000000105</td>
 		<td>1..1</td>
 		<td>Mandatory</td>
-		<td>3</td>
+		<td>2</td>
 	</tr>
 	<tr>
 		<td>
@@ -78,16 +78,16 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>887161000000102</td>
     	<td>1..1</td>
-		<td>Required</td>
-		<td>1</td>
+		<td>Mandatory</td>
+		<td>2</td>
 	</tr>
 	<tr>
 		<td>
 			<a href="explore_discharge_details.html">Discharge details</a>
 		</td>
 		<td>886811000000106</td>
-    	<td>1..1</td>
-		<td>Mandatory</td>
+    	<td>0..1</td>
+		<td>Required</td>
 		<td>1</td>
 	</tr>
 	<tr>
@@ -95,18 +95,18 @@ Note: the examples of section HTML in this specification show only example html 
 			<a href="explore_distribution_list.html">Distribution list</a>
 		</td>
 		<td>887261000000109</td>
-    	<td>1..1</td>
-		<td>Mandatory</td>
-		<td>0</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>4</td>
 	</tr>
 	<tr>
 		<td>
 			<a href="explore_gp_practice.html">GP practice</a>
 		</td>
 		<td>886711000000101</td>
-    	<td>0..1</td>
-		<td>Optional</td>
-		<td>0</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>2</td>
 	</tr>
 	<tr>
 		<td>
@@ -114,7 +114,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>1052901000000109</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
@@ -123,16 +123,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>1052951000000105</td>
     	<td>0..1</td>
-		<td>Optional</td>
-		<td>0</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a>
-		</td>
-		<td>1064471000000105</td>
-    	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
@@ -150,17 +141,17 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>886961000000102</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_medication.html">Medications and medical devices</a>
+			<a href="explore_medication.html">Medications and Medical Devices</a>
 		</td>
 		<td>933361000000108</td>
     	<td>0..1</td>
 		<td>Optional</td>
-		<td>3</td>
+		<td>2</td>
 	</tr>
 	<tr>
 		<td>
@@ -178,7 +169,7 @@ Note: the examples of section HTML in this specification show only example html 
 		<td>886731000000109</td>
     	<td>1..1</td>
 		<td>Mandatory</td>
-		<td>0</td>
+		<td>1</td>
 	</tr>
 	<tr>
 		<td>
@@ -186,7 +177,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>1052941000000107</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
@@ -204,7 +195,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>887201000000105</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
@@ -222,7 +213,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>1052891000000108</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
@@ -231,7 +222,7 @@ Note: the examples of section HTML in this specification show only example html 
 		</td>
 		<td>886931000000107</td>
     	<td>0..1</td>
-		<td>Optional</td>
+		<td>Required</td>
 		<td>0</td>
 	</tr>
 	<tr>
