@@ -33,7 +33,7 @@ The Social context section carries information about the social context of the p
 </tr>
 <tr>
 <td>Educational history</td>
-<td>The current and/or previous relevant educational history of the patient/individual.</TD>
+<td>The current and/or previous relevant educational history of the patient/individual.</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
