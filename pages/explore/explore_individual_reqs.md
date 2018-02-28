@@ -9,7 +9,7 @@ summary: "Gives information about the Individual requirements section"
 
 {% include custom/section.warnbanner.html %}
 
-## Individual Requirements Content ##
+## Individual Requirements Section Content ##
 The Individual requirements section carries information about the individual requirements of the patient,items in bold are subheadings and should be formatted as such in any html sent:
 
 
