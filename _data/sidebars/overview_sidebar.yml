@@ -111,9 +111,9 @@ entries:
         - title: Information and advice given
           url: /explore_information_given.html
           output: web
-        - title: Investigations and procedures requested
-          url: /explore_invest_and_proc_req.html
-          output: web
+        # - title: Investigations and procedures requested
+          # url: /explore_invest_and_proc_req.html
+          # output: web
         - title: Investigation results
           url: /explore_invest_results.html
           output: web
