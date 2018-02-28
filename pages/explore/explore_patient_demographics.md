@@ -10,7 +10,6 @@ summary: "Gives information about the patient"
 
 
 ## Patient Demographics Section Content##
-
 The Patient demographics section contains information about the patient, sub headings should be rendered as such in any html sent.
 
 <table width="100%">
