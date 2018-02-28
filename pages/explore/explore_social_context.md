@@ -10,11 +10,32 @@ summary: "Gives information about the Social context section"
 {% include custom/section.warnbanner.html %}
 
 ## Social Context Section Content##
-The Social context section carries information about the social context of the patient,items in bold are subheadings and should be formatted as such in any html sent:
+The Social context section carries information about the social context of the patient, subheadings should be formatted as such in any html sent:
 
-- **Household composition** - Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.
-- **Lives alone** - Yes/no/don’t know (Y/N/DK).
-- **Occupational history** - The current and/or previous relevant occupation(s) of the patient/individual. This may include educational history.
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Household composition<td>
+<td>Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.>/td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<td>Occupational history</td>
+<td>The current and/or previous relevant occupation(s) of the patient/individual.</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<td>Educational history</td>
+<td>The current and/or previous relevant educational history of the patient/individual.</TD>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+</table>
 
 ##  Example Social Context Section ##
 
