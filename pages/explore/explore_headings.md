@@ -241,7 +241,7 @@ Note: the examples of section HTML in this specification show only example html 
 This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text. 
 
 
-<img src="images/explore/eDIS_composition_overview.png" style="height:90%;max-height: 90%;"/>
+<img src="images/explore/eDIS_composition_overview.png" style="height:80%;max-height: 80%;"/>
 
 
 
