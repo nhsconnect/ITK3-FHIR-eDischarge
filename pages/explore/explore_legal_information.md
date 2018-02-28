@@ -10,6 +10,7 @@ summary: "Gives information about the Legal information section"
 {% include custom/section.warnbanner.html %}
 
 ## Legal Information Section Content ##
+The Legal information section carries information about about legal information relevant to the patient, subheadings should be formatted as such in any html sent:
 
 <table width="100%">
 <tr>
