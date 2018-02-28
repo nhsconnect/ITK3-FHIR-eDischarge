@@ -238,7 +238,9 @@ Note: the examples of section HTML in this specification show only example html 
 
 
 ## Overview of eDischarge Sections and Coded profiles ##
-This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text. 
+This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text.
+
+Due to the size of the image, this example is best viewed with the navigation side bar switched off <img src="images/engage/nav_shot.png" style="width:8%;max-width: 8%;">.
 
 
 <img src="images/explore/eDIS_composition_overview.png" style="width:auto;height: auto;"/>
