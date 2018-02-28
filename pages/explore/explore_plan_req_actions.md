@@ -20,17 +20,49 @@ The Plan and requested actions section carries information about planned and req
 <th width="15%">Conformance</th>
 </tr>
 <tr>
-<td>Actions</td>
-<td>Including planned investigations, procedures, Interventions and treatment for a patient’s identified conditions and priorities. For each action the following should be identified: 
-<ol><li>person responsible - name and designation / department / hospital / patient etc or role (eg GP) responsible for carrying out the proposed action, and where action should take place.</li>
-<li>status - requested, planned or completed.</li> 
-<li>When action requested for - requested date, time, or period - as relevant.</li>                                                       <li>suggested strategies - suggested strategies for potential problems.</li>
-<li>outcome expectations, including patient’s expectations.</li>
+<td>Actions for healthcare professionals
+</td>
+<td>Including planned investigations, procedures, interventions and treatment for a patient’s identified conditions and priorities. For each action the following should be identified: 
+<ol><li>Person responsible - name and designation / department / hospital / patient etc or role (eg GP) responsible for carrying out the proposed action, and where action should take place.</li>
+<li>Status - requested, planned or completed.</li> 
+<li>When action requested for - requested date, time, or period - as relevant.</li>                                                       <li>Suggested strategies - suggested strategies for potential problems.</li>
+<li>Outcome expectations, including patient’s expectations.</li>
 </ol>
 </td>
 <td>1..1</td>
 <td>Mandatory</td>
-
+</tr>
+<tr>
+<td>Actions for patient or their carer</td>
+<td>"For each action the following should be identified:                                                    a) person responsible - name and designation eg patient or carer responsible for carrying out the proposed action, and where action should take place.
+b) status - requested, planned or completed.                                              c)  When action requested for - requested date, time, or period - as relevant.                                                       d) suggested strategies - suggested strategies for potential problems, eg telephone contact for advice.
+e) outcome expectations, including patient’s expectations. "
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Agreed with patient or legitimate patient representative
+</td>
+<td>Indicates whether the patient or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments.
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Investigations requested
+</td>
+<td>This includes a name or description of the investigation requested and the date requested. </td>  
+<td>1..1</td>
+<td>Mandatory</td>
+</tr>
+<tr>
+<td>Procedures requested
+</td>
+<td>These are the diagnostic or therapeutic procedures that have actually been requested (and the date requested).
+</td>
+<td>1..1</td>
+<td>Mandatory</td>
 </tr>
 </table>
 
