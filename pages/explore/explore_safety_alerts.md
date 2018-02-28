@@ -10,10 +10,28 @@ summary: "Gives information about the Safety alerts section"
 {% include custom/section.warnbanner.html %}
 
 ## Safety Alerts Section Content##
-The Safety alerts section carries safety alerts associated with the patient,items in bold are subheadings and should be formatted as such in any html sent:
+The Safety alerts section carries safety alerts associated with the patient, subheadings should be formatted as such in any html sent:
 
-- **Risks to self** - Risks the patient poses to themself, eg, suicide, overdose, self-harm, self-neglect.
-- **Risks to others** - Risks to care professional or third party.
+<table width="100%">
+<tr>
+<th width="25%">Sub-section</th>
+<th width="45%">Description</th>
+<th width="15%">Cardinally</th>
+<th width="15%">Conformance</th>
+</tr>
+<tr>
+<td>Risks to self</td>
+<td>Risks the patient poses to themself, eg, suicide, overdose, self-harm, self-neglect.</td>
+<td>0..1</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Risks to others</td>
+<td>Risks to care professional or third party.</td>
+<td>0..1</td>
+<td>Required</td>
+</tr>
+</table>
 
 ##  Example Safety Alerts Section ##
 
