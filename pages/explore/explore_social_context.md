@@ -20,16 +20,18 @@ The Social context section carries information about the social context of the p
 <th width="15%">Conformance</th>
 </tr>
 <tr>
-<td>Household composition<td>
+<td>Household composition</td>
 <td>Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.>/td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
+<tr>
 <td>Occupational history</td>
 <td>The current and/or previous relevant occupation(s) of the patient/individual.</td>
 <td>1..1</td>
 <td>Mandatory</td>
 </tr>
+<tr>
 <td>Educational history</td>
 <td>The current and/or previous relevant educational history of the patient/individual.</TD>
 <td>1..1</td>
