@@ -42,7 +42,7 @@ The Diagnoses section carries information about Diagnoses, elements should be fo
 			<td>Confirmed diagnosis (or symptom); active diagnosis being treated.</td>
 			<td>1 only</td>
 			<td>mandatory</td>
-			<td>Choice of free text or text derived from SNOMED CT</td>
+			<td>Choice of free text or text derived from SNOMED CT concepts</td>
 		<tr>
 			<td>Stage</td>
 			<td>Stage of the disease, where relevant</td>
