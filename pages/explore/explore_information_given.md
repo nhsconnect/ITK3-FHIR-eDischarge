@@ -10,7 +10,7 @@ summary: "Gives information about the Information and advice given section"
 {% include custom/section.warnbanner.html %}
 
 ## Information and Advice Given Section Content##
-The Information and advice given section carries information and advice given, elements should be formatted as sub headings in any html sent.
+The Information and advice given section carries information and advice given. Elements should be formatted as subheadings in any html sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

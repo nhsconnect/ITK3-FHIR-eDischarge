@@ -10,7 +10,7 @@ summary: "Gives information about the Admission details section"
 {% include custom/section.warnbanner.html %}
 
 ## Admission Details Section Content##
-The Admission details section carries information about the patient's admission, elements should be formatted as sub headings in any html sent.
+The Admission details section carries information about the patient's admission. Elements should be formatted as sub headings in any html sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

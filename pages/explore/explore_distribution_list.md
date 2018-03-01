@@ -12,7 +12,7 @@ summary: "A list of recipients of the document"
 ## Distribution List Section Content ##
 
 
-The Distribution list section carries a list of recipients of the document subheadings should be formatted as such in any html sent:
+The Distribution list section carries a list of recipients of the document. Elements should be formatted as subheadings in any html sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

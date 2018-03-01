@@ -10,7 +10,7 @@ summary: "Gives information about Investigation Results section"
 {% include custom/section.warnbanner.html %}
 
 ## Investigation Results Section Content ##
-The Investigation results section carries information about investigation results for the patient, elements should be formatted as sub headings in any html sent.
+The Investigation results section carries information about investigation results for the patient. Elements should be formatted as sub headings in any html sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

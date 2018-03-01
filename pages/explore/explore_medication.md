@@ -10,7 +10,7 @@ summary: "Gives information about the Medications and medical devices section"
 {% include custom/section.warnbanner.html %}
 
 ## Medications and Medical Devices Section Content ##
-The Medications and medical devices section carries information about the patient's medication , subheadings should be formatted as such in any html sent. Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](https://nhsconnect.github.io/ITK-FHIR-eDischarge/build_medication_lists.html) should be consulted for further information. 
+The Medications and medical devices section carries information about the patient's medication. Elements should be formatted as subheadings in any html sent. Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](https://nhsconnect.github.io/ITK-FHIR-eDischarge/build_medication_lists.html) should be consulted for further information. 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

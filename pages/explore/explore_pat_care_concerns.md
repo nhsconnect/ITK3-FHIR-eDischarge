@@ -10,7 +10,7 @@ summary: "Gives information about the Patient and carer concerns, expectations a
 {% include custom/section.warnbanner.html %}
 
 ## Patient and Carer Concerns, Expectations and Wishes Section Content##
-The Patient and carer concerns, expectations and wishes section carries information about the concerns of the patient or their representative. Subheadings should be formatted as such in any html sent:
+The Patient and carer concerns, expectations and wishes section carries information about the concerns of the patient or their representative. Elements should be formatted as subheadings in any html sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
