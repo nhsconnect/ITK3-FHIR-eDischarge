@@ -10,60 +10,69 @@ summary: "Gives information about the Plan and requested actions section"
 {% include custom/section.warnbanner.html %}
 
 ## Plan and Requested Actions Section Content ##
-The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc, subheadings should be formatted as such in any html sent:
+The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc, elements should be formatted as sub headings in any html sent.
 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-<tr>
-<td>Actions for healthcare professionals
-</td>
-<td>Including planned investigations, procedures, interventions and treatment for a patient’s identified conditions and priorities. For each action the following should be identified: 
-<ol><li>Person responsible - name and designation / department / hospital / patient etc or role (eg GP) responsible for carrying out the proposed action, and where action should take place.</li>
-<li>Status - requested, planned or completed.</li> 
-<li>When action requested for - requested date, time, or period - as relevant.</li>                                                       <li>Suggested strategies - suggested strategies for potential problems.</li>
-<li>Outcome expectations, including patient’s expectations.</li>
-</ol>
-</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Actions for patient or their carer</td>
-<td>"For each action the following should be identified:                                                    a) person responsible - name and designation eg patient or carer responsible for carrying out the proposed action, and where action should take place.
-b) status - requested, planned or completed.                                              c)  When action requested for - requested date, time, or period - as relevant.                                                       d) suggested strategies - suggested strategies for potential problems, eg telephone contact for advice.
-e) outcome expectations, including patient’s expectations. "
-</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Agreed with patient or legitimate patient representative
-</td>
-<td>Indicates whether the patient or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments.
-</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Investigations requested
-</td>
-<td>This includes a name or description of the investigation requested and the date requested. </td>  
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Procedures requested
-</td>
-<td>These are the diagnostic or therapeutic procedures that have actually been requested (and the date requested).
-</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
+<table style="width:100%;max-width: 100%;">
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Plan and requested actions</td>
+			<td>The details of planned investigations, procedures and treatment, and whether this plan has been agreed with the patient or their legitimate representative.</td>
+			<td>0 to 1</td>
+			<td>required</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Actions for healthcare professionals</td>
+			<td>Including planned investigations, procedures and treatment for a patient's identified conditions and priorities. For each action the following should be identified:outcome expectations, including patient's expectations</td>
+			<td>0 to many</td>
+			<td>required</td>
+			<td>A record of the planned and requested actions. May be structured (table), with actions, names, dates, status, location, strategies, or free text</td>
+		</tr>
+		<tr>
+			<td>Actions for patient or their carer</td>
+			<td>For each action the following should be identified:outcome expectations, including patient's expectations.</td>
+			<td>0 to many</td>
+			<td>required</td>
+			<td>A record of the planned and requested actions. May be structured (table), with actions, names, dates, status, location, strategies, or free text.</td>
+		</tr>
+		<tr>
+			<td>Agreed with patient or legitimate patient representative</td>
+			<td>Indicates whether the patient or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments.</td>
+			<td>0 to 1</td>
+			<td>required</td>
+			<td>A record of the agreement of the decisions made. Text</td>
+		</tr>
+		<tr>
+			<td>Investigations requested</td>
+			<td>This includes a name or description of the investigation requested and the date requested.</td>
+			<td>0 to many</td>
+			<td>optional</td>
+			<td>Text. Plus date requested.</td>
+		</tr>
+		<tr>
+			<td>Procedures requested</td>
+			<td>These are the diagnostic or therapeutic procedures that have actually been requested (and the date requested).</td>
+			<td>0 to many</td>
+			<td>optional</td>
+			<td>Text. Plus date requested</td>
+		</tr>
+	</tbody>
 </table>
 
 ##  Example Plan and Requested Actions Section ##
