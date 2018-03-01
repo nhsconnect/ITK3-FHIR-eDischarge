@@ -10,22 +10,43 @@ summary: "Gives information about Investigation Results section"
 {% include custom/section.warnbanner.html %}
 
 ## Investigation Results Section Content ##
-The Investigation results section carries information about investigation results for the patient, subheadings should be formatted as such in any html sent:
+The Investigation results section carries information about investigation results for the patient, elements should be formatted as sub headings in any html sent.
 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-<tr>
-<td>Investigation results</td>
-<td>The result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date), and plans for acting upon investigation results.</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
+<table>
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Investigation results</td>
+			<td>A record of investigations and procedures requested, results and plans.</td>
+			<td>0 to 1</td>
+			<td>optional</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Investigation result</td>
+			<td>For each investigation, the result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date, and plans for acting upon investigation results.</td>
+			<td>0 to many</td>
+			<td>optional</td>
+			<td>If possible, this should include only results which are important or relevant to communicate to the GP. Hence health professional may need to select them. Text. (Note that work is underway to standardise recording of pathology investigation results, which will inform content under this heading.)</td>
+		</tr>
+	</tbody>
 </table>
+
 
 ## Example Investigation Results Section ##
 
