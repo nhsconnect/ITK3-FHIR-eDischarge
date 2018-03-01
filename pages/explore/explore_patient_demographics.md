@@ -15,11 +15,11 @@ The Patient demographics section contains information about the patient, sub hea
 <table>
 	<thead>
 		<tr>
-			<th width="20%">Section</th>
-			<th width="28%">Description</th>
-			<th width="12%">Cardinality</th>
-			<th width="12%">MRO*</th>
-			<th width="28%">Values</th>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,11 +31,11 @@ The Patient demographics section contains information about the patient, sub hea
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Element</td>
-			<td>Description</td>
-			<td>Cardinality</td>
-			<td>MRO*</td>
-			<td>Values</td>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
 		</tr>
 		<tr>
 			<td>Patient name</td>
