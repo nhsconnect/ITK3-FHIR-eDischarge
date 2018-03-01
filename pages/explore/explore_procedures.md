@@ -10,7 +10,7 @@ summary: "Gives information about the Procedures section"
 {% include custom/section.warnbanner.html %}
 
 ## Procedures Section Content##
-The Procedures section carries information about the procedures that have been performed on the patient, subheadings should be formatted as such in any html sent:
+The Procedures section carries information about the procedures that have been performed on the patient, elements should be formatted as sub headings in any html sent.
 
 <table>
 	<thead>

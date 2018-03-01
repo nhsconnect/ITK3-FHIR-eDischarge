@@ -10,21 +10,41 @@ summary: "Gives information about the Clinical summary section"
 {% include custom/section.warnbanner.html %}
 
 ## Clinical Summary Section Content##
-The Clinical summary section carries a narrative summary of the episode, where possible very brief. Subheadings should be formatted as such in any html sent:
+The Clinical summary section carries a narrative summary of the episode, where possible very brief, elements should be formatted as sub headings in any html sent.
 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-<tr>
-<td>Clincal summary</td>
-<td>This may include interpretation of findings and results; differential diagnoses, opinion and specific action(s). Planned actions will be recorded under ‘plan’.</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
+<table>
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Clinical summary</td>
+			<td>A brief description of the encounter.</td>
+			<td>1 only</td>
+			<td>mandatory</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Clinical summary</td>
+			<td>Summary of the encounter. Where possible, very brief. This may include interpretation of findings and results; differential diagnoses, opinion and specific action(s). Planned actions will be recorded under 'plan'.</td>
+			<td>1 only</td>
+			<td>mandatory</td>
+			<td>Free text</td>
+		</tr>
+	</tbody>
 </table>
 
 ##  Example Clinical Summary Section ##
