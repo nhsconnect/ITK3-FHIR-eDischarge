@@ -98,6 +98,8 @@ The Medications and medical devices section carries information about the patien
 			<td>A plain text description of medication dose frequency, as described in the AoMRC medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description</td>
 			<td>0 to 1</td>
 			<td>optional</td>
+		</tr>
+		<tr>
 			<td>Text Parsable dose directions *** A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</td>
 			<td>0 to 1</td>
 			<td>optional</td>
