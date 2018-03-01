@@ -19,7 +19,7 @@ The Patient demographics section contains information about the patient, sub hea
 			<th width="28%">Description</th>
 			<th width="12%">Cardinality</th>
 			<th width="12%">MRO*</th>
-			<th width="48%">Values</th>
+			<th width="28%">Values</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -63,20 +63,14 @@ The Patient demographics section contains information about the patient, sub hea
 			<td>The patient's gender.  As the patient wishes to portray themselves.</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>0 Not known1 Male2 Female9 Not specified</td>
+			<td>0 Not known 1 Male 2 Female 9 Not specified</td>
 		</tr>
 		<tr>
 			<td>NHS number</td>
 			<td>The unique identifier for a patient within the NHS in England and Wales.</td>
-			<td>0 to 1</td>
+			<td>0 to 1</td> 
 			<td>required</td>
-			<td>"Sent as per the NHS Data Dictionary NHS number.</td>
-		</tr>
-		<tr>
-			<td>        </td>
-		</tr>
-		<tr>
-			<td>      Traced NHS Numbers only should be used."</td>
+			<td>"Sent as per the NHS Data Dictionary NHS number.Traced NHS Numbers only should be used."</td>
 		</tr>
 		<tr>
 			<td>Other identifier</td>
