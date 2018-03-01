@@ -10,7 +10,7 @@ summary: "Gives information about the Social context section"
 {% include custom/section.warnbanner.html %}
 
 ## Social Context Section Content##
-The Social context section carries information about the social context of the patient, elements should be rendered as sub headings in any html sent.
+The Social context section carries information about the social context of the patient, elements should be formatted as sub headings in any html sent.
 
 <table>
 	<thead>
