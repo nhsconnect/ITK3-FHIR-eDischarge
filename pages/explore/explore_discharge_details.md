@@ -73,11 +73,11 @@ The Discharge details section carries details of the patient's discharge, elemen
 			<td>A code from the NHS Data Dictionary Discharge Method code</td>
 		</tr>
 		<tr>
-			<td>Discharge destination cluster</td>
-			<td>The destination of the patient on discharge. National codes. Eg, High Dependency Unit.</td>
-			<td>0 to 1</td>
-			<td>required</td>
-			<td>&nbsp;</td>
+			<th>Discharge destination cluster</th>
+			<th>The destination of the patient on discharge. National codes. Eg, High Dependency Unit.</th>
+			<th>0 to 1</th>
+			<th>required</th>
+			<th>&nbsp;</th>
 		</tr>
 		<tr>
 			<td>Discharge type</td>
