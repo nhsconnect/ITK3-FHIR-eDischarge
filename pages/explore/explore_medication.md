@@ -12,7 +12,7 @@ summary: "Gives information about the Medications and medical devices section"
 ## Medications and Medical Devices Section Content ##
 The Medications and medical devices section carries information about the patient's medication , subheadings should be formatted as such in any html sent:
 
-<table>
+<table width="100%">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>
