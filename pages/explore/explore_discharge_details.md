@@ -12,7 +12,7 @@ summary: "Gives information about the Discharge details section"
 ## Discharge Details Section Content##
 The Discharge details section carries details of the patient's discharge, elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>

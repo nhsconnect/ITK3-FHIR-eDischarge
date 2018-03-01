@@ -12,7 +12,7 @@ summary: "Gives information about the Referrer details section"
 ## Referrer Details Section Content##
 The Referrer details section carries a narrative summary of the episode. Where possible, very brief,elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="15%">Section</th>

@@ -12,7 +12,7 @@ summary: "Gives information about the Participation in research section"
 ## Participation in Research Section Content##
 This is to flag participation in a clinical trial, elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>

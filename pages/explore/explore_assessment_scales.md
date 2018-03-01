@@ -12,7 +12,7 @@ summary: "Gives information about the Assessment scales section"
 ## Assessment Scales Section Content##
 The Assessment scales section carries information about assessment scales used,  elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>

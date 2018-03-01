@@ -12,7 +12,7 @@ summary: "Gives information about the Clinical summary section"
 ## Clinical Summary Section Content##
 The Clinical summary section carries a narrative summary of the episode, where possible very brief, elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>

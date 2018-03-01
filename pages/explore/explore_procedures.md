@@ -12,7 +12,7 @@ summary: "Gives information about the Procedures section"
 ## Procedures Section Content##
 The Procedures section carries information about the procedures that have been performed on the patient, elements should be formatted as sub headings in any html sent.
 
-<table>
+<table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
 			<th width="18%">Section</th>
