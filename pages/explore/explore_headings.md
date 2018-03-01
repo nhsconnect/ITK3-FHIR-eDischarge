@@ -8,6 +8,7 @@ summary: "Overview of the eDischarge headings"
 ---
 
 {% include custom/search.warnbanner.html %}
+{% include custom/section.warnbanner.html %}
 
 ## Overview ##
 
@@ -248,9 +249,10 @@ Due to the size of the image, this example is best viewed with the navigation si
 
 
 The text sections are carried in the FHIR composition resource. 
+
 This is profiled as the [ITK-EDIS-Composition](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1)
 
 
-{% include custom/section.warnbanner.html %}
+
 
 
