@@ -12,10 +12,10 @@ summary: "Gives information about the patient"
 ## Patient Demographics Section Content##
 The Patient demographics section contains information about the patient, sub headings should be rendered as such in any html sent.
 
-<table width="100%">
+<table width="120%">
 	<thead>
 		<tr>
-			<th width="20%">Section</th>
+			<th width="40%">Section</th>
 			<th width="28%">Description</th>
 			<th width="12%">Cardinality</th>
 			<th width="12%">MRO*</th>
