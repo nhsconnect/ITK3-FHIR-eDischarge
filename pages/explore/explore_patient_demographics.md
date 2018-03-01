@@ -14,7 +14,7 @@ The Patient demographics section contains information about the patient, sub hea
 
 <table style="width:120%;">
 	<thead>
-		<tr>
+		<tr style="width:120%;">
 			<th width="40%">Section</th>
 			<th width="28%">Description</th>
 			<th width="12%">Cardinality</th>
