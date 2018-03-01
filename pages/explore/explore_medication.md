@@ -248,7 +248,7 @@ The Medications and medical devices section carries information about the patien
 			<td>Text</td>
 		</tr>
 		<tr>
-			<th>Medication discontinued entry</td>
+			<th>Medication discontinued entry</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
