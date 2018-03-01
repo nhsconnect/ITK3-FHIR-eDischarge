@@ -12,23 +12,41 @@ summary: "Gives information about the Individual requirements section"
 ## Individual Requirements Section Content ##
 The Individual requirements section carries information about the individual requirements of the patient,items in bold are subheadings and should be formatted as such in any html sent:
 
-
- 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-<tr>
-<td>Individual requirement</td>
-<td>Individual requirements that a person has. These may be communication, cultural, cognitive or mobility needs.
-</td>
-<td>0..1</td>
-<td>Required</td>
-</tr>
+<table>
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Individual requirements </td>
+			<td>Individual requirements that a person has, e.g. communication, cultural, cognitive or mobility needs. </td>
+			<td>0 to 1</td>
+			<td>required</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Individual requirements</td>
+			<td>Individual requirements that a person has. These may be communication, cultural, cognitive or mobility needs.</td>
+			<td>0 to 1</td>
+			<td>required</td>
+			<td>Information volunteered by the person or their representative or known about locally. Text or coded text (SNOMED CT), constrained as specified in SCCI1605 Accessible Information standard (accessible information - communications support, accessible information - requires communications professional, accessible information - requires specific contact method, accessible information - requires specific information format).</td>
+		</tr>
+	</tbody>
 </table>
+
 
 ##  Example Individual Requirements Section ##
 
