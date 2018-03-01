@@ -10,33 +10,55 @@ summary: "Gives information about the Social context section"
 {% include custom/section.warnbanner.html %}
 
 ## Social Context Section Content##
-The Social context section carries information about the social context of the patient, subheadings should be formatted as such in any html sent:
+The Social context section carries information about the social context of the patient, elements should be rendered as sub headings in any html sent.
 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-<tr>
-<td>Household composition</td>
-<td>Eg: lives alone, lives with family, lives with partner, etc. This may be plain text.</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Occupational history</td>
-<td>The current and/or previous relevant occupation(s) of the patient/individual.</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
-<tr>
-<td>Educational history</td>
-<td>The current and/or previous relevant educational history of the patient/individual.</td>
-<td>1..1</td>
-<td>Mandatory</td>
-</tr>
+<table>
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Social context</td>
+			<td>The social setting in which the patient lives, such as their household, occupational history, and lifestyle factors.</td>
+			<td>0 to 1</td>
+			<td>optional</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Household composition</td>
+			<td>E.g., lives alone, lives with family, lives with partner, etc. This may be free text.</td>
+			<td>0 to 1</td>
+			<td>required</td>
+			<td>This is the record of the people living in the household with the patient (including where the patient lives alone) as given by the patient or their representative or carer. Free text.</td>
+		</tr>
+		<tr>
+			<td>Occupational history</td>
+			<td>The current and/or previous relevant occupation(s) of the patient/individual.</td>
+			<td>0 to many</td>
+			<td>optional</td>
+			<td>This is a record of the patient's current or previous occupations as volunteered by the patient. Text or coded text (SNOMED CT).</td>
+		</tr>
+		<tr>
+			<td>Educational history</td>
+			<td>The current and/or previous relevant educational history of the patient/individual</td>
+			<td>0 to 1</td>
+			<td>optional</td>
+			<td>This is a record of the patient's current or previous educational history as volunteered by the patient or their representative or carer. Text.</td>
+		</tr>
+	</tbody>
 </table>
 
 ##  Example Social Context Section ##
