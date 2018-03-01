@@ -10,32 +10,41 @@ summary: "Gives information about the Assessment scales section"
 {% include custom/section.warnbanner.html %}
 
 ## Assessment Scales Section Content##
-The Assessment scales section carries information about assessment scales used, subheadings should be formatted as such in any html sent:
+The Assessment scales section carries information about assessment scales used,  elements should be formatted as sub headings in any html sent.
 
-<table width="100%">
-<tr>
-<th width="25%">Sub-section</th>
-<th width="45%">Description</th>
-<th width="15%">Cardinally</th>
-<th width="15%">Conformance</th>
-</tr>
-
-<tr>
-<td>Assessment scales</td> 
-<td>Assessment scales used,eg:
-
-<ul>
-<li>New York Heart Failure scale</li>
-<li>Activities of Daily Living(ADL)</li>
-<li>cognitive function, mood assessment scales</li>
-<li>developmental scales</li>
-<li>MUST (nutrition)</li>
-<li>BPI (pain)</li>
-</ul>
-</td>
-<td>0..*</td>
-<td>Optional</td>
-</tr>
+<table>
+	<thead>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Assessment scale</td>
+			<td>A description of any assessment scales used.</td>
+			<td>0 to 1</td>
+			<td>optional</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
+		</tr>
+		<tr>
+			<td>Assessment scale</td>
+			<td>Assessment scale used, eg New York Heart Failure, Activities of Daily Living (ADL)</td>
+			<td>0 to many</td>
+			<td>optional</td>
+			<td>Text. Content could include scale name, date and time of assessment and values recorded, including overall score. Format of assessment would be determined locally and may be tabular.</td>
+		</tr>
+	</tbody>
 </table>
 
 

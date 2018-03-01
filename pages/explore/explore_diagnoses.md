@@ -56,10 +56,7 @@ The Diagnoses section carries information about Diagnoses, elements should be fo
 			<td>Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text.</td>
-		</tr>
-		<tr>
-			<td>Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
+			<td>Free text.Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
 		</tr>
 	</tbody>
 </table>
