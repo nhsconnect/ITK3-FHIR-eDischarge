@@ -38,7 +38,7 @@ The Medications and medical devices section carries information about the patien
 			<th>Values</th>
 		</tr>
 		<tr>
-			<th>Medication item cluster</td>
+			<th>Medication item cluster</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
