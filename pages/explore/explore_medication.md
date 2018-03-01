@@ -10,7 +10,7 @@ summary: "Gives information about the Medications and medical devices section"
 {% include custom/section.warnbanner.html %}
 
 ## Medications and Medical Devices Section Content ##
-The Medications and medical devices section carries information about the patient's medication , subheadings should be formatted as such in any html sent:
+The Medications and medical devices section carries information about the patient's medication , subheadings should be formatted as such in any html sent. Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](https://nhsconnect.github.io/ITK-FHIR-eDischarge/build_medication_lists.html) should be consulted for further information. 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
@@ -49,28 +49,28 @@ The Medications and medical devices section carries information about the patien
 			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
 			<td>mandatory</td>
-			<td>Text derived from SNOMED CT -  constraint: MedicationName. Any AMP/VMP/VTM/AMPP/VMPP subsets from the dm+d terminology. NHS dm+d AMP ::352201000001139 NHS dm+d AMPP ::352401000001135 NHS dm+d VMP ::352701000001133 NHS dm+d VMPP ::352301000001131 NHS dm+d VTM ::352601000001138. Constraint binding: [dm+d]subset=NHS_dm+d.</td>
+			<td>Text derived from SNOMED CT</td>
 		</tr>
 		<tr>
 			<td>Form</td>
 			<td>Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED CT -  constraint: DrugDoseForm. SNOMED CT CfH DoseForm termset. Any descendant of 421967003 | drug dose form. Constraint binding: [SNOMED CT]subset=CfH DoseForm"</td>
+			<td>Text derived from SNOMED CT</td>
 		</tr>
 		<tr>
 			<td>Route</td>
 			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube).Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supportsmultiple Routes to allow a choice to be specified by the prescriber</td>
 			<td>0 to many</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED CT -  constraint: NHS e-prescribing route of administration subset ID: 413001000001136 Original Id : 30201000001137 This is an extract from the SUBSET -BiAnnual-Drug-15.0.1-20130401: SnomedCT_GB1000001_20130401/Subsets/EPrescribing/NHS e-Prescribing route of administration subset. Constraint binding: [SNOMED-CT]subset=NHS e-Prescribing route of administration subset</td>
+			<td>Text derived from SNOMED CT</td>
 		</tr>
 		<tr>
 			<td>Site</td>
 			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye"</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED-CT -  constraint: SiteOfMedicationAdministration. Any valid site for the administration of a medication. Constraint binding: [SNOMED-CT]subset= SiteOfMedicationAdministration</td>
+			<td>Text derived from SNOMED-CT</td>
 		</tr>
 		<tr>
 			<td>Method</td>
