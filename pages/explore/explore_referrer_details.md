@@ -14,9 +14,9 @@ The Referrer details section carries a narrative summary of the episode. Where p
 <table>
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
+			<th width="15%">Section</th>
 			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
+			<th width="14%">Cardinality</th>
 			<th width="11%">MRO*</th>
 			<th width="30%">Values</th>
 		</tr>
@@ -39,7 +39,7 @@ The Referrer details section carries a narrative summary of the episode. Where p
 		<tr>
 			<td>Referrer details</td>
 			<td>Name, role, grade, organisation and contact details of referrer. If not an individual, this could be e.g. GP surgery, department, specialty, sub-specialty, educational institution, mental health team etc. Also needs to include self-referral.</td>
-			<td>0 to 1 referrer name<br/>0 to 1 referrer role<br/>0 to 1 referrer grade<br/>0 to 1 referrer department or team name</br>0 to 1 referrer speciality<br/>0 to 1 referrer organisation<br/>0 to many contact details</td>
+			<td>0 to 1 referrer name<br/>0 to 1 referrer role<br/>0 to 1 referrer grade<br/>0 to 1 referrer department or team name<br/>0 to 1 referrer speciality<br/>0 to 1 referrer organisation<br/>0 to many contact details</td>
 			<td>required</td>
 			<td>The referrer details will normally be copied forward from the referral or handover of care, document.Where the referral or handover of care document stated individual, team, department or organisation names and identifies, these should form part of the Referrer details.Where the referral is a self-referral, coded text - self referral.</td>
 		</tr>
