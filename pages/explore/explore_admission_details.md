@@ -12,14 +12,14 @@ summary: "Gives information about the Admission details section"
 ## Admission Details Section Content##
 The Admission details section carries information about the patient's admission, elements should be formatted as sub headings in any html sent.
 
-<table class="tableizer-table">
+<table>
 	<thead>
-		<tr class="tableizer-firstrow">
-			<th>Section</th>
-			<th>Description</th>
-			<th>Cardinality</th>
-			<th>MRO*</th>
-			<th>Values</th>
+		<tr>
+			<th width="18%">Section</th>
+			<th width="30%">Description</th>
+			<th width="11%">Cardinality</th>
+			<th width="11%">MRO*</th>
+			<th width="30%">Values</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,11 +31,11 @@ The Admission details section carries information about the patient's admission,
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>Element</td>
-			<td>Description</td>
-			<td>Cardinality</td>
-			<td>MRO*</td>
-			<td>Values</td>
+			<th>Element</th>
+			<th>Description</th>
+			<th>Cardinality</th>
+			<th>MRO*</th>
+			<th>Values</th>
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
