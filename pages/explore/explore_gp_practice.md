@@ -62,17 +62,14 @@ The GP practice section contains details of the patients GP practice. Elements s
 	</tbody>
 </table>
 
-The PractitionerRole resource is included to allow identification of the practitioner in the role of GP. 
 
-## Example GP Practice Using Organization Resource ##
+## Example GP Practice Section ##
 
-<script src="https://gist.github.com/IOPS-DEV/96ebbfe2e8f8f58ca820c7fb0a278bd5.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/0254c9b07fa77cd926dbe0b5a68ff4d8.js"></script>
 
-## Example GP Name Using Practitioner Resource ##
 
-Note: The GP is linked to the GP Practice by the Practitioner resource referencing the organization resource using the managingOrganization element. The PractitionerRole resource identifies the practitioner in the role of GP.
 
-<script src="https://gist.github.com/IOPS-DEV/3f5d3d112a125a0d28f449964e0a26c5.js"></script>
+
 
 
 

@@ -110,9 +110,9 @@ The Patient demographics section contains information about the patient. Element
 	</tbody>
 </table>
 
-## Example Patient Demographics Using Patient Resource ##
+## Example Patient Demographics Section ##
 
-<script src="https://gist.github.com/IOPS-DEV/af79cf398178936f11f5eb5c5d45c13c.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/347fa1e99bc57ea46e426423f89491e5.js"></script>
 
 
 

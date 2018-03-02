@@ -84,70 +84,14 @@ The Distribution list section carries a list of recipients of the document. Elem
 	</tbody>
 </table>
 
-## Example Distribution List Entry Using Organization Resource ##
+## Example Distribution List Section ##
 
-This example shows a recipient organization entry.
-
-<script src="https://gist.github.com/IOPS-DEV/f5c1fab997a9d0ef2a586e73728ac2a7.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/8d12d4ff8d08f694a4a4cec3dfd352d0.js"></script>
 
 
-## Example Distribution List Entry Using Practitioner Resource ##
-
-This example shows a recipient practitioner entry.
-
-<script src="https://gist.github.com/IOPS-DEV/dd3378a4b7b62deaa48117449efbd7b8.js"></script>
 
 
-## Example Distribution List Entry Using Patient Resource ##
 
-This example shows a recipient patient entry.
-
-<script src="https://gist.github.com/IOPS-DEV/af79cf398178936f11f5eb5c5d45c13c.js"></script>
-
-## Example Distribution List Entry Using RelatedPerson Resource ##
-
-This example shows a recipient related person (such as a carer) entry.
-
-<script src="https://gist.github.com/IOPS-DEV/0b8035163391ff6a5de011412c079338.js"></script>
-
-## Example Rendered Distribution List ##
-
-This example shows a Distribution list section when rendered using the NHS Digital exemplar renderer.
-
-
-**Distribution list**
-		
-<table width="100%">
-<tr>
-<th>Recipient name</th>
-<th>Job role</th>
-<th>Phone</th>
-<tr>
-<tr>
-<td>Morris, Angela (Mrs)</td>
-<td>Physiotherapist</td>
-<td>01136323200</td>
-<tr>
-<tr>
-<th>Recipient name</th>
-<th>Relationship</th>
-<th>Phone</th>
-<tr>
-<tr>
-<td>Smith, Sarah</td>
-<td>Wife</td>
-<td>071234567811</td>
-<tr>		
-<tr>
-<th>Recipient name</th>
-<th>Type</th>
-<th>Phone</th>
-<tr>
-<tr>
-<td>Whitehouse Practice</td>
-<td>GP Practice</td>
-<td>071234567811</td>
-<tr>
 			
 
 
