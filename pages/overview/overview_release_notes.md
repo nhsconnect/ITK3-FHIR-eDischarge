@@ -12,8 +12,11 @@ summary: Summary release notes of the versions released in ITK eDischarge Implem
 ## 2.1.0-alpha ##
 This version of the Transfer Of Care eDischarge specification has been changed to align with the ITK3 Messaging Distribution specification version 2.1.0-beta.  The url for ValueSet-CareSettingType-1, has changed to <https://fhir.nhs.uk/STU3/ValueSet/CareSettingType-1> so that it can be used across programs, also the internal version has changed to 1.0.0.
 
+The structure used for the Patient demographics , GP practice and Distribution list sections has been changed to have specific slices in the composition to align with all other PRSB sections. Descriptions and examples have been updated to suit.
 
+All PRSB headings and subheadings have been updated following release of the version 1.0 PRSB documentation. Descriptions and examples have been updated to suit. 
 
+Added Binary resource profile to allow support for attachments.
 
 ## 2.0.0-alpha.1 ##
 First version published using Jekyll
