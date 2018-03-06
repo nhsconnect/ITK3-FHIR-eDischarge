@@ -4,7 +4,7 @@ keywords:  messaging
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: explore_defs_overview.html
-summary: "Overview of the Message Definitions section"
+summary: "Overview of the Message Definitions Section"
 ---
 
 {% include custom/search.warnbanner.html %}
