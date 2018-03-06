@@ -4,7 +4,7 @@ keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_rendering.html
-summary: "Constructing an observation"
+summary: "Rendering Transfer of Care Documents"
 ---
 
 {% include important.html content="All information provided below is indicative and subject to on-going review." %}
