@@ -11,7 +11,7 @@ summary: "Gives information about the Allergies and adverse reactions section"
 
 ## Allergies and Adverse Reactions Section Content##
 The Allergies and adverse reactions section carries information about the patient's allergies and adverse reactions. Elements should be formatted as subheadings in any html sent.
-Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](https://nhsconnect.github.io/ITK-FHIR-eDischarge/build_allergy_lists.html) should be consulted for further information. 
+Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](build_allergy_lists.html) should be consulted for further information. 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
