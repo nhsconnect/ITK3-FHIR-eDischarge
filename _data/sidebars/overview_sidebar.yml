@@ -182,10 +182,10 @@ entries:
       url: /build_resource_referencing.html
       output: web
     - title: Use of Attachments
-      url: /design_attachments.html
+      url: /build_attachments.html
       output: web
     - title: Rendering documents
-      url: /design_rendering.html
+      url: /build_rendering.html
       output: web
       subfolders:
       - title: Constructing Clinical Coded Structures
