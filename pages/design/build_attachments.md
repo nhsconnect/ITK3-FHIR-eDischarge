@@ -1,9 +1,9 @@
 ---
 title: Use of attachments | Design & Build 
-keywords: design, build,																																					tags: tags: [design, overview]
-sidebar: overview_sidebar
+keywords: design, build,																																					tags: tags: [design]
+sidebar: foundations_sidebar
 permalink: build_attachments.html
-summary: Describes how attachments may be used in Transfer of Care documents
+summary: "Describes how attachments may be used in Transfer of Care documents"
 ---
 
 {% include important.html content="All information provided below is indicative and subject to on-going review." %}
