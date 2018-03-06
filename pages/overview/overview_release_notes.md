@@ -15,6 +15,10 @@ summary: Summary release notes of the versions released in ITK eDischarge Implem
 
 Changed to align with the ITK3 Messaging Distribution specification version 2.1.0-beta.  
 
+**Messaging Architecture Changes**
+
+Interactions have been replaced by message definitions and new ITK Handling keys.
+
 **Value sets / Code Systems**
 
 The url for ValueSet-CareSettingType-1, has changed to <https://fhir.nhs.uk/STU3/ValueSet/CareSettingType-1> so that it can be used across programs, also the internal version has changed to 1.0.0.

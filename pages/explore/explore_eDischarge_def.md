@@ -9,7 +9,7 @@ summary: "eDischarge Message Definition"
 
 {% include custom/search.warnbanner.html %}
 
-## Send Message Definition Overview ##
+## eDischarge Definition Overview ##
 
 This is the MessageDefinition instance for the ITK 3 eDischarge document.
 
