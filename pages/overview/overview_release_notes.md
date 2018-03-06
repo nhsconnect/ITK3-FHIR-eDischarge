@@ -29,11 +29,15 @@ The structure used for the Patient demographics , GP practice and Distribution l
 
 **Section Guidance**
 
-All PRSB headings and subheadings have been updated following release of the version 1.0 PRSB documentation. Descriptions and examples have been updated to suit. 
+All PRSB headings and subheadings have been updated following release of the version 1.0 Final PRSB documentation. Descriptions and examples have been updated to suit. 
 
 **New Profiles**
 
 Added Binary resource profile to allow support for attachments.
+
+**Specification Structure**
+
+Added new sub menus under Design and build section for "Use of Attachments" and "Rendering of Documents" these are place-holders for guidance to be issued in a later release.
 
 ## 2.0.0-alpha.1 ##
 First version published using Jekyll
