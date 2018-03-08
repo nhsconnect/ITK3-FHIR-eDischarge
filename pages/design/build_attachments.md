@@ -1,6 +1,6 @@
 ---
 title: Use of Attachments
-keywords: design, build,
+keywords: design, build
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_attachments.html
