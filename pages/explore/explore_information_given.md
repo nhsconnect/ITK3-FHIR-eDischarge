@@ -22,6 +22,7 @@ The Information and advice given section carries information and advice given. E
 			<th width="30%">Values</th>
 		</tr>
 	</thead>
+ <tbody>
 		<tr>
 			<td>Information and advice given</td>
 			<td>A record of any information or advice given to the patient, carer or relevant third party.</td>
