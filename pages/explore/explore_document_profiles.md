@@ -42,13 +42,8 @@ The Bundle consists of the following FHIR Resource Profiles.
 
 ## Profile Extensions ##
 
-- **[Extension-ITK-Authorization-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Authorization-1)** - An NHS Digital extension to Composition resource to allow the details of the person who authorised the document.
+
 - **[Extension-ITK-CareSettingType-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-CareSettingType-1)** - An NHS Digital extension to Composition resource to allow the details care setting type that the document was sent from.
-- **[Extension-ITK-DataEnterer-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-DataEnterer-1)** An NHS Digital extension to Composition resource to allow the details of a person who entered the information contained in the document.
-- **[Extension-ITK-Informant-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Informant-1)** - An NHS Digital extension to Composition resource to allow the details of the person who informed the author about information contained in the document.
-- **[Extension-ITK-InformationRecipient-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-InformationRecipient-1)** - An NHS Digital extension to Composition resource to allow the details of the person or organization who/which is a recipient of the document.
-- **[Extension-ITK-Participant-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Participant-1)** - An NHS Digital extension to Composition resource to allow the details of the person who participated in the document where this is not explicitly modelled.
-- **[Extension-ITK-Performer-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-Performer-1)** - An NHS Digital extension to Composition resource to allow the details of the person who performed items within the document.
 - **[Extension-CareConnect-NHSCommunication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1)** - A CareConnect extension to Patient and Practitioner resources to carry language information suitable for NHS use.
 - **[Extension-CareConnect-MainLocation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1)** - A CareConnect extension to the Location resource to allow the main location to be carried/indicated.
 - **[organization-period](http://hl7.org/fhir/StructureDefinition/organization-period)** - An HL7 common extension to the Organization resource allows the periods of time to be associated with the organization.
