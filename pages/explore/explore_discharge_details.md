@@ -99,7 +99,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 
 ##  Example Discharge Section ##
 
-<script src="https://gist.github.com/IOPS-DEV/8af6e4182fad6c0ce91e46e6d17563b5.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/1bfa7a1c00147c6bc5b1fc98aaa51029.js"></script>
 
 ## Coded Resources ##
 
