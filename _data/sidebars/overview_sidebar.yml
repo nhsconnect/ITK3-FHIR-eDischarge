@@ -201,14 +201,11 @@ entries:
         - title: Allergy List
           url: /build_allergy_lists.html
           output: web
-        - title: Condition
+        - title: Condition List
           url: /build_conditions.html
           output: web
-        - title: Procedure
+        - title: Procedure List
           url: /build_procedures.html
-          output: web
-        - title: Observation
-          url: /build_observations.html
           output: web
 #  - title: Test
 #    output: web
