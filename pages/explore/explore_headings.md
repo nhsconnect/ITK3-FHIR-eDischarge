@@ -241,9 +241,9 @@ Note: the examples of section HTML in this specification show only example html 
 ## Overview of eDischarge Sections and Coded profiles ##
 This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text.
 
-<img src="images/explore/eDIS_composition_overview.png" style="width:auto;height: auto;"/>
-
 <a href="images/explore/eDIS_composition_overview.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in new window</b></a>
+
+<img src="images/explore/eDIS_composition_overview.png" style="width:auto;height: auto;"/>
 
 
 The text sections are carried in the FHIR composition resource. 
