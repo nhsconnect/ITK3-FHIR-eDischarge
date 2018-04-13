@@ -15,9 +15,9 @@ The Design & Build section details items that will be useful when designing and 
 
 The subsections provide information on things such as:
 
-- how the resources are linked
-- how attachments are used
-- guidance on constructing and rendering the narrative of a document
+- How the resources are linked
+- How attachments are used
+- Guidance on constructing and rendering the narrative of a document
 - How to construct the list for coded clinical resources
 
 
