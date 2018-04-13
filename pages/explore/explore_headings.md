@@ -25,7 +25,7 @@ This section lists the following
 This diagram shows a typical text section.
 Note: the examples of section HTML in this specification show only example html format such as tables. This is an exemplar format. There is no mandated format for the section HTML. 
 
-<img src="images/explore/section_description.png" style="width:90%;max-width: 90%;"/>
+<img src="images/explore/section_description.png" style="width: 100%;max-width: 100%;">
  
 ## Headings Used By eDischarge ##
 
