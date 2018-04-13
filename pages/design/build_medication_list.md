@@ -61,7 +61,7 @@ The Medication resource allows for medications to be characterized by the form o
 ## How the Medication Record is Constructed ##
 The medication record is constructed as a single list. The diagram below shows the Resources used and the relationship between the Resources.
 
-<img src="images/build/medication_basic_structure.png" style="width:50%;max-width: 50%;">
+<img src="images/build/medication_basic_structure.png" style="width:100%;max-width: 100%;">
 
 
 There will be one medication statement for each of the medication items contained in the list.
