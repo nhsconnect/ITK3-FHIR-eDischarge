@@ -58,12 +58,6 @@ The diagram shows the referencing for the Medication resource.
 
 <img src="images/explore/medication_referencing.png" style="width: 50%;max-width: 50%;">  
 
-## Flag (Medication) ##
-
-The diagram shows the referencing for the Flag resource for Medication.
-
-<img src="images/explore/medication_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
-
 ## List (Allergy) ##
 
 The diagram shows the referencing for the List resource for Allergies.
@@ -76,11 +70,11 @@ The diagram shows the referencing for the AllergyIntolerance resource.
 
 <img src="images/explore/allergyIntolerance_referencing.png" style="width: 75%;max-width: 75%;"> 
 
-## Flag (Allergy) ##
+## List (Condition) ##
 
-The diagram shows the referencing for the Flag resource for Allergies.
+The diagram shows the referencing for the List resource for conditions.
 
-<img src="images/explore/allergy_flag_referencing.png" style="width: 75%;max-width: 75%;"> 
+<img src="images/explore/condition_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
 ## Condition ##
 
@@ -88,17 +82,17 @@ The diagram shows the referencing for the Condition resource.
 
 <img src="images/explore/condition_referencing.png" style="width: 75%;max-width: 75%;"> 
 
+## List (Procedure) ##
+
+The diagram shows the referencing for the List resource for procedures.
+
+<img src="images/explore/procedure_list_referencing.png" style="width: 75%;max-width: 75%;"> 
+
 ## Procedure ##
 
 The diagram shows the referencing for the Procedure resource.
 
 <img src="images/explore/procedure_referencing.png" style="width: 75%;max-width: 75%;"> 
-
-## Observation ##
-
-The diagram shows the referencing for the Observation resource.
-
-<img src="images/explore/observation_referencing.png" style="width: 75%;max-width: 75%;"> 
 
 ## Practitioner and Organization ##
 
