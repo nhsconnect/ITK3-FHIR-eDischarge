@@ -122,3 +122,4 @@ plugins:
    - jekyll-sitemap
    - jekyll-feed
    - jekyll-gist
+   - jekyll-sitemap
