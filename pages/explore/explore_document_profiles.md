@@ -12,7 +12,7 @@ summary: "ITK eDischarge FHIR Document profile"
 
 ## ITK eDischarge FHIR Document Bundle ##
 
-FHIR resource profiles combined to support eDischarge (inpatient discharge summary) FHIR Documents.
+The document bundle is a collection of FHIR resource profiles combined to support eDischarge (inpatient discharge summary) FHIR Documents.
 
 The Bundle consists of the following FHIR Resource Profiles.
 
@@ -39,45 +39,7 @@ The Bundle consists of the following FHIR Resource Profiles.
 
 **Note**: This attachment profile must not be used to send an unstructured Transfer of Care document, its purpose is to allow an attachment to be included within a structured Transfer of Care document.
 
-## Profile Extensions ##
-
-
-- **[Extension-ITK-CareSettingType-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-CareSettingType-1)** - An NHS Digital extension to Composition resource to allow the details care setting type that the document was sent from.
-
-- **[Extension-CareConnect-MainLocation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1)** - A CareConnect extension to the Location resource to allow the main location to be carried/indicated.
-- **[organization-period](http://hl7.org/fhir/StructureDefinition/organization-period)** - An HL7 common extension to the Organization resource allows the periods of time to be associated with the organization.
-- **[Extension-CareConnect-EncounterTransport-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1)** - A CareConnect extension to the Encounter resource to allow transportation information to be carried.
-- **[Extension-CareConnect-OutcomeOfAttendance-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-OutcomeOfAttendance-1)** - A CareConnect extension to the Encounter resource to record the outcome of attendance. 
-- **[EmergencyCareDischargeStatus-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EmergencyCareDischargeStatus-1")** A  CareConnect extension to the Encounter resource to record discharge status of the patient.
-- **[Extension-CareConnect-AdmissionMethod-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AdmissionMethod-1)** A CareConnect extension to the encounter resource to support a coded admission method.
-- **[Extension-CareConnect-DischargeMethod-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DischargeMethod-1)** A CareConnect extension to the encounter resource record the method of discharge.
-- **[Extension-coding-sctdescid](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid)** -  A CareConnect extension used in resources that use SNOMED CT to allow the SNOMED description identifier to be carried.
-- **[Extension-CareConnect-MedicationStatementLastIssueDate-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementLastIssueDate-1)** - A CareConnect extension to the MedicationStatement resource to allow the last issue date of the medication to be carried.
-- **[Extension-CareConnect-MedicationChangeSummary-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationChangeSummary-1)**
-- **[Extension-CareConnect-MedicationRepeatInformation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1)** - A CareConnect extension to the MedicationStatement resource to allow the specific repeat information of a medication item.
-- **[Extension-CareConnect-MedicationStatusReason-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatusReason-1")**
-- **[Extension-CareConnect-PrescriptionType-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1")**
-- **[Extension-CareConnect-MedicationQuantityText-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1)**
-- **[Extension-CareConnect-MedicationRepeatInformation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1)**
-- **[Extension-CareConnect-MedicationStatusReason-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatusReason-1)**
-- **[Extension-CareConnect-PrescriptionType-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1)**
-- **[Extension-CareConnect-EthnicCategory-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1)** - A CareConnect extension to the Patient resource to carry the ethnic category for a patient.
-- **[Extension-CareConnect-ReligiousAffiliation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1)** - A CareConnect extension to the Patient resource to carry the religious affiliation for a patient.
-- **[Extension-CareConnect-ResidentialStatus-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ResidentialStatus-1)** - A CareConnect extension to the Patient resource to carry the residential status for a patient.
-- **[Extension-CareConnect-TreatmentCategory-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-TreatmentCategory-1)** - A CareConnect extension to the Patient resource to carry the treatment category for a patient.
-- **[Extension-CareConnect-NHSNumberVerificationStatus-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1)** - A CareConnect extension to the Patient resource to carry the verification status of the patient NHS number.
-- **[Extension-CareConnect-NHSCommunication-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1)** - A CareConnect extension to Patient and Practitioner resources to carry language information suitable for NHS use.
-- **[patient-cadavericDonor](http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor)** - A HL7 common extension to the Patient resource which uses a Flag indicating whether the patient authorized the donation of body parts after death. 
-- **[patient-birthTime](http://hl7.org/fhir/StructureDefinition/patient-birthTime)** - A HL7 common extension to the patient resource which allows the time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively.
-- **[Extension-CareConnect-ConditionEpisode-1]XX(https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ConditionEpisode-1)** - A CareConnect extension to the Condition resource for the episodicity status of a condition. 
-- **[Extension-CareConnect-ConditionRelationship-1]XX(https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ConditionRelationship-1)** -  A CareConnect extension to the Condition resource for a reference to another related condition (target) whose relationship is defined by the relationship type code.
-- **[Extension-CareConnect-ReasonCondition-1]XX(https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReasonCondition-1)** -  A CareConnect extension to the Procedure resource for the reason why a procedure was added/performed/given. This may be due to a Condition, may be a coded entity of some type, or may simply be present as text. 
-- **[Extension-CareConnect-DateRecorded-1]XX(https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1)** - A CareConnect extension to the Procedure resource for the date that the Procedure was recorded.
-- **[encounter-associatedEncounter](http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter)** - A CareConnect extension to the AllergyIntolerance resource to the encounter associated with the allergy.
-- **[Extension-CareConnect-AllergyIntoleranceEnd-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1)** - A CareConnect extension to the allergyIntolerance resource for the date that the allergy was no longer valid.
-- **[Extension-CareConnect-Evidence-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1)** - A CareConnect extension to the allergyIntolerance resource to support a reference to results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests.
-
-
+For a complete definition of the eDischarge document see the section on [message definitions](explore_defs_overview.html)
 
 ## ITK eDischarge FHIR Document Profile Referencing ##
 
