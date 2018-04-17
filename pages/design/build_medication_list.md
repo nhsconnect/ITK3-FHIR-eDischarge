@@ -72,7 +72,7 @@ The medication Flag element of the List Resource will indicate the context of th
 
 The list will use the FHIR Flag element of the list resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as a discontinuation and the second as an additional medication. 
 
-<img src="images/build/medication_change.png" style="width:100%;max-width: 100%;">
+<img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
 
 ## Do Not Discontinue Medication Illustration ##
 In the illustration below, a new medication is flagged as “Do not Discontinue” using the Flag resource. The Flag resource references the medication statement resource using the common extension.
