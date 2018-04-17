@@ -15,18 +15,16 @@ The eDischarge does not support any real "workflow" but uses the encounter resou
  
 - When the patient was admitted
 - Why the patient was admitted
-- when the patient was discharged
-- when the patient was discharged to
+- When the patient was discharged
+- When the patient was discharged to
 - Who was involved in the encounter
 
 The encounter can be referenced by the following resources:
 
 - Composition
 - Condition 
-- Flag
 - List
 - MedicationStatement
-- Observation
 - Procedure
 
 ## Example Encounter ##
