@@ -17,9 +17,12 @@ This is the MessageDefinition instance for the ITK 3 eDischarge document.
 - **Receiver:** Recipient System
 - **MessageDefinition:** ITK-eDischarge-MessageDefinition-Instance-1
 
+The message definition is available as a HTML rendered version for human consumption [eDischarge Message definition rendered](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageDefinition-1) 
+
+The xml version for machine processing is available as a GIST file
 
 <script src="https://gist.github.com/IOPS-DEV/6258037b316797361f1f0fc76c5a42cc.js"></script>
----
+
 
 
 
