@@ -68,34 +68,27 @@ There will be one medication statement for each of the medication items containe
 Each medication statement should have a medication, however it is possible in some cases that the medication is described in the medication statement because the medication cannot be fully coded within the medication Resource. 
 The medication Flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK use. 
 
+## Medication Flag Structures ##
+
+<img src="images/build/medication_flag_structure.png" style="width:100%;max-width: 100%;">
+
 ## Changing Medication Illustration ##
 
-The list will use the FHIR Flag element of the list resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as a discontinuation and the second as an additional medication. 
+The list will use the FHIR Flag element of the list resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
 
 <img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
 
-## Do Not Discontinue Medication Illustration ##
-In the illustration below, a new medication is flagged as “Do not Discontinue” using the Flag resource. The Flag resource references the medication statement resource using the common extension.
-
-<img src="images/build/medication_do_not_discon.png" style="width:80%;max-width: 80%;"> 
-
-## Medication List Item Example ##
-Example to show a discontinuation of a drug, which is replaced by a stronger dose with a Flag to show that the new medication should not be discontinued.
 
 **Medication List**
 
 The list part of the record. 
 <script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
 
-**Medication Discontinuation**
+**Medication Changed**
 
-The medication being discontinued.
+The medication being changed.
 <script src="https://gist.github.com/IOPS-DEV/608bf5c9d3e200ef19f10ff1bf33244c.js"></script>
 
-**Medication Addition**
-
-The replacement for the medication discontinued.
-<script src="https://gist.github.com/IOPS-DEV/3e1e9c7cbab951dbb7d2861b63d811d4.js"></script>
 
 
  
