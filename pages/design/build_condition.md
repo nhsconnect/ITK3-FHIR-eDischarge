@@ -9,7 +9,7 @@ summary: "Constructing a condition list"
 
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition resource is reference via the List resource.
+This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition resource is referenced via the List resource.
 
 ## Resources Used for Profile Design ##
 The following FHIR resources are profiled to create the condition list.
