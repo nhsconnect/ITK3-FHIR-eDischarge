@@ -49,9 +49,9 @@ The condition list is constructed as a single list. The diagram below shows the 
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
 
-Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example confirmed). 
+Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
 
-**Important Note - The value set for the condition list flag element is currently under review and subject to change**
+**Important Note - The value set for the condition list flag element is currently under review and subject to change.**
 
 ## Condition Flag Structures ##
 
