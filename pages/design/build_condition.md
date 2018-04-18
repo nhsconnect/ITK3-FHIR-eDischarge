@@ -1,19 +1,18 @@
 ---
-title: Condition
+title: Condition List
 keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_conditions.html
-summary: "Constructing a condition"
+summary: "Constructing a condition list"
 ---
 
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model which use the condition resource. The condition resource is directly referenced from the Diagnosis section and may also be used as the reason for medication.
-
+This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition resource is reference via the List resource.
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the condition.
+The following FHIR resources are profiled to create the condition list.
 
 - **[CareConnect-ITK-Condition-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-List-1)** - A CareConnect derived NHS Digital Profile for recording a snapshot of the list of Conditions for the patient.
 - **[CareConnect-ITK-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1)** -	A CareConnect derived NHS Digital Profile for conditions. The Condition resource records detailed information about conditions (diagnoses) recognised by a clinician.
@@ -25,7 +24,7 @@ This resource acts as a container for the conditions. The following is an exampl
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose condition list this is
-- encounter - a reference to the context in which the list was created (the inpatient stay)
+- encounter - a reference to the context in which the list was created (the inpatient stay for example)
 - date - when the list was prepared
 - source - who or what defined the list
 - entry - a reference to the condition resource entry
@@ -50,8 +49,9 @@ The condition list is constructed as a single list. The diagram below shows the 
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
 
-Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
+Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example confirmed). 
 
+**Important Note - The value set for the condition list flag element is currently under review and subject to change**
 
 ## Condition Flag Structures ##
 
