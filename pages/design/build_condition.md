@@ -50,7 +50,8 @@ The condition list is constructed as a single list. The diagram below shows the 
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
 
-Each condition in the list will use the FHIR list resource Flag element to indicate the context of the allergy (For example unchanged, new etc). 
+Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
+
 
 ## Condition Flag Structures ##
 
