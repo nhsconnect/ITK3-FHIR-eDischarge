@@ -97,6 +97,9 @@ Each allergy in the list will use the FHIR list resource Flag element to indicat
 
 <img src="images/build/allergy_flag_structure.png" style="width:100%;max-width: 100%;">
 
+## How to Represent "No Know Allergies" ## 
+When there is a positive statement that the patient has "No know allergies" then no coded structure is sent. Please refer to the [Allergy and Adverse Reactions](explore_allergies_and_adverse_reactions.html) section for how to send the information as narrative text.
+
 ## Allergy List Item Example ##
 
 Example to show an allergy list.
