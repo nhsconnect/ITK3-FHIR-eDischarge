@@ -83,7 +83,7 @@ It should be noted that there is an overlap of content between the subsets used 
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
 
-## How the Allergy Record is Constructed ##
+## How the Allergy List is Constructed ##
 The allergy record is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
