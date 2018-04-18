@@ -7,8 +7,6 @@ permalink: build_allergy_lists.html
 summary: "Constructing an allergy list"
 ---
 
-{% include important.html content="The resources referenced in this section are the FHIR base resources which will be constrained by the profiles used by eDischarge, the profiles should be referred to for the actually allowable structure and content." %}
-
 ## Overview ##
 This section details the design approach using FHIR resources to support the PRSB heading model for allergies.
 It is important to distinguish between two kinds of allergic reaction / adverse reaction entry in the medical record:
@@ -22,7 +20,7 @@ Transfer of Care only records the first type of Allergic Response or Adverse Rea
 ## Resources Used for Profile Design ##
 The FHIR resources are profiled to create the allergy list as below:
 
-- **[CareConnect-ITK-Allergies-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergies-List-1)** - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.
+- **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.
 - **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A CareConnect derived Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
 
 ## List ##
@@ -85,7 +83,7 @@ It should be noted that there is an overlap of content between the subsets used 
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
 
-## How the Allergy Record is constructed ##
+## How the Allergy Record is Constructed ##
 The allergy record is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
