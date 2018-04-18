@@ -118,12 +118,19 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 	</tbody>
 </table>
 
+## How to Represent "No Know Allergies" ## 
+When there is a positive statement that the patient has "No know allergies" then no coded structure is sent and the section is sent with a text string within the narrative. When the text string is derived from coded data it must match the text of the code: for example 716186003 "No Known allergy"
+
 
 ##  Example Allergies and Adverse Reactions Sections ##
 
 ### Allergy to Penicillin ###
 
 <script src="https://gist.github.com/IOPS-DEV/c02f9626ad71d2230cd51ded6d031bb2.js"></script>
+
+### "No known Allergy" ###
+
+<script src="https://gist.github.com/IOPS-DEV/3f77d2ebcfcdf305a640484fb445cc1a.js"></script>
 
 ## Coded Resources ##
 
