@@ -46,11 +46,3 @@ Richard's wife arrives with their neighbour Peter, who has kindly agreed to pick
 ## Example Instance of Scenario ##
 
 <script src="https://gist.github.com/IOPS-DEV/4c7978a769e995660c41c2c8479b9255.js"></script>
-
-## Example Rendered Instance of Scenario ##
-
-This is a rendered example of the above XML example using an [exemplar stylesheet](https://github.com/nhsconnect/ITK3-FHIR-Documents-Renderer/tree/develop) created by NHS Digital. This style is currently draft and available for use on a AS IS BASIS. 
-
-Due to the size of the image, this example is best viewed with the navigation side bar switched off <img src="images/engage/nav_shot.png" style="width:8%;max-width: 8%;">.
-
-<img src="images/engage/richard_01.png" style="width:100%;max-width: 100%;">
