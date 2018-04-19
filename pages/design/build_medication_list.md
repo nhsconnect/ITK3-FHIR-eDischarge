@@ -78,16 +78,22 @@ The list will use the FHIR Flag element of the list resource to indicate the con
 
 <img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
 
+## Changing Medication Example ##
 
-**Medication List**
+### Medication List ###
 
-The list part of the record. 
+**The list part of the record.** 
+
 <script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
 
-**Medication Changed**
+### Medication Changed ###
 
-The medication being changed.
+**The medication being stopped.**
+
 <script src="https://gist.github.com/IOPS-DEV/608bf5c9d3e200ef19f10ff1bf33244c.js"></script>
+
+**The new medication.** 
+
 
 
 
