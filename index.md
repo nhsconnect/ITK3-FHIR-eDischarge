@@ -1,11 +1,11 @@
 ---
-title: Introduction to ITK 3 eDischarge
+title: Introduction to ITK3 eDischarge
 keywords: homepage
 tags: [overview]
 sidebar: overview_sidebar
 permalink: index.html
 toc: false
-summary: A brief introduction to getting started with the ITK 3 eDischarge.
+summary: A brief introduction to getting started with the ITK3 eDischarge.
 ---
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the ITK eDischarge components of FHIR messaging. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
@@ -32,5 +32,5 @@ This documentation provides a FHIR document implementation of the work done by t
 
 # Using this guide #
 
-This guide has been created to support the adoption of NHS Digital defined FHIR Messages. This site has been developed with input from stakeholders such as ITK 3 Messaging Solution users, developers and architects.  
+This guide has been created to support the adoption of NHS Digital defined FHIR Messages. This site has been developed with input from stakeholders such as ITK3 Messaging Solution users, developers and architects.  
 

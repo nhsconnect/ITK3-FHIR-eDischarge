@@ -11,7 +11,7 @@ summary: "eDischarge Message Definition"
 
 ## eDischarge Definition Overview ##
 
-This is the MessageDefinition instance for the ITK 3 eDischarge document.
+This is the MessageDefinition instance for the ITK3 eDischarge document.
 
 - **Sender:**  Sending System
 - **Receiver:** Recipient System

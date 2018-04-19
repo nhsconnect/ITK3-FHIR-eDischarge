@@ -11,7 +11,7 @@ summary: Describes components of a design & build of a ITK Messaging Solution us
 
 ## Background ##
 
-The Design & Build section details items that will be useful when designing and building a ITK 3 messaging solution.
+The Design & Build section details items that will be useful when designing and building a ITK3 messaging solution.
 
 The subsections provide information on things such as:
 
