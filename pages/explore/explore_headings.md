@@ -12,7 +12,7 @@ summary: "Overview of the eDischarge headings"
 
 ## Overview ##
 
-This section provides a list of the AMoRC headings used for text sections in the ITK FHIR eDischarge based on the "Standards for the clinical structure and content of patient records" documentation. 
+This section provides a list of the PRSB headings used for text sections in the ITK FHIR eDischarge based on the "Standards for the clinical structure and content of patient records" documentation. 
 
 This section lists the following
 
