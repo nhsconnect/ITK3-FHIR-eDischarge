@@ -4,7 +4,7 @@ keywords: development, versioning
 tags: [development]
 sidebar: overview_sidebar
 permalink: overview_release_notes.html
-summary: Summary release notes of the versions released in ITK eDischarge Implementation Guide
+summary: Summary release notes of the versions released in ITK3 eDischarge Implementation Guide
 ---
 
 {% include custom/search.warnbanner.html %}
@@ -31,7 +31,7 @@ Changed to align with the ITK3 Messaging Distribution specification version 2.1.
 
 **Messaging Architecture Changes**
 
-Interactions have been replaced by message definitions and new ITK Handling keys.
+Interactions have been replaced by message definitions and new ITK3 Handling keys.
 
 **Value sets / Code Systems**
 

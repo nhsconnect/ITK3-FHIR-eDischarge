@@ -83,7 +83,7 @@ The Plan and requested actions section carries information about planned and req
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded Plan and requested actions information.
+- The ITK3 FHIR eDischarge does not currently support coded Plan and requested actions information.
 
 
 

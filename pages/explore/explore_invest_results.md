@@ -56,7 +56,7 @@ The Investigation results section carries information about investigation result
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded investigation results.
+- The ITK3 FHIR eDischarge does not currently support coded investigation results.
 
 
 

@@ -56,7 +56,7 @@ The Referrer details section carries a narrative summary of the episode. Where p
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded referrer details.
+- The ITK3 FHIR eDischarge does not currently support coded referrer details.
 
 
 

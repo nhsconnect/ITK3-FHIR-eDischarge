@@ -69,6 +69,6 @@ The Safety alerts section carries safety alerts associated with the patient. Ele
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support a coded safety alerts.
+- The ITK3 FHIR eDischarge does not currently support a coded safety alerts.
 
 

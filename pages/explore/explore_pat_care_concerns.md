@@ -63,7 +63,7 @@ The Patient and carer concerns, expectations and wishes section carries informat
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded patient and carer concerns, expectations and wishes information.
+- The ITK3 FHIR eDischarge does not currently support coded patient and carer concerns, expectations and wishes information.
 
 
 

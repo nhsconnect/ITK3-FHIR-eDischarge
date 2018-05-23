@@ -70,7 +70,7 @@ GP2GP
 IDT
 : {{site.data.glossary.idt}}
 
-ITK
+ITK3
 : {{site.data.glossary.itk}}
 
 JSON

@@ -57,7 +57,7 @@ The Information and advice given section carries information and advice given. E
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded information and advice given.
+- The ITK3 FHIR eDischarge does not currently support coded information and advice given.
 
  
 

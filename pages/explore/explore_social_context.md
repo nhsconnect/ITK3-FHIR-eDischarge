@@ -68,7 +68,7 @@ The Social context section carries information about the social context of the p
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support coded Social context information.
+- The ITK3 FHIR eDischarge does not currently support coded Social context information.
 
 
 

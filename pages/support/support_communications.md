@@ -5,7 +5,7 @@ tags: [support]
 toc: false
 sidebar: overview_sidebar
 permalink: support_communications.html
-summary: "NHS Digital Interoperability Team communication channels used for the ITK Transfer of Care specifications."
+summary: "NHS Digital Interoperability Team communication channels used for the ITK3 Transfer of Care specifications."
 ---
 
 

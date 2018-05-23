@@ -104,7 +104,7 @@ The Legal information section carries information about about legal information 
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- The ITK FHIR eDischarge does not currently support a coded clinical summary.
+- The ITK3 FHIR eDischarge does not currently support a coded clinical summary.
 
 
 
