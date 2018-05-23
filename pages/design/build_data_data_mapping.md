@@ -4,12 +4,12 @@ keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_data_mapping.html
-summary: "Mapping of system data to ITK Message and Document resources"
+summary: "Mapping of system data to ITK3 Message and Document resources"
 ---
 
-{% include important.html content="The ITK Messaging Solution data mapping described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK Messaging Solutions." %}
+{% include important.html content="The ITK3 Messaging Solution data mapping described in this section is not meant to be complete but a starting point to understand some design considerations to consider when implementing ITK3 Messaging Solutions." %}
 
-## What is ITK3  Messaging Solution Data Mapping? ##
+## What is ITK3 Messaging Solution Data Mapping? ##
 
 Any ITK3 Messaging Solution will require some mapping to the FHIR resources included in the message bundle. For documents the data will also need to be mapped to the sections of the document.
 

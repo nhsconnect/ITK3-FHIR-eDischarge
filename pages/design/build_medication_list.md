@@ -1,4 +1,4 @@
----
+﻿---
 title: Medication List
 keywords: design, build,
 tags: [design]
@@ -66,7 +66,7 @@ The medication record is constructed as a single list. The diagram below shows t
 
 There will be one medication statement for each of the medication items contained in the list.
 Each medication statement should have a medication, however it is possible in some cases that the medication is described in the medication statement because the medication cannot be fully coded within the medication Resource. 
-The medication Flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK use. 
+The medication Flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
 
 ## Medication Flag Structures ##
 
