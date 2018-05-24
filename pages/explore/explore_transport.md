@@ -12,9 +12,7 @@ summary: "The transport mechanisms used for ITK3 FHIR Documents"
 
 ## ITK3 and MESH  ##
 
-FIHR Documents may be sent using ITK3 and Mesh
-
-<a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_bundle_structures.html" target="_blank">ITK3 bundle structure</a>
+FIHR Documents should be sent using the ITK3-FHIR-Messaging-Distribution over MESH for further information see the <a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_bundle_structures.html" target="_blank">ITK3-FHIR-Messaging-Distribution</a> specification.
 
 
 
