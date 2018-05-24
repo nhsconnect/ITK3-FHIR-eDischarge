@@ -9,6 +9,10 @@ summary: "Overview of the Messaging Architecture section"
 
 {% include custom/search.warnbanner.html %}
 
+## Overview ##
+
+This section gives details of the document profiles and associated transport and work-flow. 
+
 ## Pre-Requisites for FHIR ITK3 Messaging Solutions ##
 
 ## ITK3 Messaging Requirements ##
