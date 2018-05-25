@@ -14,6 +14,8 @@ summary: "A list of recipients of the document"
 
 The Distribution list section carries a list of recipients of the document. Elements should be formatted as subheadings in any html sent.
 
+The document may be sent to any number of recipients, however all recipients should be included in the distribution list to allow individual recipients to know who else has received a copy.
+
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
