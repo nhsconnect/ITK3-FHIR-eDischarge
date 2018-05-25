@@ -191,7 +191,6 @@
 						x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Conformance </tspan><tspan
 						x="4.71" dy="1.204em" class="st10">Reports<v:newlineChar/></tspan><tspan x="4" dy="1.212em" class="st9"
 						v:isBullet="true">·</tspan><tspan class="st10">Assurance </tspan><tspan x="4.71" dy="1.204em" class="st10">Checklist</tspan></text>		</g>
-		<a xlink:href="deploy.html">
 			<g id="shape7-93" v:mID="7" v:groupContext="shape" transform="translate(312.982,42.7576) rotate(-90)">
 				<title>Deploy(Pilot)</title>
 				<desc>Deploy(Pilot)</desc>
@@ -208,7 +207,7 @@
 				</g>
 				<path d="M0 226.1 L18.44 246.91 L36.87 226.1 L36.87 142.86 L18.44 163.67 L0 142.86 L0 226.1 Z" class="st6"/>
 				<text x="168.86" y="-15.44" transform="rotate(90)" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Deploy(Pilot)</text>			</g>
-		</a>
+
 		<g id="shape10-98" v:mID="10" v:groupContext="shape" transform="translate(455.046,-139.384)">
 			<title>Rectangle.10</title>
 			<desc>Messaging Harness Warranted Environment IG / IS MESH</desc>
