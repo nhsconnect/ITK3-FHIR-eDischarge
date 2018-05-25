@@ -39,7 +39,7 @@ The Bundle consists of the following FHIR Resource Profiles.
 
 **Note 1**: This attachment Profile must not be used to send an unstructured Transfer of Care document, its purpose is to allow an attachment to be included within a structured Transfer of Care document.
 
-For a complete definition of the eDischarge document see the section on [message definitions](explore_defs_overview.html)
+For a complete definition of the eDischarge document see the section on [message definitions.](explore_defs_overview.html)
 
 ## ITK3 eDischarge FHIR Document Profile Referencing ##
 
@@ -47,7 +47,7 @@ The diagram shows the referencing between the profiles in the bundle which make 
 
 When using ITK3 there is an outer bundle structure which is called the [ITK3 send payload bundle structure](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_messages.html#itk-send-payload-bundle-diagram) for use with ITK3. 
 
-This diagram only goes to one level due to the complexity and size of the document profile.Below is the key to the diagram.
+This diagram only goes to one level due to the complexity and size of the document Profile. Below is the key to the diagram.
 
 <img src="images/explore/Key.png" style="width: 75%;max-width: 75%;"> 
 
