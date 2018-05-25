@@ -10,7 +10,7 @@ summary: "Gives information about the Referrer details section"
 {% include custom/section.warnbanner.html %}
 
 ## Referrer Details Section Content##
-The Referrer details section carries a narrative summary of the episode. Where possible, very brief. Elements should be formatted as sub headings in any html sent.
+The Referrer details section carries a narrative summary of the episode. Where possible, very brief. Elements should be formatted as sub headings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

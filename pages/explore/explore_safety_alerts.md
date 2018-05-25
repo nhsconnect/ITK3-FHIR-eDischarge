@@ -10,7 +10,7 @@ summary: "Gives information about the Safety alerts section"
 {% include custom/section.warnbanner.html %}
 
 ## Safety Alerts Section Content##
-The Safety alerts section carries safety alerts associated with the patient. Elements should be formatted as subheadings in any html sent.
+The Safety alerts section carries safety alerts associated with the patient. Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

@@ -12,7 +12,7 @@ summary: "A list of recipients of the document"
 ## Distribution List Section Content ##
 
 
-The Distribution list section carries a list of recipients of the document. Elements should be formatted as subheadings in any html sent.
+The Distribution list section carries a list of recipients of the document. Elements should be formatted as subheadings in any HTML sent.
 
 The document may be sent to any number of recipients, however all recipients should be included in the distribution list to allow individual recipients to know who else has received a copy.
 

@@ -23,7 +23,7 @@ This section lists the following
  
 ## Typical Text Section Content ##
 This diagram shows the elements of a typical text section which is found in the FHIR Composition Resource.
-Note: the examples of section HTML in this specification show only example html format such as tables. This is an exemplar format. There is no mandated format for the section HTML. 
+Note: the examples of section HTML in this specification show only example HTML format such as tables. This is an exemplar format. There is no mandated format for the section HTML. 
 
 <img src="images/explore/section_description.png" style="width: 100%;max-width: 100%;">
  

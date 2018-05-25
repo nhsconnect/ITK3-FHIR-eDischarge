@@ -10,7 +10,7 @@ summary: "Gives information about the Participation in research section"
 {% include custom/section.warnbanner.html %}
 
 ## Participation in Research Section Content##
-This is to flag participation in a clinical trial. Elements should be formatted as sub headings in any html sent.
+This is to flag participation in a clinical trial. Elements should be formatted as sub headings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
