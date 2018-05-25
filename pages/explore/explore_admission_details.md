@@ -26,7 +26,7 @@ The Admission details section carries information about the patient's admission.
 		<tr>
 			<td>Admission details</td>
 			<td>Details of the patient's admission and reason for admission</td>
-			<td>&nbsp;</td>
+			<td>0..1</td>
 			<td>required</td>
 			<td>&nbsp;</td>
 		</tr>
