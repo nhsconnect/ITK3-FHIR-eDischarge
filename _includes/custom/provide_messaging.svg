@@ -291,7 +291,6 @@
 			<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st8"/>
 			<text x="26.33" y="520.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Report &#38; <tspan
 						x="29.39" dy="1.2em" class="st12">Monitor</tspan></text>		</g>
-		<a xlink:href="design_patterns">
 			<g id="shape11-77" v:mID="11" v:groupContext="shape" transform="translate(39.685,-238.11)">
 				<title>Patterns / Topology</title>
 				<desc>Patterns / Topology</desc>
@@ -305,8 +304,6 @@
 				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4"/>
 				<text x="24.66" y="520.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Patterns / <tspan
 							x="25.49" dy="1.2em" class="st12">Topology</tspan></text>			</g>
-		</a>
-		<a xlink:href="design_access.html">
 			<g id="shape12-81" v:mID="12" v:groupContext="shape" transform="translate(29.7638,-345.827)">
 				<title>Access</title>
 				<desc>Access</desc>
@@ -319,8 +316,6 @@
 				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945"/>
 				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4"/>
 				<text x="29.95" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Access</text>			</g>
-		</a>
-		<a xlink:href="design_security.html" xlink:title="Security">
 			<g id="shape4-84" v:mID="4" v:groupContext="shape" transform="translate(200.551,-464.173)">
 				<title>Security</title>
 				<desc>Security</desc>
@@ -333,6 +328,5 @@
 				<v:textRect cx="46.063" cy="523.606" width="80.62" height="69.0945"/>
 				<path d="M0 523.61 A46.063 46.063 0 0 1 92.13 523.61 A46.063 46.063 0 1 1 0 523.61 Z" class="st4"/>
 				<text x="28" y="526.61" class="st9" v:langID="2057"><v:paragraph v:horizAlign="1"/><v:tabList/>Security</text>			</g>
-		</a>
 	</g>
 </svg>
