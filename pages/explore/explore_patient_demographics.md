@@ -102,7 +102,7 @@ The Patient demographics section contains information about the patient. Element
 		</tr>
 		<tr>
 			<td>Relevant contacts</td>
-			<td>Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependants, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc.Name, relationship, role (if formal role), contact details and availability, eg out of hours.</td>
+			<td>Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependents, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc.Name, relationship, role (if formal role), contact details and availability, eg out of hours.</td>
 			<td>0 to 1</td>
 			<td>optional</td>
 			<td>Details of relevant contacts, such as carers or family members, as recorded on the local system, or volunteered by the patient. This will be a free text list of relevant contacts.</td>
