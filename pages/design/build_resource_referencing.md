@@ -42,7 +42,7 @@ The diagram shows the referencing for the Encounter resource.
 
 ## List (Medication) ##
 
-The diagram shows the referencing for the List resource for Medication.
+The diagram shows the referencing for the List Resource for Medication.
 
 <img src="images/explore/medication_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -60,7 +60,7 @@ The diagram shows the referencing for the Medication resource.
 
 ## List (Allergy) ##
 
-The diagram shows the referencing for the List resource for Allergies.
+The diagram shows the referencing for the List Resource for Allergies.
 
 <img src="images/explore/allergy_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -72,7 +72,7 @@ The diagram shows the referencing for the AllergyIntolerance resource.
 
 ## List (Condition) ##
 
-The diagram shows the referencing for the List resource for conditions.
+The diagram shows the referencing for the List Resource for conditions.
 
 <img src="images/explore/condition_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -84,7 +84,7 @@ The diagram shows the referencing for the Condition resource.
 
 ## List (Procedure) ##
 
-The diagram shows the referencing for the List resource for procedures.
+The diagram shows the referencing for the List Resource for procedures.
 
 <img src="images/explore/procedure_list_referencing.png" style="width: 75%;max-width: 75%;"> 
 

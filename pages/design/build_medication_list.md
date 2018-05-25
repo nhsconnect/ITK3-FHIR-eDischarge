@@ -24,7 +24,7 @@ The FHIR resources are profiled to create the medication list as below:
 - **[CareConnect-ITK-Medication-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1)** - An NHS Digital Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.
 
 ## List ##
-This resource acts as a container for the medication items. The following is an example of the elements which can be used:
+This Resource acts as a container for the medication items. The following is an example of the elements which can be used:
 
 - identifier - uniquely identifies this list of medication (UUID)
 - status - active, completed, stopped etc
@@ -32,7 +32,7 @@ This resource acts as a container for the medication items. The following is an 
 - encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
-- entry - a reference to the MedicationStatement resource entry
+- entry - a reference to the MedicationStatement Resource entry
 - flag - the type of medication entry (additional, discontinued etc.)
 
 ## MedicationStatement ##
@@ -41,16 +41,16 @@ A record of a medication that is being consumed by a patient.The following is an
 - identifier - uniquely identifies this medication statement (UUID)
 - clinicStatus - should always be active
 - category - should be inpatient
-- medication -the medication coded (a SNOMED CT Concept that identifies this medication) or a reference to the medication resource which details the medication. Note: the reference to medication resource allows a much richer description of the medication and should always be used if possible. 
+- medication -the medication coded (a SNOMED CT Concept that identifies this medication) or a reference to the medication Resource which details the medication. Note: the reference to medication Resource allows a much richer description of the medication and should always be used if possible. 
 - effective - the date/time or interval when the medication was taken
 - dateAsserted - When the statement was asserted?
 - informationSource - Person or organization that provided the information about the taking of this medication
 - reasonCode - Reason for why the medication is being/was taken
-- reasonReference - a reference to the condition or observation resource that supports why the medication is being/was taken 
+- reasonReference - a reference to the condition or observation Resource that supports why the medication is being/was taken 
 - dosage - Details of how medication is/was taken or should be taken
 
 ## Medication ##
-The Medication resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle).The following is a example of the elements that can be used:
+The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle).The following is a example of the elements that can be used:
 
 - code - a SNOMED CT Concept that identifies this medication
 - form - powder, tablets, capsule etc SNOMED CT form concepts
@@ -74,7 +74,7 @@ The medication Flag element of the List Resource will indicate the context of th
 
 ## Changing Medication Illustration ##
 
-The list will use the FHIR Flag element of the list resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
+The list will use the FHIR Flag element of the list Resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
 
 <img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
 

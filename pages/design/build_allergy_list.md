@@ -24,7 +24,7 @@ The FHIR resources are profiled to create the allergy list as below:
 - **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A CareConnect derived Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
 
 ## List ##
-This resource acts as a container for the allergies. The following is an example of the main elements used:
+This Resource acts as a container for the allergies. The following is an example of the main elements used:
 
 - identifier - uniquely identifies this list of allergies (UUIDs)
 - status - should always be "current"
@@ -33,10 +33,10 @@ This resource acts as a container for the allergies. The following is an example
 - encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
-- entry - a reference to the allergyIntolerance resource entry
+- entry - a reference to the allergyIntolerance Resource entry
 
 ## AllergyIntolerance ##
-This resource details the actual allergy or adverse reaction. The following is an example of the main elements used: 
+This Resource details the actual allergy or adverse reaction. The following is an example of the main elements used: 
 
 - identifier - uniquely identifies this allergy or adverse reaction (UUID)
 - clinicStatus - should always be active
@@ -50,7 +50,7 @@ This resource details the actual allergy or adverse reaction. The following is a
 - reaction - details of the reaction
 
 ## Causative Agents ##
-It is acceptable to have entries for causative agents which are similar, e.g. penicillin and amoxicillin, but have different causative agent codes. The causative agent is carried in the AllergyIntolerance resource substance element.
+It is acceptable to have entries for causative agents which are similar, e.g. penicillin and amoxicillin, but have different causative agent codes. The causative agent is carried in the AllergyIntolerance Resource substance element.
 
 Where the causative agent is a drug then:
 
@@ -89,7 +89,7 @@ The allergy record is constructed as a single list. The diagram below shows the 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
 
 
-Each allergy in the list will use the FHIR list resource Flag element to indicate the context of the allergy (For example unchanged, new etc). 
+Each allergy in the list will use the FHIR list Resource Flag element to indicate the context of the allergy (For example unchanged, new etc). 
 
 ## Allergy Flag Structures ##
 

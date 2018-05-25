@@ -23,7 +23,7 @@ This section gives details of the document profiles and associated transport and
 
 ## FHIR Conformance ##
 
-Systems SHOULD declare a Conformance using the FHIR resource Capability Statement identifying the list of message definitions supported.
+Systems SHOULD declare a Conformance using the FHIR Resource Capability Statement identifying the list of message definitions supported.
 
 
 

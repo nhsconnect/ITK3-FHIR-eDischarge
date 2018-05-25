@@ -11,7 +11,7 @@ summary: "Overview of work flow using encounter resource."
 
 ## Overview ##
 
-The eDischarge does not support any real "workflow" but uses the encounter resource to give context to the information contained in the eDischarge document. The encounter resource represent the inpatient stay and can contain important information such as:
+The eDischarge does not support any real "workflow" but uses the encounter Resource to give context to the information contained in the eDischarge document. The encounter Resource represent the inpatient stay and can contain important information such as:
  
 - When the patient was admitted
 - Why the patient was admitted

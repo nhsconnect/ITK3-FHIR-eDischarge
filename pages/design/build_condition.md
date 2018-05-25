@@ -9,16 +9,16 @@ summary: "Constructing a condition list"
 
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition resource is referenced via the List resource.
+This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition Resource is referenced via the List resource.
 
 ## Resources Used for Profile Design ##
 The following FHIR resources are profiled to create the condition list.
 
 - **[CareConnect-ITK-Condition-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-List-1)** - A CareConnect derived NHS Digital Profile for recording a snapshot of the list of Conditions for the patient.
-- **[CareConnect-ITK-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1)** -	A CareConnect derived NHS Digital Profile for conditions. The Condition resource records detailed information about conditions (diagnoses) recognised by a clinician.
+- **[CareConnect-ITK-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1)** -	A CareConnect derived NHS Digital Profile for conditions. The Condition Resource records detailed information about conditions (diagnoses) recognised by a clinician.
 
 ## List ##
-This resource acts as a container for the conditions. The following is an example of the main elements used:
+This Resource acts as a container for the conditions. The following is an example of the main elements used:
 
 - identifier - uniquely identifies this list of conditions (UUIDs)
 - status - should always be "current"
@@ -27,10 +27,10 @@ This resource acts as a container for the conditions. The following is an exampl
 - encounter - a reference to the context in which the list was created (the inpatient stay for example)
 - date - when the list was prepared
 - source - who or what defined the list
-- entry - a reference to the condition resource entry
+- entry - a reference to the condition Resource entry
 
 ## Condition ##
-This resource is used to record detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.The following is an example of the elements that can be used: 
+This Resource is used to record detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.The following is an example of the elements that can be used: 
 
 - identifier - uniquely identifies this condition (UUIDs)
 - clinicalStatus - 	active, recurrence, inactive, remission, resolved etc
@@ -49,7 +49,7 @@ The condition list is constructed as a single list. The diagram below shows the 
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
 
-Each condition in the list will use the FHIR list resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
+Each condition in the list will use the FHIR list Resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
 
 **Important Note - The value set for the condition list flag element is currently under review and subject to change.**
 
