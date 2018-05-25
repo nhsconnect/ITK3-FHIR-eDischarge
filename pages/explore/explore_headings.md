@@ -75,7 +75,7 @@ Note: the examples of section HTML in this specification show only example html 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_diagnosis.html">Diagnoses</a>
+			<a href="explore_diagnoses.html">Diagnoses</a>
 		</td>
 		<td>887161000000102</td>
     	<td>1..1</td>
