@@ -210,7 +210,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_referrer.html">Referrer details</a>
+			<a href="explore_referrer_details.html">Referrer details</a>
 		</td>
 		<td>1052891000000108</td>
     	<td>0..1</td>
