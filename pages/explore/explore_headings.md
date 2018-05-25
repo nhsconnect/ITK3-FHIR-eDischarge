@@ -111,7 +111,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_individual_requirements.html">Individual requirements</a>
+			<a href="explore_individual_reqs.html">Individual requirements</a>
 		</td>
 		<td>1052901000000109</td>
     	<td>0..1</td>
@@ -120,7 +120,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_information_and_advice_given.html">Information and advice given</a>
+			<a href="explore_information_given.html">Information and advice given</a>
 		</td>
 		<td>1052951000000105</td>
     	<td>0..1</td>
@@ -174,7 +174,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_pat_care_concerns_ex_wishes.htm">Patient and carer concerns,expectations and wishes</a>
+			<a href="explore_pat_care_concerns.html">Patient and carer concerns,expectations and wishes</a>
 		</td>
 		<td>1052941000000107</td>
     	<td>0..1</td>
@@ -210,7 +210,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_referrer_details.html">Referrer details</a>
+			<a href="explore_referrer.html">Referrer details</a>
 		</td>
 		<td>1052891000000108</td>
     	<td>0..1</td>
