@@ -47,7 +47,7 @@ All PRSB headings and subheadings have been updated following release of the ver
 
 **New Profiles**
 
-Added Binary resource profile to allow support for attachments.
+Added Binary resource Profile to allow support for attachments.
 
 **Specification Structure**
 

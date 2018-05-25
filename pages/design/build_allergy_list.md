@@ -20,7 +20,7 @@ Transfer of Care only records the first type of Allergic Response or Adverse Rea
 ## Resources Used for Profile Design ##
 The FHIR resources are profiled to create the allergy list as below:
 
-- **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital profile for recording a snapshot of the list of Allergies for the patient.
+- **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital Profile for recording a snapshot of the list of Allergies for the patient.
 - **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A CareConnect derived Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
 
 ## List ##
