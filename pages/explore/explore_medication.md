@@ -105,7 +105,7 @@ The Medications and medical devices section carries information about the patien
 			<td>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. In sufficient information to detail these further at present</td>
+			<td>Text*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</td>
 		</tr>
 		<tr>
 			<th>Structured dose direction cluster</th>
@@ -119,14 +119,14 @@ The Medications and medical devices section carries information about the patien
 			<th>A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</th>
 			<th>&nbsp;</th>
 			<th>optional</th>
-			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. In sufficient information to detail these further at present</th>
+			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</th>
 		</tr>
 		<tr>
 			<th>Structured dose timing cluster ***</th>
 			<th>A slot containing a structural, computable representation of dose timing and maximum dose.  Comment: This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</th>
 			<th>&nbsp;</th>
 			<th>optional</th>
-			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. In sufficient information to detail these further at present</th>
+			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</th>
 		</tr>
 		<tr>
 			<td>Dose direction duration</td>
