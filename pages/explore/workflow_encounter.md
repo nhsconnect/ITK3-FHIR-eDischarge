@@ -4,7 +4,7 @@ keywords: workflow
 tags: [development,fhir,profiles]
 sidebar: overview_sidebar
 permalink: workflow_encounter.html
-summary: "Overview of work flow using encounter resource."
+summary: "Overview of the work flow using Encounter Resource."
 ---
 
 {% include custom/search.warnbanner.html %}
