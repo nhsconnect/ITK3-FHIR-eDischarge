@@ -10,7 +10,7 @@ summary: "Resource referencing explained."
 {% include custom/search.warnbanner.html %}
 
 ## Overview ##
-This section details the reference between resources.
+This section details the referencing between resources.
 
 The diagrams only go to one level due to the complexity and size of the message.Below is the key to the diagrams.
 
