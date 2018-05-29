@@ -21,7 +21,7 @@ The message definition conforms to the following profile: [ITK-MessageDefinition
 
 The message definition is available as a HTML rendered version for human consumption [eDischarge MessageDefinition rendered](https://fhir.nhs.uk/STU3/MessageDefinition/ITK-eDischarge-MessageDefinition-Instance-1) 
 
-The xml version for machine processing is available as a GIST file see below.
+The XML version for machine processing is available as a GIST file see below.
 
 <script src="https://gist.github.com/IOPS-DEV/6258037b316797361f1f0fc76c5a42cc.js"></script>
 
