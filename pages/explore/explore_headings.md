@@ -33,7 +33,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 	<tr>
 		<th width="40%">Section Name</th>
 		<th width="20%">SNOMED Concept</th>
-		<th width="13%">Cardinally</th>
+		<th width="13%">Cardinality</th>
 		<th width="13%">Conformance</th>
 		<th width="13%">Associated Coded Profiles</th>
 	</tr>
