@@ -4,7 +4,7 @@ keywords:  messaging, bundles
 tags: [fhir,messaging]
 sidebar: foundations_sidebar
 permalink: explore_transport.html
-summary: "The transport mechanisms used for ITK FHIR Documents"
+summary: "The transport mechanisms used for ITK3 FHIR Documents"
 ---
 
 {% include custom/search.warnbanner.html %}

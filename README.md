@@ -1,4 +1,4 @@
-# ITK eDischarge
+# ITK3 eDischarge
 
 <p align="center">
   <a href="https://v4-alpha.getbootstrap.com">
@@ -6,10 +6,10 @@
     <img src="images/logo.png" height=72>
   </a>
 
-  <h3 align="center">ITK eDischarge </h3>
+  <h3 align="center">ITK3 eDischarge </h3>
 
   <p align="center">
-    Implementation Guide for creating ITK eDischarge components for FHIR Messaging
+    Implementation Guide for creating ITK3 eDischarge components for FHIR Messaging
     <br>
     <a href="#"><strong>Visit ITK-Distribution &raquo;</strong></a>
   </p>
@@ -34,14 +34,14 @@
 Several quick start options are available:
 
 - [View the latest release]( )
-- Clone the repo: `git clone https://github.com/nhsconnect/ITK eDischarge`
+- Clone the repo: `git clone https://github.com/nhsconnect/ITK3 eDischarge`
 - Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/#homebrew)
 - Install OS X/Linux [Jekyll](https://jekyllrb.com/docs/installation/)
 - Install Windows [Jekyll](https://jekyllrb.com/docs/windows/)
 - Run Jekyll locally: `bundle exec jekyll serve`
 - Browse website [Browser](http://localhost:4000): `http://localhost:4000`
 
-Read the [Getting started page](#) for information on ITK eDischarge components for FHIR Messaging contents, templates and examples, and more.
+Read the [Getting started page](#) for information on ITK3 eDischarge components for FHIR Messaging contents, templates and examples, and more.
 
 ## What's included
 
@@ -54,7 +54,7 @@ StructureDefinitions
 ValueSets
 ```
 
-We provide a complete set of instructions for you to get your ITK eDischarge components for FHIR Messaging working and compiled locally.
+We provide a complete set of instructions for you to get your ITK3 eDischarge components for FHIR Messaging working and compiled locally.
 
 ### Running documentation locally
 

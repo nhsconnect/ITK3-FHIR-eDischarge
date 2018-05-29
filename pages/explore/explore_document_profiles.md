@@ -16,7 +16,7 @@ The document bundle is a collection of FHIR Resource Profiles combined to suppor
 
 The Bundle consists of the following FHIR Resource Profiles.
 
-- **[ITK-Document-Bundle-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1)** - An NHS Digital Bundle Profile to represent a container to collect a combination of the ITK FHIR Document resources.
+- **[ITK-Document-Bundle-1](https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1)** - An NHS Digital Bundle Profile to represent a container to collect a combination of the ITK3 FHIR Document resources.
 - **[CareConnect-ITK-EDIS-Composition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1)** - An NHS Digital Profile derived from the CareConnect Profile for eDischarge FHIR Documents. This Profile is aligned to the PRSB standard for headings and subheadings for clinical documents.
 - **[CareConnect-ITK-Encounter-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1)** - A NHS Digital Profile derived from the CareConnect encounter profile. The encounter Resource represents an encounter between a care professional and the patient (or patient's record).
 - **[CareConnect-ITK-Medication-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/Careconnect-ITK-Medication-List-1)** - An NHS Digital Profile derived from the CareConnect List Profile for recording a snapshot of the list of Medications for the patient.
