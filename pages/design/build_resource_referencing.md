@@ -12,7 +12,7 @@ summary: "Resource referencing explained."
 ## Overview ##
 This section details the referencing between resources.
 
-The diagrams only go to one level due to the complexity and size of the message.Below is the key to the diagrams.
+The diagrams only go to one level due to the complexity and size of the message. Below is the key to the diagrams.
 
 <img src="images/explore/Key.png" style="width: 75%;max-width: 75%;"> 
 
