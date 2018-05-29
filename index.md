@@ -16,7 +16,7 @@ summary: A brief introduction to getting started with the ITK3 eDischarge.
 
 ## Introduction ##
 
-The Transfer Of Care eDischarge  Specification supports the following care communications:
+The Transfer of Care eDischarge  Specification supports the following care communications:
 
 **eDischarge (inpatient discharge summary) Document** – An ITK3 FHIR Document containing Transfer of Care information supporting an inpatient discharge typically between an acute hospital and GP practice.
    
