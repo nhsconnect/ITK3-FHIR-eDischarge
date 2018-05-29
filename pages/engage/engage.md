@@ -9,6 +9,6 @@ summary: "These pages assist with requirements gathering and mapping stages of a
 
 ## Case Studies  ##
 
-Please see the relevant payload specification for details on case studies.
+Please see the relevant Payload specification for details on case studies.
 
 
