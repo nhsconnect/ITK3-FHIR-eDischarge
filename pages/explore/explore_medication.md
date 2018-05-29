@@ -60,7 +60,7 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Route</td>
-			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube).Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supportsmultiple Routes to allow a choice to be specified by the prescriber</td>
+			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
 			<td>0 to many</td>
 			<td>optional</td>
 			<td>Text derived from SNOMED CT</td>

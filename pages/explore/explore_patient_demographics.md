@@ -70,7 +70,7 @@ The Patient demographics section contains information about the patient. Element
 			<td>The unique identifier for a patient within the NHS in England and Wales.</td>
 			<td>0 to 1</td> 
 			<td>required</td>
-			<td>"Sent as per the NHS Data Dictionary NHS number.Traced NHS Numbers only should be used."</td>
+			<td>Sent as per the NHS Data Dictionary NHS number.Traced NHS Numbers only should be used."</td>
 		</tr>
 		<tr>
 			<td>Other identifier</td>

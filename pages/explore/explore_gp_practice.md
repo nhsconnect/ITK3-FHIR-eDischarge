@@ -50,7 +50,7 @@ The GP practice section contains details of the patients GP practice. Elements s
 			<td>Name and address of the patient's registered GP Practice</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact.Include details of the Practice name and address</td>
+			<td>Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact. Include details of the Practice name and address</td>
 		</tr>
 		<tr>
 			<td>GP practice identifier</td>

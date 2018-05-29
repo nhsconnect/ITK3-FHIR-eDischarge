@@ -12,9 +12,9 @@ summary: Providing an ITK3 Messaging Solution for the first time is a journey. T
 	
 ## How to provide an ITK3 Messaging Solution ##
 
-The diagram below explains the parts involved in providing ITK3 Messaging Solutions. This implementation guide provides :
+The diagram below explains the parts involved in providing ITK3 Messaging Solutions. This implementation guide provides:
 - the starting point of providing ITK3 Messaging Solutions (in white);
-- descriptions and pointers of elements to getting working ITK3 Messaging Solution within various infrastructures (in green); and
+- descriptions and pointers of elements to get working ITK3 Messaging Solutions  within various infrastructures (in green); and
 - considerations when managing live ITK3 Messaging Solutions (in gray)
 
 {% include custom/provide_messaging.svg %}
