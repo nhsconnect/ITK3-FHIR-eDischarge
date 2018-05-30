@@ -8,7 +8,7 @@ summary: "Constructing an allergy list"
 ---
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model for allergies.
+This section details the design approach using FHIR Resources to support the PRSB heading model for allergies.
 It is important to distinguish between two kinds of allergic reaction / adverse reaction entry in the medical record:
 ## Allergic Response or Adverse Reaction Event and Propensity ##
 <ol>
@@ -18,10 +18,10 @@ It is important to distinguish between two kinds of allergic reaction / adverse 
 Transfer of Care only records the first type of Allergic Response or Adverse Reaction i.e. the allergic event not the propensity.
 
 ## Resources Used for Profile Design ##
-The FHIR resources are profiled to create the allergy list as below:
+The FHIR Resources are profiled to create the allergy list as below:
 
-- **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital Profile for recording a snapshot of the list of Allergies for the patient.
-- **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A CareConnect derived Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
+- **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital Profile derived from the CareConnect Profile for recording a snapshot of the list of Allergies for the patient.
+- **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A NHS Digital Profile derived from the CareConnect Profile for Allergie and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
 
 ## List ##
 This Resource acts as a container for the allergies. The following is an example of the main elements used:
@@ -39,12 +39,12 @@ This Resource acts as a container for the allergies. The following is an example
 This Resource details the actual allergy or adverse reaction. The following is an example of the main elements used: 
 
 - identifier - uniquely identifies this allergy or adverse reaction (UUID)
-- clinicStatus - should always be active
+- clinicalStatus - should always be active
 - category - whether the allergy or adverse reaction is to food, medication etc
 - criticality - low, high, unable-to-assess etc
 - code - identifies the allergy
 - patient - a reference to the patient
-- asserted date - date record was believed accurate
+- assertedDate  - date record was believed accurate
 - asserter - the source of the information about the allergy (patient, related person, practitioner)
 - lastOccurrence - when it last occurred if known
 - reaction - details of the reaction
@@ -96,7 +96,7 @@ Each allergy in the list will use the FHIR list Resource Flag element to indicat
 <img src="images/build/allergy_flag_structure.png" style="width:100%;max-width: 100%;">
 
 ## How to Represent "No Known Allergies" ## 
-When there is a positive statement that the patient has "No Known Allergies" then no coded structure is sent. Please refer to the [Allergy and Adverse Reactions](explore_allergies_and_adverse_reactions.html) section for how to send the information as narrative text.
+When there is a positive statement that the patient has "No known allergies" then no coded structure is sent. Please refer to the [Allergy and Adverse Reactions](explore_allergies_and_adverse_reactions.html) section for how to send the information as narrative text.
 
 ## Allergy List Item Example ##
 

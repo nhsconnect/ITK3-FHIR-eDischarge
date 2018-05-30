@@ -10,14 +10,14 @@ summary: "Constructing a medication list"
 {% include important.html content="The resources referenced in this section are the FHIR base resources which will be constrained by the profiles used by eDischarge, the profiles should be referred to for the actually allowable structure and content." %}
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the AoMRC heading model for medication and devices.
+This section details the design approach using FHIR Resources to support the AoMRC heading model for medication and devices.
 
 
 ## Medication Snapshot ##
 The medication list is a “Snapshot” of the medication at a point in time (for example on discharge from hospital). It is not a master list of the patient’s medications. Other lists of medications for the patient may exist on other systems. 
 
 ## Resources Used for Profile Design ##
-The FHIR resources are profiled to create the medication list as below:
+The FHIR Resources are profiled to create the medication list as below:
 
 - **[CareConnect-ITK-Medication-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-List-1)** - An NHS Digital Profile for recording a snapshot of the list of Medications for the patient.
 - **[CareConnect-ITK-MedicationStatement-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationStatement-1)** - An NHS Digital Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.
@@ -36,12 +36,12 @@ This Resource acts as a container for the medication items. The following is an 
 - flag - the type of medication entry (additional, discontinued etc.)
 
 ## MedicationStatement ##
-A record of a medication that is being consumed by a patient.The following is an example of the elements that can be used:
+A record of a medication that is being consumed by a patient. The following is an example of the elements that can be used:
 
 - identifier - uniquely identifies this medication statement (UUID)
-- clinicStatus - should always be active
+- clinicalStatus - should always be active
 - category - should be inpatient
-- medication -the medication coded (a SNOMED CT Concept that identifies this medication) or a reference to the medication Resource which details the medication. Note: the reference to medication Resource allows a much richer description of the medication and should always be used if possible. 
+- medication - the medication coded (a SNOMED CT Concept that identifies this medication), this is done by reference to the Medication Resource which details the medication. 
 - effective - the date/time or interval when the medication was taken
 - dateAsserted - When the statement was asserted?
 - informationSource - Person or organization that provided the information about the taking of this medication
@@ -66,7 +66,7 @@ The medication record is constructed as a single list. The diagram below shows t
 
 There will be one medication statement for each of the medication items contained in the list.
 Each medication statement should have a medication, however it is possible in some cases that the medication is described in the medication statement because the medication cannot be fully coded within the medication Resource. 
-The medication Flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
+The entry.flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
 
 ## Medication Flag Structures ##
 
@@ -74,7 +74,7 @@ The medication Flag element of the List Resource will indicate the context of th
 
 ## Changing Medication Illustration ##
 
-The list will use the FHIR Flag element of the list Resource to indicate the context of the medication of statement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
+The list will use the FHIR Flag element of the List Resource to indicate the context of the MedicationStatement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
 
 <img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
 

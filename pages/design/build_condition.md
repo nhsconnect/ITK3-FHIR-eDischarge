@@ -9,10 +9,10 @@ summary: "Constructing a condition list"
 
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model for a condition list. The condition Resource is referenced via the List resource.
+This section details the design approach using FHIR Resources to support the PRSB heading model for a condition list. The condition Resource is referenced via the List Resource.
 
 ## Resources Used for Profile Design ##
-The following FHIR resources are profiled to create the condition list.
+The following FHIR Resources are profiled to create the condition list.
 
 - **[CareConnect-ITK-Condition-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-List-1)** - A CareConnect derived NHS Digital Profile for recording a snapshot of the list of Conditions for the patient.
 - **[CareConnect-ITK-Condition-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Condition-1)** -	A CareConnect derived NHS Digital Profile for conditions. The Condition Resource records detailed information about conditions (diagnoses) recognised by a clinician.
@@ -35,7 +35,7 @@ This Resource is used to record detailed information about a condition, problem,
 - identifier - uniquely identifies this condition (UUIDs)
 - clinicalStatus - 	active, recurrence, inactive, remission, resolved etc
 - category - for eDischarge this will normally be encounter-diagnosis
-- Severity - subjective severity of condition
+- severity - subjective severity of condition
 - code - identification of the condition, problem or diagnosis
 - bodySite - anatomical location, if relevant
 - subject - the patient

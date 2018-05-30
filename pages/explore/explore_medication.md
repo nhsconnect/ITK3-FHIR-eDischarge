@@ -312,7 +312,7 @@ This text section should be linked to the following FHIR Resources to provide th
 - MedicationStatement
 - Flag
  
-See constructing coded clinical structures - [Medication Lists](build_medication_lists.html)
+See constructing clinical coded structures - [Medication Lists](build_medication_lists.html)
 
 
 

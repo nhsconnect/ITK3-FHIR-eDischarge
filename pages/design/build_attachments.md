@@ -11,7 +11,7 @@ summary: "Use of Attachments in Transfer of Care Documents"
 
 ## Background ##
 
-The Transfer of Care documents allow for attachments to be included with a structured FHIR document. This section is a place-holder for guidance about the use of attachments which will be added in a later release of this specification.
+The Transfer of Care documents allow for attachments to be included within a structured FHIR document. This section is a place holder for guidance about the use of attachments which will be added in a later release of this specification.
 
 
 

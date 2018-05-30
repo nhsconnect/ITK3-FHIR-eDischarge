@@ -28,7 +28,7 @@ When using ITK3 there is an outer bundle structure which is called the [ITK3 sen
 
 ## Patient ##
 
-The diagram shows the referencing for the Patient resource.
+The diagram shows the referencing for the Patient Resource.
 
 
 <img src="images/explore/patient_referencing.png" style="width: 75%;max-width: 75%;"> 
@@ -36,7 +36,7 @@ The diagram shows the referencing for the Patient resource.
 
 ## Encounter ##
 
-The diagram shows the referencing for the Encounter resource.
+The diagram shows the referencing for the Encounter Resource.
 
 <img src="images/explore/encounter_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -48,13 +48,13 @@ The diagram shows the referencing for the List Resource for Medication.
 
 ## MedicationStatement ##
 
-The diagram shows the referencing for the MedicationStatement resource.
+The diagram shows the referencing for the MedicationStatement Resource.
 
 <img src="images/explore/medicationStatement_referencing.png" style="width: 75%;max-width: 75%;">
 
 ## Medication ##
 
-The diagram shows the referencing for the Medication resource.
+The diagram shows the referencing for the Medication Resource.
 
 <img src="images/explore/medication_referencing.png" style="width: 50%;max-width: 50%;">  
 
@@ -66,7 +66,7 @@ The diagram shows the referencing for the List Resource for Allergies.
 
 ## AllergyIntolerance ##
 
-The diagram shows the referencing for the AllergyIntolerance resource.
+The diagram shows the referencing for the AllergyIntolerance Resource.
 
 <img src="images/explore/allergyIntolerance_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -78,7 +78,7 @@ The diagram shows the referencing for the List Resource for conditions.
 
 ## Condition ##
 
-The diagram shows the referencing for the Condition resource.
+The diagram shows the referencing for the Condition Resource.
 
 <img src="images/explore/condition_referencing.png" style="width: 75%;max-width: 75%;"> 
 
@@ -90,7 +90,7 @@ The diagram shows the referencing for the List Resource for procedures.
 
 ## Procedure ##
 
-The diagram shows the referencing for the Procedure resource.
+The diagram shows the referencing for the Procedure Resource.
 
 <img src="images/explore/procedure_referencing.png" style="width: 75%;max-width: 75%;"> 
 

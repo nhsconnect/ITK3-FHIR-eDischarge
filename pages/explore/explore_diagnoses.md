@@ -75,7 +75,7 @@ This text section should be linked to the following FHIR Resources to provide th
 
 - Condition
  
-See constructing coded clinical structures - [Condition](build_conditions.html)
+See constructing clinical coded structures - [Condition](build_conditions.html)
 
 
 

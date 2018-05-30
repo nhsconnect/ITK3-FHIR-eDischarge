@@ -8,10 +8,10 @@ summary: "Constructing a procedure list"
 ---
 
 ## Overview ##
-This section details the design approach using FHIR resources to support the PRSB heading model which use the procedure resource. The Procedure Resource is referenced via the List resource.
+This section details the design approach using FHIR Resources to support the PRSB heading model which use the Procedure Resource. The Procedure Resource is referenced via the List Resource.
 
 ## Resources Used for Profile Design ##
-The FHIR resources are profiled to create the procedure list as follows:
+The FHIR Resources are profiled to create the procedure list as follows:
 
 - **[CareConnect-ITK-Procedure-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Procedure-List-1)** - A CareConnect derived NHS Digital Profile for recording a snapshot of the list of Procedures for the patient.
 - **[CareConnect-ITK-Procedure-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Procedure-1)** - A CareConnect derived NHS Digital Profile for procedures. The Procedure Resource is used to record an action that is or was performed on a patient.
@@ -29,7 +29,7 @@ This Resource acts as a container for the procedures. The following is an exampl
 - entry - a reference to the procedure Resource entry
 
 ## Procedure ##
-This Resource is used to record detailed information about a procedure.The following is a example of the elements that can be used: 
+This Resource is used to record detailed information about a procedure. The following is a example of the elements that can be used: 
 
 - identifier - uniquely identifies this procedure (UUIDs)
 - status - completed, aborted etc 

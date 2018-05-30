@@ -11,7 +11,7 @@ summary: "Rendering Transfer of Care Documents"
 
 ## Background ##
 
-The Transfer of Care documents need to be rendered to a human reader. This section is a place-holder for guidance about rendering Transfer of Care documents which will be added in a later release of this specification.
+The Transfer of Care documents need to be rendered to a human reader. This section is a place holder for guidance about rendering Transfer of Care documents which will be added in a later release of this specification.
 
 
 

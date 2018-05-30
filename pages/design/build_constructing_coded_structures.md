@@ -4,7 +4,7 @@ keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_overview.html
-summary: "Overview of constructing coded clinical structures"
+summary: "Overview of constructing clinical coded structures"
 ---
 
 ## What is a Coded Clinical Structure ##
