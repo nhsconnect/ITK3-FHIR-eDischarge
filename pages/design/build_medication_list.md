@@ -50,7 +50,7 @@ A record of a medication that is being consumed by a patient. The following is a
 - dosage - Details of how medication is/was taken or should be taken
 
 ## Medication ##
-The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle).The following is a example of the elements that can be used:
+The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle). The following is a example of the elements that can be used:
 
 - code - a SNOMED CT Concept that identifies this medication
 - form - powder, tablets, capsule etc SNOMED CT form concepts
@@ -66,7 +66,7 @@ The medication record is constructed as a single list. The diagram below shows t
 
 There will be one medication statement for each of the medication items contained in the list.
 Each medication statement should have a medication, however it is possible in some cases that the medication is described in the medication statement because the medication cannot be fully coded within the medication Resource. 
-The entry.flag element of the List Resource will indicate the context of the medication statement(for example additional, discontinuation etc). the list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
+entry.flag element of the List Resource will indicate the context of the medication statement (for example additional, discontinuation etc). The list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
 
 ## Medication Flag Structures ##
 

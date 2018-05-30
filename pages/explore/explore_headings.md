@@ -26,7 +26,34 @@ This diagram shows the elements of a typical text section which is found in the 
 Note: the examples of section HTML in this specification show only example HTML format such as tables. This is an exemplar format. There is no mandated format for the section HTML. 
 
 <img src="images/explore/section_description.png" style="width: 100%;max-width: 100%;">
- 
+
+## Must Support Property ##
+Some elements in the the Composition Resource used within ITK3 Transfer of Care documents have the must support property set to "true"
+These are :
+- Composition.extension(careSettingTypeExtension)
+- Composition.identifier
+- Composition.status
+- Composition.type
+- Composition.class
+- Composition.subject
+- Composition.encounter
+- Composition.date
+- Composition.author
+- Composition.title
+- Composition.custodian
+- Composition.relatesTo
+- Composition.section(slice) Where slice=The PRSB headings for the ITK3 Transfer of Care document type
+
+This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:
+
+- The sending system MUST support the creation and sending of all the elements in the list above.
+- The sending system MUST support the creation and sending of all Composition.section slices with the specified sub-elements and narrative.* See Note 1. 
+- The receiving system MUST support the processing of all the elements in the list above.  
+- The receiving system MUST support the display of all Composition.section slices with the specified sub-elements and narrative.
+
+**Note 1** - There are rules around when sections are sent and when a section can be not sent in a document. For example when there is no data available on the sending system. These are specified in the document headings sections as 0..1 required.
+
+
 ## Headings Used By eDischarge ##
 
 <table>

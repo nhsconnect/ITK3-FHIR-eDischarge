@@ -9,7 +9,7 @@ summary: "Constructing an allergy list"
 
 ## Overview ##
 This section details the design approach using FHIR Resources to support the PRSB heading model for allergies.
-It is important to distinguish between two kinds of allergic reaction / adverse reaction entry in the medical record:
+It is important to distinguish between two kinds of allergic reaction / adverse reaction entry in the medical record.
 ## Allergic Response or Adverse Reaction Event and Propensity ##
 <ol>
 <li>Recording an Allergic Response or Adverse Reaction to an item of medication or a substance</li>
