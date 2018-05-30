@@ -42,9 +42,9 @@ These are :
 - Composition.title
 - Composition.custodian
 - Composition.relatesTo
-- Composition.section(slice) Where slice=The PRSB headings for the ITK3 Transfer of Care document type
+- Composition.section(slice) Where slice=The PRSB headings for the ITK3 Transfer of Care document type.
 
-This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:
+The cardinality of the element, mandatory or optional has no relevance for the must support property, which has been added to all the elements that must be supported regardless of cardinality. This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:
 
 - The sending system MUST support the creation and sending of all the elements in the list above.
 - The sending system MUST support the creation and sending of all Composition.section slices with the specified sub-elements and narrative.* See Note 1. 
