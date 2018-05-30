@@ -46,7 +46,7 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>If the comunication is being sent to a named individual, then this is the name of the recipient, preferably in a structured format. An identifier for the individual, for example GMC code (for a GP), or an SDS identifier, a NHS Number (for a patient) will be sent alongside the name, but may not displayed on rendered document.</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>Names may be entered as the communication is being created, or sourced from the hospital system.Patient names may be from the Patient Demographic Service.</td>
+			<td>Names may be entered as the communication is being created, or sourced from the hospital system. Patient names may be from the Patient Demographic Service.</td>
 		</tr>
 		<tr>
 			<td>Role</td>
