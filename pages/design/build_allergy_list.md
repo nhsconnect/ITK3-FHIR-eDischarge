@@ -30,7 +30,7 @@ This Resource acts as a container for the allergies. The following is an example
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose allergy list this is
-- encounter - a reference to the context in which the list was created (the inpatient stay)
+- Encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
 - entry - a reference to the allergyIntolerance Resource entry

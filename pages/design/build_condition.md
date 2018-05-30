@@ -24,7 +24,7 @@ This Resource acts as a container for the conditions. The following is an exampl
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose condition list this is
-- encounter - a reference to the context in which the list was created (the inpatient stay for example)
+- Encounter - a reference to the context in which the list was created (the inpatient stay for example)
 - date - when the list was prepared
 - source - who or what defined the list
 - entry - a reference to the condition Resource entry
