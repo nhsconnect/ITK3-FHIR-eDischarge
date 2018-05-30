@@ -26,7 +26,7 @@ This Resource acts as a container for the procedures. The following is an exampl
 - Encounter - a reference to the context in which the list was created (the inpatient stay for example)
 - date - when the list was prepared
 - source - who or what defined the list
-- entry - a reference to the procedure Resource entry
+- entry - a reference to the Procedure Resource entry
 
 ## Procedure ##
 This Resource is used to record detailed information about a procedure. The following is a example of the elements that can be used: 
