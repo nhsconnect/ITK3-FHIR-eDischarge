@@ -34,7 +34,6 @@ These are :
 - Composition.identifier
 - Composition.status
 - Composition.type
-- Composition.class
 - Composition.subject
 - Composition.encounter
 - Composition.date
