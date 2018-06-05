@@ -43,14 +43,14 @@ These are :
 - Composition.relatesTo
 - Composition.section(slice) Where slice=The PRSB headings for the ITK3 Transfer of Care document type.
 
-The cardinality of the element, mandatory or optional has no relevance for the must support property, which has been added to all the elements that must be supported regardless of cardinality. This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:
+The “must support” property has been added to all the elements that must be supported regardless of cardinality.  Whether the conformance of the element is mandatory or optional has no relevance for the “must support” property. This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:
 
 - The sending system MUST support the creation and sending of all the elements in the list above.
 - The sending system MUST support the creation and sending of all Composition.section slices with the specified sub-elements and narrative.* See Note 1. 
 - The receiving system MUST support the processing of all the elements in the list above.  
 - The receiving system MUST support the display of all Composition.section slices with the specified sub-elements and narrative.
 
-**Note 1** - There are rules around when sections are sent and when a section can be not sent in a document. For example when there is no data available on the sending system. These are specified in the document headings sections as 0..1 required.
+**Note 1** - There are rules around when sections are sent or not sent in a document. These are specified in the document headings sections.
 
 
 ## Headings Used By eDischarge ##
