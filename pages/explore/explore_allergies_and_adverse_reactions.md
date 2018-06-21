@@ -57,28 +57,28 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. For example, skin rash.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>Text and if coding is available carried in the CodeableConcept of the<b>AllergyIntolerance.reaction.manifestation</b> FHIR element if no coding available use <b>AllergyIntolerance.reaction.description</b> FHIR element For futher imformation on reation details see <a href="build_allergy_lists.html#reaction-details">Constructing Medication Lists.</a></td>
 		</tr>
 		<tr>
 			<td>Date recorded</td>
 			<td>The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction but this may not be wholly clear from source data.</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>The date that the reaction was clinically recorded/asserted. Text and carried in AllergyIntolerance.assertedDate FHIR element.</td>
+			<td>The date that the reaction was clinically recorded/asserted. Text and carried in <b>AllergyIntolerance.assertedDate</b> FHIR element.</td>
 		</tr>
 		<tr>
 			<td>Severity</td>
 			<td>A description of the severity of the reaction</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>Text and if coding is available carried in the CodeableConcept of the <b>AllergyIntolerance.reaction.severity</b> FHIR element. For further information on severity see see <a href="build_allergy_lists.html#severity">Constructing Medication Lists.</td>
 		</tr>
 		<tr>
 			<td>Certainty</td>
 			<td>A description of the certainty that the stated causative agent caused the allergic or adverse reaction.</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>Text and if coding is used available carried in the Code of <b>AllergyIntolerance.verificationStatus</b> FHIR element. For further information on certainty see see <a href="build_allergy_lists.html#certainty">Constructing Medication Lists.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
@@ -92,7 +92,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>The type of reaction experienced by the patient (allergic, adverse, intolerance)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>Text and if coding is available carried in Code of <b>AllergyIntolerance.type</b> FHIR element. For further information on certainty see see <a href="build_allergy_lists.html#type-of-reaction">Constructing Medication Lists</td>
 		</tr>
 		<tr>
 			<td>Evidence</td>

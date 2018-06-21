@@ -74,9 +74,66 @@ OR ^999000561000001109|National Health Service dictionary of medicines and devic
 OR ^999000541000001108|National Health Service dictionary of medicines and devices actual medicinal product simple reference set|             
 OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient simple reference set|OR <<716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)
 
+## Severity ##
 
+"PRSB valueSet
+Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifiervalue))
+Moderate [The reaction was moderate.][SNOMED-CT::6736007] (Moderate (severity modifier) (qualifier value))
+Severe [The reaction was severe.][SNOMED-CT::24484000] (Severe (severity modifier) (qualifier value))
+Life threatening [The reaction was life-threatening.][SNOMED-CT::442452003] (Life threatening severity (qualifier value))
+Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))
 
+reaction.severity is a Required code (mild | moderate | severe)
 
+What about Life threatening & Fatal?
+
+If Life threatening then map to Severe (is this OK?)
+
+For Fatal there may be a ToC discharge, and a death notification.
+
+No longer have a UK severity extension
+
+As SNOMED Expression but see note above on not using 'life threatening' or 'severe':
+
+(255604002 |Mild|
+OR 6736007 |Moderate|
+OR 24484000 |Severe|
+OR 399166001 |Fatal|
+442452003 |Life threatening severity|)
+"
+
+## certainty ##
+
+"PRSB values are
+• Unlikely        [The   reaction is  thought  unlikely  to have  been  caused  by  the  agent.]
+[SNOMED-CT::1491118016]
+• Likely        [The   reaction is thought  likely  to  have  been  caused  by the agent.]
+[SNOMED-CT::5961011]
+• Certain        [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.]
+[SNOMED-CT::255545003]        (Definite        (qualifier value))
+• Confirmed by  challenge  testing  [The  reaction to the agent has been confirmed by challenge testing or other concrete evidence.]
+[SNOMED-CT::410605003]        (Confirmed present (qualifier value))
+
+verficationStatus is mandatory
+
+verficationStatus has a Required valueSet (unconfirmed | confirmed | refuted | entered-in-error)
+
+""Profile out"" ( refuted | entered-in-error)
+
+Certain & Confirmed by Challenge = confirmed; Likely & Unlikely = unconfirmed [DB post comment on Zulip]
+
+If verificationStatus is not known, then set to unconfirmed. If exta information about certainty is known, this should reported as a note
+
+ remove SNOMED-extension from careconnect
+01feb2018: The value set is required in FHIR and can't changed and we have mapped it as above, the proposal is to remove the SNOMED certainty extension. 
+Proposed guidance for System suppliers to default to unconfirmed for all meesages.
+
+As SNOMED Expressions (Note that 1491118016 |unlikely| and 5961011 |likely|  above are desription identifiers for synonyms of concepts below)
+
+(385434005 |Improbable diagnosis|
+OR 2931005 |Probable diagnosis|
+OR 255545003 |Definite|
+OR 410605003 |Confirmed present|)"
 
 ## Reaction details ##
 "This is part of reaction, which is optional (0..*) - so if there is no manifestation known, then don't send a reaction section
