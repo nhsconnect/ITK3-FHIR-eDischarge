@@ -99,7 +99,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text</td>
+			<td>Free text. Note: structured FHIR Diagnosistic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included as evidence.</td>
 		</tr>
 		<tr>
 			<td>Probability of recurrence</td>
