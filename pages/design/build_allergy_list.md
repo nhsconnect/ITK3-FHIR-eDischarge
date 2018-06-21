@@ -61,14 +61,15 @@ Degrade codes <b>(196461000000101|transfer-degraded drug allergy(record artifact
 
 As a SNOMED CT expression
 
-<table style="width:100%;max-width: 100%;"><tr><td>(&lt;&lt;105590001 |Substance|</br>
-OR &lt;&lt;373873005 |Pharmaceutical / biologic product|<br/>
-OR &lt;&lt;716186003 |No known allergy|<br/>
-OR 196461000000101 |Transfer-degraded drug allergy|<br/>
-OR 196471000000108 |Transfer-degraded non-drug allergy|)</td></tr>
+<table style="width:100%;max-width: 100%;">
+<tr><td>(&lt;&lt;105590001 |Substance|</td></tr>
+<tr><td>(OR &lt;&lt;373873005 |Pharmaceutical / biologic product|</td></tr>
+<tr><td>(OR &lt;&lt;716186003 |No known allergy|</td></tr>
+<tr><td>(OR 196461000000101 |Transfer-degraded drug allergy|</td></tr>
+<tr><td>(OR 196471000000108 |Transfer-degraded non-drug allergy|)</td></tr>
 </table>
 
-<table style="width:100%;max-width: 100%;"><tr><td>(^999000801000001108 |Allergy Archetypes Drug Groups simple reference set| <br/>     
+<table style="width:100%;max-width: 100%;"><tr><td>(^999000801000001108 |Allergy Archetypes Drug Groups simple reference set|<br/>     
 OR ^999000631000001100|National Health Service dictionary of medicines and devices trade family simple reference set|<br/>             
 OR ^999000641000001107|National Health Service dictionary of medicines and devices trade family group simple reference set|<br/>              
 OR ^999000771000001105|National Health Service dictionary of medicines and devices combination drug virtual therapeutic moiety simple reference set|<br/>               
@@ -80,30 +81,24 @@ OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient
 
 PRSB valueSet applicable for severity is as folllows:
 
-<table style="width:100%;max-width: 100%;"><tr><td>Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifiervalue))<br/>
+<table style="width:100%;max-width: 100%;"><tr><td>Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifiervalue))
 Moderate [The reaction was moderate.][SNOMED-CT::6736007] (Moderate (severity modifier) (qualifier value))<br/>
 Severe [The reaction was severe.][SNOMED-CT::24484000] (Severe (severity modifier) (qualifier value))<br/>  
 Life threatening [The reaction was life-threatening.][SNOMED-CT::442452003] (Life threatening severity (qualifier value))<br/>  
 Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))<br/></td></tr></table>  
 
-reaction.severity is a Required code (mild | moderate | severe)
+**Important note:** reaction.severity is a Required code in FHIR with values (mild | moderate | severe)
 
-What about Life threatening & Fatal?
+"Life threatening" and "Fatal" cannot currently be mapped.
 
-If Life threatening then map to Severe (is this OK?)
+As SNOMED CT Expression but see note above on not using 'life threatening' or 'Fatal':
 
-For Fatal there may be a ToC discharge, and a death notification.
-
-No longer have a UK severity extension
-
-As SNOMED Expression but see note above on not using 'life threatening' or 'severe':
-
-(255604002 |Mild|
+<table style="width:100%;max-width: 100%;"><tr><td>(255604002 |Mild|
 OR 6736007 |Moderate|
 OR 24484000 |Severe|
 OR 399166001 |Fatal|
-442452003 |Life threatening severity|)
-"
+442452003 |Life threatening severity|)</td></tr></Table>
+
 
 ## certainty ##
 
