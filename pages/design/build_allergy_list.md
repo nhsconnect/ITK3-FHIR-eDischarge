@@ -188,10 +188,10 @@ As a SNOMED Expression
 <table style="width:100%;max-width: 100%;"><tr><td>^999000051000001100 |ePrescribing route of administration simple reference set|</td></tr></table>
 
 ## AllergyIntolerance.reaction.note ##
-This FHIR element <b>MUST NOT</b> be used and the information must where available always be carried in the <b>Composition.section.text</b> FHIR element.
+This FHIR element <b>MUST NOT</b> be used and the information must where available, always be carried in the <b>Composition.section.text</b> FHIR element.
 
 ## AllergyInterolerance.ReasonEnded
-This FHIR element must be supported and is to allow for clinical content for "RESOLVED" status allergies. Where <b>AllergyIntolerance.clinicalStatus</b> FHIR element contains the value of "resolved" - FHIR definition is "A reaction to the identified substance has been clinically reassessed by testing or re-exposure and considered to be resolved."
+This FHIR element must be supported and is to allow for clinical content for "RESOLVED" status allergies. This is where <b>AllergyIntolerance.clinicalStatus</b> FHIR element contains the value of "resolved" - FHIR definition is "A reaction to the identified substance has been clinically reassessed by testing or re-exposure and considered to be resolved."
 
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
@@ -200,16 +200,6 @@ The allergies list is a “Snapshot” of the known allergies at a point in time
 The allergy record is constructed as a single list for Transfer of Care Documents. The diagram below shows the Resources used and relationships between the Resources.
 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
-
-
-Each allergy in the list will use the FHIR list Resource Flag element to indicate the context of the allergy (For example unchanged, new etc). 
-
-## Allergy Flag Structures ##
-
-<img src="images/build/allergy_flag_structure.png" style="width:100%;max-width: 100%;">
-
-## How to Represent "No Known Allergies" ## 
-When there is a positive statement that the patient has "No known allergies" then no coded structure is sent. Please refer to the [Allergy and Adverse Reactions](explore_allergies_and_adverse_reactions.html) section for how to send the information as narrative text.
 
 ## How to Represent "No Known Allergies" ## 
 <br/>First option: Send coded 'No Known Allergies' .Generic issue of handling negation, Initial Proposal :if there are active allergy records , these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use 'EmptyReason' to send No Known Allergy as text.
