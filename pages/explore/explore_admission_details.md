@@ -31,7 +31,7 @@ The Admission details section carries information about the patient's admission.
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
 			<th>Card.</th>
 			<th>MRO*</th>
