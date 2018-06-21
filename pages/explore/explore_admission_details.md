@@ -18,8 +18,8 @@ The Admission details section carries information about the patient's admission.
 			<th width="15%">Section</th>
 			<th width="35%">Description</th>
 			<th width="5%">Card.</th>
-			<th width="5%">MRO*</th>
-			<th width="40%">M=Mandatory R=Required O=Optional</th>
+			<th width="5%">MRO* M=Mandatory R=Required O=Optional</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -35,7 +35,7 @@ The Admission details section carries information about the patient's admission.
 			<th>Description</th>
 			<th>Card.</th>
 			<th>MRO*</th>
-			<th>FHIR Target and Guidance</th>		
+			<th>&nbsp;</th>		
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
