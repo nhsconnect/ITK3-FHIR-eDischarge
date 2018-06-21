@@ -20,7 +20,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<th width="35%">Description</th>
 			<th width="5%">Card.</th>
 			<th width="5%">MRO*</th>
-			<th width="40%">M=Mandatory R=Required O=Optional</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -29,7 +29,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>The details of any known allergies, intolerances or adverse reactions.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Note: Some information may be text only for example "No known drug allergies or adverse reactions" and "Information not available" for further information see the section on <a href="build_allergy_lists.html">Constructing Medication Lists.</a>. </td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
 			<th>PRSB Element</th>
