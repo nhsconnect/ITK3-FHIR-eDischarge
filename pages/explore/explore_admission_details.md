@@ -19,7 +19,7 @@ The Admission details section carries information about the patient's admission.
 			<th width="30%">Description</th>
 			<th width="5%">Card.</th>
 			<th width="5%">MRO*</th>
-			<th width="25%"></th>
+			<th width="25%">M=Mandatory R=Required O=Optional</th>
 			<th width="20%"></th>
 		</tr>
 	</thead>
@@ -38,14 +38,15 @@ The Admission details section carries information about the patient's admission.
 			<th>Card.</th>
 			<th>MRO*</th>
 			<th>Guidance</th>
-			<th>FHIR Mapping</th>
+			<th>FHIR Element</th>
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
 			<td>The health problems and issues experienced by the patient that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall,  a specific procedure, intervention, investigation or treatment, non compliance with treatment.</td>
 			<td>0 to 1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>May be a SNOMED CT concept and/or free text.</td>
+			<td>Encounter.reason</td>
 		</tr>
 		<tr>
 			<td>Admission method</td>
