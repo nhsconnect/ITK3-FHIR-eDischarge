@@ -134,7 +134,7 @@ The ValueSet guidance for implementers is to default to FHIR value of "unconfirm
 <tr><td>OR 2931005 |Probable diagnosis|</td></tr>
 <tr><td>OR 255545003 |Definite|</td></tr>
 <tr><td>OR 410605003 |Confirmed present|)</td></tr>
-</table
+</table>
 
 ## Reaction Details ##
 <b>AllergyIntolerance.reaction.manifestation</b> is a sub-element of <b>AllergyIntolerance.reaction</b>, which is optional (0..*) - so if there is no manifestation known, then don't send a <b>AllergyIntolerance.reaction</b> FHIR element.
