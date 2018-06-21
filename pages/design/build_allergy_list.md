@@ -95,7 +95,7 @@ PRSB valueSet applicable for severity is as folllows:
 </table>  
 
 <table style="width:100%;max-width: 100%;">
-<tr><td>**Important note:** reaction.severity is a Required code in FHIR with values (mild | moderate | severe)</td></tr>
+<tr><td><b>Important note: reaction.severity</b> is a Required code in FHIR with values (mild | moderate | severe)</td></tr>
 <tr><td>"Life threatening" and "Fatal" cannot currently be mapped.</td></tr>
 </table>
 
@@ -103,10 +103,10 @@ As SNOMED CT Expression but see note above on not using 'life threatening' or 'F
 
 <table style="width:100%;max-width: 100%;">
 <tr><td>(255604002 |Mild|</td></tr>
-</td></tr>OR 6736007 |Moderate|</td></tr>
-</td></tr>OR 24484000 |Severe|</td></tr>
-</td></tr>OR 399166001 |Fatal|</td></tr>
-</td></tr>442452003 |Life threatening severity|)</td></tr>
+<tr><td>>OR 6736007 |Moderate|</td></tr>
+<tr><td>OR 24484000 |Severe|</td></tr>
+<tr><td>>OR 399166001 |Fatal|</td></tr>
+<tr><td>442452003 |Life threatening severity|)</td></tr>
 </Table>
 
 
