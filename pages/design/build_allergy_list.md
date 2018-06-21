@@ -50,6 +50,7 @@ This Resource details the actual allergy or adverse reaction. The following is a
 - reaction - details of the reaction
 
 ## Causative Agents ##
+
 Notes 
 <ul><li> - "Everything from the Product (373873005 |Pharmaceutical / biologic product (product)|) hierarchy & 
 Everything from the substance ( 105590001 | substance | ) hierarchys For precoordinated allergy terms use a degrade code - see below</li>
@@ -73,8 +74,9 @@ OR ^999000561000001109|National Health Service dictionary of medicines and devic
 OR ^999000541000001108|National Health Service dictionary of medicines and devices actual medicinal product simple reference set|             
 OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient simple reference set|OR <<716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)
 
-16th March 2018: For information not available and No known allergies, please see the link below:
-https://docs.google.com/presentation/d/1HUvyR_Gwxq8h7CZ4En3rk-Z0lhB_JXP_W0KPMdlQZK8/edit#slide=id.p 
+
+
+
 
 ## Reaction details ##
 "This is part of reaction, which is optional (0..*) - so if there is no manifestation known, then don't send a reaction section
