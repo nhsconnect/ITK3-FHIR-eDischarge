@@ -78,12 +78,13 @@ OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient
 
 ## Severity ##
 
-"PRSB valueSet
-Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifiervalue))
-Moderate [The reaction was moderate.][SNOMED-CT::6736007] (Moderate (severity modifier) (qualifier value))
-Severe [The reaction was severe.][SNOMED-CT::24484000] (Severe (severity modifier) (qualifier value))
-Life threatening [The reaction was life-threatening.][SNOMED-CT::442452003] (Life threatening severity (qualifier value))
-Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))
+PRSB valueSet applicable for severity is as folllows:
+
+<table><tr><td>Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifiervalue))<br/>
+Moderate [The reaction was moderate.][SNOMED-CT::6736007] (Moderate (severity modifier) (qualifier value))<br/>
+Severe [The reaction was severe.][SNOMED-CT::24484000] (Severe (severity modifier) (qualifier value))<br/>  
+Life threatening [The reaction was life-threatening.][SNOMED-CT::442452003] (Life threatening severity (qualifier value))<br/>  
+Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))<br/></td></tr></table>  
 
 reaction.severity is a Required code (mild | moderate | severe)
 
