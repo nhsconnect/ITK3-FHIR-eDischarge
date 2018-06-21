@@ -28,7 +28,7 @@ The Admission details section carries information about the patient's admission.
 			<td>Details of the patient's admission and reason for admission</td>
 			<td>0..1</td>
 			<td>R</td>
-			<td>&nbsp;</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section(admissionDetailsSection).code</b> FHIR element</td>
 		</tr>
 		<tr>
 			<th>PRSB Element</th>
