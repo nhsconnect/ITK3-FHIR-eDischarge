@@ -127,7 +127,7 @@ The values Certain and Confirmed by Challenge = FHIR value "confirmed". The valu
 
 If <b>AllergyIntolerance.verificationStatus</b> is not known, then set to FHIR value "unconfirmed". If extra information about certainty is known, this should reported as a note.
 
-The ValueSet guidance for implementers to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
+The ValueSet guidance for implementers is to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
 
 <table style="width:100%;max-width: 100%;"><tr><td>As SNOMED Expressions (Note that 1491118016 |unlikely| and 5961011 |likely|  above are description identifiers for synonyms of concepts below)</td></tr>
 <tr><td>(385434005 |Improbable diagnosis|</td></tr>
