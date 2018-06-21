@@ -36,14 +36,14 @@ This table should be used in conjunction with the section on [constructing clini
 			<th>Description</th>
 			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Guidance</th>		
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<td>Causative agent</td>
 			<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of AllergyIntolerance.code FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agent">Constructing Medication Lists.</a></td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of <b>AllergyIntolerance.code</b> FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agent">Constructing Medication Lists.</a></td>
 		</tr>
 		<tr>
 			<th>Reaction details cluster</th>
