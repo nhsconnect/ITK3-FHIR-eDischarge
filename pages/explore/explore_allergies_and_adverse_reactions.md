@@ -113,7 +113,10 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text and <b> AllergyIntolerance.onset[x] FHIR element. For further information see <a href="build_allergy_lists.html#date-first-experienced">Constructing Medication Lists(Date first experienced)</a></td>
+			<td>Free text and <b>AllergyIntolerance.onset[x]</b> FHIR element. For further information see <a href="build_allergy_lists.html#date-first-experienced">Constructing Medication Lists(Date first experienced)</a></td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
