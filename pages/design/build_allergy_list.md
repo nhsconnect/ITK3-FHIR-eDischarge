@@ -190,7 +190,7 @@ The allergy record is constructed as a single list for Transfer of Care Document
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
 
 ## How to Represent "No Known Allergies" ## 
-<br/>First option: Send coded 'No Known Allergies' .Generic issue of handling negation, Initial Proposal :if there are active allergy records , these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use 'EmptyReason' to send No Known Allergy as text.
+<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No Known Allergies' and replicate this in <b>Composition,section.text</b>. If there are active allergy records , these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use List.emptyReason' to send No Known Allergy as text and replicate this in <b>Composition,section.text</b>.
 
 ## Allergy List Item Example ##
 
