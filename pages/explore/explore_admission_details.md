@@ -63,7 +63,7 @@ The Admission details section carries information about the patient's admission.
 			<td>Date and time patient admitted to hospital.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The date and time of admission as recorded on the Patient Administration System (PAS) as text and carried in the <b>Encounter.period.start element</b> </td>
+			<td>The date and time of admission as recorded on the Patient Administration System (PAS) as text and carried in the <b>Encounter.period.start</b> element </td>
 		</tr>
 	</tbody>
 </table>
