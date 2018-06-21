@@ -94,9 +94,10 @@ PRSB valueSet applicable for severity is as folllows:
 <tr><td>Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))<br/></td></tr>
 </table>  
 
-**Important note:** reaction.severity is a Required code in FHIR with values (mild | moderate | severe)
-
-"Life threatening" and "Fatal" cannot currently be mapped.
+<table style="width:100%;max-width: 100%;">
+<tr><td>**Important note:** reaction.severity is a Required code in FHIR with values (mild | moderate | severe)</td></tr>
+<tr><td>"Life threatening" and "Fatal" cannot currently be mapped.</td></tr>
+</table>
 
 As SNOMED CT Expression but see note above on not using 'life threatening' or 'Fatal':
 
@@ -111,7 +112,10 @@ As SNOMED CT Expression but see note above on not using 'life threatening' or 'F
 
 ## certainty ##
 
-"PRSB values are
+PRSB valueSet applicable for certainty is as follows:
+
+<table style="width:100%;max-width: 100%;">
+
 • Unlikely        [The   reaction is  thought  unlikely  to have  been  caused  by  the  agent.]
 [SNOMED-CT::1491118016]
 • Likely        [The   reaction is thought  likely  to  have  been  caused  by the agent.]
