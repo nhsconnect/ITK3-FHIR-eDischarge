@@ -18,7 +18,7 @@ The Admission details section carries information about the patient's admission.
 			<th width="15%">Section</th>
 			<th width="35%">Description</th>
 			<th width="5%">Card.</th>
-			<th width="5%">MRO* M=Mandatory R=Required O=Optional</th>
+			<th width="5%">MRO*</th>
 			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
@@ -64,6 +64,9 @@ The Admission details section carries information about the patient's admission.
 			<td>0 to 1</td>
 			<td>R</td>
 			<td>The date and time of admission as recorded on the Patient Administration System (PAS) as text and carried in the <b>Encounter.period.start</b> FHIR element.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
