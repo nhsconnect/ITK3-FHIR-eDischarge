@@ -16,10 +16,10 @@ The Admission details section carries information about the patient's admission.
 	<thead>
 		<tr>
 			<th width="15%">Section</th>
-			<th width="30%">Description</th>
+			<th width="35%">Description</th>
 			<th width="5%">Card.</th>
 			<th width="5%">MRO*</th>
-			<th width="25%">M=Mandatory R=Required O=Optional</th>
+			<th width="40%">M=Mandatory R=Required O=Optional</th>
 		</tr>
 	</thead>
 	<tbody>
