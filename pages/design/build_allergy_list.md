@@ -110,7 +110,7 @@ As SNOMED CT Expression but see note above on not using 'life threatening' or 'F
 </Table>
 
 
-## certainty ##
+## Certainty ##
 
 PRSB valueSet applicable for certainty is as follows:
 
@@ -120,39 +120,33 @@ PRSB valueSet applicable for certainty is as follows:
 <tr><td>Certain - [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.][SNOMED-CT::255545003] (Definite(qualifier value))</td></tr>       
 <tr><td>Confirmed by challenge testing - [The  reaction to the agent has been confirmed by challenge testing or other concrete evidence.][SNOMED-CT::410605003] Confirmed present (qualifier value))</td></tr></table>
 
-The FHIR element b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verficationStatus is required and uses values (unconfirmed | confirmed | refuted | entered-in-error) the values ( refuted | entered-in-error) MUST NOT be used.
+The FHIR element <b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verficationStatus is required and uses values (unconfirmed | confirmed | refuted | entered-in-error) the values ( refuted | entered-in-error) <b>MUST NOT</b> be used for Transfer of Care Documents.
 
-""Profile out"" 
+The values Certain and Confirmed by Challenge = FHIR value "confirmed". The values Likely and Unlikely = FHIR value "unconfirmed".
 
-Certain & Confirmed by Challenge = confirmed; Likely & Unlikely = unconfirmed [DB post comment on Zulip]
+If <b>AllergyIntolerance.verificationStatus</b> is not known, then set to FHIR value "unconfirmed". If extra information about certainty is known, this should reported as a note.
 
-If verificationStatus is not known, then set to unconfirmed. If exta information about certainty is known, this should reported as a note
+The ValueSet guidance for implementers to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
 
- remove SNOMED-extension from careconnect
-01feb2018: The value set is required in FHIR and can't changed and we have mapped it as above, the proposal is to remove the SNOMED certainty extension. 
-Proposed guidance for System suppliers to default to unconfirmed for all meesages.
+<table style="width:100%;max-width: 100%;"><tr><td>As SNOMED Expressions (Note that 1491118016 |unlikely| and 5961011 |likely|  above are description identifiers for synonyms of concepts below)</td></tr>
+<tr><td>(385434005 |Improbable diagnosis|</td></tr>
+<tr><td>OR 2931005 |Probable diagnosis|</td></tr>
+<tr><td>OR 255545003 |Definite|</td></tr>
+<tr><td>OR 410605003 |Confirmed present|)</td></tr>
+</table
 
-As SNOMED Expressions (Note that 1491118016 |unlikely| and 5961011 |likely|  above are desription identifiers for synonyms of concepts below)
+## Reaction Details ##
+<b>AllergyIntolerance.reaction.manifestation</b> is a sub-element of <b>AllergyIntolerance.reaction</b>, which is optional (0..*) - so if there is no manifestation known, then don't send a <b>AllergyIntolerance.reaction</b> FHIR element.
 
-(385434005 |Improbable diagnosis|
-OR 2931005 |Probable diagnosis|
-OR 255545003 |Definite|
-OR 410605003 |Confirmed present|)"
+<table style="width:100%;max-width: 100%;"><tr><td>Anything from the clinical finding hierarchy ( 404684003 | clinical finding (finding) | ). Plus the HL7 nullFlavors documented here.</td></tr></table>
 
-## Reaction details ##
-"This is part of reaction, which is optional (0..*) - so if there is no manifestation known, then don't send a reaction section
+The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is Extensible. If you have a code, then goes in Manifestation CodeableConcept.
 
-Anything from the clinical finding hierarchy ( 404684003 | clinical finding (finding) | ) PLUS the HL7 nullFlavors documented here
+Where no code is known (but a manifestation needs to be recorded) then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "UNC" - "un-encoded" and populate text of manifestation in <b>AllergyIntolerance.reaction.description</b>.
 
-CodeableConcept is Extensible
+When patient is asked about reaction, but doesn't know the reaction then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "ASKU" - "asked but unknown".
 
-If you have a code, then goes in Manifestation CodeableConcept.
-
-Where no code is known (but a manifestation needs to be recorded) then populate the Manifestation CodeableConcept with the HL7 FHIR nullFlavor ""UNC"" - ""un-encoded"" & text of manifestation in reaction.description
-
-When patient is asked about reaction, but doesn't know the reaction then use HL7 nullFlavor ""ASKU"" - ""asked but unknown""
-
-When the reaction details cannot be determined/verified, then use the HL7 nullFlavor ""NI"" - ""No Information"""
+When the reaction details cannot be determined/verified, then then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "NI" - "No Information".
 
 ## Type of Reaction ##
 
