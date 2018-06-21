@@ -46,22 +46,23 @@ The Admission details section carries information about the patient's admission.
 			<td>The health problems and issues experienced by the patient that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall,  a specific procedure, intervention, investigation or treatment, non compliance with treatment.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text and SNOMED CT concept carried in CodedConcept of FHIR element where supported.</td>
+			<td>Text and where supported a SNOMED CT concept carried in the CodedConcept of the stated FHIR element of the Encounter Resource.</td>
 			<td>Encounter.reason</td>
 		</tr>
 		<tr>
 			<td>Admission method</td>
 			<td>How the patient was admitted to hospital. For example: elective, emergency, maternity, transfer etc.</td>
 			<td>0 to 1</td>
-			<td>required</td>
-			<td>One of the codes and description from the NHS Data Dictionary Admission Method</td>
+			<td>R</td>
+			<td>Text and one of the codes and description from the NHS Data Dictionary Admission Method carried in the FHIR CodedConcept of the stated FHIR element of the Encounter Resource where supported by system.</td>
+            <td>Encounter.hospitalization.Extension-CareConnect-AdmissionMethod-1</td>
 		</tr>
 		<tr>
 			<td>Source of admission</td>
 			<td>Where the patient was immediately prior to admission, e.g. usual place of residence, temporary place of residence, penal establishment. National code.</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>One of the codes and description from the NHS Data Dictionary Source of Admission</td>
+			<td>Text and one of the codes and description from the NHS Data Dictionary Source of Admission carried in </td>
 		</tr>
 		<tr>
 			<td>Date/time of admission</td>
