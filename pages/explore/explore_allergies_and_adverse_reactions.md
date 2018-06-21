@@ -99,7 +99,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text. Note: structured FHIR Diagnosistic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included as evidence.See section on <href="build_attachments.html">Use of attachments</a></td>
+			<td>Free text. Note: structured FHIR Diagnosistic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included with a link as evidence.See section on <href="build_attachments.html">Use of attachments</a></td>
 		</tr>
 		<tr>
 			<td>Probability of recurrence</td>
@@ -113,7 +113,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text</td>
+			<td>Free text and <b> AllergyIntolerance.onset[x] FHIR element.</td>
 		</tr>
 	</tbody>
 </table>
