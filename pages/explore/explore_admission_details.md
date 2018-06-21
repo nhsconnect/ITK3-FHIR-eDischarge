@@ -50,21 +50,21 @@ The Admission details section carries information about the patient's admission.
 			<td>How the patient was admitted to hospital. For example: elective, emergency, maternity, transfer etc.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text and where supported a code and description from the ValueSet [CareConnect-SourceOfAdmission-1](https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1) carried in the FHIR CodeableConcept of  the Encounter.hospitalization.Extension-CareConnect-AdmissionMethod-1 element</td>
+			<td>Text and where supported a code and description from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1">CareConnect-SourceOfAdmission-1</a> carried in the FHIR CodeableConcept of  the <b>Encounter.hospitalization.Extension-CareConnect-AdmissionMethod-1</b> element</td>
 		</tr>
 		<tr>
 			<td>Source of admission</td>
 			<td>Where the patient was immediately prior to admission, e.g. usual place of residence, temporary place of residence, penal establishment. National code.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text and where supported a code and description from the ValueSet [CareConnect-SourceOfAdmission-1](https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1) carried in the CodeableConcept of the Encounter.hospitalization.admitSource element</td>
+			<td>Text and where supported a code and description from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1">CareConnect-SourceOfAdmission-1</a> carried in the CodeableConcept of the <b>Encounter.hospitalization.admitSource</b> element</td>
 		</tr>
 		<tr>
 			<td>Date/time of admission</td>
 			<td>Date and time patient admitted to hospital.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The date and time of admission as recorded on the Patient Administration System (PAS) as text and carried in the Encounter.period.end element </td>
+			<td>The date and time of admission as recorded on the Patient Administration System (PAS) as text and carried in the <b>Encounter.period.start element</b> </td>
 		</tr>
 	</tbody>
 </table>
