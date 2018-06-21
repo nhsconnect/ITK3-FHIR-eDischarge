@@ -35,7 +35,7 @@ The Admission details section carries information about the patient's admission.
 			<th>Description</th>
 			<th>Card.</th>
 			<th>MRO*</th>
-			<th>&nbsp;</th>		
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
