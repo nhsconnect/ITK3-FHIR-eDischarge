@@ -11,7 +11,7 @@ summary: "Gives information about the Allergies and adverse reactions section"
 
 ## Allergies and Adverse Reactions Section Content##
 The Allergies and adverse reactions section carries information about the patient's allergies and adverse reactions. Elements should be formatted as subheadings in any HTML sent.
-Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](build_allergy_lists.html) should be consulted for further information. 
+This table should be used in conjunction with the section on [constructing clinical coded structures](build_allergy_lists.html) for further information on constructing and coding allergy lists. 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
@@ -29,7 +29,7 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 			<td>The details of any known allergies, intolerances or adverse reactions.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Note: Some information may be text only for example "No known drug allergies or adverse reactions" and "Information not available" for further information see the section on <a href="build_medication_lists.html">Constructing Medication Lists.</a>. </td>
+			<td>Note: Some information may be text only for example "No known drug allergies or adverse reactions" and "Information not available" for further information see the section on <a href="build_allergy_lists.html">Constructing Medication Lists.</a>. </td>
 		</tr>
 		<tr>
 			<th>PRSB Element</th>
@@ -43,7 +43,7 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 			<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of AllergyIntolerance.code FHIR element. For further information on coding causative agent see <a href="build_medication_lists.html#Causative Agent">Constructing Medication Lists.</a></td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of AllergyIntolerance.code FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agent">Constructing Medication Lists.</a></td>
 		</tr>
 		<tr>
 			<th>Reaction details cluster</th>

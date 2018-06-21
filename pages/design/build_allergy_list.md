@@ -76,6 +76,21 @@ OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient
 16th March 2018: For information not available and No known allergies, please see the link below:
 https://docs.google.com/presentation/d/1HUvyR_Gwxq8h7CZ4En3rk-Z0lhB_JXP_W0KPMdlQZK8/edit#slide=id.p 
 
+## Reaction details ##
+"This is part of reaction, which is optional (0..*) - so if there is no manifestation known, then don't send a reaction section
+
+Anything from the clinical finding hierarchy ( 404684003 | clinical finding (finding) | ) PLUS the HL7 nullFlavors documented here
+
+CodeableConcept is Extensible
+
+If you have a code, then goes in Manifestation CodeableConcept.
+
+Where no code is known (but a manifestation needs to be recorded) then populate the Manifestation CodeableConcept with the HL7 FHIR nullFlavor ""UNC"" - ""un-encoded"" & text of manifestation in reaction.description
+
+When patient is asked about reaction, but doesn't know the reaction then use HL7 nullFlavor ""ASKU"" - ""asked but unknown""
+
+When the reaction details cannot be determined/verified, then use the HL7 nullFlavor ""NI"" - ""No Information"""
+
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
 
