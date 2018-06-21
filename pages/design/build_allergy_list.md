@@ -137,13 +137,7 @@ The values Certain and Confirmed by Challenge = FHIR value "confirmed". The valu
 
 <table style="width:100%;max-width: 100%;"><tr><td>Anything from the clinical finding hierarchy ( 404684003 | clinical finding (finding) | ). Plus the HL7 nullFlavors documented here.</td></tr></table>
 
-The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is Extensible. If you have a code, then goes in Manifestation CodeableConcept.
-
-Where no code is known (but a manifestation needs to be recorded) then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "UNC" - "un-encoded" and populate text of manifestation in <b>AllergyIntolerance.reaction.description</b>.
-
-When patient is asked about reaction, but doesn't know the reaction then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "ASKU" - "asked but unknown".
-
-When the reaction details cannot be determined/verified, then then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "NI" - "No Information".
+The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is Extensible. If you have a code, then goes in Manifestation CodeableConcept. Where no code is known (but a manifestation needs to be recorded) then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "UNC" - "un-encoded" and populate text of manifestation in <b>AllergyIntolerance.reaction.description</b>. When patient is asked about reaction, but doesn't know the reaction then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "ASKU" - "asked but unknown". When the reaction details cannot be determined/verified, then then populate the <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept with the value from the HL7 FHIR NullFlavor ValueSet of "NI" - "No Information".
 
 ## Type of Reaction ##
 
@@ -154,9 +148,7 @@ An absence of AllergyIntollerance.type implies Not Known . Advice from FHIR pati
 
 ## Date first experienced ##
 
-This is mapped to the "higher level" of the FHIR element <b>AllergyIntolerance.onset[x]</b> estimated or actual date, date-time, or age when allergy or intolerance was identified.
-        
-The definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time , the onset under reaction could be multiple. 
+This is mapped to the "higher level" of the FHIR element <b>AllergyIntolerance.onset[x]</b> estimated or actual date, date-time, or age when allergy or intolerance was identified. The definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time , the onset under reaction could be multiple. 
 
 ## Clinicalstatus ##
 The FHIR element <b>AllergyIntolerance.clinicalStatus</b> for Transfer of Care Documents should if present be set to "active".
