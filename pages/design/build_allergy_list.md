@@ -50,35 +50,31 @@ This Resource details the actual allergy or adverse reaction. The following is a
 - reaction - details of the reaction
 
 ## Causative Agents ##
-It is acceptable to have entries for causative agents which are similar, e.g. penicillin and amoxicillin, but have different causative agent codes. The causative agent is carried in the AllergyIntolerance Resource substance element.
+Notes 
+<ul><li> - "Everything from the Product (373873005 |Pharmaceutical / biologic product (product)|) hierarchy & 
+Everything from the substance ( 105590001 | substance | ) hierarchys For precoordinated allergy terms use a degrade code - see below</li>
 
-Where the causative agent is a drug then:
 
-- Drug Constraint (drug) codes from the following
-- NHS dm+d AMP
+Degrade codes ( 196461000000101 | transfer-degraded drug allergy (record artifact) |  &  196471000000108 | transfer-degraded non-drug allergy (record artifact) | ) can be used if only a text representation of the allergy is known & precoordinated allergy codes (for example  213020009 | egg protein allergy | )
+As a SNOMED expression
 
-Or
+(<<105590001 |Substance|
+OR <<373873005 |Pharmaceutical / biologic product|
+OR <<716186003 |No known allergy|
+OR 196461000000101 |Transfer-degraded drug allergy|
+OR 196471000000108 |Transfer-degraded non-drug allergy|)
 
-- NHS dm+d VMP
+(^999000801000001108 |Allergy Archetypes Drug Groups simple reference set|      
+OR ^999000631000001100|National Health Service dictionary of medicines and
+devices trade family simple reference set|             
+OR ^999000641000001107|National Health Service dictionary of medicines and devices trade family group simple reference set|            
+OR ^999000771000001105|National Health Service dictionary of medicines and devices combination drug virtual therapeutic moiety simple reference set|             
+OR ^999000561000001109|National Health Service dictionary of medicines and devices virtual medicinal product simple reference set|         
+OR ^999000541000001108|National Health Service dictionary of medicines and devices actual medicinal product simple reference set|             
+OR ^999000791000001109|NHS dm+d (dictionary of medicines and devices) ingredient simple reference set|OR <<716186003 |No known allergy| OR 196461000000101 |Transfer-degraded drug allergy| OR 196471000000108 |Transfer-degraded non-drug allergy|)
 
-Or
-
-- NHS dm+d VTM
-
-Or
-
-- Drug Categories subset original ID 7851000000131
-
-Where the causative agent is a food then
-
-Food Constraint (food) codes from the following
-- Food allergens subset original ID 2001000000137
-
-Non Food Constraint (non food) codes from the following
-
-- Non-food substance allergens subset original ID 1991000000135
-
-It should be noted that there is an overlap of content between the subsets used for food, non food and drug. E.g. it is entirely reasonable for a food to be an ingredient of a drug. 
+16th March 2018: For information not available and No known allergies, please see the link below:
+https://docs.google.com/presentation/d/1HUvyR_Gwxq8h7CZ4En3rk-Z0lhB_JXP_W0KPMdlQZK8/edit#slide=id.p 
 
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
@@ -98,6 +94,8 @@ Each allergy in the list will use the FHIR list Resource Flag element to indicat
 ## How to Represent "No Known Allergies" ## 
 When there is a positive statement that the patient has "No known allergies" then no coded structure is sent. Please refer to the [Allergy and Adverse Reactions](explore_allergies_and_adverse_reactions.html) section for how to send the information as narrative text.
 
+## How to Represent "No Known Allergies" ## 
+<br/>First option: Send coded 'No Known Allergies' .Generic issue of handling negation, Initial Proposal :if there are active allergy records , these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use 'EmptyReason' to send No Known Allergy as text.
 ## Allergy List Item Example ##
 
 Example to show an allergy list.

@@ -35,7 +35,7 @@ The Admission details section carries information about the patient's admission.
 			<th>Description</th>
 			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Guidance</th>		
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
@@ -49,7 +49,7 @@ The Admission details section carries information about the patient's admission.
 			<td>How the patient was admitted to hospital. For example: elective, emergency, maternity, transfer etc.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text and where supported a code and description from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SourceOfAdmission-1">CareConnect-SourceOfAdmission-1</a> carried in the FHIR CodeableConcept of  the <b>Encounter.hospitalization.Extension-CareConnect-AdmissionMethod-1</b> FHIR element.</td>
+			<td>Text and where supported a code and description from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdmissionMethod-1)">CareConnect-SourceOfAdmission-1</a> carried in the CodeableConcept of the <b>Encounter.hospitalization.Extension-CareConnect-AdmissionMethod-1</b> FHIR element.</td>
 		</tr>
 		<tr>
 			<td>Source of admission</td>
