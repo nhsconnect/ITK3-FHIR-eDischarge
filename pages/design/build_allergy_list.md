@@ -51,17 +51,19 @@ This Resource details the actual allergy or adverse reaction. The following is a
 
 ## Causative Agents ##
 
-Notes 
-<ul><li> - "Everything from the Product (373873005 |Pharmaceutical / biologic product (product)|) hierarchy & 
-Everything from the substance ( 105590001 | substance | ) hierarchys For precoordinated allergy terms use a degrade code - see below</li>
+Guidance of the use of SNOMED CT for causative agents are as follows
 
+Everything from the Product <b>(373873005|Pharmaceutical/biologic product(product)|)</b> hierarchy & everything from the substance <b>(105590001|substance|)</b> hierarchy. 
 
-Degrade codes ( 196461000000101 | transfer-degraded drug allergy (record artifact) |  &  196471000000108 | transfer-degraded non-drug allergy (record artifact) | ) can be used if only a text representation of the allergy is known & precoordinated allergy codes (for example  213020009 | egg protein allergy | )
+For pre-coordinated allergy terms use a degrade code - see below:
+
+Degrade codes <b>(196461000000101|transfer-degraded drug allergy(record artifact)|&amp;196471000000108|transfer-degraded non-drug allergy(record artifact)|) can be used if only a text representation of the allergy is known & pre coordinated allergy codes (for example 213020009|egg protein allergy|).
+
 As a SNOMED expression
 
-(<<105590001 |Substance|
-OR <<373873005 |Pharmaceutical / biologic product|
-OR <<716186003 |No known allergy|
+(&lt;&lt;105590001 |Substance|
+OR &lt;&lt;373873005 |Pharmaceutical / biologic product|
+OR &lt;&lt;716186003 |No known allergy|
 OR 196461000000101 |Transfer-degraded drug allergy|
 OR 196471000000108 |Transfer-degraded non-drug allergy|)
 
