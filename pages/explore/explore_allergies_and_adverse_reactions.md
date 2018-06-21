@@ -16,11 +16,11 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">M=Mandatory R=Required O=Optional</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -28,22 +28,22 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 			<td>Allergies and adverse reactions</td>
 			<td>The details of any known allergies, intolerances or adverse reactions.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>&nbsp;</td>
+			<td>M</td>
+			<td>Note: Some information may be text only for example "No known drug allergies or adverse reactions" and "Information not available" for further information see the section on <a href="build_medication_lists.html">Constructing Medication Lists.</a>. </td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>Guidance</th>		
 		</tr>
 		<tr>
 			<td>Causative agent</td>
-			<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient. Or "No known drug allergies or adverse reactions" Or "Information not available"</td>
+			<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>Text derived from SNOMED CT. Plus text options "No known drug allergies or adverse reactions" and "Information not available"</td>
+			<td>M</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of AllergyIntolerance.code FHIR element. For further information on coding causative agent see <a href="build_medication_lists.html#Causative Agent">Constructing Medication Lists.</a></td>
 		</tr>
 		<tr>
 			<th>Reaction details cluster</th>
@@ -56,7 +56,7 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 			<td>Description of reaction</td>
 			<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. For example, skin rash.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text derived from SNOMED CT</td>
 		</tr>
 		<tr>
@@ -64,7 +64,7 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 			<td>The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction but this may not be wholly clear from source data.</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>The date that the reaction was clinically recorded/asserted.</td>
+			<td>The date that the reaction was clinically recorded/asserted. Text and carried in AllergyIntolerance.assertedDate FHIR element.</td>
 		</tr>
 		<tr>
 			<td>Severity</td>
@@ -118,8 +118,7 @@ Where a value is marked as Text derived from SNOMED CT the section on [construct
 	</tbody>
 </table>
 
-## How to Represent "No Known Allergies" ## 
-When there is a positive statement that the patient has "No known allergies" then no coded structure is sent and the section is sent with a text string within the narrative. When the text string within the narrative has been derived from code"d data it must match the text of the coded data: for example code = "716186003" Display = "No known allergy" narrative should be "No known allergy" 
+
 
 
 ##  Example Allergies and Adverse Reactions Sections ##
