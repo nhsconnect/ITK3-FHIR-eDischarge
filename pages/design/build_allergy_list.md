@@ -66,6 +66,7 @@ OR &lt;&lt;373873005 |Pharmaceutical / biologic product|
 OR &lt;&lt;716186003 |No known allergy|
 OR 196461000000101 |Transfer-degraded drug allergy|
 OR 196471000000108 |Transfer-degraded non-drug allergy|)</td></tr>
+</table>
 
 (^999000801000001108 |Allergy Archetypes Drug Groups simple reference set|      
 OR ^999000631000001100|National Health Service dictionary of medicines and
