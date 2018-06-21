@@ -115,21 +115,14 @@ As SNOMED CT Expression but see note above on not using 'life threatening' or 'F
 PRSB valueSet applicable for certainty is as follows:
 
 <table style="width:100%;max-width: 100%;">
+<tr><td>Unlikely - [The reaction is thought unlikely to have been caused by the agent.][SNOMED-CT::1491118016]</td></tr>
+<tr><td>Likely - [The reaction is thought likely to have been caused by the agent.][SNOMED-CT::5961011]</td></tr>
+<tr><td>Certain - [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.][SNOMED-CT::255545003] (Definite(qualifier value))</td></tr>       
+<tr><td>Confirmed by challenge testing - [The  reaction to the agent has been confirmed by challenge testing or other concrete evidence.][SNOMED-CT::410605003] Confirmed present (qualifier value))</td></tr></table>
 
-• Unlikely        [The   reaction is  thought  unlikely  to have  been  caused  by  the  agent.]
-[SNOMED-CT::1491118016]
-• Likely        [The   reaction is thought  likely  to  have  been  caused  by the agent.]
-[SNOMED-CT::5961011]
-• Certain        [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.]
-[SNOMED-CT::255545003]        (Definite        (qualifier value))
-• Confirmed by  challenge  testing  [The  reaction to the agent has been confirmed by challenge testing or other concrete evidence.]
-[SNOMED-CT::410605003]        (Confirmed present (qualifier value))
+The FHIR element b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verficationStatus is required and uses values (unconfirmed | confirmed | refuted | entered-in-error) the values ( refuted | entered-in-error) MUST NOT be used.
 
-verficationStatus is mandatory
-
-verficationStatus has a Required valueSet (unconfirmed | confirmed | refuted | entered-in-error)
-
-""Profile out"" ( refuted | entered-in-error)
+""Profile out"" 
 
 Certain & Confirmed by Challenge = confirmed; Likely & Unlikely = unconfirmed [DB post comment on Zulip]
 
