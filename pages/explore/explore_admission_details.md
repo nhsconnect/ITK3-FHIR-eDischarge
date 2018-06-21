@@ -15,11 +15,12 @@ The Admission details section carries information about the patient's admission.
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
+			<th width="15%">Section</th>
 			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="25%"></th>
+			<th width="20%"></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,15 +28,17 @@ The Admission details section carries information about the patient's admission.
 			<td>Admission details</td>
 			<td>Details of the patient's admission and reason for admission</td>
 			<td>0..1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>&nbsp;</td>
+			<td></td
 		</tr>
 		<tr>
 			<th>Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>Guidance</th>
+			<th>FHIR Mapping</th>
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
