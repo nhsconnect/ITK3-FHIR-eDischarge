@@ -103,9 +103,9 @@ As SNOMED CT Expression but see note above on not using 'life threatening' or 'F
 
 <table style="width:100%;max-width: 100%;">
 <tr><td>(255604002 |Mild|</td></tr>
-<tr><td>>OR 6736007 |Moderate|</td></tr>
+<tr><td>OR 6736007 |Moderate|</td></tr>
 <tr><td>OR 24484000 |Severe|</td></tr>
-<tr><td>>OR 399166001 |Fatal|</td></tr>
+<tr><td>OR 399166001 |Fatal|</td></tr>
 <tr><td>442452003 |Life threatening severity|)</td></tr>
 </Table>
 
