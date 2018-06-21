@@ -123,11 +123,7 @@ PRSB valueSet applicable for certainty is as follows:
 <table style="width:100%;max-width: 100%;"><tr><td>The FHIR element <b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verficationStatus has a required terminology binding and uses values (unconfirmed | confirmed | refuted | entered-in-error)</td></tr>
 <tr><td> the values ( refuted | entered-in-error) <b>MUST NOT</b> be used for Transfer of Care Documents.</td></tr></table>
 
-The values Certain and Confirmed by Challenge = FHIR value "confirmed". The values Likely and Unlikely = FHIR value "unconfirmed".
-
-If <b>AllergyIntolerance.verificationStatus</b> is not known, then set to FHIR value "unconfirmed". If extra information about certainty is known, this should reported as a note.
-
-The ValueSet guidance for implementers is to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
+The values Certain and Confirmed by Challenge = FHIR value "confirmed". The values Likely and Unlikely = FHIR value "unconfirmed". If <b>AllergyIntolerance.verificationStatus</b> is not known, then set to FHIR value "unconfirmed". If extra information about certainty is known, this should reported as a note. The ValueSet guidance for implementers is to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
 
 <table style="width:100%;max-width: 100%;"><tr><td>As SNOMED Expressions (Note that 1491118016 |unlikely| and 5961011 |likely|  above are description identifiers for synonyms of concepts below)</td></tr>
 <tr><td>(385434005 |Improbable diagnosis|</td></tr>
