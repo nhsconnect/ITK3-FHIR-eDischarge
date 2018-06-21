@@ -160,14 +160,14 @@ An absence of AllergyIntollerance.type implies Not Known . Advice from FHIR pati
 
 This is mapped to the "higher level" of the FHIR element <b>AllergyIntolerance.onset[x]</b> estimated or actual date, date-time, or age when allergy or intolerance was identified.
         
-THe definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time , the onset under reaction could be multiple. 
+The definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time , the onset under reaction could be multiple. 
 
 ## Clinicalstatus ##
 The FHIR element <b>AllergyIntolerance.clinicalStatus</b> for Transfer of Care Documents should if present be set to "active".
 
 ## 	AllergyIntolerance.category ##
 
-The category of the identified substance this may be of use to receivers and can be populated with a value from the FHIR required ValueSet <b>AllergyIntoleranceCategory</b>. 
+The category of the identified substance, this may be of use to receivers and can be populated with a value from the FHIR required ValueSet <b>AllergyIntoleranceCategory</b>. 
 
 ## AllergyIntolerance.criticality ##
 This FHIR element may be used to express life threatening (hight) in conjunction with <b>AllergyIntolerance.severity</b> FHIR element.
@@ -185,7 +185,7 @@ This FHIR element may be populated if known.
 This FHIR element may be populated with a value from dm+d routes refset. 
 As a SNOMED Expression
 
-<table style="width:100%;max-width: 100%;"><tr>>td>^999000051000001100 |ePrescribing route of administration simple reference set|</td></tr></table>
+<table style="width:100%;max-width: 100%;"><tr><td>^999000051000001100 |ePrescribing route of administration simple reference set|</td></tr></table>
 
 ## AllergyIntolerance.reaction.note ##
 This FHIR element <b>MUST NOT</b> be used and the information must where available always be carried in the <b>Composition.section.text</b> FHIR element.
