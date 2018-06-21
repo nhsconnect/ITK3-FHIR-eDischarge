@@ -92,14 +92,14 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>The type of reaction experienced by the patient (allergic, adverse, intolerance)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text and if coding is available carried in Code of <b>AllergyIntolerance.type</b> FHIR element. For further information on certainty see see <a href="build_allergy_lists.html#type-of-reaction">Constructing Medication Lists(Type of reaction)</a></td>
+			<td>Text and if coding is available carried in Code of <b>AllergyIntolerance.type</b> FHIR element. For further information on certainty see <a href="build_allergy_lists.html#type-of-reaction">Constructing Medication Lists(Type of reaction)</a></td>
 		</tr>
 		<tr>
 			<td>Evidence</td>
 			<td>Results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text. Note: structured FHIR Diagnosistic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included with a link as evidence.See section on <href="build_attachments.html">Use of attachments</a></td>
+			<td>Free text. Note: structured FHIR Diagnosistic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included with a link as evidence.See section on <a href="build_attachments.html">Use of attachments</a></td>
 		</tr>
 		<tr>
 			<td>Probability of recurrence</td>
@@ -113,7 +113,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text and <b> AllergyIntolerance.onset[x] FHIR element.</td>
+			<td>Free text and <b> AllergyIntolerance.onset[x] FHIR element. For further information see <a href="build_allergy_lists.html#date-first-experienced">Constructing Medication Lists(Date first experienced)</a></td>
 		</tr>
 	</tbody>
 </table>

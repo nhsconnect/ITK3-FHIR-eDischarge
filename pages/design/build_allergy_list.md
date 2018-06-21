@@ -150,6 +150,27 @@ When patient is asked about reaction, but doesn't know the reaction then use HL7
 
 When the reaction details cannot be determined/verified, then use the HL7 nullFlavor ""NI"" - ""No Information"""
 
+## Type of Reaction ##
+
+"FHIR lists a Required valueSet of (allergy | intolerance) - as this is a required valueSet these values must be used.
+
+What about ""Adverse Reaction"" & ""Not Known""? [See Zulip post https://chat.fhir.org/#narrow/stream/implementers/topic/Extensions.20on.20Required.20Codes for international debate on adding codes to AllergyIntolerance.type]
+Adverse reactions is closer to Intoleranceby FHIR definition.
+An absence of AllergyIntollerance.type implies Not Known .
+
+15/05/2018: FHIR patient care WGM: adverse reaction recorded under reaction.description."
+
+## Date first experienced ##
+
+"Mapped to the ""higher level""   AllergyIntolerance.onset[x]
+Estimated or actual date, date-time, or age when allergy or intolerance was identified.
+        
+Reaction.onset definittion: Record of the date and/or time of the onset of the Reaction.
+The reason for mapping to higher onset is that this is the date when the reaction was experinced by the patient for the first time , the onset under reaction could be multiple. 
+
+Raise to international FHIR re onset reaction having age and text. :Jennifer
+"
+
 ## Allergy Snapshot ##
 The allergies list is a “Snapshot” of the known allergies at a point in time (for example on discharge from hospital). It is not a master list of the patient’s allergies. Other lists of allergies for the patient may exist on other systems. 
 
