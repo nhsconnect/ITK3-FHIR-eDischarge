@@ -15,34 +15,38 @@ The Discharge details section carries details of the patient's discharge. Elemen
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
-	</thead>
 	<tbody>
 		<tr>
 			<td>Discharge details</td>
 			<td>The details of the patient's discharge from hospital.</td>
 			<td>&nbsp;</td>
 			<td>required</td>
-			<td>&nbsp;</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>FHIR Target and Guidance</th>	
 		</tr>
 		<tr>
 			<td>Discharging consultant</td>
 			<td>The consultant responsible for the patient at time of discharge</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. The identifier would not be displayed in the message.</td>
+			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resouces: 
+			<ul>
+			<li><b>Encounter.participant.individual.Practitioner.identifier<li>
+			<li>Encounter.participant.individual.Practitioner.name</li>
+			<li>PractitionerRole.code</li>
+			<li>PractitionerRole.identifier</b></li></ul></td>
 		</tr>
 		<tr>
 			<td>Discharging specialty/department</td>
@@ -92,6 +96,9 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>0 to 1</td>
 			<td>required</td>
 			<td>If the patient is discharged to their normal place of residence, no address is recorded on the discharge summary. Otherwise, an address other than the patient's usual place of residence may be provided by the patient or their representative.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
