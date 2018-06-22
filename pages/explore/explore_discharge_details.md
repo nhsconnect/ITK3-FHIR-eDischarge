@@ -43,10 +43,10 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>required</td>
 			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resouces: 
 			<ul>
-			<li><b>Encounter.participant.individual.Reference.Practitioner.identifier<li>
-			<li>Encounter.participant.individual.Reference.Practitioner.name</li>
-			<li>PractitionerRole.code</li>
-			<li>PractitionerRole.identifier</b></li></ul></td>
+			<li><b>Encounter.participant.individual.Reference.Practitioner.identifier</b><li>
+			<li><b>Encounter.participant.individual.Reference.Practitioner.name</b></li>
+			<li><b>PractitionerRole.code</b></li>
+			<li><b>PractitionerRole.identifier</b></li></ul></td>
 		</tr>
 		<tr>
 			<td>Discharging specialty/department</td>
