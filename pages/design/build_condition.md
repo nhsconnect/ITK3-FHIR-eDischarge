@@ -10,6 +10,11 @@ summary: "Constructing a condition list"
 
 ## Overview ##
 This section details the design approach using FHIR Resources to support the PRSB heading model for a condition list. The condition Resource is referenced via the List Resource.
+Implementation guidance on diagnoses from the discharge summary PRSB standard:
+The discharge summary should inform the GP of the main diagnosis / diagnoses that were important during the admission (or symptom(s) if no diagnosis), including any new diagnosis that came to light during the admission.
+When a diagnosis has not yet been made, the most granular clinical concept with the highest level of certainty should be recorded.  This may be a problem, symptom, sign, or test result, and may evolve over time, as a conventional diagnosis is reached.  For example, ‘dyspepsia’ may be the diagnosis when a patient first presents with indigestion, upgraded to 'gastric ulcer' when this is found at endoscopy, and 'gastric cancer' when biopsies reveal this. 
+'Co-morbidities' should be recorded as separate diagnoses.  For example, dementia may be recorded as a primary diagnosis by a psycho-geriatrician, but as a co-morbidity where a patient is admitted for a hip replacement.
+Unconfirmed or excluded diagnoses should not be recorded in structured code.
 
 ## Resources Used for Profile Design ##
 The following FHIR Resources are profiled to create the condition list.
@@ -53,6 +58,7 @@ The SNOMED CT concept should be from the following ref set:
 <tr><td>OR &lt; 413350009 |Finding with explicit context|</td></tr>
 <tr><td>OR &lt; 272379006 |Event|</td></tr></table>
 
+For Inpatient Discharge Summary this is used in conjunction with <b>condition.category</b> with <b>encounter-diagnosis</b> as the ValueSet. 
 
 ## How the Condition List is Constructed ##
 The condition list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
