@@ -44,18 +44,20 @@ This Resource is used to record detailed information about a condition, problem,
 - stage - stage/grade, usually assessed formally
 - evidence - supporting evidence
 
+## Diagnosis Code ##
+
+Handles information entered for each individual diagnosis. Confirmed diagnosis (or symptom); active diagnosis (or symptom) being treated. Should include the stage of the disease where relevant. 
+The SNOMED CT concept should be from the following ref set:
+
+<table><tr><td>&lt; 404684003 |Clinical finding|</td></tr>
+<tr><td>OR &lt; 413350009 |Finding with explicit context|</td></tr>
+<tr><td>OR &lt; 272379006 |Event|</td></tr></table>
+
+
 ## How the Condition List is Constructed ##
 The condition list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
-
-Each condition in the list will use the FHIR list Resource Flag element to indicate the context of the condition (For example primary, secondary etc). 
-
-**Important Note - The value set for the condition list flag element is currently under review and subject to change.**
-
-## Condition Flag Structures ##
-
-<img src="images/build/condition_flag_structure.png" style="width:100%;max-width: 100%;">
 
 ## Condition List Item Example ##
 
