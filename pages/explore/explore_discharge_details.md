@@ -53,14 +53,15 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>The specialty or department responsible for the patient at the time of discharge</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty is <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element.</td>
+			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". Note further guidance will be issues in a later release of the specification. 
+</td>
 		</tr>
 		<tr>
 			<td>Discharge location</td>
 			<td>The ward or unit the patient was in immediately prior to discharge</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>The ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system.</td>
+			<td>Text to carry the ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system. This information <b>SHOULD</b> also be carried in the <b>Encounter.location.Reference.Location.name</b> </td>
 		</tr>
 		<tr>
 			<td>Date/time of discharge</td>
