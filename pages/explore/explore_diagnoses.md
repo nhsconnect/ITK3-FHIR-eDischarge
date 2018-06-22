@@ -15,48 +15,50 @@ The Diagnoses section carries information about Diagnoses. Elements should be fo
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
-	</thead>
 	<tbody>
 		<tr>
 			<td>Diagnoses</td>
 			<td>A list of the patient's diagnoses.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>&nbsp;</td>
+			<td>M</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>FHIR Target and Guidance</th>	
 		</tr>
 		<tr>
 			<td>Diagnosis name</td>
 			<td>Confirmed diagnosis (or symptom); active diagnosis being treated.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>Choice of free text or text derived from SNOMED CT concepts</td>
+			<td>M</td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.code</b> FHIR element.</td>
 		</tr>
 		<tr>
 			<td>Stage</td>
 			<td>Stage of the disease, where relevant</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Text.</td>
+			<td>O</td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.stage.summary(using the CodeableContext text to hold the stage of disease text)</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Free text.Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
+			<td>O</td>
+			<td>Free text.Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.The section text should be repeated in the text of the <b>Condition.note </b>FHIR element to record Free differential and excluded diagnosis.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
