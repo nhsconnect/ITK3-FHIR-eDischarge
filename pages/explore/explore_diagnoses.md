@@ -21,6 +21,7 @@ The Diagnoses section carries information about Diagnoses. Elements should be fo
 			<th width="5%">MRO*</th>
 			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
+	</thead>
 	<tbody>
 		<tr>
 			<td>Diagnoses</td>
