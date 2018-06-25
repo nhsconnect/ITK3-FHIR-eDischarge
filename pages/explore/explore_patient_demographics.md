@@ -42,7 +42,7 @@ The Patient demographics section contains information about the patient. Element
 			<td>The full name of the patient</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>The legal name of the patient from the Patient Demographics Service (PDS), or the name volunteered by the patient in text and carried in the FHIR element <b>Patient.name</b> with the <b>Patient.name.use/b> containing the value "official".  </td>
+			<td>The legal name of the patient from the Patient Demographics Service (PDS), or the name volunteered by the patient in text and carried in the FHIR element <b>Patient.name</b> with the <b>Patient.name.use</b> containing the value "official".  </td>
 		</tr>
 		<tr>
 			<td>Patient preferred name</td>
