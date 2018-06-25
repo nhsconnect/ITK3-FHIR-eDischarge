@@ -23,7 +23,6 @@ The Plan and requested actions section carries information about planned and req
 		</tr>
 	</thead>
 	<tbody>
-	<tbody>
 		<tr>
 			<td>Plan and requested actions</td>
 			<td>The details of planned investigations, procedures and treatment, and whether this plan has been agreed with the patient or their legitimate representative.</td>
@@ -53,7 +52,7 @@ The Plan and requested actions section carries information about planned and req
 			<td>A record of the planned and requested actions. May be structured HTML for example a table, with actions, names, dates, status, location, strategies, or free text.</td>
 		</tr>
 		<tr>
-			<td>Agreed with patient or legitimate patient representative</td>
+			<td>Agreed with patient or legitimate patient representative.</td>
 			<td>Indicates whether the patient or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments.</td>
 			<td>0 to 1</td>
 			<td>R</td>
