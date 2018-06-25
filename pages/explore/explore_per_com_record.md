@@ -57,7 +57,7 @@ The Person completing record section carries information about the person who co
 			<td>The grade of the person completing the record</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The grade of the person completing the record held on the source system or from an authoritative source<. Sent as text only./td>
+			<td>The grade of the person completing the record held on the source system or from an authoritative source<. Sent as text only.</td>
 		</tr>
 		<tr>
 			<td>Specialty</td>
