@@ -15,11 +15,11 @@ This is to flag participation in a clinical trial. Elements should be formatted 
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,22 +27,25 @@ This is to flag participation in a clinical trial. Elements should be formatted 
 			<td>Participation in research</td>
 			<td>The details of any research studies participated in.</td>
 			<td>&nbsp;</td>
-			<td>optional</td>
-			<td>&nbsp;</td>
+			<td>O</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<td>Name of research study</td>
 			<td>Name of the research study/trial and/or drug/intervention</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Record(s) of participation in clinical trial(s). Each record should include information about the trial and the patient's participation, as recorded by the clinician. Text.</td>
+			<td>O</td>
+			<td>Record(s) of participation in clinical trial(s). Each record should include information about the trial and the patient's participation, as recorded by the clinician. Text only.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
