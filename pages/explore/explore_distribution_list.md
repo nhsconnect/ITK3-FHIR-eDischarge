@@ -60,14 +60,14 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>The recipient's grade.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>The grade of the recipient, if known by the sending institution, otherwise omitted. Texr only</td>
+			<td>The grade of the recipient, if known by the sending institution, otherwise omitted. Text only</td>
 		</tr>
 		<tr>
 			<td>Organisation name</td>
 			<td>The name of the organisation the recipient is representing or the organisation named as the receiving organisation.An identifier for the organisation will be sent alongside the name.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Organisation name in text and carrired in the FHIR element <bOrganization.name</b> and identifier (which <b>MUST NOT</b> be in carried in the text), taken from the Organisation Data Service (ODS)) and carried in the FHIR element <b>Organization.identifier</b></td>
+			<td>Organisation name in text and carrired in the FHIR element <b>Organization.name</b> and identifier (which <b>MUST NOT</b> be in carried in the text), taken from the Organisation Data Service (ODS)) and carried in the FHIR element <b>Organization.identifier</b></td>
 		</tr>
 		<tr>
 			<td>Team</td>
