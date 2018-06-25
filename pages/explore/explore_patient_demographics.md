@@ -70,7 +70,7 @@ The Patient demographics section contains information about the patient. Element
 			<td>The unique identifier for a patient within the NHS in England and Wales.</td>
 			<td>0 to 1</td> 
 			<td>R</td>
-			<td>Sent as text as per the NHS Data Dictionary NHS number. Traced NHS Numbers only should be used and the NHS number <b>SHOULD<b/> be carried in the FHIR element <b>Patient.identifier</b>.</td>
+			<td>Sent as text as per the NHS Data Dictionary NHS number. Traced NHS Numbers only should be used and the NHS number <b>SHOULD</b> be carried in the FHIR element <b>Patient.identifier</b>.</td>
 		</tr>
 		<tr>
 			<td>Other identifier</td>
