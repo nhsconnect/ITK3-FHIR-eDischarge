@@ -49,202 +49,202 @@ The Medications and medical devices section carries information about the patien
 			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>Medication.name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Form</td>
 			<td>Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>O</td>
+			<td>Text derived from SNOMED CT MedicationStatement.medication[x].<br/>medicationReference.Medication.form. See <a href="build_medication_lists.html#medication.form">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Route</td>
 			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
 			<td>0 to many</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text derived from SNOMED CT</td>
 		</tr>
 		<tr>
 			<td>Site</td>
 			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye"</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text derived from SNOMED-CT</td>
 		</tr>
 		<tr>
 			<td>Method</td>
 			<td>The technique or method by which the medication is to be administered.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Dose directions description</td>
 			<td>A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency.  Comment: e.g. "I tablet at night" or "20mg at 10pm" This is the form of dosage direction text normally available from UK GP systems.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Dose amount description </td>
 			<td>A plain text description of medication single dose amount, as described in the AoMRC medication headings.  Comment: e.g. "30 mg" or "2 tabs". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Dose timing description</td>
 			<td>A plain text description of medication dose frequency, as described in the AoMRC medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Text Parsable dose directions ***</td>
 			<td>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</td>
 		</tr>
 		<tr>
 			<th>Structured dose direction cluster</th>
 			<th>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose</th>
 			<th>0 to many</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>&nbsp;</th>
 		</tr>
 		<tr>
 			<th>Structured dose amount cluster ***</th>
 			<th>A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</th>
 			<th>&nbsp;</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</th>
 		</tr>
 		<tr>
 			<th>Structured dose timing cluster ***</th>
 			<th>A slot containing a structural, computable representation of dose timing and maximum dose.  Comment: This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</th>
 			<th>&nbsp;</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>*** Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient  information to detail these further at present</th>
 		</tr>
 		<tr>
 			<td>Dose direction duration</td>
 			<td>Recommendation of the time period for which the medication should be continued, including direction not to discontinue.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Choice of Text - Continue indefinitely [The medication should be continued indefinitely.]<br/>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]<br/>Stop when course complete. [The medication should be stopped when the currently prescribed course has been completed.]<br/>Duration: Allowed values: years, months, weeks, days, hours >=0 days"</td>
 		</tr>
 		<tr>
 			<td>Additional instruction </td>
 			<td>Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.  Comment: e.g. "Omit  morning dose on day of procedure", "for pain or fever", "Dispense weekly".</td>
 			<td>0 to many</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.]<br/>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. 'Dispensing instructions' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Patient advice [Multiple plain text instructions intended for patient or carer. 'Patient advice' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]"</td>
 		</tr>
 		<tr>
 			<th>Course details cluster</th>
 			<th>Details of the overall course of medication.</th>
 			<th>0 to 1</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>&nbsp;</th>
 		</tr>
 		<tr>
 			<td>Course status **</td>
 			<td>The status of this prescription in an ambulatory (outpatient/GP/community) context</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Choice of Coded text** Data item not relevant to Hospital to GP discharge summary<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.]"</td>
 		</tr>
 		<tr>
 			<td>Start date/time</td>
 			<td>The date and/or time that the medication course should begin.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Date/time</td>
 		</tr>
 		<tr>
 			<td>End date/time</td>
 			<td>The date and/or time that the medication course should finish.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Date/time</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
 			<td>Reason for medication being prescribed, where known.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>"A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis.</td>
 		</tr>
 		<tr>
 			<td>Link to indication record</td>
 			<td>A link to the record which contains the Indication for this medication order.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>URL</td>
 		</tr>
 		<tr>
 			<td>Comment/recommendation</td>
 			<td>Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations</td>
 		</tr>
 		<tr>
 			<th>Medication change summary cluster</th>
 			<th>Records the changes made to medication since admission</th>
 			<th>0 to 1</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>&nbsp;</th>
 		</tr>
 		<tr>
 			<td>Status</td>
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Choice of code derived text<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.]</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
 			<td>Reason for change in medication, eg sub-therapeutic dose, patient intolerant.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the latest change - addition, or amendment</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Date / time</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
 			<td>Where a change is made to the medication ie one drug stopped and another started or eg dose, frequency or route is changed.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any additional comment about the medication change</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<th>Total dose daily quantity cluster **</th>
 			<th>The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.</th>
 			<th>0 to 1</th>
-			<th>optional</th>
+			<th>O</th>
 			<th>** Data item not relevant to Hospital to GP discharge summary</th>
 		</tr>
 		<tr>
 			<td>Medical devices entry</td>
 			<td>Any therapeutic medical device of relevance that does not have representation in the NHS dictionary of medicines and medical devices (dm+d).</td>
 			<td>0 to many</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
@@ -258,42 +258,42 @@ The Medications and medical devices section carries information about the patien
 			<td>Name of discontinued medication</td>
 			<td>The name of the medication or medical device being discontinued</td>
 			<td>1</td>
-			<td>mandatory</td>
+			<td>M</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Status</td>
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>1</td>
-			<td>mandatory</td>
+			<td>M</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
 			<td>The clinical indication for any changes in medication status</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the discontinuation</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Date / time</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
 			<td>A description of any amendment</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any additional comment about the medication change.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Text</td>
 		</tr>
 		<tr>
