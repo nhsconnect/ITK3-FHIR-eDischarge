@@ -28,7 +28,7 @@ The GP practice section contains details of the patients GP practice. Elements s
 			<td>GP practice </td>
 			<td>Details of the GP practice where the patient is registered.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
+			<td>M</td>
 			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
@@ -42,21 +42,21 @@ The GP practice section contains details of the patients GP practice. Elements s
 			<td>GP name</td>
 			<td>Where the patient or patient's representative offers the name of a GP as their usual GP</td>
 			<td>0 to 1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>Patients are registered with GP Practices, so their usual GP name will be something volunteered by the patient or their representative. Text and carried in the FHIR element <b>Practitioner.name.</b></td>
 		</tr>
 		<tr>
 			<td>GP practice details</td>
 			<td>Name and address of the patient's registered GP Practice</td>
 			<td>0 to 1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact. Include details of the Practice name and address in text and carried in the FHIR elements <b>Organization.name</b> and <b>Organization.address</b></td>
 		</tr>
 		<tr>
 			<td>GP practice identifier</td>
 			<td>The identifier of the registered GP Practice.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
+			<td>M</td>
 			<td>This should be the Organisation Data Services (ODS) identifier for the practice which <b>MUST NOT</b> be in text but carried in the FHIR element <b>Organization.identifier</b>. This includes codes to use where there is no registered GP practice which such follow the <a href="https://www.datadictionary.nhs.uk/web_site_content/supporting_information/organisation_data_service_default_codes.asp?shownav=1">NHS Data Dictionary default codes</a> </td>
 		</tr>
 		<tr>
