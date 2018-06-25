@@ -85,7 +85,7 @@ The Person completing record section carries information about the person who co
 			<td>Contact details of the person completing the record. For example a phone number, email address. Contact details are used to resolve queries about the record entry.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>The contact details may be for the individual completing the record, or wider team details (for example a phone number for a hospital department). This will be sent as text and where supported in the FHIR elements <b>PractitionerRole.telecom</b> or <b>Practitioner.telecom</b></td> or <b>Organization.telecom</b>.
+			<td>The contact details may be for the individual completing the record, or wider team details (for example a phone number for a hospital department). This will be sent as text and where supported in the FHIR elements <b>PractitionerRole.telecom</b> or <b>Practitioner.telecom</b> or <b>Organization.telecom</b>.</td>
 		</tr>
 		<tr>
 			<td>Organisation</td>
