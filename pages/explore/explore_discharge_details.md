@@ -40,7 +40,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>Discharging consultant</td>
 			<td>The consultant responsible for the patient at time of discharge</td>
 			<td>0 to 1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resouces: 
 			<ul>
 			<li><b>Encounter.participant.individual.Reference.Practitioner.identifier</b><li>
@@ -53,50 +53,50 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>The specialty or department responsible for the patient at the time of discharge</td>
 			<td>0 to 1</td>
 			<td>required</td>
-			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". Note further guidance will be issues in a later release of the specification. 
+			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This is proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The FHIR CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". Note further guidance will be issues in a later release of the specification. 
 </td>
 		</tr>
 		<tr>
 			<td>Discharge location</td>
 			<td>The ward or unit the patient was in immediately prior to discharge</td>
 			<td>0 to 1</td>
-			<td>required</td>
-			<td>Text to carry the ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system. This information <b>SHOULD</b> also be carried in the <b>Encounter.location.Reference.Location.name</b> </td>
+			<td>R</td>
+			<td>Text to carry the ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system. This information <b>SHOULD</b> also be carried in the FHIR element <b>Encounter.location.Reference.Location.name</b>. </td>
 		</tr>
 		<tr>
 			<td>Date/time of discharge</td>
 			<td>The actual date of discharge</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>The date and time of discharge as recorded by the PAS or discharging system.</td>
+			<td>M</td>
+			<td>Text indicating date and time of discharge as recorded by the PAS or discharging system. This <b>SHOULD</b> also be carried in the FHIR element <b>Encounter.period.end</b>.</td>
 		</tr>
 		<tr>
 			<td>Discharge method</td>
 			<td>The method of discharge from hospital. National codes: e.g.. patient discharged on clinical advice or with clinical consent; patient discharged him/herself or was discharged by a relative or advocate; patient died; stillbirth</td>
 			<td>0 to 1</td>
-			<td>required</td>
-			<td>A code from the NHS Data Dictionary Discharge Method code</td>
+			<td>R</td>
+			<td>Text - Currently not to be coded for Transfer of Care Documents</td>
 		</tr>
 		<tr>
 			<th>Discharge destination cluster</th>
 			<th>The destination of the patient on discharge. National codes. Eg, High Dependency Unit.</th>
 			<th>0 to 1</th>
-			<th>required</th>
+			<th>R</th>
 			<th>&nbsp;</th>
 		</tr>
 		<tr>
 			<td>Discharge type</td>
 			<td>The destination of the patient on discharge from hospital. National codes e.g.. NHS-run care home.</td>
 			<td>0 to 1</td>
-			<td>required</td>
-			<td>A code from the NHS Data Dictionary Discharge Destination</td>
+			<td>R</td>
+			<td>Text and a code from the NHS Data Dictionary Discharge Destination carried in the CodeableConcept of the FHIR element <b>Encounter.hospitalization.dischargeDisposition</b></td>
 		</tr>
 		<tr>
 			<td>Discharge address</td>
 			<td>Address to which patient discharged. Only complete where this is not the usual place of residence.</td>
 			<td>0 to 1</td>
-			<td>required</td>
-			<td>If the patient is discharged to their normal place of residence, no address is recorded on the discharge summary. Otherwise, an address other than the patient's usual place of residence may be provided by the patient or their representative.</td>
+			<td>R</td>
+			<td>If the patient is discharged to their normal place of residence, no address is recorded on the discharge summary. Otherwise, an address other than the patient's usual place of residence may be provided by the patient or their representative. Text and an address carried in the FHIR element Encounter.location.Reference.Location.address</b></td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
