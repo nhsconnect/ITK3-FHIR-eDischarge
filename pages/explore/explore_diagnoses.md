@@ -42,7 +42,7 @@ The Diagnoses section carries information about Diagnoses. Elements should be fo
 			<td>Confirmed diagnosis (or symptom); active diagnosis being treated.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.code</b> FHIR element. See <a href="build_conditions.html#diagnosis-code">Constructing Diagnosis Lists(Diagnosis code) for further guidance.</td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.code</b> FHIR element. See <a href="build_conditions.html#diagnosis-code">Constructing Diagnosis Lists(Diagnosis code)</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Stage</td>
