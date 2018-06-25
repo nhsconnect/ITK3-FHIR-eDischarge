@@ -15,11 +15,11 @@ The Procedures section carries information about the procedures that have been p
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -28,56 +28,59 @@ The Procedures section carries information about the procedures that have been p
 			<td>The details of any procedures performed.</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>&nbsp;</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<td> Procedure name</td>
 			<td>The therapeutic or diagnostic procedure performed.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>Choice of free or text derived from SNOMED CT concepts.</td>
+			<td>M</td>
+			<td>The procedure name in text and where supported a SNOMED CT concept from 71388002 Procedure (procedure) hierarcy or Procedure with explicit context (situation)129125009. See <a href="build_procedures.html">Constructing Procedure Lists</a></td>
 		</tr>
 		<tr>
 			<td>Anatomical site</td>
 			<td>The body site of the procedure</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Choice of free or text derived from SNOMED CT concepts.</td>
+			<td>O</td>
+			<td>Text and where supported a SNOMED CT concept to represent the anatomical site.</td>
 		</tr>
 		<tr>
 			<td>Laterality</td>
 			<td>Laterality of the procedure</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Choice of free or text derived from SNOMED CT concepts.</td>
+			<td>O</td>
+			<td>Text and where supported a SNOMED CT concept to represent the laterality.</td>
 		</tr>
 		<tr>
 			<td>Complications related to procedure</td>
 			<td>Details of any intra-operative complications encountered during the procedure, arising during the patient's stay in the recovery unit or directly attributable to the procedure.</td>
 			<td>0 to many</td>
-			<td>optional</td>
-			<td>Choice of free or text derived from SNOMED CT concepts.</td>
+			<td>O</td>
+			<td>Text and where supported a SNOMED CT concept to represent the compication.</td>
 		</tr>
 		<tr>
 			<td>Specific anaesthesia issues</td>
 			<td>Details of any adverse reaction to any anaesthetic agents including local anaesthesia.  Problematic intubation, transfusion reaction, etc.</td>
 			<td>0 to many</td>
-			<td>optional</td>
-			<td>Choice of free or text derived from SNOMED CT concepts.</td>
+			<td>O</td>
+			<td>Text and where supported a SNOMED CT concept to represent the anaesthesia issues.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any further textual comment to clarify such as statement that information is partial or incomplete.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>Text</td>
+			<td>O</td>
+			<td>Free text</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
