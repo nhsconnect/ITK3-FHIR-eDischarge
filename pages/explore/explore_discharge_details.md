@@ -96,7 +96,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>Address to which patient discharged. Only complete where this is not the usual place of residence.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>If the patient is discharged to their normal place of residence, no address is recorded on the discharge summary. Otherwise, an address other than the patient's usual place of residence may be provided by the patient or their representative. Text and an address carried in the FHIR element Encounter.location.Reference.Location.address</b></td>
+			<td>If the patient is discharged to their normal place of residence, no address is recorded on the discharge summary. Otherwise, an address other than the patient's usual place of residence may be provided by the patient or their representative. Text and an address carried in the FHIR element <b>Encounter.location.Reference.Location.address</b></td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
