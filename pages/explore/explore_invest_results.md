@@ -15,11 +15,11 @@ The Investigation results section carries information about investigation result
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,8 +27,8 @@ The Investigation results section carries information about investigation result
 			<td>Investigation results</td>
 			<td>A record of investigations and procedures requested, results and plans.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>&nbsp;</td>
+			<td>O</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
 			<th>Element</th>
@@ -41,8 +41,11 @@ The Investigation results section carries information about investigation result
 			<td>Investigation result</td>
 			<td>For each investigation, the result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date, and plans for acting upon investigation results.</td>
 			<td>0 to many</td>
-			<td>optional</td>
-			<td>If possible, this should include only results which are important or relevant to communicate to the GP. Hence health professional may need to select them. Text. (Note that work is underway to standardise recording of pathology investigation results, which will inform content under this heading.)</td>
+			<td>O</td>
+			<td>If possible, this should include only results which are important or relevant to communicate to the GP. Hence health professional may need to select them. Text only. (Note that work is underway to standardise recording of pathology investigation results, which will inform content under this heading.)</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
