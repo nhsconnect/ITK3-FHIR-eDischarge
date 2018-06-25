@@ -49,14 +49,14 @@ The Social context section carries information about the social context of the p
 			<td>The current and/or previous relevant occupation(s) of the patient/individual.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>This is a record of the patient's current or previous occupations as volunteered by the patient. Text or coded text (SNOMED CT).</td>
+			<td>This is a record of the patient's current or previous occupations as volunteered by the patient. Text only.</td>
 		</tr>
 		<tr>
 			<td>Educational history</td>
 			<td>The current and/or previous relevant educational history of the patient/individual</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>This is a record of the patient's current or previous educational history as volunteered by the patient or their representative or carer. Text.</td>
+			<td>This is a record of the patient's current or previous educational history as volunteered by the patient or their representative or carer. Text only.</td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
