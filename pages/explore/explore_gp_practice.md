@@ -57,7 +57,7 @@ The GP practice section contains details of the patients GP practice. Elements s
 			<td>The identifier of the registered GP Practice.</td>
 			<td>1 only</td>
 			<td>mandatory</td>
-			<td>This should be the Organisation Data Services (ODS) identifier for the practice which <b>MUST NOT</b> be in text but carried in the FHIR element <b>Organization.identifier</b>. This includes codes to use where there is no registered GP practice. </td>
+			<td>This should be the Organisation Data Services (ODS) identifier for the practice which <b>MUST NOT</b> be in text but carried in the FHIR element <b>Organization.identifier</b>. This includes codes to use where there is no registered GP practice which such follow the <a href="https://www.datadictionary.nhs.uk/web_site_content/supporting_information/organisation_data_service_default_codes.asp?shownav=1">NHS Data Dictionary default codes</a> </td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
