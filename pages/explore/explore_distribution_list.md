@@ -83,7 +83,6 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>O</td>
 			<td>Personal relationships as documented in the NHS Data Dictionary Person Relationship Type.</td>
 		</tr>
-		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
