@@ -10,16 +10,16 @@ summary: "Gives information about the Medications and medical devices section"
 {% include custom/section.warnbanner.html %}
 
 ## Medications and Medical Devices Section Content ##
-The Medications and medical devices section carries information about the patient's medication. Elements should be formatted as subheadings in any HTML sent. Where a value is marked as Text derived from SNOMED CT the section on [constructing clinical coded structures](https://nhsconnect.github.io/ITK-FHIR-eDischarge/build_medication_lists.html) should be consulted for further information. 
+The Medications and medical devices section carries information about the patient's medication. Elements should be formatted as subheadings in any HTML sent. For more information on constructing medication lists see [constructing clinical coded structures](build_medication_lists.html). 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
 		<tr>
-			<th width="18%">Section</th>
-			<th width="30%">Description</th>
-			<th width="11%">Cardinality</th>
-			<th width="11%">MRO*</th>
-			<th width="30%">Values</th>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,15 +27,15 @@ The Medications and medical devices section carries information about the patien
 			<td>Medications and Medical Devices </td>
 			<td>The details of and instructions for medications and medical equipment the patient is using.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
-			<td>&nbsp;</td>
+			<td>O</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
-			<th>Element</th>
+			<th>PRSB Element</th>
 			<th>Description</th>
-			<th>Cardinality</th>
+			<th>Card.</th>
 			<th>MRO*</th>
-			<th>Values</th>
+			<th>FHIR Target and Guidance</th>		
 		</tr>
 		<tr>
 			<th>Medication item cluster</th>
@@ -48,8 +48,8 @@ The Medications and medical devices section carries information about the patien
 			<td>Medication name</td>
 			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
-			<td>mandatory</td>
-			<td>Text derived from SNOMED CT</td>
+			<td>M</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>Medication.name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Form</td>
@@ -295,6 +295,9 @@ The Medications and medical devices section carries information about the patien
 			<td>0 to 1</td>
 			<td>optional</td>
 			<td>Text</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
 		</tr>
 	</tbody>
 </table>
