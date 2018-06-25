@@ -49,7 +49,7 @@ The Diagnoses section carries information about Diagnoses. Elements should be fo
 			<td>Stage of the disease, where relevant</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.stage.summary(using the CodeableContext text to hold the stage of disease text)</td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.stage.summary(using the CodeableContext text to hold the stage of disease text)</b></td>
 		</tr>
 		<tr>
 			<td>Comment</td>
