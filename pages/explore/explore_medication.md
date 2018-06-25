@@ -101,11 +101,11 @@ The Medications and medical devices section carries information about the patien
 			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
 		</tr>
 		<tr>
-			<td>Text Parsable dose directions ***</td>
-			<td>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</td>
+			<th>Text Parsable dose directions ***</th>
+			<th>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<td><b>DO NOT USE Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</b></th>
 		</tr>
 		<tr>
 			<th>Structured dose direction cluster</th>
@@ -133,7 +133,7 @@ The Medications and medical devices section carries information about the patien
 			<td>Recommendation of the time period for which the medication should be continued, including direction not to discontinue.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text in the <b>section.narrative.text</b> - Continue indefinitely [The medication should be continued indefinitely.]<br/>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]<br/>Stop when course complete. [The medication should be stopped when the currently prescribed course has been completed.]<br/>Duration: Allowed values: years, months, weeks, days, hours >=0 days" information should be repeated in the FHIR element <b>MedicationStatement.additionalInstruction</b>.
+			<td>Text in the <b>section.narrative.text</b> - Continue indefinitely [The medication should be continued indefinitely.]<br/>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]<br/>Stop when course complete. [The medication should be stopped when the currently prescribed course has been completed.]<br/>Duration: Allowed values: years, months, weeks, days, hours >=0 days" information should be repeated in the FHIR element <b>MedicationStatement.additionalInstruction</b>.</td>
 		</tr>
 		<tr>
 			<td>Additional instruction </td>
