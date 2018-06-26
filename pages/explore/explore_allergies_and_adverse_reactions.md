@@ -43,7 +43,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of <b>AllergyIntolerance.code</b> FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agents">Constructing Medication Lists (Causative agents).</a></td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of <b>AllergyIntolerance.code</b> FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agents">Constructing Allergy Lists (Causative agents).</a></td>
 		</tr>
 		<tr>
 			<th colspan="5">Reaction details cluster</th>
@@ -53,7 +53,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>A description of the manifestation of the allergic or adverse reaction experienced by the patient. For example, skin rash.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and if coding is available carried in the CodeableConcept of the <b>AllergyIntolerance.reaction.manifestation</b> FHIR element. If no coding available use  <b>AllergyIntolerance.reaction.description</b> FHIR element. For further information on reaction details see <a href="build_allergy_lists.html#reaction-details">Constructing Medication Lists (Description of reaction).</a></td>
+			<td>Text and if coding is available carried in the CodeableConcept of the <b>AllergyIntolerance.reaction.manifestation</b> FHIR element. If no coding available use  <b>AllergyIntolerance.reaction.description</b> FHIR element. For further information on reaction details see <a href="build_allergy_lists.html#reaction-details">Constructing Allergy Lists (Description of reaction).</a></td>
 		</tr>
 		<tr>
 			<td>Date recorded</td>
@@ -67,14 +67,14 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>A description of the severity of the reaction</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text and if coding is available carried in the CodeableConcept of the <b>AllergyIntolerance.reaction.severity</b> FHIR element. For further information on severity see <a href="build_allergy_lists.html#severity">Constructing Medication Lists (Severity)</a>.</td>
+			<td>Text and if coding is available carried in the CodeableConcept of the <b>AllergyIntolerance.reaction.severity</b> FHIR element. For further information on severity see <a href="build_allergy_lists.html#severity">Constructing Allergy Lists (Severity)</a>.</td>
 		</tr>
 		<tr>
 			<td>Certainty</td>
 			<td>A description of the certainty that the stated causative agent caused the allergic or adverse reaction.</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text and if coding is used available carried in the Code of <b>AllergyIntolerance.verificationStatus</b> FHIR element. For further information on certainty see <a href="build_allergy_lists.html#certainty">Constructing Medication Lists (Certainty)</a>.</td>
+			<td>Text and if coding is used available carried in the Code of <b>AllergyIntolerance.verificationStatus</b> FHIR element. For further information on certainty see <a href="build_allergy_lists.html#certainty">Constructing Allergy Lists (Certainty)</a>.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
@@ -91,7 +91,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>The type of reaction experienced by the patient (allergic, adverse, intolerance)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Text and if coding is available carried in Code of <b>AllergyIntolerance.type</b> FHIR element. For further information on certainty see <a href="build_allergy_lists.html#type-of-reaction">Constructing Medication Lists (Type of reaction)</a></td>
+			<td>Text and if coding is available carried in Code of <b>AllergyIntolerance.type</b> FHIR element. For further information on certainty see <a href="build_allergy_lists.html#type-of-reaction">Constructing Allergy Lists (Type of reaction)</a></td>
 		</tr>
 		<tr>
 			<td>Evidence</td>
@@ -112,7 +112,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>
 			<td>0 to 1</td>
 			<td>optional</td>
-			<td>Free text and <b>AllergyIntolerance.onset[x]</b> FHIR element. For further information see <a href="build_allergy_lists.html#date-first-experienced">Constructing Medication Lists (Date first experienced)</a></td>
+			<td>Free text and <b>AllergyIntolerance.onset[x]</b> FHIR element. For further information see <a href="build_allergy_lists.html#date-first-experienced">Constructing Allergy Lists (Date first experienced)</a></td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
