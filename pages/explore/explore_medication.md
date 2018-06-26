@@ -119,7 +119,7 @@ The Medications and medical devices section carries information about the patien
 			<td> <font color="red">A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</font></td>
 			<td> <font color="red">&nbsp;</font></td>
 			<td> <font color="red">O</font></td>
-				<th> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
 		</tr>
 		<tr>
 			<td> <font color="red">Structured dose timing cluster</font></td>
