@@ -140,56 +140,56 @@ The Medications and medical devices section carries information about the patien
 			<td>Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.  Comment: e.g. "Omit  morning dose on day of procedure", "for pain or fever", "Dispense weekly".</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.]<br/>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. 'Dispensing instructions' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Patient advice [Multiple plain text instructions intended for patient or carer. 'Patient advice' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]. This information is carried as text in <b>section.narrative.text</b> and repeated in the FHIR elements <b>MedicationStatement.dosage.patientInstruction</b> for specific patient instruction use MedicationStatement.dosage.patientInstruction and <b>MedicationStatement.note</b> For narrative instructions (e.g. monitoring, pain, prevention).
+			<td>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.]<br/>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. 'Dispensing instructions' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Patient advice [Multiple plain text instructions intended for patient or carer. 'Patient advice' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]. This information is carried as text in <b>section.narrative.text</b> and repeated in the FHIR elements <b>MedicationStatement.dosage.patientInstruction</b> for specific patient instruction use and <b>MedicationStatement.note</b> For narrative instructions (e.g. monitoring, pain, prevention).
 		</tr>
 		<tr>
 			<th>Course details cluster</th>
 			<th>Details of the overall course of medication.</th>
 			<th>0 to 1</th>
 			<th>O</th>
-			<th>&nbsp;</th>
+			<th>Not to be used for Transfer of Care Documents</th>
 		</tr>
 		<tr>
-			<td>Course status **</td>
-			<td>The status of this prescription in an ambulatory (outpatient/GP/community) context</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>Choice of Coded text** Data item not relevant to Hospital to GP discharge summary<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.]"</td>
+			<th>Course status **</th>
+			<th>The status of this prescription in an ambulatory (outpatient/GP/community) context</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>Choice of Coded text** Data item not relevant to Hospital to GP discharge summary<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
-			<td>Start date/time</td>
-			<td>The date and/or time that the medication course should begin.</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>Date/time</td>
+			<th>Start date/time</th>
+			<th>The date and/or time that the medication course should begin.</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>Date/time - Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
-			<td>End date/time</td>
-			<td>The date and/or time that the medication course should finish.</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>Date/time</td>
+			<th>End date/time</th>
+			<th>The date and/or time that the medication course should finish.</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>Date/time. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
-			<td>Indication</td>
-			<td>Reason for medication being prescribed, where known.</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>"A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis.</td>
+			<th>Indication</th>
+			<th>Reason for medication being prescribed, where known.</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>"A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
-			<td>Link to indication record</td>
-			<td>A link to the record which contains the Indication for this medication order.</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>URL</td>
+			<th>Link to indication record</th>
+			<th>A link to the record which contains the Indication for this medication order.</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>URL. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
-			<td>Comment/recommendation</td>
-			<td>Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations</td>
+			<th>Comment/recommendation</th>
+			<th>Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</th>
+			<th>0 to 1</th>
+			<th>O</th>
+			<th>Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
 			<th>Medication change summary cluster</th>
@@ -203,49 +203,49 @@ The Medications and medical devices section carries information about the patien
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Choice of code derived text<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.]</td>
+			<td>Text containing the strings assoicated with the codes as below<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.] and coded using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>status</b> element.</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
 			<td>Reason for change in medication, eg sub-therapeutic dose, patient intolerant.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text and and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>indicationForChange</b> element.</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the latest change - addition, or amendment</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Date / time</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>dateChanged</b> element.</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
 			<td>Where a change is made to the medication ie one drug stopped and another started or eg dose, frequency or route is changed.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>detailsOfAdmendment</b> element.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any additional comment about the medication change</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td><b>This heading is no longer used  and comments should be included in the Description of admendment heading.</b></td>
 		</tr>
 		<tr>
 			<th>Total dose daily quantity cluster **</th>
 			<th>The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.</th>
 			<th>0 to 1</th>
 			<th>O</th>
-			<th>** Data item not relevant to Hospital to GP discharge summary</th>
+			<th>** <b>Data item not relevant to Hospital to GP discharge summary</b> and <b>MUST NOT</b> be used.</th>
 		</tr>
 		<tr>
 			<td>Medical devices entry</td>
 			<td>Any therapeutic medical device of relevance that does not have representation in the NHS dictionary of medicines and medical devices (dm+d).</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text only.</td>
 		</tr>
 		<tr>
 			<th>Medication discontinued entry</th>
@@ -256,45 +256,45 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Name of discontinued medication</td>
-			<td>The name of the medication or medical device being discontinued</td>
-			<td>1</td>
+			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
+			<td>1 only</td>
 			<td>M</td>
-			<td>Text</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Status</td>
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>1</td>
 			<td>M</td>
-			<td>Text</td>
+			<td>Text and carried in the FHIR element <b>MedicationStatement.status</b> which <b>MUST</b> contain the value of "stopped"</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
 			<td>The clinical indication for any changes in medication status</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text and carried in the FHIR element <b>MedicationStatement.reasonCode</b>.</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the discontinuation</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Date / time</td>
+			<td>Text and carried in the FHIR element <b>MedicationStatement.effectiveDateTime</b>.</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
 			<td>A description of any amendment</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text and carried in the FHIR element <b>MedicationStatement.note</b>.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any additional comment about the medication change.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text</td>
+			<td>Text and may also be carried in the FHIR element <b>"MedicationStatement.note</b>.</td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
