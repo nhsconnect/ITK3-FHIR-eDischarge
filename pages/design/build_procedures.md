@@ -70,6 +70,27 @@ Procedure.code can carry combined bodySite expression:
 <tr>
 <td>Refined site and laterality  - 448243002 | external fixation of femur | :405813007 | procedure site - Direct | = 41111004 | bone structure of shaft of femur | , 272741003 | laterality | = 7771000 | left |</td></tr></table> 
 
+## Procedure.bodySite ##
+
+<table style="width:100%;max-width: 100%;">
+<tr>
+<td>&lt;&lt;442083009 |anatomical or acquired body structure|</td></tr></table> 
+
+Note: that this includes the following two sub-hierarchies
+- 91723000 anatomical structure
+- 280115004 acquired body structure
+
+So an alternative is only:
+- 91723000 anatomical structure
+
+## Procedure.complication ##
+References the condition resource.
+
+## Procedure.anestheticIssues ##
+References the condition resource.
+
+## Procedure.note ##
+Any further textual comment to clarify such as statement that information is partial or incomplete. MUST be repeated in the FHIR element <b>Composition.esction.text</b>.
 
 ## How the Procedure List is Constructed ##
 The Procedure list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
