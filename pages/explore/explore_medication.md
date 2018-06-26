@@ -238,11 +238,11 @@ The Medications and medical devices section carries information about the patien
 			<td><b>This heading is no longer used  and comments should be included in the Description of admendment heading.</b></td>
 		</tr>
 		<tr>
-			<th>Total dose daily quantity cluster **</th>
-			<th>The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>** <b>Data item not relevant to Hospital to GP discharge summary</b> and <b>MUST NOT</b> be used.</th>
+			<td> <font color="red">Total dose daily quantity cluster</font></td>
+			<td><font color="red">The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Data item not relevant to Hospital to GP discharge summary and <b>MUST NOT</b> be used.</font></td>
 		</tr>
 		<tr>
 			<td>Medical devices entry</td>
