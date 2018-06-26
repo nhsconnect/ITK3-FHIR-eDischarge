@@ -169,11 +169,15 @@ The above as a SNOMED CT expression
 
 ### Medication List ###
 
-**The list part of the record.** 
+**The list part of the record** 
+
+**Active List** 
 
 <script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
 
-<script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
+**Discontinued List**
+
+<script src="https://gist.github.com/IOPS-DEV/37cb3b0cb467ea6f714cc391f990ce33.js"></script>
 
 
 **The Active Medication.**
