@@ -100,7 +100,7 @@ The Medications and medical devices section carries information about the patien
 			<td>O</td>
 			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
 		</tr>
-		<tr>
+		<tr><font="red">
 			<th>Text Parsable dose directions ***</th>
 			<th>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</th>
 			<th>0 to 1</th>
@@ -127,7 +127,7 @@ The Medications and medical devices section carries information about the patien
 			<th>&nbsp;</th>
 			<th>O</th>
 				<th><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</th>
-		</tr>
+		</tr></font>
 		<tr>
 			<td>Dose direction duration</td>
 			<td>Recommendation of the time period for which the medication should be continued, including direction not to discontinue.</td>
@@ -147,14 +147,14 @@ The Medications and medical devices section carries information about the patien
 			<th>Details of the overall course of medication.</th>
 			<th>0 to 1</th>
 			<th>O</th>
-			<th>Not to be used for Transfer of Care Documents</th>
+			<th>Not to be used for Hospital to GP discharge summary.</th>
 		</tr>
 		<tr>
 			<th>Course status **</th>
 			<th>The status of this prescription in an ambulatory (outpatient/GP/community) context</th>
 			<th>0 to 1</th>
 			<th>O</th>
-			<th>Choice of Coded text** Data item not relevant to Hospital to GP discharge summary<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<th>Choice of Coded text** <br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
 			<th>Start date/time</th>
@@ -175,7 +175,7 @@ The Medications and medical devices section carries information about the patien
 			<th>Reason for medication being prescribed, where known.</th>
 			<th>0 to 1</th>
 			<th>O</th>
-			<th>"A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<th>A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
 		</tr>
 		<tr>
 			<th>Link to indication record</th>
