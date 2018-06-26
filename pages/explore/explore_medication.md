@@ -70,7 +70,7 @@ The Medications and medical devices section carries information about the patien
 			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye"</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.site</b>. See <a href="build_medication_lists.html#medicationStatementdosagesite">medicationStatement.dosage.site</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.site</b>. See <a href="build_medication_lists.html#medicationstatementdosagesite">medicationStatement.dosage.site</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Method</td>
