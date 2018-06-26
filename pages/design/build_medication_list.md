@@ -33,14 +33,15 @@ This Resource acts as a container for the medication items. The following is an 
 - code - the type of list (SNOMED CT concept for "active" or "discontinued")
 - status - should only be "current"
 - mode - should only be "snapshot"
+- title - descriptive name for the list
 - subject - a reference to the patient whose medication list this is
-- Encounter - a reference to the context in which the list was created (the inpatient stay)
+- encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
-- orderedBy - **MUST  NOT be used for Transfer of Care**
-- note - **MUST  NOT be used for Transfer of Care**
 - entry - a reference to the MedicationStatement Resource entry or entries
+- flag - **MUST  NOT be used for Transfer of Care**
 - emptyReason - **MUST  NOT be used for Transfer of Care** if list is empty do not send List.
+- 
 
 ## MedicationStatement ##
 A record of a medication that is being consumed or has been consumed by a patient. The following is an example of the elements that can be used:
@@ -50,23 +51,24 @@ A record of a medication that is being consumed or has been consumed by a patien
 - category - should be inpatient
 - medication - the medication coded (a SNOMED CT Concept that identifies this medication), this is done by reference to the Medication Resource which details the medication. 
 - effective - the date/time or interval when the medication was taken
-- dateAsserted - When the statement was asserted?
-- informationSource - Person or organization that provided the information about the taking of this medication
+- dateAsserted - When the statement was asserted defaults to composition date
+- informationSource - Person or organization that provided the information about the taking of this medication, assumed to be composition author
 - reasonCode - Reason for why the medication is being/was taken
-- reasonReference - a reference to the condition or observation Resource that supports why the medication is being/was taken 
+- subject - The Patient
+- reasonReference - a reference to the Condition Resource that supports why the medication is being/was taken
+- medicationReference - a reference to the Medication Resource
+- taken - default to "unknown" or "na" if the taken is not applicable for the medication or device
+- reasonNotTaken - **MUST NOT be used for Transfer of Care** 
 - dosage - Details of how medication is/was taken or should be taken
 
 ## Medication ##
 The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle). The following is a example of the elements that can be used:
 
 - code - a SNOMED CT Concept that identifies this medication
-- form - powder, tablets, capsule etc SNOMED CT form concepts
-- ingredient - active or inactive ingredient
-- package - details about packaged medications
-- batch - 	Identifies a single production run 
+- form - powder, tablets, capsule etc SNOMED CT form concepts 
  
 ## How the Medication List is Constructed ##
-The medication record is constructed as a single list. The diagram below shows the Resources used and the relationship between the Resources.
+The medication record is constructed as two lists. The diagram below shows the Resources used and the relationship between the Resources.
 
 <img src="images/build/medication_basic_structure.png" style="width:100%;max-width: 100%;">
 
