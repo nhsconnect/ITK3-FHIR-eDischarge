@@ -1,3 +1,6 @@
+
+
+----------
 ---
 title: Procedure List
 keywords: design, build,
@@ -91,7 +94,7 @@ References the condition resource.
 References the condition resource.
 
 ## Procedure.note ##
-Any further textual comment to clarify such as statement that information is partial or incomplete. MUST be repeated in the FHIR element <b>Composition.esction.text</b>.
+Any further textual comment to clarify such as statement that information is partial or incomplete. <b>MUST</b> be repeated in the FHIR element <b>Composition.section.text</b>.
 
 ## How the Procedure List is Constructed ##
 The Procedure list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
