@@ -150,14 +150,14 @@ The Medications and medical devices section carries information about the patien
 			<td><font color="red">Details of the overall course of medication.</font></td>
 			<td><font color="red">0 to 1</font></td>
 			<td><font color="red">O</font></td>
-			<td><font color="red">Not to be used for Hospital to GP discharge summary.</font></td>
+			<td><font color="red"><b>Not to be used for Hospital to GP discharge summary.</b></font></td>
 		</tr>
 		<tr>
 			<td><font color="red">Course status</font></td>
 			<td><font color="red">The status of this prescription in an ambulatory (outpatient/GP/community) context.</font></td>
 			<td><font color="red">0 to 1</font></td>
 			<td><font color="red">O</font></td>
-			<td><font color="red">Choice of Coded text<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></t>
+			<td><font color="red">Choice of Coded text<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></td>
 		</tr>
 		<tr>
 			<td><font color="red">Start date/time</font></td>
