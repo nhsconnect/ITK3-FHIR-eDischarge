@@ -35,9 +35,41 @@ This Resource is used to record detailed information about a procedure. The foll
 - status - completed, aborted etc 
 - category - Classification of the procedure
 - code - identification of the procedure
+- bodySite - the body site of the procedure
+- complicationDetail - details of any intra-operative complications encountered during the procedure, arising during the patient’s stay in the recovery unit or directly attributable to the procedure
+- anestheticIssues - details of any adverse reaction to any anaesthetic agents including local anaesthesia. Problematic intubation, transfusion reaction, etc.
+- note - any further textual comment to clarify such as statement that information is partial or incomplete
 - performed - when procedure was performed
 - subject - the patient
 - outcome - the result of procedure
+
+## Procedure.code ##
+
+<table style="width:100%;max-width: 100%;">
+<tr>
+<td>71388002 | Procedure (procedure) | hierarcy AND  Procedure with explicit context (situation)</td>
+<td>SCTID: 129125009 [EXTENSIBLE]</td>
+</tr>
+</table>
+
+Terminology binding as a SNOMED Expression:
+<table style="width:100%;max-width: 100%;">
+<tr>
+<td>&lt;&lt;71388002 |Procedure|</td>
+<td>&lt;&lt;129125009 |Procedure with explicit context|</td>
+<tr>
+</table>
+
+Procedure.code can carry combined bodySite expression:
+
+<table style="width:100%;max-width: 100%;">
+<tr>
+<td>Laterality only - 448243002 | external fixation of femur | :272741003 | laterality | = 7771000 | left |</td></tr></table>
+
+<table style="width:100%;max-width: 100%;">
+<tr>
+<td>Refined site and laterality  - 448243002 | external fixation of femur | :405813007 | procedure site - Direct | = 41111004 | bone structure of shaft of femur | , 272741003 | laterality | = 7771000 | left |</td></tr></table> 
+
 
 ## How the Procedure List is Constructed ##
 The Procedure list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
