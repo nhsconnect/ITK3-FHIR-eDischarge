@@ -55,9 +55,10 @@ This Resource is used to record detailed information about a procedure. The foll
 Terminology binding as a SNOMED Expression:
 <table style="width:100%;max-width: 100%;">
 <tr>
-<td>&lt;&lt;71388002 |Procedure|</td>
-<td>&lt;&lt;129125009 |Procedure with explicit context|</td>
+<td>&lt;&lt;71388002 |Procedure|</td></tr>
 <tr>
+<td>&lt;&lt;129125009 |Procedure with explicit context|</td>
+</tr>
 </table>
 
 Procedure.code can carry combined bodySite expression:
