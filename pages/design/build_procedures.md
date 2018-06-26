@@ -47,8 +47,8 @@ This Resource is used to record detailed information about a procedure. The foll
 
 <table style="width:100%;max-width: 100%;">
 <tr>
-<td>71388002 | Procedure (procedure) | hierarcy AND  Procedure with explicit context (situation)</td>
-<td>SCTID: 129125009 [EXTENSIBLE]</td>
+<td>71388002 | Procedure (procedure) | hierarcy AND  Procedure with explicit context (situation)</td></tr>
+<tr><td>SCTID: 129125009 [EXTENSIBLE]</td>
 </tr>
 </table>
 
