@@ -42,21 +42,21 @@ The Diagnoses section carries information about Diagnoses. Elements should be fo
 			<td>Confirmed diagnosis (or symptom); active diagnosis being treated.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.code</b> FHIR element. See <a href="build_conditions.html#diagnosis-code">Constructing Diagnosis Lists(Diagnosis code)</a> for further guidance.</td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.code</b> FHIR element. See <a href="build_conditions.html#diagnosis-code">Constructing Diagnosis Lists (Diagnosis code)</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Stage</td>
 			<td>Stage of the disease, where relevant</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.stage.summary(using the CodeableContext text to hold the stage of disease text)</b></td>
+			<td>Text and if available a SNOMED CT concept carried in the CodeableConcept of the <b>Condition.stage.summary (using the CodeableContext text to hold the stage of disease text)</b></td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Free text.Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.The section text should be repeated in the text of the <b>Condition.note </b>FHIR element to record Free differential and excluded diagnosis.</td>
+			<td>Free text.  Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.  The section text should be repeated in the text of the <b>Condition.note </b>FHIR element to record Free differential and excluded diagnosis.</td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
