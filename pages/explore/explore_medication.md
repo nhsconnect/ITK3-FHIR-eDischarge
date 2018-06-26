@@ -108,18 +108,18 @@ The Medications and medical devices section carries information about the patien
 			<td> <font color="red"><b>DO NOT USE Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</b></font></td>
 		</tr>
 		<tr>
-			<th>Structured dose direction cluster</th>
-			<th>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose</th>
-			<th>0 to many</th>
-			<th>O</th>
-			<th><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</th>
+			<td> <font color="red">Structured dose direction cluster</font></td>
+			<td> <font color="red">A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose</font></td>
+			<td> <font color="red">0 to many</font></td>
+			<td> <font color="red">O</font></td>
+			<td> <font color="red"><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
 		</tr>
 		<tr>
-			<th>Structured dose amount cluster ***</th>
-			<th>A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</th>
-			<th>&nbsp;</th>
-			<th>O</th>
-				<th><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</th>
+			<td> <font color="red">Structured dose amount cluster</font></td>
+			<td> <font color="red">A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</font></td>
+			<td> <font color="red">&nbsp;</font></td>
+			<td> <font color="red">O</font></td>
+				<th> <font color="red"><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
 		</tr>
 		<tr>
 			<th>Structured dose timing cluster ***</th>
