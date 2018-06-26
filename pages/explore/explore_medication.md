@@ -124,9 +124,9 @@ The Medications and medical devices section carries information about the patien
 		<tr>
 			<td> <font color="red">Structured dose timing cluster</font></td>
 			<td> <font color="red">A slot containing a structural, computable representation of dose timing and maximum dose.  Comment: This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</font></td>
-			<td> <font color="red">&nbsp;</font</td>
+			<td> <font color="red">&nbsp;</font></td>
 			<td> <font color="red">O</font></td>
-				<tb> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
 		</tr>
 		<tr>
 			<td>Dose direction duration</td>
