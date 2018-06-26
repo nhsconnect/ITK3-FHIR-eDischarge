@@ -167,28 +167,45 @@ The above as a SNOMED CT expression
 <tr><td>^999000781000001107 |NHS dm+d (dictionary of medicines and devices) dose form simple reference set|</td></tr>
 </table>
 
-### Medication List ###
+### Medication List Examples###
 
-**The list part of the record** 
 
-**Active List** 
+**The Active List** 
 
 <script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
+
+**The Active MedicationStatement**
+
+Note: example only shows one item in the list.
+
+<script src="https://gist.github.com/IOPS-DEV/eaf5f7159b9925448d8b479177c244f3.js"></script>
+
+**The Active Medication.**
+
+Note: example only shows one item in the list.
+
+<script src="https://gist.github.com/IOPS-DEV/5141e4cfc8480c8b4638d30ad03c564b.js"></script>
 
 **Discontinued List**
 
 <script src="https://gist.github.com/IOPS-DEV/37cb3b0cb467ea6f714cc391f990ce33.js"></script>
 
+**The Discontinued MedicationStatement**
 
-**The Active Medication.**
+Note: example only shows one item in the list.
+
+<script src="https://gist.github.com/IOPS-DEV/3c5abe367cf39391c6611a0d58952fee.js"></script>
+
+**The Discontinued Medication** 
+
+Note: example only shows one item in the list.
 
 <script src="https://gist.github.com/IOPS-DEV/608bf5c9d3e200ef19f10ff1bf33244c.js"></script>
 
-<script src="https://gist.github.com/IOPS-DEV/5141e4cfc8480c8b4638d30ad03c564b.js"></script>
 
-**The Discontinued Medication.** 
 
-<script src="https://gist.github.com/IOPS-DEV/eaf5f7159b9925448d8b479177c244f3.js"></script>
+
+
 
 <script src="https://gist.github.com/IOPS-DEV/71435b5b230677181ded2c81506f3e21.js"></script>
 
