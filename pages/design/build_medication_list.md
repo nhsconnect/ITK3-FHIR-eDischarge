@@ -41,7 +41,7 @@ This Resource acts as a container for the medication items. The following is an 
 - entry - a reference to the MedicationStatement Resource entry or entries
 - flag - **MUST  NOT be used for Transfer of Care**
 - emptyReason - **MUST  NOT be used for Transfer of Care** if list is empty do not send List.
-- 
+
 
 ## MedicationStatement ##
 A record of a medication that is being consumed or has been consumed by a patient. The following is an example of the elements that can be used:
@@ -83,7 +83,7 @@ Constraint: NHS e-Prescribing route of administration subset refset 999000051000
 The route can be any route, and not constrained to a dm+d route for the medication. Separate products are different MedicationStatements in Primary Care if the same product have multiple route options then the routes go in the FHIR element <b>MedicationStatement.dosage.text</b>. When using routes outside the stated ValueSet, then use FHIR element <b>MedicationStatement.dosage.text</b>.
 
 ## MedicationStatement.dosage.site ##
-Constraint: As per the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">approach-site-codes</a>. Site may have similar content as Route - There may be some overlap with Route (e.g. intra ocular left eye). If no code then use the FHIR element <b>MedicationStatement.dosage.text</
+Constraint: As per the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">approach-site-codes</a>. Site may have similar content as Route - There may be some overlap with Route (e.g. intra ocular left eye). If no code then use the FHIR element <b>MedicationStatement.dosage.text</b>
 
 ## MedicationStatement.dosage.method ##
 This <b>MUST NOT</b> be used in Transfer of Care, carry in the FHIR element <b>Composition.section.text</b> use the FHIR <b>MedicationStatement.dosage.text</b>
@@ -91,7 +91,7 @@ This <b>MUST NOT</b> be used in Transfer of Care, carry in the FHIR element <b>C
 
 ## MedicationStatement.dosage.timing ##
 
-** MUST NOT be used in Transfer of Care ** but is captured as part of the <FHIR element <b>MedicationStatement.dosage.additionalInstruction</b> string. 
+**MUST NOT** be used in Transfer of Care, but is captured as part of the <FHIR element <b>MedicationStatement.dosage.additionalInstruction</b> string. 
 
 ## MedicationStatement.dosage.text ##
 A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency. e.g. "1 tablet at night" or "20mg at 10pm" This is the form of dosage direction text normally available from UK GP systems.
@@ -109,7 +109,7 @@ Specific patient instruction may use <b>MedicationStatement.dosage.patientInstru
 The FHIR element <b>MedicationStatement.status</b> is fixed to "active" for active medication lists and "stopped" for discontinued medication lists.
 
 ## MedicationStatement.reasonCode ##
-** MUST NOT be used in Transfer of Care **
+**MUST NOT** be used in Transfer of Care.
 
 ## MedicationStatement.effectiveDateTime ##
 Used to indicate when the medication was discontinued or became active.
