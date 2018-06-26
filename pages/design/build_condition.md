@@ -90,7 +90,7 @@ The estimated or actual date, date-time, or age of abatement which <b>MUST</b> b
 
 
 ## How the Condition List is Constructed ##
-The condition list is constructed as a single list. The diagram below shows the Resources used and relationships between the Resources.
+The condition list is constructed as a list, there may be one or more list types. The diagram below shows the Resources used and relationships between the Resources.
 
 <img src="images/build/condition_basic_structure.png" style="width:100%;max-width: 100%;">
 
