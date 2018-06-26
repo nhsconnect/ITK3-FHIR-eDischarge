@@ -100,7 +100,7 @@ The Medications and medical devices section carries information about the patien
 			<td>O</td>
 			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
 		</tr>
-		<tr><font="red">
+		<tr><font color="red">
 			<th>Text Parsable dose directions ***</th>
 			<th>A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</th>
 			<th>0 to 1</th>
