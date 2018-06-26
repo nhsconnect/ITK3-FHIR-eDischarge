@@ -66,7 +66,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>The ward or unit the patient was in immediately prior to discharge</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text to carry the ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system. This information <b>SHOULD</b> also be carried in the FHIR element <b>Encounter.location.Reference.Location.name</b>. </td>
+			<td>Text to carry the ward name and identifier (if available) prior to discharge as recorded on the hospital discharging system. This information <b>SHOULD</b> also be carried in the FHIR element <b>Encounter.location.Reference.Location.name</b> and <b>Encounter.location.Reference.Location.identifier/b> </td>
 		</tr>
 		<tr>
 			<td>Date/time of discharge</td>

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Medication List
 keywords: design, build,
 tags: [design]
@@ -14,7 +14,10 @@ This section details the design approach using FHIR Resources to support the AoM
 
 
 ## Medication Snapshot ##
-The medication list is a “Snapshot” of the medication at a point in time (for example on discharge from hospital). It is not a master list of the patient’s medications. Other lists of medications for the patient may exist on other systems. 
+The medication list is a “Snapshot” of the medication at a point in time (for example on discharge from hospital). It is not a master list of the patient’s medications. Other lists of medications for the patient may exist on other systems. For Transfer of Care Documents there will a potentially be two lists one for active medication and one for discontinued medication. There are two entries in the FHIR Composition.section.text element:
+
+- medication item entries which map to the Medication Statements in the active list 
+- Medication discontinued entries which map to the Medication Statements in the discontinued list
 
 ## Resources Used for Profile Design ##
 The FHIR Resources are profiled to create the medication list as below:
@@ -27,16 +30,20 @@ The FHIR Resources are profiled to create the medication list as below:
 This Resource acts as a container for the medication items. The following is an example of the elements which can be used:
 
 - identifier - uniquely identifies this list of medication (UUID)
-- status - active, completed, stopped etc
+- code - the type of list (SNOMED CT concept for "active" or "discontinued")
+- status - should only be "current"
+- mode - should only be "snapshot"
 - subject - a reference to the patient whose medication list this is
 - Encounter - a reference to the context in which the list was created (the inpatient stay)
 - date - when the list was prepared
 - source - who or what defined the list
-- entry - a reference to the MedicationStatement Resource entry
-- flag - the type of medication entry (additional, discontinued etc.)
+- orderedBy - **MUST  NOT be used for Transfer of Care**
+- note - **MUST  NOT be used for Transfer of Care**
+- entry - a reference to the MedicationStatement Resource entry or entries
+- emptyReason - **MUST  NOT be used for Transfer of Care** if list is empty do not send List.
 
 ## MedicationStatement ##
-A record of a medication that is being consumed by a patient. The following is an example of the elements that can be used:
+A record of a medication that is being consumed or has been consumed by a patient. The following is an example of the elements that can be used:
 
 - identifier - uniquely identifies this medication statement (UUID)
 - clinicalStatus - should always be active
