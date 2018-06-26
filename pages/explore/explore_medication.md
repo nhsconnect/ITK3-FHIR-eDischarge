@@ -142,55 +142,59 @@ The Medications and medical devices section carries information about the patien
 			<td>O</td>
 			<td>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.]<br/>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. 'Dispensing instructions' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Patient advice [Multiple plain text instructions intended for patient or carer. 'Patient advice' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]. This information is carried as text in <b>section.narrative.text</b> and repeated in the FHIR elements <b>MedicationStatement.dosage.patientInstruction</b> for specific patient instruction use and <b>MedicationStatement.note</b> For narrative instructions (e.g. monitoring, pain, prevention).
 		</tr>
+<tr>
+<th colspan="5">Medication item cluster end</th>
+</tr>
 		<tr>
-			<th>Course details cluster</th>
-			<th>Details of the overall course of medication.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>Not to be used for Hospital to GP discharge summary.</th>
+			<td><font color="red">Course details cluster</font></td>
+			<td><font color="red">Details of the overall course of medication.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Not to be used for Hospital to GP discharge summary.</font></td>
 		</tr>
 		<tr>
-			<th>Course status **</th>
-			<th>The status of this prescription in an ambulatory (outpatient/GP/community) context</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>Choice of Coded text** <br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">Course status</font></td>
+			<td><font color="red">The status of this prescription in an ambulatory (outpatient/GP/community) context.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Choice of Coded text<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></t>
 		</tr>
 		<tr>
-			<th>Start date/time</th>
-			<th>The date and/or time that the medication course should begin.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>Date/time - Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">Start date/time</font></td>
+			<td><font color="red">The date and/or time that the medication course should begin.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Date/time - Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></td>
 		</tr>
 		<tr>
-			<th>End date/time</th>
-			<th>The date and/or time that the medication course should finish.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>Date/time. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">End date/time</font></td>
+			<td><font color="red">The date and/or time that the medication course should finish.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Date/time. Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT</b> be used.</font></td>
 		</tr>
 		<tr>
-			<th>Indication</th>
-			<th>Reason for medication being prescribed, where known.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">Indication</font></td>
+			<td><font color="red">Reason for medication being prescribed, where known.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">A free text or code derived text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.<br/>Comment: e.g. "Angina". The Indication generally describes a condition or diagnosis. Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT</b> be used.</font></td>
 		</tr>
 		<tr>
-			<th>Link to indication record</th>
-			<th>A link to the record which contains the Indication for this medication order.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>URL. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">Link to indication record</font></td>
+			<td><font color="red">A link to the record which contains the Indication for this medication order.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">URL. Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT</b> be used.</font></td>
 		</tr>
 		<tr>
-			<th>Comment/recommendation</th>
-			<th>Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</th>
-			<th>0 to 1</th>
-			<th>O</th>
-			<th>Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</th>
+			<td><font color="red">Comment/recommendation</font></td>
+			<td><font color="red">Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</font></td>
+			<td><font color="red">0 to 1</font></td>
+			<td><font color="red">O</font></td>
+			<td><font color="red">Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</font></td>
 		</tr>
+<tr colspan="5"><td><font color="red">End of course details cluster</font></td></tr>
 		<tr>
 			<th>Medication change summary cluster</th>
 			<th>Records the changes made to medication since admission</th>
