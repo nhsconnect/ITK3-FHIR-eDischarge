@@ -74,7 +74,98 @@ The medication record is constructed as two lists. The diagram below shows the R
 
 
 
+## MedicationStatement ##
 
+This section gives guidance of the use of the MedicationStatement Resource. Sending Systems should send as much details as they can. 
+
+## MedicationStatement.dosage.route ##
+Constraint: NHS e-Prescribing route of administration subset refset 999000051000001100.
+The route can be any route, and not constrained to a dm+d route for the medication. Separate products are different MedicationStatements in Primary Care if the same product have multiple route options then the routes go in the FHIR element <b>MedicationStatement.dosage.text</b>. When using routes outside the stated ValueSet, then use FHIR element <b>MedicationStatement.dosage.text</b>.
+
+## MedicationStatement.dosage.site ##
+Constraint: As per the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">approach-site-codes</a>. Site may have similar content as Route - There may be some overlap with Route (e.g. intra ocular left eye). If no code then use the FHIR element <b>MedicationStatement.dosage.text</
+
+## MedicationStatement.dosage.method ##
+This <b>MUST NOT</b> be used in Transfer of Care, carry in the FHIR element <b>Composition.section.text</b> use the FHIR <b>MedicationStatement.dosage.text</b>
+"Short term this should be deprecated to a text string & concatenated with the dose direction (above)
+
+## MedicationStatement.dosage.timing ##
+
+** MUST NOT be used in Transfer of Care ** but is captured as part of the <FHIR element <b>MedicationStatement.dosage.additionalInstruction</b> string. 
+
+## MedicationStatement.dosage.text ##
+A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency. e.g. "1 tablet at night" or "20mg at 10pm" This is the form of dosage direction text normally available from UK GP systems.
+
+## MedicationStatement.effective[x].effectivePeriod ##
+
+If available may be carried in the FHIR element <b>MedicationStatement.effective[x].effectivePeriod</b>.
+
+## MedicationStatement.dosage.patientInstruction ##
+
+Specific patient instruction may use <b>MedicationStatement.dosage.patientInstruction</b>
+
+## MedicationStatement.status ##
+
+The FHIR element <b>MedicationStatement.status</b> is fixed to "active" for active medication lists and "stopped" for discontinued medication lists.
+
+## MedicationStatement.reasonCode ##
+** MUST NOT be used in Transfer of Care **
+
+## MedicationStatement.effectiveDateTime ##
+Used to indicate when the medication was discontinued or became active.
+
+## MedicationStatement.category ##
+This FHIR element should carried the value "inpatient" for Discharge Documents and "outpatient" for Outpatient Letters.
+
+## MedicationStatement.taken ##
+
+This FHIR element should contain a value from the FHIR ValueSet <a>http://hl7.org/fhir/ValueSet/medication-statement-taken>medication-statement-taken</a> to indicate whether the patient has taken the medication. For Transfer of Care the default is unk - unknown or if a value is not applicable then na - not applicable. 
+
+## Medication Resource ##
+This section gives guidance of the use of the Medication Resource
+
+## medication.code ##
+This FHIR element is mapped to the PRSB medication name
+
+constraint: MedicationName.   Any AMP/VMP/VTM/AMPP/VMPP subsets from the dm+d terminology. 
+
+<table style="width:100%;max-width: 100%;">
+<tr><td>VTM NHS dm+d virtual therapeutic moiety (DD4C) 999000581000001102</td></tr> 
+<tr><td>VMP NHS dm+d virtual medicinal product (DD4C) 999000561000001109</td></tr> 
+<tr><td>VMPP NHS dm+d virtual medicinal product pack (DD4C) 999000571000001104</td></tr> 
+<tr><td>AMP NHS dm+d actual medicinal product (DD4C) 999000541000001108</td></tr> 
+<tr><td>AMPP NHS dm+d actual medicinal product pack (DD4C) 999000551000001106</td></tr>
+</table> 
+
+The above as a SNOMED CT expression. 
+
+<table style="width:100%;max-width: 100%;">
+<tr><td>(^999000581000001102</td></tr> 
+<tr><td>OR ^999000561000001109</td></tr> 
+<tr><td>OR ^999000571000001104</td></tr> 
+<tr><td>OR ^999000541000001108</td></tr> 
+<tr><td>OR ^999000551000001106)</td></tr> 
+<tr><td></td></tr> 
+<tr><td>OR with preferred terms</td></tr> 
+<tr><td>(^999000541000001108 |National Health Service dictionary of medicines and devices actual medicinal product simple reference set|</td></tr> 
+<tr><td>OR ^999000551000001106 |National Health Service dictionary of medicines and devices actual medicinal product pack simple reference set|</td></tr> 
+<tr><td>OR ^999000561000001109 |National Health Service dictionary of medicines and devices virtual medicinal product simple reference set|</td></tr> 
+<tr><td>OR ^999000571000001104 |National Health Service dictionary of medicines and devices virtual medicinal product pack simple reference set|</td></tr> 
+<tr><td>OR ^999000581000001102 |National Health Service dictionary of medicines and devices virtual therapeutic moiety simple reference set|)</td></tr> 
+</table>
+
+
+## medication.form ##
+This form is on the medication profile. Where VTM has form specified (coded) it goes here.
+AMP & VMP don't need separate Form (it is optional to populate). For VTM the form could be in MedicationStatement.dosage.text (as it would be part of a dosage string) i.e. not a separately specified code.
+
+Constraint: DrugDoseForm. SNOMED CT CfH DoseForm termset. Constraint binding: [SNOMED CT]subset=CfH  DoseForm (refset 999000781000001107)
+
+The above as a SNOMED CT expression
+
+<table style="width:100%;max-width: 100%;">
+<tr><td>^999000781000001107 |NHS dm+d (dictionary of medicines and devices) dose form simple reference set|</td></tr>
+</table>
 
 ### Medication List ###
 
@@ -82,15 +173,16 @@ The medication record is constructed as two lists. The diagram below shows the R
 
 <script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
 
-### Medication Changed ###
+<script src="https://gist.github.com/IOPS-DEV/396128c150948b3de78014ad7f2b8e4e.js"></script>
 
-**The medication being stopped.**
+
+**The Active Medication.**
 
 <script src="https://gist.github.com/IOPS-DEV/608bf5c9d3e200ef19f10ff1bf33244c.js"></script>
 
 <script src="https://gist.github.com/IOPS-DEV/5141e4cfc8480c8b4638d30ad03c564b.js"></script>
 
-**The new medication.** 
+**The Discontinued Medication.** 
 
 <script src="https://gist.github.com/IOPS-DEV/eaf5f7159b9925448d8b479177c244f3.js"></script>
 

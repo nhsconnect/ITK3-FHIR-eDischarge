@@ -56,7 +56,7 @@ The Medications and medical devices section carries information about the patien
 			<td>Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medication.form">medication.code</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medication.form">medication.form</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Route</td>
