@@ -192,7 +192,7 @@ The Medications and medical devices section carries information about the patien
 			<td><font color="red">Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.</font></td>
 			<td><font color="red">0 to 1</font></td>
 			<td><font color="red">O</font></td>
-			<td><font color="red">Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations. Data items not relevant to Hospital to GP discharge summary and SHOULD NOT be used.</font></td>
+			<td><font color="red">Free text. Additional comment or recommendation about the medication course e.g. 'Patient named supply', 'unlicensed medication', 'Foreign brand' or monitoring recommendations. Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT</b> be used.</font></td>
 		</tr>
 <tr ><td colspan="5"><font color="red">End of course details cluster</font></td></tr>
 		<tr>
