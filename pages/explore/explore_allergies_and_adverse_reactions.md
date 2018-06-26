@@ -46,11 +46,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of <b>AllergyIntolerance.code</b> FHIR element. For further information on coding causative agent see <a href="build_allergy_lists.html#causative-agents">Constructing Medication Lists (Causative agents).</a></td>
 		</tr>
 		<tr>
-			<th>Reaction details cluster</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
+			<th colspan="5">Reaction details cluster</th>
 		</tr>
 		<tr>
 			<td>Description of reaction</td>
