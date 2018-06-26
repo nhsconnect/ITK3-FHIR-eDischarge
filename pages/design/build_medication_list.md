@@ -73,21 +73,8 @@ The medication record is constructed as two lists. The diagram below shows the R
 <img src="images/build/medication_basic_structure.png" style="width:100%;max-width: 100%;">
 
 
-There will be one medication statement for each of the medication items contained in the list.
-Each medication statement should have a medication, however it is possible in some cases that the medication is described in the medication statement because the medication cannot be fully coded within the medication Resource. 
-entry.flag element of the List Resource will indicate the context of the medication statement (for example additional, discontinuation etc). The list of values for this is based on the FHIR value set [Patient Medicine Change Types](http://hl7.org/fhir/valueset-list-item-flag.html)  with additional and/or different values for NHS/ITK3 use. 
 
-## Medication Flag Structures ##
 
-<img src="images/build/medication_flag_structure.png" style="width:100%;max-width: 100%;">
-
-## Changing Medication Illustration ##
-
-The list will use the FHIR Flag element of the List Resource to indicate the context of the MedicationStatement, in this case the first in the list will be flagged as obsolete and the second as a new medication. 
-
-<img src="images/build/medication_change_structure.png" style="width:100%;max-width: 100%;">
-
-## Changing Medication Example ##
 
 ### Medication List ###
 
