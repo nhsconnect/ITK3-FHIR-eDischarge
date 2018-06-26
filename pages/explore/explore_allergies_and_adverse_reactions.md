@@ -88,6 +88,9 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Free text</td>
 		</tr>
 		<tr>
+		<th colspan="5">End of Reaction details cluster</th>
+		</tr>
+		<tr>
 			<td>Type of reaction</td>
 			<td>The type of reaction experienced by the patient (allergic, adverse, intolerance)</td>
 			<td>0 to 1</td>
