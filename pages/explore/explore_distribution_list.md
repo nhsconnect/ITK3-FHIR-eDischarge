@@ -43,13 +43,13 @@ The document may be sent to any number of recipients, however all recipients sho
 		</tr>
 		<tr>
 			<td>Name</td>
-			<td>If the comunication is being sent to a named individual, then this is the name of the recipient, preferably in a structured format. An identifier for the individual, for example GMC code (for a GP), or an SDS identifier, a NHS Number (for a patient) will be sent alongside the name, but may not displayed on rendered document.</td>
+			<td>If the comunication is being sent to a named individual, then this is the name of the recipient, preferably in a structured format. An identifier for the individual, for example GMC code (for a GP), or an SDS identifier, a NHS Number (for a patient) will be sent alongside the name.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Names may be entered as the communication is being created, or sourced from the hospital system. Patient names may be from the Patient Demographic Service. Text and carried in THe FHIR element <b>Practitioner.name</b></td>
+			<td>Names may be entered as the communication is being created, or sourced from the hospital system. Patient names may be from the Patient Demographic Service. Text and carried in THe FHIR element <b>Practitioner.name</b> or <b>Patient.name</b>. The identifier will be carried in the FHIR element <b>Practitioner.identifier</b> or <b>Patient.identifier.</b></td>
 		</tr>
 		<tr>
-			<td>Role</td>
+			<td>Role</td> or 
 			<td>If the communication is being sent to either a named individual, or to a non-named person with a specific role, then this is the role of the recipient.</td>
 			<td>0 to 1</td>
 			<td>R</td>
