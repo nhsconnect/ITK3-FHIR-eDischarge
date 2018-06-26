@@ -49,28 +49,28 @@ The Medications and medical devices section carries information about the patien
 			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medicationcode">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Form</td>
 			<td>Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medication.form">medication.form</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medicationform">medication.form</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Route</td>
 			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.route</b>. See <a href="build_medication_lists.html#medicationStatement.dosage.route">medicationStatement.dosage.route</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.route</b>. See <a href="build_medication_lists.html#medicationStatementdosageroute">medicationStatement.dosage.route</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Site</td>
 			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye"</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.site</b>. See <a href="build_medication_lists.html#medicationStatement.dosage.site">medicationStatement.dosage.site</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.site</b>. See <a href="build_medication_lists.html#medicationStatementdosagesite">medicationStatement.dosage.site</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Method</td>
@@ -95,7 +95,7 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Dose timing description</td>
-			<td>A plain text description of medication dose frequency, as described in the AoMRC medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description</td>
+			<td>A plain text description of medication dose frequency, as described in the PRSB medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description</td>
 			<td>0 to 1</td>
 			<td>O</td>
 			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
@@ -263,7 +263,7 @@ The Medications and medical devices section carries information about the patien
 			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medication.code">medication.code</a> for further guidance.</td>
+			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medicationcode">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Status</td>

@@ -205,11 +205,6 @@ Note: example only shows one item in the list.
 
 
 
-
-
-<script src="https://gist.github.com/IOPS-DEV/71435b5b230677181ded2c81506f3e21.js"></script>
-
-
  
 
 
