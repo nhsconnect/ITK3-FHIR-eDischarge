@@ -42,7 +42,7 @@ The Safety alerts section carries safety alerts associated with the patient. Ele
 			<td>Risks the patient poses to themselves, e.g., suicide, overdose, self-harm, self-neglect.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>A statement of any risks identified by the clinician. Text only.</td>
+			<td>A statement of any risks identified by the clinician or healthcare professional. Text only.</td>
 		</tr>
 		<tr>
 			<td>Risks to others</td>
