@@ -7,7 +7,7 @@ permalink: build_medication_lists.html
 summary: "Constructing a medication list"
 ---
 
-{% include important.html content="The resources referenced in this section are the FHIR base resources which will be constrained by the profiles used by eDischarge, the profiles should be referred to for the actually allowable structure and content." %}
+{% include important.html content="The resources referenced in this section are the FHIR base resources which will be constrained by the profiles used by eDischarge, the profiles should be referred to for the actual allowable structure and content." %}
 
 ## Overview ##
 This section details the design approach using FHIR Resources to support the AoMRC heading model for medication and devices.
