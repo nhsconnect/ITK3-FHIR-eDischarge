@@ -205,7 +205,7 @@ entries:
           url: /build_conditions.html
           output: web
         - title: Procedure List
-          url: /build_procedure.html
+          url: /build_procedures.html
           output: web
 #  - title: Test
 #    output: web

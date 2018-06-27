@@ -6,7 +6,7 @@ title: Procedure List
 keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
-permalink: build_procedure.html
+permalink: build_procedures.html
 summary: "Constructing a procedure list"
 ---
 
