@@ -56,7 +56,7 @@ The Patient demographics section contains information about the patient. Element
 			<td>The date of birth of the patient.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>The date of birth of the patient taken from PDS, or the date of birth volunteered by the patient (as recorded on the PAS (Patient Administration System). The date of birth will be as precise as possible, but should at least contain a year. This will be in text and carried in the FHIR element <b>Patient.birthDate</b>.</td>
+			<td>The date of birth of the patient taken from PDS, or the date of birth volunteered by the patient (as recorded on the PAS (Patient Administration System). The date of birth will be as precise as possible but should at least contain a year. This will be in text and carried in the FHIR element <b>Patient.birthDate</b>.</td>
 		</tr>
 		<tr>
 			<td>Gender</td>
@@ -70,14 +70,14 @@ The Patient demographics section contains information about the patient. Element
 			<td>The unique identifier for a patient within the NHS in England and Wales.</td>
 			<td>0 to 1</td> 
 			<td>R</td>
-			<td>Sent as text as per the NHS Data Dictionary NHS number. Traced NHS Numbers only should be used and the NHS number <b>SHOULD</b> be carried in the FHIR element <b>Patient.identifier</b>.</td>
+			<td>Sent as text as per the NHS Data Dictionary NHS number. Traced NHS Numbers only should be used and the NHS number  <b>SHOULD</b> be carried in the FHIR element <b>Patient.identifier</b>.</td>
 		</tr>
 		<tr>
 			<td>Other identifier</td>
 			<td>Country specific or local identifier, e.g., Community Health Index (CHI) in Scotland. Two data items: type of identifier and identifier.</td>
 			<td>0 to many</td>
 			<td>R</td>
-			<td>Recorded as per: NHS Data Dictionary - local identifier.The assigning authority should also be supplied along with the country or local identifier. This is carried as text and also carried in the FHIR element <b>Patient.identifier</b>.</td>
+			<td>Recorded as per: NHS Data Dictionary - local identifier. The assigning authority should also be supplied along with the country or local identifier. This is carried as text and also carried in the FHIR element <b>Patient.identifier</b>.</td>
 		</tr>
 		<tr>
 			<td>Patient address</td>
@@ -91,18 +91,18 @@ The Patient demographics section contains information about the patient. Element
 			<td>Email address of the patient</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Set in accordance with the NHS Data Dictionary: contact email address (patient or lead contact). May be auto generated from PDS, GP referral record, or from the local PAS. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b> containing the value "email".</td>
+			<td>Set in accordance with the NHS Data Dictionary: contact email address (patient or lead contact). May be auto generated from PDS, GP referral record, or from the local PAS. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b>  containing the value "email".</td>
 		</tr>
 		<tr>
 			<td>Patient telephone number</td>
 			<td>Telephone contact details of the patient. To include, e.g., mobile, work and home number if available.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Contact details may come from PDS, or those recorded on the local PAS.Both the actual contact number and its use (work number, home number, mobile number etc.) should be sent. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b> containing the value "phone".</td>
+			<td>Contact details may come from PDS, or those recorded on the local PAS.Both the actual contact number and its use (work number, home number, mobile number etc.) should be sent. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b>  containing the value "phone".</td>
 		</tr>
 		<tr>
 			<td>Relevant contacts</td>
-			<td>Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependents, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc.Name, relationship, role (if formal role), contact details and availability, eg out of hours.</td>
+			<td>Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependents, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc. Name, relationship, role (if formal role), contact details and availability, e.g. out of hours.</td>
 			<td>0 to 1</td>
 			<td>O</td>
 			<td>Details of relevant contacts, such as carers or family members, as recorded on the local system, or volunteered by the patient. This will be a free text list of relevant contacts.</td>

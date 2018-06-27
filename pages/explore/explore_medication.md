@@ -46,21 +46,21 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Medication name</td>
-			<td>May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g."Citalopram tab 20mg", "Trimethoprim"</td>
+			<td>May be generic name or brand name (as appropriate). Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g. "Citalopram tab 20mg", "Trimethoprim"</td>
 			<td>1 only</td>
 			<td>M</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medicationcode">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Form</td>
-			<td>Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
+			<td>Form of the medicinal substance e.g. capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
 			<td>0 to 1</td>
 			<td>O</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medicationform">medication.form</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Route</td>
-			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
+			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
 			<td>0 to many</td>
 			<td>O</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.route</b>. See <a  href="build_medication_lists.html#medicationstatementdosageroute">medicationStatement.dosage.route</a> for further guidance.</td>
@@ -137,7 +137,7 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Additional instruction </td>
-			<td>Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.  Comment: e.g. "Omit  morning dose on day of procedure", "for pain or fever", "Dispense weekly".</td>
+			<td>Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.  Comment: e.g. "Omit morning dose on day of procedure", "for pain or fever", "Dispense weekly".</td>
 			<td>0 to many</td>
 			<td>O</td>
 			<td>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as "Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.]<br/>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. 'Dispensing instructions' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Patient advice [Multiple plain text instructions intended for patient or carer. 'Patient advice' may be used as a specific label to overwrite 'Additional instructions' to align with legacy GP system behaviour.]<br/>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]. This information is carried as text in <b>section.narrative.text</b> and repeated in the FHIR elements <b>MedicationStatement.dosage.patientInstruction</b> for specific patient instruction use and <b>MedicationStatement.note</b> For narrative instructions (e.g. monitoring, pain, prevention).</td>
@@ -207,7 +207,7 @@ The Medications and medical devices section carries information about the patien
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text containing the strings assoicated with the codes as below<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.] and coded using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>status</b> element.</td>
+			<td>Text containing the strings associated with the codes as below<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.] and coded using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>status</b> element.</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
