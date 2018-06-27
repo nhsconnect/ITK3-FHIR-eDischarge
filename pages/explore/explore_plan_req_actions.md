@@ -39,14 +39,14 @@ The Plan and requested actions section carries information about planned and req
 		</tr>
 		<tr>
 			<td>Actions for healthcare professionals</td>
-			<td>Including planned investigations, procedures and treatment for a patient's identified conditions and priorities. For each action the following should be identified:outcome expectations, including patient's expectations</td>
+			<td>Including planned investigations, procedures and treatment for a patient's identified conditions and priorities. For each action the following should be identified: outcome expectations, including patient's expectations</td>
 			<td>0 to many</td>
 			<td>R</td>
 			<td>A record of the planned and requested actions. May be structured HTML for example a table, with actions, names, dates, status, location, strategies, or free text</td>
 		</tr>
 		<tr>
 			<td>Actions for patient or their carer</td>
-			<td>For each action the following should be identified:outcome expectations, including patient's expectations.</td>
+			<td>For each action the following should be identified: outcome expectations, including patient's expectations.</td>
 			<td>0 to many</td>
 			<td>R</td>
 			<td>A record of the planned and requested actions. May be structured HTML for example a table, with actions, names, dates, status, location, strategies, or free text.</td>

@@ -42,7 +42,7 @@ The Procedures section carries information about the procedures that have been p
 			<td>The therapeutic or diagnostic procedure performed.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>The procedure name in text and where supported a SNOMED CT concept from 71388002 Procedure (procedure) hierarcy or Procedure with explicit context (situation)129125009. See <a href="build_procedures#procedurecode.html">Constructing Procedure Lists (Procedure name)</a></td>
+			<td>The procedure name in text and where supported a SNOMED CT concept from 71388002 Procedure (procedure) hierarchy or Procedure with explicit context (situation)129125009. See <a href="build_procedures#procedurecode.html">Constructing Procedure Lists (Procedure name)</a></td>
 		</tr>
 		<tr>
 			<td>Anatomical site</td>
@@ -63,7 +63,7 @@ The Procedures section carries information about the procedures that have been p
 			<td>Details of any intra-operative complications encountered during the procedure, arising during the patient's stay in the recovery unit or directly attributable to the procedure.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the compication.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the complication.</td>
 		</tr>
 		<tr>
 			<td>Specific anaesthesia issues</td>
