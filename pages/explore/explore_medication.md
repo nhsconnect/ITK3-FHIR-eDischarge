@@ -46,28 +46,28 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Medication name</td>
-			<td>May be generic name or brand name (as appropriate). Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g. "Citalopram tab 20mg", "Trimethoprim"</td>
+			<td>May be generic name or brand name (as appropriate). Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. Comment: e.g. "Citalopram tab 20mg", "Trimethoprim".</td>
 			<td>1 only</td>
 			<td>M</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.Name</b>. See <a href="build_medication_lists.html#medicationcode">medication.code</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Form</td>
-			<td>Form of the medicinal substance e.g. capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules"</td>
+			<td>Form of the medicinal substance e.g. capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  Comment: e.g. "Modified Release Capsules".</td>
 			<td>0 to 1</td>
 			<td>O</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medicationform">medication.form</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Route</td>
-			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber</td>
+			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber.</td>
 			<td>0 to many</td>
 			<td>O</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.route</b>. See <a  href="build_medication_lists.html#medicationstatementdosageroute">medicationStatement.dosage.route</a> for further guidance.</td>
 		</tr>
 		<tr>
 			<td>Site</td>
-			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye"</td>
+			<td>The anatomical site at which the medication is to be administered.  Comment: e.g. "Left eye".</td>
 			<td>0 to 1</td>
 			<td>O</td>
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.dosage.site</b>. See <a href="build_medication_lists.html#medicationstatementdosagesite">medicationStatement.dosage.site</a> for further guidance.</td>
@@ -84,49 +84,49 @@ The Medications and medical devices section carries information about the patien
 			<td>A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency.  Comment: e.g. "I tablet at night" or "20mg at 10pm" This is the form of dosage direction text normally available from UK GP systems.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text within the <b>section.narrative.text</b> and text repeated in the FHIR element <b>MedicationStatement.dosage.text</b></td>
+			<td>Text within the <b>section.narrative.text</b> and text repeated in the FHIR element <b>MedicationStatement.dosage.text</b>.</td>
 		</tr>
 		<tr>
 			<td>Dose amount description </td>
 			<td>A plain text description of medication single dose amount, as described in the AoMRC medication headings.  Comment: e.g. "30 mg" or "2 tabs". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
+			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b>.</td>
 		</tr>
 		<tr>
 			<td>Dose timing description</td>
-			<td>A plain text description of medication dose frequency, as described in the PRSB medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description</td>
+			<td>A plain text description of medication dose frequency, as described in the PRSB medication headings.  Comment: e.g. "Twice a day", "At 8am 2pm and 10pm". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b></td>
+			<td>Text should be part of Dose directions description PRSB element and will be included as part of the FHIR element <b>MedicationStatement.dosage.text</b>.</td>
 		</tr>
 		<tr>
 			<td> <font color="red">Text Parsable dose directions</font></td>
-			<td> <font color="red">A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems</font></td>
+			<td> <font color="red">A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  Comment: e.g. "20-30mg ^4/6h prn [180mg /24h]" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only within openEHR-based systems.</font></td>
 			<td> <font color="red">0 to 1</font></td>
 			<td> <font color="red">O</font></td>
-			<td> <font color="red"><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+			<td> <font color="red"><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
 		</tr>
 		<tr>
 			<td> <font color="red">Structured dose direction cluster</font></td>
-			<td> <font color="red">A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose</font></td>
+			<td> <font color="red">A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</font></td>
 			<td> <font color="red">0 to many</font></td>
 			<td> <font color="red">O</font></td>
-			<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+			<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
 		</tr>
 		<tr>
 			<td> <font color="red">Structured dose amount cluster</font></td>
 			<td> <font color="red">A structural representation of dose amount.  Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</font></td>
 			<td> <font color="red">&nbsp;</font></td>
 			<td> <font color="red">O</font></td>
-				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
 		</tr>
 		<tr>
 			<td> <font color="red">Structured dose timing cluster</font></td>
 			<td> <font color="red">A slot containing a structural, computable representation of dose timing and maximum dose.  Comment: This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.</font></td>
 			<td> <font color="red">&nbsp;</font></td>
 			<td> <font color="red">O</font></td>
-				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. insufficient information to detail these further at present</font></td>
+				<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
 		</tr>
 		<tr>
 			<td>Dose direction duration</td>
@@ -157,7 +157,7 @@ The Medications and medical devices section carries information about the patien
 			<td><font color="red">The status of this prescription in an ambulatory (outpatient/GP/community) context.</font></td>
 			<td><font color="red">0 to 1</font></td>
 			<td><font color="red">O</font></td>
-			<td><font color="red">Choice of Coded text<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></td>
+			<td><font color="red">Choice of Coded text:<br/>Active [This is an active medication.]<br/>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]<br/> Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]<br/> Completed [The medication course has been completed.]<br/> Obsolete [This medication order has been superseded by another.] Data items not relevant to Hospital to GP discharge summary and <b>SHOULD NOT be used</b>.</font></td>
 		</tr>
 		<tr>
 			<td><font color="red">Start date/time</font></td>
@@ -207,35 +207,35 @@ The Medications and medical devices section carries information about the patien
 			<td>The nature of any change made to the medication since admission.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text containing the strings associated with the codes as below<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.] and coded using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>status</b> element.</td>
+			<td>Text containing the strings associated with the codes as below<br/>Continued [Medicine present on both admission and discharge with no amendments.]<br/>Added [Medicine present on discharge but not on admission]<br/>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.] and coded using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>status</b> element.</td>
 		</tr>
 		<tr>
 			<td>Indication</td>
-			<td>Reason for change in medication, eg sub-therapeutic dose, patient intolerant.</td>
+			<td>Reason for change in medication, e.g. sub-therapeutic dose, patient intolerant.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>indicationForChange</b> element.</td>
+			<td>Text is carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>indicationForChange</b> element.</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the latest change - addition, or amendment</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>dateChanged</b> element.</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>dateChanged</b> element.</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
-			<td>Where a change is made to the medication ie one drug stopped and another started or eg dose, frequency or route is changed.</td>
+			<td>Where a change is made to the medication i.e. one drug stopped and another started or e.g. dose, frequency or route is changed.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These is will use the <b>detailsOfAdmendment</b> element.</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>detailsOfAmendment</b> element.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
 			<td>Any additional comment about the medication change</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td><b>This heading is no longer used  and comments should be included in the Description of admendment heading.</b></td>
+			<td><b>This heading is no longer used  and comments should be included in the Description of amendment heading.</b></td>
 		</tr>
 		<tr>
 			<td> <font color="red">Total dose daily quantity cluster</font></td>
