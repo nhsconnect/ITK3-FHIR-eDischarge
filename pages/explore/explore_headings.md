@@ -28,7 +28,7 @@ Note: the examples of section HTML in this specification show only example HTML 
 <img src="images/explore/section_description.png" style="width: 100%;max-width: 100%;">
 
 ## Must Support Property ##
-Some elements in the the Composition Resource used within ITK3 Transfer of Care documents have the must support property set to "true"
+Some elements in the Composition Resource used within ITK3 Transfer of Care documents have the must support property set to "true".  
 These are :
 - Composition.extension(careSettingTypeExtension)
 - Composition.identifier
@@ -200,7 +200,7 @@ The “must support” property has been added to all the elements that must be 
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_pat_care_concerns.html">Patient and carer concerns,expectations and wishes</a>
+			<a href="explore_pat_care_concerns.html">Patient and carer concerns, expectations and wishes</a>
 		</td>
 		<td>1052941000000107</td>
     	<td>0..1</td>
@@ -267,7 +267,7 @@ The “must support” property has been added to all the elements that must be 
 ## Overview of eDischarge Sections and Coded profiles ##
 This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text.
 
-<a href="images/explore/eDIS_composition_overview.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in new window</b></a>
+<a href="images/explore/eDIS_composition_overview.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in a new window</b></a>
 
 <img src="images/explore/eDIS_composition_overview.png" style="width:auto;height: auto;"/>
 
