@@ -39,7 +39,7 @@ The Patient and carer concerns, expectations and wishes section carries informat
 		</tr>
 		<tr>
 			<td>Patient and carer concerns, expectations and wishes</td>
-			<td>Description of the concerns, wishes or goals of the person in relation to their care, as expressed by the person, their representative or carer. Record who has expressed these (patient or carer/ representative on behalf of the patient).Where the person lacks capacity this may include their representative's concerns, expectations or wishes.</td>
+			<td>Description of the concerns, wishes or goals of the person in relation to their care, as expressed by the person, their representative or carer. Record who has expressed these (patient or carer/ representative on behalf of the patient). Where the person lacks capacity this may include their representative's concerns, expectations or wishes.</td>
 			<td>0 to 1</td>
 			<td>R</td>
 			<td>A record of statements expressed by the person or their carer or representative. Text only.</td>

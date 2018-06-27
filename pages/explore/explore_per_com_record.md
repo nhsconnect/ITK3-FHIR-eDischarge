@@ -64,7 +64,7 @@ The Person completing record section carries information about the person who co
 			<td>The main specialty of the person completing the record</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The main clinical specialty as held on the source system sent as text and the specialty <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This is proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The FHIR CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". Note further guidance will be issues in a later release of the specification.</td>
+			<td>The main clinical specialty as held on the source system sent as text and the specialty <b>SHOULD</b>  be populated in the <b>PractitionerRole.specialty</b>  FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This is proposed to be replaced by NHS Data main specialty code and therefore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The FHIR CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". Note further guidance will be issues in a later release of the specification.</td>
 		</tr>
 		<tr>
 			<td>Professional identifier</td>
@@ -82,7 +82,7 @@ The Person completing record section carries information about the person who co
 		</tr>
 		<tr>
 			<td>Contact details</td>
-			<td>Contact details of the person completing the record. For example a phone number, email address. Contact details are used to resolve queries about the record entry.</td>
+			<td>Contact details of the person completing the record. For example, a phone number, email address. Contact details are used to resolve queries about the record entry.</td>
 			<td>0 to many</td>
 			<td>O</td>
 			<td>The contact details may be for the individual completing the record, or wider team details (for example a phone number for a hospital department). This will be sent as text and where supported in the FHIR elements <b>PractitionerRole.telecom</b> or <b>Practitioner.telecom</b> or <b>Organization.telecom</b>.</td>
@@ -92,7 +92,7 @@ The Person completing record section carries information about the person who co
 			<td>The organisation the person completing the record works for.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>The name of the organisation or site, and a postal address (if available) caried in text and carried in the FHIR elements <b>Organization.name</b> and <b>Organization.address</b>. An ODS identifier for the organisation or site carried in the FHIR element <b>Organization.identifier</b>.</td>
+			<td>The name of the organisation or site, and a postal address (if available) carried in text and carried in the FHIR elements <b>Organization.name</b> and <b>Organization.address</b>. An ODS identifier for the organisation or site carried in the FHIR element <b>Organization.identifier</b>.</td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
