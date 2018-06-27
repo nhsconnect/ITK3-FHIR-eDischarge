@@ -13,7 +13,7 @@ This section details the design approach using FHIR Resources to support the PRS
 Implementation guidance on diagnoses from the discharge summary PRSB standard:
 The discharge summary should inform the GP of the main diagnosis / diagnoses that were important during the admission (or symptom(s) if no diagnosis), including any new diagnosis that came to light during the admission.
 When a diagnosis has not yet been made, the most granular clinical concept with the highest level of certainty should be recorded.  This may be a problem, symptom, sign, or test result, and may evolve over time, as a conventional diagnosis is reached.  For example, ‘dyspepsia’ may be the diagnosis when a patient first presents with indigestion, upgraded to 'gastric ulcer' when this is found at endoscopy, and 'gastric cancer' when biopsies reveal this. 
-'Co-morbidities' should be recorded as separate diagnoses.  For example, dementia may be recorded as a primary diagnosis by a psycho-geriatrician, but as a co-morbidity where a patient is admitted for a hip replacement.Unconfirmed or excluded diagnoses should not be recorded in structured code.
+'Co-morbidities' should be recorded as separate diagnoses.  For example, dementia may be recorded as a primary diagnosis by a psycho-geriatrician, but as a co-morbidity where a patient is admitted for a hip replacement. Unconfirmed or excluded diagnoses should not be recorded in structured code.
 
 ## Resources Used for Profile Design ##
 The following FHIR Resources are profiled to create the condition list.
@@ -25,6 +25,7 @@ The following FHIR Resources are profiled to create the condition list.
 This Resource acts as a container for the conditions. The following is an example of the main elements used:
 
 - identifier - uniquely identifies this list of conditions (UUIDs)
+- code - the type of list (for example SNOMED CT concept for "Primary Diagnosis")
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose condition list this is
@@ -58,10 +59,10 @@ The SNOMED CT concept should be from the following ref set:
 For Inpatient Discharge Summary this is used in conjunction with <b>condition.category</b> with <b>encounter-diagnosis</b> as the ValueSet. 
 
 ## Condition.severity ##
-<b>MUST NOT</b> be use for Transfer of Care Documents.
+<b>MUST NOT</b> be used for Transfer of Care Documents.
 
 ## Condition.bodysite ##
-<b>MUST NOT</b> be use for Transfer of Care Documents.
+<b>MUST NOT</b> be used for Transfer of Care Documents.
 
 ## Condition.subject ##
 A reference to the Patient Resource.
@@ -96,7 +97,7 @@ The condition list is constructed as a list, there may be one or more list types
 
 ## Condition List Item Example ##
 
-Example to show an condition list.
+Example to show a condition list.
 
 **Condition List**
 

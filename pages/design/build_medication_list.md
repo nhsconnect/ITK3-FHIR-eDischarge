@@ -30,7 +30,7 @@ The FHIR Resources are profiled to create the medication list as below:
 This Resource acts as a container for the medication items. The following is an example of the elements which can be used:
 
 - identifier - uniquely identifies this list of medication (UUID)
-- code - the type of list (SNOMED CT concept for "active" or "discontinued")
+- code - the type of list (SNOMED CT concept for "active medication" or "discontinued medication")
 - status - should only be "current"
 - mode - should only be "snapshot"
 - title - descriptive name for the list

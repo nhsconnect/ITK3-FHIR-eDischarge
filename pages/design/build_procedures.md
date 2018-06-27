@@ -23,6 +23,7 @@ The FHIR Resources are profiled to create the procedure list as follows:
 This Resource acts as a container for the procedures. The following is an example of the main elements used:
 
 - identifier - uniquely identifies this list of procedures (UUIDs)
+- code - the type of list (for example SNOMED CT concept for "requested procedures")
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose procedure list this is

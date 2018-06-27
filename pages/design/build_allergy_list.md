@@ -27,6 +27,7 @@ The FHIR Resources are profiled to create the allergy list as below:
 This Resource acts as a container for the allergies. The following is an example of the main elements used:
 
 - identifier - uniquely identifies this list of allergies (UUIDs)
+- code - the type of list (for example SNOMED CT concept for "ended allergy")
 - status - should always be "current"
 - mode - should always be "snapshot" 
 - subject - a reference to the patient whose allergy list this is
@@ -144,7 +145,7 @@ The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is
 For the <b>AllergyIntolerance.type</b> FHIR has a required terminology binding using the values of (allergy | intolerance) - as this is a required ValueSet these values must be used.
 
 The values "Adverse Reaction" and "Not Known" are currently not supported However adverse reaction is closer to intolerance by the FHIR definition.
-An absence of AllergyIntollerance.type implies Not Known . Advice from FHIR patient care WGM is that adverse reaction should recorded under <b>AllergyIntolerance.reaction.description</b>.
+An absence of AllergyIntollerance.type implies Not Known. Advice from FHIR patient care WGM is that adverse reaction should recorded under <b>AllergyIntolerance.reaction.description</b>.
 
 ## Date first experienced ##
 
@@ -190,7 +191,7 @@ The allergy record is constructed as a single list for Transfer of Care Document
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
 
 ## How to Represent "No Known Allergies" ## 
-<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No Known Allergies' and replicate this in <b>Composition,section.text</b>. If there are active allergy records , these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use List.emptyReason' to send No Known Allergy as text and replicate this in <b>Composition,section.text</b>.
+<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No Known Allergies' and replicate this in <b>Composition,section.text</b>. If there are active allergy records, these positive presence of allergies should not be sent with 'No Known Allergies'. Other option is to use the list resource and use List.emptyReason' to send No Known Allergy as text and replicate this in <b>Composition,section.text</b>.
 
 ## Allergy List Item Example ##
 
