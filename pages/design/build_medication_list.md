@@ -10,7 +10,7 @@ summary: "Constructing a medication list"
 {% include important.html content="The resources referenced in this section are the FHIR base resources which will be constrained by the profiles used by eDischarge, the profiles should be referred to for the actual allowable structure and content." %}
 
 ## Overview ##
-This section details the design approach using FHIR Resources to support the AoMRC heading model for medication and devices.
+This section details the design approach using FHIR Resources to support the PRSB heading model for medication and devices.
 
 
 ## Medication Snapshot ##
@@ -40,7 +40,7 @@ This Resource acts as a container for the medication items. The following is an 
 - source - who or what defined the list
 - entry - a reference to the MedicationStatement Resource entry or entries
 - flag - **MUST  NOT be used for Transfer of Care**
-- emptyReason - **MUST  NOT be used for Transfer of Care** if list is empty do not send List.
+- emptyReason - **MUST  NOT be used for Transfer of Care** if list is empty do not send a List.
 
 
 ## MedicationStatement ##
@@ -57,7 +57,7 @@ A record of a medication that is being consumed or has been consumed by a patien
 - subject - The Patient
 - reasonReference - a reference to the Condition Resource that supports why the medication is being/was taken
 - medicationReference - a reference to the Medication Resource
-- taken - default to "unknown" or "na" if the taken is not applicable for the medication or device
+- taken - default to "unknown" or "na" if the taken element is not applicable for the medication or device
 - reasonNotTaken - **MUST NOT be used for Transfer of Care** 
 - dosage - Details of how medication is/was taken or should be taken
 
@@ -83,15 +83,15 @@ Constraint: NHS e-Prescribing route of administration subset refset 999000051000
 The route can be any route, and not constrained to a dm+d route for the medication. Separate products are different MedicationStatements in Primary Care if the same product have multiple route options then the routes go in the FHIR element <b>MedicationStatement.dosage.text</b>. When using routes outside the stated ValueSet, then use FHIR element <b>MedicationStatement.dosage.text</b>.
 
 ## MedicationStatement.dosage.site ##
-Constraint: As per the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">approach-site-codes</a>. Site may have similar content as Route - There may be some overlap with Route (e.g. intra ocular left eye). If no code then use the FHIR element <b>MedicationStatement.dosage.text</b>
+Constraint: As per the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">approach-site-codes</a>. Site may have similar content as Route - There may be some overlap with Route (e.g. intra ocular left eye). If no code, then use the FHIR element <b>MedicationStatement.dosage.text</b>
 
 ## MedicationStatement.dosage.method ##
 This <b>MUST NOT</b> be used in Transfer of Care, carry in the FHIR element <b>Composition.section.text</b> use the FHIR <b>MedicationStatement.dosage.text</b>
-"Short term this should be deprecated to a text string & concatenated with the dose direction (above)
+Short term this should be deprecated to a text string & concatenated with the dose direction (above).
 
 ## MedicationStatement.dosage.timing ##
 
-**MUST NOT** be used in Transfer of Care, but is captured as part of the <FHIR element <b>MedicationStatement.dosage.additionalInstruction</b> string. 
+**MUST NOT** be used in Transfer of Care, but is captured as part of the FHIR element <b>MedicationStatement.dosage.additionalInstruction</b> string. 
 
 ## MedicationStatement.dosage.text ##
 A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency. e.g. "1 tablet at night" or "20mg at 10pm" This is the form of dosage direction text normally available from UK GP systems.
@@ -119,7 +119,7 @@ This FHIR element should carried the value "inpatient" for Discharge Documents a
 
 ## MedicationStatement.taken ##
 
-This FHIR element should contain a value from the FHIR ValueSet <a>http://hl7.org/fhir/ValueSet/medication-statement-taken>medication-statement-taken</a> to indicate whether the patient has taken the medication. For Transfer of Care the default is unk - unknown or if a value is not applicable then na - not applicable. 
+This FHIR element should contain a value from the FHIR ValueSet <a href="http://hl7.org/fhir/ValueSet/medication-statement-taken>medication-statement-taken</a> to indicate whether the patient has taken the medication. For Transfer of Care the default is unk - unknown or if a value is not applicable then na - not applicable. 
 
 ## Medication Resource ##
 This section gives guidance of the use of the Medication Resource
