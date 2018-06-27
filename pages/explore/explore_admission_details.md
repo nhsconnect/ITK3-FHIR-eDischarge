@@ -39,7 +39,7 @@ The Admission details section carries information about the patient's admission.
 		</tr>
 		<tr>
 			<td>Reason for admission</td>
-			<td>The health problems and issues experienced by the patient that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall,  a specific procedure, intervention, investigation or treatment, non compliance with treatment.</td>
+			<td>The health problems and issues experienced by the patient that prompted the decision to admit to hospital e.g. chest pain, mental health crisis, blackout, fall, a specific procedure, intervention, investigation or treatment, non-compliance with treatment.</td>
 			<td>0 to 1</td>
 			<td>R</td>
 			<td>Text and where supported a SNOMED CT concept carried in the CodeableConcept of the <b>Encounter.reason</b> FHIR element to indicate the reason the patient was admitted.</td>

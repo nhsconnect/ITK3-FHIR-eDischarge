@@ -57,7 +57,7 @@ This table should be used in conjunction with the section on [constructing clini
 		</tr>
 		<tr>
 			<td>Date recorded</td>
-			<td>The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction but this may not be wholly clear from source data.</td>
+			<td>The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction, but this may not be wholly clear from source data.</td>
 			<td>0 to 1</td>
 			<td>required</td>
 			<td>The date that the reaction was clinically recorded/asserted. Text and carried in <b>AllergyIntolerance.assertedDate</b> FHIR element.</td>
@@ -106,7 +106,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>0 to 1</td>
 			<td>optional</td>
 			<td>Free text</td>
-		</tr>Diagnosistic
+		</tr>
 		<tr>
 			<td>Date first experienced</td>
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>

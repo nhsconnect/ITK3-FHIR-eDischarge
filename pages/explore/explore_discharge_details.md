@@ -43,7 +43,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>The consultant responsible for the patient at time of discharge</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resouces: 
+			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resources: 
 			<ul>
 			<li><b>Encounter.participant.individual.<br/>Reference.Practitioner.identifier</b></li>
 			<li><b>Encounter.participant.individual.<br/>Reference.Practitioner.name</b></li>
@@ -57,7 +57,7 @@ The Discharge details section carries details of the patient's discharge. Elemen
 			<td>The specialty or department responsible for the patient at the time of discharge</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty <b>SHOULD</b> populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This is proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The FHIR CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". As an alternative this element may be populated with a SNOMED CT concept and the FHIR CodeSystem element populated with "http://snomed.info/sct".
+			<td>Text for either the main specialty of the discharging clinician (as held on the Spine Directory Service), or the department from which the patient is discharged. The specialty <b>SHOULD</b> be populated in the <b>PractitionerRole.specialty</b> FHIR element. The profile is currently bound to the FHIR ValueSet <a href="http://hl7.org/fhir/stu3/valueset-c80-practice-codes.html">c80-practice-codes</a> as preferred. This is proposed to be replaced by NHS Data main specialty code and therfore the current guidance is to not use the preferred ValueSet but to replace it using a code from <a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/m/main_specialty_code_de.asp?shownav=1">MAIN SPECIALTY CODE</a>. The FHIR CodeSystem element should be populated with "https://www.datadictionary.nhs.uk". As an alternative this element may be populated with a SNOMED CT concept and the FHIR CodeSystem element populated with "http://snomed.info/sct".
 
 Note further guidance will be issues in a later release of the specification.</td>
 		</tr>	
@@ -79,14 +79,14 @@ Note further guidance will be issues in a later release of the specification.</t
 		</tr>
 		<tr>
 			<td>Discharge method</td>
-			<td>The method of discharge from hospital. National codes: e.g.. patient discharged on clinical advice or with clinical consent; patient discharged him/herself or was discharged by a relative or advocate; patient died; stillbirth</td>
+			<td>The method of discharge from hospital. National codes: e.g. patient discharged on clinical advice or with clinical consent; patient discharged him/herself or was discharged by a relative or advocate; patient died; stillbirth</td>
 			<td>0 to 1</td>
 			<td>R</td>
 			<td>Text - Currently not to be coded for Transfer of Care Documents</td>
 		</tr>
 		<tr>
 			<th>Discharge destination cluster</th>
-			<th>The destination of the patient on discharge. National codes. Eg, High Dependency Unit.</th>
+			<th>The destination of the patient on discharge. National codes. E.g., High Dependency Unit.</th>
 			<th>0 to 1</th>
 			<th>R</th>
 			<th></th>
