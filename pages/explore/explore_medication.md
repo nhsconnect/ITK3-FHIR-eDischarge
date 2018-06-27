@@ -317,7 +317,6 @@ This text section should be linked to the following FHIR Resources to provide th
 
 - List
 - MedicationStatement
-- Flag
  
 See constructing clinical coded structures - [Medication Lists](build_medication_lists.html)
 
