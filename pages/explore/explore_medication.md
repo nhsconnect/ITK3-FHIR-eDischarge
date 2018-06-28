@@ -214,21 +214,21 @@ The Medications and medical devices section carries information about the patien
 			<td>Reason for change in medication, e.g. sub-therapeutic dose, patient intolerant.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text is carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>indicationForChange</b> element.</td>
+			<td>Text is carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, this will use the <b>indicationForChange</b> element.</td>
 		</tr>
 		<tr>
 			<td>Date of latest change</td>
 			<td>The date of the latest change - addition, or amendment</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>dateChanged</b> element.</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, this will use the <b>dateChanged</b> element.</td>
 		</tr>
 		<tr>
 			<td>Description of amendment</td>
 			<td>Where a change is made to the medication i.e. one drug stopped and another started or e.g. dose, frequency or route is changed.</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, These will use the <b>detailsOfAmendment</b> element.</td>
+			<td>Text and carried using the FHIR elements in <b>MedicationStatement.Extension<br/>-CareConnect-MedicationChangeSummary</b>, this will use the <b>detailsOfAmendment</b> element.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
