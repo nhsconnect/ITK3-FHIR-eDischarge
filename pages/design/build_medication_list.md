@@ -119,7 +119,7 @@ This FHIR element should carried the value "inpatient" for Discharge Documents a
 
 ## MedicationStatement.taken ##
 
-This FHIR element should contain a value from the FHIR ValueSet <a href="http://hl7.org/fhir/ValueSet/medication-statement-taken>medication-statement-taken</a> to indicate whether the patient has taken the medication. For Transfer of Care the default is unk - unknown or if a value is not applicable then na - not applicable. 
+This FHIR element should contain a value from the FHIR ValueSet <a href="http://hl7.org/fhir/ValueSet/medication-statement-taken"> medication-statement-taken</a> to indicate whether the patient has taken the medication. For Transfer of Care the default is unk - unknown or if a value is not applicable then na - not applicable. 
 
 ## Medication Resource ##
 This section gives guidance of the use of the Medication Resource
