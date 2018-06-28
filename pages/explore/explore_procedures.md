@@ -42,35 +42,35 @@ The Procedures section carries information about the procedures that have been p
 			<td>The therapeutic or diagnostic procedure performed.</td>
 			<td>1 only</td>
 			<td>M</td>
-			<td>The procedure name in text and where supported a SNOMED CT concept from 71388002 Procedure (procedure) hierarchy or Procedure with explicit context (situation)129125009. See <a href="build_procedures#procedurecode.html">Constructing Procedure Lists (Procedure name)</a></td>
+			<td>The procedure name in text and where supported a SNOMED CT concept from 71388002 Procedure (procedure) hierarchy or Procedure with explicit context (situation)129125009. Carried in the FHIR element <b>Procedure.code</b> See <a href="build_procedures#procedurecode.html">Constructing Procedure Lists (Procedure name)</a></td>
 		</tr>
 		<tr>
 			<td>Anatomical site</td>
 			<td>The body site of the procedure</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the anatomical site.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the anatomical site carried in <b>Procedure.bodySite</b>.</td>
 		</tr>
 		<tr>
 			<td>Laterality</td>
 			<td>Laterality of the procedure</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the laterality.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the laterality carried in <b>Procedure.bodySite</b> (if part of the pre-coordinated term).</td>
 		</tr>
 		<tr>
 			<td>Complications related to procedure</td>
 			<td>Details of any intra-operative complications encountered during the procedure, arising during the patient's stay in the recovery unit or directly attributable to the procedure.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the complication.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the complication carried in the FHIR element <b>Procedure.complication</b>.</td>
 		</tr>
 		<tr>
 			<td>Specific anaesthesia issues</td>
 			<td>Details of any adverse reaction to any anaesthetic agents including local anaesthesia.  Problematic intubation, transfusion reaction, etc.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the anaesthesia issues.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the anaesthesia issues carried in the FHIR element <b>Procedure.complication</b>.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
