@@ -30,7 +30,7 @@ This Resource acts as a container for the procedures. The following is an exampl
 - entry - a reference to the Procedure Resource entry
 
 ## Procedure ##
-This Resource is used to record detailed information about a procedure. The following is a example of the elements that can be used: 
+This Resource is used to record detailed information about a procedure. The following is an example of the elements that can be used: 
 
 - identifier - uniquely identifies this procedure (UUIDs)
 - status - completed, aborted etc 
@@ -82,7 +82,7 @@ Note: that this includes the following two sub-hierarchies
 - 91723000 anatomical structure
 - 280115004 acquired body structure
 
-So an alternative is only:
+So, an alternative is only:
 - 91723000 anatomical structure
 
 ## Procedure.complication ##
@@ -101,7 +101,7 @@ The Procedure list is constructed as a single list. The diagram below shows the 
 
 ## Procedure List Item Example ##
 
-Example to show an procedure list
+Example to show a procedure list
 
 **Procedure List**
 

@@ -35,7 +35,7 @@ This Resource acts as a container for the conditions. The following is an exampl
 - entry - a reference to the condition Resource entry
 
 ## Condition ##
-This Resource is used to record detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.The following is an example of the elements that can be used: 
+This Resource is used to record detailed information about a condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern. The following is an example of the elements that can be used: 
 
 - identifier - uniquely identifies this condition (UUIDs)
 - clinicalStatus - 	active, recurrence, inactive, remission, resolved etc

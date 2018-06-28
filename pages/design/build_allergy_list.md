@@ -21,7 +21,7 @@ Transfer of Care only records the first type of Allergic Response or Adverse Rea
 The FHIR Resources are profiled to create the allergy list as below:
 
 - **[CareConnect-ITK-Allergy-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Allergy-List-1)** - An NHS Digital Profile derived from the CareConnect Profile for recording a snapshot of the list of Allergies for the patient.
-- **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A NHS Digital Profile derived from the CareConnect Profile for Allergie and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
+- **[CareConnect-ITK-AllergyIntolerance-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1)** - A NHS Digital Profile derived from the CareConnect Profile for Allergies and adverse reactions. The AllergyIntolerance Resource records risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
 
 ## List ##
 This Resource acts as a container for the allergies. The following is an example of the main elements used:
@@ -42,7 +42,7 @@ This Resource details the actual allergy or adverse reaction. The following is a
 - identifier - uniquely identifies this allergy or adverse reaction (UUID)
 - clinicalStatus - should always be active
 - category - whether the allergy or adverse reaction is to food, medication etc
-- criticality - low, high, unable-to-assess etc
+- criticality - low, high, unable-to-assess etc.
 - code - identifies the allergy
 - patient - a reference to the patient
 - assertedDate  - date record was believed accurate
@@ -149,7 +149,7 @@ An absence of AllergyIntollerance.type implies Not Known. Advice from FHIR patie
 
 ## Date first experienced ##
 
-This is mapped to the "higher level" of the FHIR element <b>AllergyIntolerance.onset[x]</b> estimated or actual date, date-time, or age when allergy or intolerance was identified. The definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time , the onset under reaction could be multiple. 
+This is mapped to the "higher level" of the FHIR element <b>AllergyIntolerance.onset[x]</b> estimated or actual date, date-time, or age when allergy or intolerance was identified. The definition of <b>AllergyIntolerance.onset[x]</b> is: Record of the date and/or time of the onset of the Reaction. The reason for mapping to higher onset is that this is the date when the reaction was experienced by the patient for the first time, the onset under reaction could be multiple. 
 
 ## Clinicalstatus ##
 The FHIR element <b>AllergyIntolerance.clinicalStatus</b> for Transfer of Care Documents should if present be set to "active".
@@ -159,7 +159,7 @@ The FHIR element <b>AllergyIntolerance.clinicalStatus</b> for Transfer of Care D
 The category of the identified substance, this may be of use to receivers and can be populated with a value from the FHIR required ValueSet <b>AllergyIntoleranceCategory</b>. 
 
 ## AllergyIntolerance.criticality ##
-This FHIR element may be used to express life threatening (hight) in conjunction with <b>AllergyIntolerance.severity</b> FHIR element.
+This FHIR element may be used to express life threatening (high) in conjunction with <b>AllergyIntolerance.severity</b> FHIR element.
 
 ## AllergyIntolerance.lastOccurrence ##
 This FHIR element may be used to represents the date and/or time of the last known occurrence of a reaction event. May be populated if known.

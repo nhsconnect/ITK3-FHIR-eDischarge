@@ -62,7 +62,7 @@ A record of a medication that is being consumed or has been consumed by a patien
 - dosage - Details of how medication is/was taken or should be taken
 
 ## Medication ##
-The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle). The following is a example of the elements that can be used:
+The Medication Resource allows for medications to be characterized by the form of the drug and the ingredient (or ingredients), as well as how it is packaged. The medication will include the ingredient(s) and their strength(s) and the package can include the amount (for example, number of tablets, volume, etc.) that is contained in a particular container (for example, 100 capsules of Amoxicillin 500mg per bottle). The following is an example of the elements that can be used:
 
 - code - a SNOMED CT Concept that identifies this medication
 - form - powder, tablets, capsule etc SNOMED CT form concepts 
