@@ -204,7 +204,7 @@ If there are active allergy records, these positive presence of allergies should
 
 The FHIR element <b>List.EmptyReason</b> a code from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ListEmptyReasonCode-1">Care Connect List Empty Reason Code</a> which is the code "no-content-recorded".
 
-**Option 2** : FHIR element <b>Text.Narrative</b> = "Information not available" include List Resource and AllergyIntolerance Resource. The FHIR element <b>AllergyIntolerance.code</b> contains a SNOMED CT concept for example "1631000175102:Patient not asked" . The List Resource is NOT empty and FHIR element <b>List.EmptyReason<b> MUST NOT be populated.
+**Option 2** : FHIR element <b>Text.Narrative</b> = displayName of the code in <b>AllergyIntolerance.code</b> and include List Resource and AllergyIntolerance Resource. The FHIR element <b>AllergyIntolerance.code</b> contains a SNOMED CT concept for example "1631000175102:Patient not asked" . The List Resource is not empty and FHIR element <b>List.EmptyReason</b> MUST NOT be populated.
 
 
 
