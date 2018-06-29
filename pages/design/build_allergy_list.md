@@ -190,10 +190,22 @@ The allergy record is constructed as a single list for Transfer of Care Document
 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
 
-## How to Represent "No Known Allergies" ## 
+## Handling Negated Codes e.g. “No Known Drug allergy”, Which is Explicitly Recorded By The Clinician ## 
 
-If relevant investigations and observations have been carried out and no allergies or adverse reactions identified then this heading should appear in the document with the text “No known drug allergies or adverse reactions”.If no information is available about allergies or adverse reactions (but allergies or adverse reactions may have been identified), then this heading should appear in the eDischarge summary with the text “Information not available”
-<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No known drug allergies or adverse reactions' and replicate this in <b>Composition,section.text</b>. If there are active allergy records, these positive presence of allergies should not be sent with 'No known drug allergies or adverse reactions'. Other option is to use the list resource and use List.emptyReason' to send 'No known drug allergies or adverse reactions' as text and replicate this in <b>Composition,section.text</b>.
+If relevant investigations and observations have been carried out and no allergies or adverse reactions identified then this heading should appear in the document with the text “No known drug allergies or adverse reactions”.If no information is available about allergies or adverse reactions (but allergies or adverse reactions may have been identified), then this heading should appear in the Document with the text “Information not available”
+<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No known drug allergies or adverse reactions' and replicate this in <b>Composition,section.text</b>.
+There are other "No Known" codes for example "No known drug allergy", "No known food allergy" etc. Positive and negated codes should not be mixed within a document.
+
+If there are active allergy records, these positive presence of allergies should not be sent with 'No known drug allergies or adverse reactions'. Other option is to use the list resource and use List.emptyReason' to send 'No known drug allergies or adverse reactions' as text and replicate this in <b>Composition.section.text</b>
+
+## Handling an EMPTY Allergy list (no allergies recorded in EOR) ##
+
+**Option 1** : Fhir element <b>Text.Narrative</b> = "Information not available" this is the PRSB preferred option.
+
+The FHIR element <b>List.EmptyReason</b> a code from the ValueSet <a href="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ListEmptyReasonCode-1">Care Connect List Empty Reason Code</a> which is the code "no-content-recorded".
+
+**Option 2** : FHIR element <b>Text.Narrative</b> = "Information not available" include List Resource and AllergyIntolerance Resource. The FHIR element <b>AllergyIntolerance.code</b> contains a SNOMED CT concept for example "1631000175102:Patient not asked" . The List Resource is NOT empty and FHIR element <b>List.EmptyReason<b> MUST NOT be populated.
+
 
 
 ## Allergy List Item Example ##
