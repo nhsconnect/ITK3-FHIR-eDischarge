@@ -27,7 +27,7 @@ The Clinical summary section carries a narrative summary of the episode, where p
 			<td>Clinical summary</td>
 			<td>A brief description of the encounter.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
+			<td>M</td>
 		    <td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
@@ -41,7 +41,7 @@ The Clinical summary section carries a narrative summary of the episode, where p
 			<td>Clinical summary</td>
 			<td>Summary of the encounter. Where possible, very brief. This may include interpretation of findings and results; differential diagnoses, opinion and specific action(s). Planned actions will be recorded under 'plan'.</td>
 			<td>1 only</td>
-			<td>mandatory</td>
+			<td>M</td>
 			<td>Free text</td>
 		</tr>
 		<tr>
