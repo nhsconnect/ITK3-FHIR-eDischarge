@@ -190,9 +190,9 @@ The allergy record is constructed as a single list for Transfer of Care Document
 
 <img src="images/build/allergy_basic_structure.png" style="width:100%;max-width: 100%;">
 
-## Handling Negated Codes e.g. “No Known Drug allergy”, Which is Explicitly Recorded By The Clinician ## 
+## Handling Negated Codes e.g. “No Known Drug allergy” ## 
 
-If relevant investigations and observations have been carried out and no allergies or adverse reactions identified then there are two options.
+When there are negated codes which are explicitly recorded by the clinician then:
 
 - FHIR element <b>Text.Narrative</b> MUST match text of code e.g. “No known drug allergies”, PRSB guidance to be revised.
 - List is NOT empty therefore the FHIR element <b>List.EmptyReason</b> not needed.
@@ -203,9 +203,6 @@ The negated codes to use are:
 - 716186003 - No known allergy
 - 409137002 - No known drug allergy
 - 429625007 - No known food allergy
-
-If no information is available about allergies or adverse reactions (but allergies or adverse reactions may have been identified), then this heading should appear in the Document with the text “Information not available”
-
 
 ## Handling an EMPTY Allergy list (no allergies recorded in EOR) ##
 
