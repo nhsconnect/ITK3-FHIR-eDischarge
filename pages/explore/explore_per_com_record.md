@@ -10,7 +10,7 @@ summary: "Gives information about the Person completing record section"
 {% include custom/section.warnbanner.html %}
 
 ## Person Completing Record Section Content##
-The Person completing record section carries information about the person who completed the record. Elements should be formatted as subheadings in any HTML sent.
+The Person completing record section carries information about the person who completed the record. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 
 <table style="width:100%;max-width: 100%;">

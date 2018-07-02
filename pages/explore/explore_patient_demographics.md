@@ -10,7 +10,7 @@ summary: "Gives information about the patient"
 
 
 ## Patient Demographics Section Content##
-The Patient demographics section contains information about the patient. Elements should be formatted as subheadings in any HTML sent.
+The Patient demographics section contains information about the patient. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

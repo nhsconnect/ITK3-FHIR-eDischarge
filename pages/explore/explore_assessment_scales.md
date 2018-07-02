@@ -10,7 +10,7 @@ summary: "Gives information about the Assessment scales section"
 {% include custom/section.warnbanner.html %}
 
 ## Assessment Scales Section Content##
-The Assessment scales section carries information about assessment scales used. Elements should be formatted as subheadings in any HTML sent.
+The Assessment scales section carries information about assessment scales used. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

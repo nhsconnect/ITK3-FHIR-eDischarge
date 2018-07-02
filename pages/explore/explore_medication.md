@@ -10,7 +10,7 @@ summary: "Gives information about the Medications and medical devices section"
 {% include custom/section.warnbanner.html %}
 
 ## Medications and Medical Devices Section Content ##
-The Medications and medical devices section carries information about the patient's medication. Elements should be formatted as subheadings in any HTML sent. For more information on constructing medication lists see [constructing clinical coded structures](build_medication_lists.html). 
+The Medications and medical devices section carries information about the patient's medication. PRSB Elements should be formatted as subheadings in any HTML sent. For more information on constructing medication lists see [constructing clinical coded structures](build_medication_lists.html). 
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

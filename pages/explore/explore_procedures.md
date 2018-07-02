@@ -10,7 +10,7 @@ summary: "Gives information about the Procedures section"
 {% include custom/section.warnbanner.html %}
 
 ## Procedures Section Content##
-The Procedures section carries information about the procedures that have been performed on the patient. Elements should be formatted as subheadings in any HTML sent.
+The Procedures section carries information about the procedures that have been performed on the patient. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

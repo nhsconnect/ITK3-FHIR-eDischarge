@@ -10,7 +10,7 @@ summary: "Gives information about Investigation Results section"
 {% include custom/section.warnbanner.html %}
 
 ## Investigation Results Section Content ##
-The Investigation results section carries information about investigation results for the patient. Elements should be formatted as subheadings in any HTML sent.
+The Investigation results section carries information about investigation results for the patient. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>

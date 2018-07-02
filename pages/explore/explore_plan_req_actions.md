@@ -10,7 +10,7 @@ summary: "Gives information about the Plan and requested actions section"
 {% include custom/section.warnbanner.html %}
 
 ## Plan and Requested Actions Section Content ##
-The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc. Elements should be formatted as subheadings in any HTML sent.
+The Plan and requested actions section carries information about planned and requested actions such as planned investigations, procedures etc. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
