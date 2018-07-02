@@ -52,7 +52,7 @@ The Clinical summary section carries a narrative summary of the episode, where p
 
 ##  Example Clinical Summary Section ##
 
-<script src="https://gist.github.com/IOPS-DEV/77620f7d132b195c42b5f2fee5f39172.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/721d38297900a223f98cbd1b1c1f4e5b.js"></script>
 
 ## Coded Resources ##
 
