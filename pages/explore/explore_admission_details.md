@@ -1,4 +1,4 @@
----
+﻿---
 title: Admission Details Section
 keywords:  messaging, sections
 tags: [fhir,messaging,section]
@@ -74,7 +74,7 @@ The Admission details section carries information about the patient's admission.
 
 ##  Example Admission Details Section ##
 
-<script src="https://gist.github.com/IOPS-DEV/063615bfb87522015e0c37ef7f06d4fd.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/ac48a6fbd35e67cfc66ea2cdf7227691.js"></script>
 
 ## Coded Resources ##
 
