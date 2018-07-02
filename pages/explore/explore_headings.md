@@ -139,7 +139,7 @@ The “must support” property has been added to all the elements that must be 
 		<td>
 			<a href="explore_individual_reqs.html">Individual requirements</a>
 		</td>
-		<td>1052901000000109</td>
+		<td>1078911000000106</td>
     	<td>0..1</td>
 		<td>Required</td>
 		<td>0</td>
