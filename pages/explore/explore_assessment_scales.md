@@ -53,7 +53,7 @@ The Assessment scales section carries information about assessment scales used. 
 
 ## Example Assessment Scales Section Example ##
 
-<script src="https://gist.github.com/IOPS-DEV/661246335c1771029116eda10ec1f54b.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/3f9a0f6a0aa5a1a557046a620fabe540.js"></script>
 
 ## Coded Resources ##
 
