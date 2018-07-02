@@ -192,11 +192,20 @@ The allergy record is constructed as a single list for Transfer of Care Document
 
 ## Handling Negated Codes e.g. “No Known Drug allergy”, Which is Explicitly Recorded By The Clinician ## 
 
-If relevant investigations and observations have been carried out and no allergies or adverse reactions identified then this heading should appear in the document with the text “No known drug allergies or adverse reactions”.If no information is available about allergies or adverse reactions (but allergies or adverse reactions may have been identified), then this heading should appear in the Document with the text “Information not available”
-<br/>First option: Send AllergyIntolerance Resource with <b>AllergyIntolerance.code</b> populated with SNOMED CT concept for 'No known drug allergies or adverse reactions' and replicate this in <b>Composition,section.text</b>.
-There are other "No Known" codes for example "No known drug allergy", "No known food allergy" etc. Positive and negated codes should not be mixed within a document.
+If relevant investigations and observations have been carried out and no allergies or adverse reactions identified then there are two options.
 
-If there are active allergy records, these positive presence of allergies should not be sent with 'No known drug allergies or adverse reactions'. Other option is to use the list resource and use List.emptyReason' to send 'No known drug allergies or adverse reactions' as text and replicate this in <b>Composition.section.text</b>
+- FHIR element <b>Text.Narrative</b> MUST match text of code e.g. “No known drug allergies”, PRSB guidance to be revised.
+- List is NOT empty therefore the FHIR element <b>List.EmptyReason</b> not needed.
+- Place negated code in the FHIR element <b>AllergyIntolerance.code</b>.
+
+The negated codes to use are:
+
+- 716186003 - No known allergy
+- 409137002 - No known drug allergy
+- 429625007 - No known food allergy
+
+If no information is available about allergies or adverse reactions (but allergies or adverse reactions may have been identified), then this heading should appear in the Document with the text “Information not available”
+
 
 ## Handling an EMPTY Allergy list (no allergies recorded in EOR) ##
 
