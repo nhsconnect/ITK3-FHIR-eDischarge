@@ -27,7 +27,7 @@ The Plan and requested actions section carries information about planned and req
 			<td>Plan and requested actions</td>
 			<td>The details of planned investigations, procedures and treatment, and whether this plan has been agreed with the patient or their legitimate representative.</td>
 			<td>0 to 1</td>
-			<td>required</td>
+			<td>R</td>
 			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
