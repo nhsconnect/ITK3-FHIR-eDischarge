@@ -27,7 +27,7 @@ The Procedures section carries information about the procedures that have been p
 			<td>Procedures </td>
 			<td>The details of any procedures performed.</td>
 			<td>0 to 1</td>
-			<td>optional</td>
+			<td>O</td>
 			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
 		</tr>
 		<tr>
