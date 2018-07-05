@@ -23,7 +23,7 @@ Sender <b>SHOULD</b> send attachments as a PDF, but <b>MAY</b> use other formats
 
 ## Receivers of Attachments ##
 
-Receivers <b>SHOULD</b> process attachments in-line with the rules stated in the <a href="https://developer.nhs.uk/apis/itk3messagedistribution/explore_s_and_r.html">ITK3 Messaging Distribution Specification</a>. 
+Receivers <b>SHOULD</b> process attachments in-line with the rules stated in the <a href="https://developer.nhs.uk/apis/itk3messagedistribution/explore_s_and_r.html" target="_blank">ITK3 Messaging Distribution Specification</a>. 
 
 ## Binary Resource ##
 
