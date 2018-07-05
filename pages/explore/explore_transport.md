@@ -7,7 +7,7 @@ permalink: explore_transport.html
 summary: "The transport mechanisms used for ITK3 FHIR Documents"
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 
 ## ITK3 and MESH  ##

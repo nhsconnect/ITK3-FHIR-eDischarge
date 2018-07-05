@@ -7,7 +7,23 @@ permalink: overview_release_notes.html
 summary: Summary release notes of the versions released in ITK3 eDischarge Implementation Guide
 ---
 
-{% include custom/search.warnbanner.html %}
+
+
+## 2.3.0-beta ##
+
+**PRSB section tables** 
+
+These have been updated to include mappings of the PRSB elements to the FHIR elements (where there are mappings). 
+
+**Examples**
+
+Examples have been updated and corrected following further validation.
+
+All Coded entries are now done as lists. Medication is now two lists one for "Active" and one for "Discontinued". 
+
+**Constructing clinical coded structures section**
+
+Updated with new guidance derived from INTEROPen curation.
 
 ## 2.2.0-alpha ##
 

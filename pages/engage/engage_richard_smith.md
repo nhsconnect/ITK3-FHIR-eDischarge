@@ -7,7 +7,7 @@ permalink: engage_richard_smith.html
 summary: "Example scenario - Richard Smith Discharge Summary"
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 ## Background ##
 

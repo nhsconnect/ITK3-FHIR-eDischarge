@@ -7,7 +7,7 @@ permalink: explore_eDischarge_def.html
 summary: "eDischarge Message Definition"
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 ## eDischarge Definition Overview ##
 

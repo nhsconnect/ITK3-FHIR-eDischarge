@@ -7,7 +7,7 @@ permalink: explore_messaging_versioning.html
 summary: An overview of how messages and profiles are versioned.
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 
 ## 1. Product Versioning ##

@@ -7,7 +7,7 @@ permalink: workflow_encounter.html
 summary: "Overview of the work flow using Encounter Resource."
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 ## Overview ##
 

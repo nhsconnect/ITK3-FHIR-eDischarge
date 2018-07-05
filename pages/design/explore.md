@@ -7,7 +7,7 @@ permalink: explore.html
 summary: "Overview of the Messaging Architecture section"
 ---
 
-{% include custom/search.warnbanner.html %}
+
 
 ## Overview ##
 
