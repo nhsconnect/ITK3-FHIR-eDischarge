@@ -11,4 +11,4 @@ summary: "Overview of the Message Definitions Section"
 
 ## Use of Message Definitions ##
 
-For ITK3 message flows, the use of message definitions to replace interactions has been implemented. For further information [click here](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/explore_defs_overview.html).
+For ITK3 message flows, the use of message definitions to replace interactions has been implemented. For further information [click here](https://developer.nhs.uk/apis/itk3messagedistribution/explore_defs_overview.html).
