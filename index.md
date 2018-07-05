@@ -8,10 +8,6 @@ toc: false
 summary: A brief introduction to getting started with the ITK3 eDischarge.
 ---
 
-{% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the ITK3 eDischarge components of FHIR messaging. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
-
-{% include warning.html content="The examples provided are for illustrative purposes only. They have had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the FHIR profiles and this specification, where there are conflicts the written message specification or FHIR Profile shall be considered to take precedence." %}
-
 ## Introduction ##
 
 The Transfer of Care eDischarge  Specification supports the following care communications:
