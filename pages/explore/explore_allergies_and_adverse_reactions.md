@@ -59,7 +59,7 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Date recorded</td>
 			<td>The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction, but this may not be wholly clear from source data.</td>
 			<td>0 to 1</td>
-			<td>R$</td>
+			<td>R</td>
 			<td>The date that the reaction was clinically recorded/asserted. Text and carried in <b>AllergyIntolerance.assertedDate</b> FHIR element.</td>
 		</tr>
 		<tr>
