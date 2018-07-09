@@ -1,4 +1,4 @@
-{% include custom/section.version_warning.html %}
+{% include custom/version_warning.html %}
 ---
 title: Introduction to ITK3 eDischarge
 keywords: homepage
