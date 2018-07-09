@@ -1,4 +1,3 @@
-{% include custom/versions_warning.html %}
 ---
 title: Introduction to ITK3 eDischarge
 keywords: homepage
@@ -8,6 +7,8 @@ permalink: index.html
 toc: false
 summary: A brief introduction to getting started with the ITK3 eDischarge.
 ---
+
+{% include custom/versions_warning.html %}
 
 ## Introduction ##
 
