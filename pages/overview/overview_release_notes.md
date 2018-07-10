@@ -8,6 +8,20 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 ---
 
 
+## 2.4.0-beta ##
+
+**Profiles**
+
+- New CareConnect-ITK-MedicationResponse-1 Profile added to support TTOs (To take outs)
+- Updated CareConnect-ITK-MedicationStatement-1 to support reference to CareConnect-ITK-MedicationResponse-1.
+
+**Specification Pages**
+
+- Updated Profile page to include the new Profile
+- Updated Message Definitions
+- Added new MedicationDispense referencing diagram
+- Updated MedicationStatement referencing diagram to include MedicationDispense Resource
+- Update "Build medication list" pages 
 
 ## 2.3.0-beta ##
 

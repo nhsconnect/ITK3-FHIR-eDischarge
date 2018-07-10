@@ -67,11 +67,7 @@ The Referrer details section carries a narrative summary of the episode. Where p
 
 <script src="https://gist.github.com/IOPS-DEV/324006a867ea11a33997dcb6148b289a.js"></script>
 
-## Coded Resources ##
 
-This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
-
-- The ITK3 FHIR eDischarge does not currently support coded referrer details.
 
 
 

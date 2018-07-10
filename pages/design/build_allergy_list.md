@@ -121,7 +121,7 @@ PRSB valueSet applicable for certainty is as follows:
 <tr><td>Certain - [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.][SNOMED-CT::255545003] (Definite(qualifier value))</td></tr>       
 <tr><td>Confirmed by challenge testing - [The  reaction to the agent has been confirmed by challenge testing or other concrete evidence.][SNOMED-CT::410605003] Confirmed present (qualifier value))</td></tr></table>
 
-<table style="width:100%;max-width: 100%;"><tr><td>The FHIR element <b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verficationStatus has a required terminology binding and uses values (unconfirmed | confirmed | refuted | entered-in-error)</td></tr>
+<table style="width:100%;max-width: 100%;"><tr><td>The FHIR element <b>AllergyIntolerance.verificationStatus</b> is mandatory and the ValueSet verificationStatus has a required terminology binding and uses values (unconfirmed | confirmed | refuted | entered-in-error)</td></tr>
 <tr><td> the values ( refuted | entered-in-error) <b>MUST NOT</b> be used for Transfer of Care Documents.</td></tr></table>
 
 The values Certain and Confirmed by Challenge = FHIR value "confirmed". The values Likely and Unlikely = FHIR value "unconfirmed". If <b>AllergyIntolerance.verificationStatus</b> is not known, then set to FHIR value "unconfirmed". If extra information about certainty is known, this should reported as a note. The ValueSet guidance for implementers is to default to FHIR value of "unconfirmed" for all Transfer of Care Document types.
@@ -142,7 +142,11 @@ The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is
 
 ## Type of Reaction ##
 
-For the <b>AllergyIntolerance.type</b> FHIR has a required terminology binding using the values of (allergy | intolerance) - as this is a required ValueSet these values must be used.
+<table style="width:100%;max-width: 100%;">
+<tr>
+<tr><td>For the <b>AllergyIntolerance.type</b> FHIR has a required terminology binding using the values of (allergy | intolerance) - as this is a required ValueSet these values must be used.</td>
+</tr>
+</table>
 
 The values "Adverse Reaction" and "Not Known" are currently not supported However adverse reaction is closer to intolerance by the FHIR definition.
 An absence of AllergyIntollerance.type implies Not Known. Advice from FHIR patient care WGM is that adverse reaction should recorded under <b>AllergyIntolerance.reaction.description</b>.

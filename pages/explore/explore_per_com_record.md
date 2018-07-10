@@ -57,7 +57,7 @@ The Person completing record section carries information about the person who co
 			<td>The grade of the person completing the record</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>The grade of the person completing the record held on the source system or from an authoritative source<. Sent as text only.</td>
+			<td>The grade of the person completing the record held on the source system or from an authoritative source. Sent as text only.</td>
 		</tr>
 		<tr>
 			<td>Specialty</td>
@@ -104,11 +104,7 @@ The Person completing record section carries information about the person who co
 
 <script src="https://gist.github.com/IOPS-DEV/4eceababbca389067cde4aefd2d61cde.js"></script>
 
-## Coded Resources ##
 
-This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
-
-- The ITK3 FHIR eDischarge does not currently support coded Person completing record information.
 
 
 

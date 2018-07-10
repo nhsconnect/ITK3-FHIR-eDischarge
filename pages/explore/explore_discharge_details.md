@@ -45,6 +45,8 @@ The Discharge details section carries details of the patient's discharge. PRSB E
 			<td>R</td>
 			<td>The name and identifier of the consultant from a recognised source such as the Spine Directory Service, or a local identifier. Any identifiers <b>MUST NOT</b> be carried as text. The following FHIR Elements <b>SHOULD</b> be populated in the Practitioner and PractitionerRole Resources: 
 			<ul>
+			<li><b>Encounter.participant.type.code</b> should contain the value "DIS"</li>
+			<li><b>Encounter.participant.type.display</b> should contain the value "discharger"</li>
 			<li><b>Encounter.participant.individual.<br/>Reference.Practitioner.identifier</b></li>
 			<li><b>Encounter.participant.individual.<br/>Reference.Practitioner.name</b></li>
 			<li><b>PractitionerRole.code</b></li>

@@ -63,7 +63,7 @@ The Procedures section carries information about the procedures that have been p
 			<td>Details of any intra-operative complications encountered during the procedure, arising during the patient's stay in the recovery unit or directly attributable to the procedure.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the complication carried in the FHIR element <b>Procedure.complication</b>.</td>
+			<td>Text and where supported a SNOMED CT concept to represent the complication carried in the FHIR element <b>Procedure.complication</b> and <b>Procedure.complicationDetail</b>.</td>
 		</tr>
 		<tr>
 			<td>Specific anaesthesia issues</td>
@@ -94,7 +94,7 @@ The Procedures section carries information about the procedures that have been p
 
 This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.
 
-- Procedures
+- Procedure
  
 See constructing clinical coded structures - [Procedures](build_procedures.html)
 
