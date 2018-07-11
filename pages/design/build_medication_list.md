@@ -25,6 +25,7 @@ The FHIR Resources are profiled to create the medication list as below:
 - **[CareConnect-ITK-Medication-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-List-1)** - An NHS Digital Profile for recording a snapshot of the list of Medications for the patient.
 - **[CareConnect-ITK-MedicationStatement-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationStatement-1)** - An NHS Digital Profile for medication statements. The MedicationStatement Resource is a record of a medication that is being consumed by a patient.
 - **[CareConnect-ITK-Medication-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Medication-1)** - An NHS Digital Profile for medication. The Medication Resource is primarily used for the identification and definition of a medication.
+- **[CareConnect-ITK-MedicationDispense-1](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-MedicationDispense-1)** - An NHS Digital Profile derived from the CareConnect MedicationDispense Profile. Indicates that a medication product is to be or has been dispensed for a named person/patient. This includes a description of the medication product (supply) provided and the instructions for administering the medication. 
 
 ## List ##
 This Resource acts as a container for the medication items. The following is an example of the elements which can be used:
@@ -49,6 +50,7 @@ A record of a medication that is being consumed or has been consumed by a patien
 - identifier - uniquely identifies this medication statement (UUID)
 - clinicalStatus - should always be active
 - category - should be inpatient
+- partOf - A reference to the MedicationDispense Resource used to carry the quantity that was dispensed (for example TTO after a hospital provider spell) 
 - medication - the medication coded (a SNOMED CT Concept that identifies this medication), this is done by reference to the Medication Resource which details the medication. 
 - effective - the date/time or interval when the medication was taken
 - dateAsserted - When the statement was asserted defaults to composition date
@@ -77,6 +79,10 @@ The medication record is constructed as two lists. The diagram below shows the R
 ## MedicationStatement ##
 
 This section gives guidance of the use of the MedicationStatement Resource. Sending Systems should send as much details as they can. 
+
+## MedicationStatement.partOf ##
+
+This uses a reference to the MedicationDispense.quantity to indicate the amount of medication that was dispensed, for example TTO after a hospital provider spell.
 
 ## MedicationStatement.dosage.route ##
 Constraint: NHS e-Prescribing route of administration subset refset 999000051000001100.

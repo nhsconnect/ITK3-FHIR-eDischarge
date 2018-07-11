@@ -108,11 +108,23 @@ The Medications and medical devices section carries information about the patien
 			<td> <font color="red"><b>DO NOT USE</b> Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
 		</tr>
 		<tr>
-			<td> <font color="red">Structured dose direction cluster</font></td>
-			<td> <font color="red">A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</font></td>
-			<td> <font color="red">0 to many</font></td>
-			<td> <font color="red">O</font></td>
-			<td> <font color="red"><b>DO NOT USE</b> - Data items acting as placeholders for future 'advanced' structured dose syntax solution. Insufficient information to detail these further at present.</font></td>
+			<td>Structured dose direction cluster</td>
+			<td>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</font></td>
+			<td>0 to many</font></td>
+			<td>O</font></td>
+			<td>Text and where supported (these values)
+<ul>
+<li>Continue indefinitely [The medication should be continued indefinitely.] </li>
+<li>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]</li>
+<li>Stop when course complete. [The medication should be stopped when the currently prescribed course has been completed.]</li>
+<li>Duration:  Allowed values: years, months, weeks, days, hours >=0 days</li>
+</ul> 
+For coded information use the FHIR element <b>MedicationStatement.dosage.additionalInstruction</b>.<br/>If no codes exist use the FHIR element <b>MedicationStatement.dosage.additionalInstruction CodeableConcept.text</b><br/>
+Duration goes in the FHIR element <b>MedicationStatement.effective[x].effectivePeriod</b><br/>
+Implementation guidance: FHIR element <b>MedicationStatement.additionalInstruction</b> to be used as a string element for "Continue Indefinitely"; "Do not discontinue" and "Stop when course complete".</br> 
+Any Duration instructions in the FHIR element <b>MedicationStatement.effective[x].effectivePeriod</b> or in FHIR element <b>MedicationStatement.note</b> as a degrade to text.
+
+</td>
 		</tr>
 		<tr>
 			<td> <font color="red">Structured dose amount cluster</font></td>
