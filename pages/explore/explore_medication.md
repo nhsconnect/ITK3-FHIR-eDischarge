@@ -109,8 +109,8 @@ The Medications and medical devices section carries information about the patien
 		</tr>
 		<tr>
 			<td>Structured dose direction cluster</td>
-			<td>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</font></td>
-			<td>0 to many</font></td>
+			<td>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</td>
+			<td>0 to many</td>
 			<td>O</font></td>
 			<td>Text and where supported (these values)
 <ul>
