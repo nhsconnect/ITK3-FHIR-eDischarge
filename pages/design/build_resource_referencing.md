@@ -58,6 +58,12 @@ The diagram shows the referencing for the Medication Resource.
 
 <img src="images/explore/medication_referencing.png" style="width: 50%;max-width: 50%;">  
 
+## MedicationDispense ##
+
+The diagram shows the referencing for the MedicationDispense  Resource.
+
+<img src="images/explore/medicationDispense_referencing.png" style="width: 50%;max-width: 50%;">  
+
 ## List (Allergy) ##
 
 The diagram shows the referencing for the List Resource for Allergies.
