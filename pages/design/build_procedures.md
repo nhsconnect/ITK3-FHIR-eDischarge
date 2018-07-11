@@ -89,7 +89,7 @@ So, an alternative is only:
 References the condition resource.
 
 ## Procedure.anestheticIssues ##
-References the condition resource.
+Uses the <b>Extension-CareConnect-AnaestheticIssues-1</b> extension to either references the condition resource or carry a SNOMED CT concept to detail the anaesthetic issues the patient had.
 
 ## Procedure.note ##
 Any further textual comment to clarify such as statement that information is partial or incomplete. <b>MUST</b> be repeated in the FHIR element <b>Composition.section.text</b>.

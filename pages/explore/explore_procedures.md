@@ -70,7 +70,7 @@ The Procedures section carries information about the procedures that have been p
 			<td>Details of any adverse reaction to any anaesthetic agents including local anaesthesia.  Problematic intubation, transfusion reaction, etc.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>Text and where supported a SNOMED CT concept to represent the anaesthesia issues carried in the FHIR element <b>Procedure.complication</b>.</td>
+			<td>Text and where supported either a SNOMED CT concept or a reference to the Condition Resource to represent the anaesthesia issues carried using the extension <b>Extension-CareConnect-AnaestheticIssues-1</b>.</td>
 		</tr>
 		<tr>
 			<td>Comment</td>
