@@ -121,7 +121,7 @@ The Medications and medical devices section carries information about the patien
 </ul> 
 For coded information use the FHIR element <b>MedicationStatement.dosage.additionalInstruction</b>.<br/>If no codes exist use the FHIR element <b>MedicationStatement.dosage.additionalInstruction CodeableConcept.text</b><br/>
 Duration goes in the FHIR element <b>MedicationStatement.effective[x].effectivePeriod</b><br/>
-Implementation guidance: FHIR element <b>MedicationStatement.additionalInstruction</b> to be used as a string element for "Continue Indefinitely"; "Do not discontinue" and "Stop when course complete".</br> 
+Implementation guidance: FHIR element <b>MedicationStatement.additionalInstruction</b> to be used as a string element for "Continue Indefinitely"; "Do not discontinue" and "Stop when course complete".<br/> 
 Any Duration instructions in the FHIR element <b>MedicationStatement.effective[x].effectivePeriod</b> or in FHIR element <b>MedicationStatement.note</b> as a degrade to text.
 
 </td>
