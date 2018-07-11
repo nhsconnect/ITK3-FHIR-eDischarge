@@ -111,8 +111,8 @@ The Medications and medical devices section carries information about the patien
 			<td>Structured dose direction cluster</td>
 			<td>A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.</td>
 			<td>0 to many</td>
-			<td>O</font></td>
-			<td>Text and where supported (these values)
+			<td>O</td>
+			<td>Where supported (these values)
 <ul>
 <li>Continue indefinitely [The medication should be continued indefinitely.] </li>
 <li>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]</li>
