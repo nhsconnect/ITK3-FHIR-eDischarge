@@ -191,11 +191,11 @@ For Transfer of Care only a small subset of the elements should be used.
 
 ## status ##
 
-This should contain the value completed.
+This should contain the value "completed".
 
 ## category ##
 
-This should the value inpatient or outpatient as appropriate.
+This should the value "inpatient" or "outpatient" as appropriate.
 
 ## quantity ##
 
@@ -203,7 +203,7 @@ This is mandated when the dispense resource is used. The FHIR element <b>Extensi
 
 ## performer ##
 
-Who dispensed the medication if available to sender.
+Who dispensed the medication if available to the sender.
 
 ## References ##
 The references to the following must be carried:
