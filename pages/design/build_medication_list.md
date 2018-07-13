@@ -68,6 +68,17 @@ The Medication Resource allows for medications to be characterized by the form o
 
 - code - a SNOMED CT Concept that identifies this medication
 - form - powder, tablets, capsule etc SNOMED CT form concepts 
+
+## MedicationDispense ##
+The main purpose of the MedicationDispense resource is for Medication that is to record the amount of medication which has supplied to the patient. For example TTOs(to take outs). The following is an example of the elements can be used:
+
+- identifier - uniquely identifies this medication dispense (UUID)
+- status - for ToC should always be completed
+- category - inpatient or outpatient 
+- medication - a reference to the medication which was dispensed
+- subject - a reference to the patient
+- performer - who / what dispensed the medication
+- quantity - How much was dispensed
  
 ## How the Medication List is Constructed ##
 The medication record is constructed as two lists. The diagram below shows the Resources used and the relationship between the Resources.
@@ -76,7 +87,7 @@ The medication record is constructed as two lists. The diagram below shows the R
 
 
 
-## MedicationStatement ##
+## MedicationStatement Resource ##
 
 This section gives guidance of the use of the MedicationStatement Resource. Sending Systems should send as much details as they can. 
 
@@ -173,6 +184,34 @@ The above as a SNOMED CT expression
 <tr><td>^999000781000001107 |NHS dm+d (dictionary of medicines and devices) dose form simple reference set|</td></tr>
 </table>
 
+## MedicationDispense Resource ##
+
+This Resource provides details of medication that has been dispensed to the patient, for TTO(To Take Outs).
+For Transfer of Care only a small subset of the elements should be used.
+
+## status ##
+
+This should contain the value completed.
+
+## category ##
+
+This should the value inpatient or outpatient as appropriate.
+
+## quantity ##
+
+This is mandated when the dispense resource is used. The FHIR element <b>Extension-CareConnect-MedicationQuantityText-1</b> is used to carry the amount dispensed as a text string. Where supported the quantity may be structured, but there is no guidance at this time.
+
+## performer ##
+
+Who dispensed the medication if available to sender.
+
+## References ##
+The references to the following must be carried:
+
+- medication
+- subject (patient)
+- context (encounter) 
+
 ## Medication List Examples ##
 
 
@@ -191,6 +230,10 @@ Note: example only shows one item in the list.
 Note: example only shows one item in the list.
 
 <script src="https://gist.github.com/IOPS-DEV/5141e4cfc8480c8b4638d30ad03c564b.js"></script>
+
+**Medication Dispense**
+
+<script src="https://gist.github.com/IOPS-DEV/99af046bcbf44b43f5b675eaa9864b02.js"></script>
 
 **Discontinued List**
 
