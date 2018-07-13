@@ -186,7 +186,7 @@ The above as a SNOMED CT expression
 
 ## MedicationDispense Resource ##
 
-This Resource provides details of medication that has been dispensed to the patient, for TTO(To Take Outs).
+This Resource provides details of medication that has been dispensed to the patient, for example TTO(To Take Outs).
 For Transfer of Care only a small subset of the elements should be used.
 
 ## status ##
