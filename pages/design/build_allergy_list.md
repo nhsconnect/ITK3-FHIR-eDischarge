@@ -144,7 +144,7 @@ The <b>AllergyIntolerance.reaction.manifestation</b> CodeableConcept ValueSet is
 
 <table style="width:100%;max-width: 100%;">
 <tr>
-<tr><td>For the <b>AllergyIntolerance.type</b> FHIR has a required terminology binding using the values of (allergy | intolerance) - as this is a required ValueSet these values must be used.</td>
+<td>For the <b>AllergyIntolerance.type</b> FHIR has a required terminology binding using the values of (allergy | intolerance) - as this is a required ValueSet these values must be used.</td>
 </tr>
 </table>
 
