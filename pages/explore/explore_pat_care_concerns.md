@@ -9,7 +9,7 @@ summary: "Gives information about the Patient and carer concerns, expectations a
 
 {% include custom/section.warnbanner.html %}
 
-## Patient and Carer Concerns, Expectations and Wishes Section Content##
+## Patient and Carer Concerns, Expectations and Wishes Section content ##
 The Patient and carer concerns, expectations and wishes section carries information about the concerns of the patient or their representative. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">

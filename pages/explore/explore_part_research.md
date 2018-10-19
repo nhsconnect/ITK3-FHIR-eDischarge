@@ -9,7 +9,7 @@ summary: "Gives information about the Participation in research section"
 
 {% include custom/section.warnbanner.html %}
 
-## Participation in Research Section Content##
+## Participation in Research Section content ##
 This is to flag participation in a clinical trial. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">

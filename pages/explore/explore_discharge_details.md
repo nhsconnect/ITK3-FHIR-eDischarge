@@ -9,7 +9,7 @@ summary: "Gives information about the Discharge details section"
 
 {% include custom/section.warnbanner.html %}
 
-## Discharge Details Section Content##
+## Discharge Details Section content ##
 The Discharge details section carries details of the patient's discharge. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">

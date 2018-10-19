@@ -9,7 +9,7 @@ summary: "Gives information about the Referrer details section"
 
 {% include custom/section.warnbanner.html %}
 
-## Referrer Details Section Content##
+## Referrer Details Section content ##
 The Referrer details section carries a narrative summary of the episode. Where possible, very brief. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 

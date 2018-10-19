@@ -9,7 +9,7 @@ summary: "Gives information about the Safety alerts section"
 
 {% include custom/section.warnbanner.html %}
 
-## Safety Alerts Section Content##
+## Safety Alerts Section content ##
 The Safety alerts section carries safety alerts associated with the patient. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">

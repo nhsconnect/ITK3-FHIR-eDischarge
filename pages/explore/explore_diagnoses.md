@@ -9,7 +9,7 @@ summary: "Gives information about the Diagnoses section"
 
 {% include custom/section.warnbanner.html %}
 
-## Diagnoses Section Content##
+## Diagnoses Section Content ##
 The Diagnoses section carries information about Diagnoses. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">

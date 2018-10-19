@@ -9,7 +9,7 @@ summary: "Gives information about the Person completing record section"
 
 {% include custom/section.warnbanner.html %}
 
-## Person Completing Record Section Content##
+## Person Completing Record Section content ##
 The Person completing record section carries information about the person who completed the record. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 
