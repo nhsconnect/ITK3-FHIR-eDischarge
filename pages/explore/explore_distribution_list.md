@@ -66,7 +66,7 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>Organisation name</td>
 			<td>The name of the organisation the recipient is representing or the organisation named as the receiving organisation. An identifier for the organisation will be sent alongside the name.</td>
 			<td>0 to 1</td>
-			<td>O</td>
+			<td>R</td>
 			<td>Organisation name in text and carried in the FHIR element <b>Organization.name</b> and identifier (which <b>MUST NOT</b> be in carried in the text), taken from the Organisation Data Service (ODS)) and carried in the FHIR element <b>Organization.identifier</b></td>
 		</tr>
 		<tr>

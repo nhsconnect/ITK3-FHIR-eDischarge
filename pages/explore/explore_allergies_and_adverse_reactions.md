@@ -101,13 +101,6 @@ This table should be used in conjunction with the section on [constructing clini
 			<td>Free text. Note: structured FHIR Diagnostic Reports are not currently supported in Transfer of Care. An attachment such as a pdf of a laboratory report may be included with a link as evidence. See section on <a href="build_attachments.html">Use of attachments</a></td>
 		</tr>
 		<tr>
-			<td>Probability of recurrence</td>
-			<td>Probability of the reaction (allergic, adverse, intolerant) occurring</td>
-			<td>0 to 1</td>
-			<td>O</td>
-			<td>Free text</td>
-		</tr>
-		<tr>
 			<td>Date first experienced</td>
 			<td>When the reaction was first experienced. May be a date or partial date (e.g. year) or text (e.g. during childhood)</td>
 			<td>0 to 1</td>
