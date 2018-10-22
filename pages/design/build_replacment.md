@@ -15,12 +15,12 @@ A sender may choose to send a new replacement document for a number of reasons, 
 - The original document contained an error - identified after the document sent
 - The sender has more up to date  or complete information - the original is correct but further information is now available to make the document more complete or detailed 
 
-Receivers of replacement documents **MUST** process the replacement document and archive the replaced document or report a error using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution/explore_response_codes.html) for further information. 
+Receivers of replacement documents **MUST** process the replacement document and archive the replaced document.
 
 When the new document cannot be processed then:
 
-- The receiver of the new document **MUST** mark the original and replacement document as null and void.
-- The sender of the new document **MUST** mark the original and replacement document as null and void.
+- The receiver of the new document **SHOULD** mark the original and replacement document as null and void and report a error to the sender using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution/explore_response_codes.html) for further information. 
+- The sender of the new document **SHOULD** mark the original and replacement document as null and void once it recessives the ITK3 Response for the new document.
 
 
 ## FHIR Elements Used for Replacement ##
@@ -33,7 +33,7 @@ When the new document cannot be processed then:
 
 ## Example of Use of relatesTo Element ##
 
-<img src="images/build/replacemnt.png" style="width: 75%;max-width: 75%;"> 
+<img src="images/build/ReplacementDiagram.png" style="width: 75%;max-width: 75%;"> 
 
 
 
