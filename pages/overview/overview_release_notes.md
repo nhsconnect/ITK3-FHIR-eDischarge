@@ -17,9 +17,9 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 **Profiles** 
 
 
-- All other Profiles are now "Active" status
-- Condition Profile has optional condition.note added to profile minor version increased +1
-- Composition Profile has care-setting extension aligned with CareConnect results in a URL change but structure identical
+- All Profiles are now "Active" status
+- Condition Profile has optional condition.note added to profile and minor version increased +1
+- Composition Profile has care-setting extension aligned with CareConnect results in a URL change but structure is identical
 - Composition Profile has document type value set aligned with CareConnect results in URL change but codes are identical  
 - Removal of Organization reference from Person Completing record Section as it was an incorrect reference
 - Removal of optional element verificationStatus from Composition Profile as no requirement to use for Transfer of Care
@@ -36,7 +36,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 **PRSB Headings**
 
-- Aligned with the latest PRSB headings
+- Specification has been aligned with the latest PRSB maintenance release
 - Organisation name element in Distribution List section changed from optional to required
 - Probability of recurrence element removed from Allergies and Adverse Reactions section
 

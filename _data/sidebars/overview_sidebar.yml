@@ -187,6 +187,9 @@ entries:
     - title: Rendering Documents
       url: /build_rendering.html
       output: web
+    - title: Document Replacement 
+      url: /build_replacement.html
+      output: web
       subfolders:
       - title: Constructing Clinical Coded Structures
         url: /build_constructing_coded_structures.html
