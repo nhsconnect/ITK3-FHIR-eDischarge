@@ -26,7 +26,7 @@ When the new document cannot be processed then:
 ## FHIR Elements Used for Replacement ##
 
 - Composition.identifier@value on old document - UUID of original document
-- Composition.identifier@value on old document - UUID of new document
+- Composition.identifier@value on new document - UUID of new document
 - Composition.relatesTo.code@value fixed value of "replaces"
 - Composition.relatesTo.targetIdentifier@value = UUID of original document
 
