@@ -33,7 +33,9 @@ When the new document cannot be processed then:
 
 ## Example of Use of relatesTo Element ##
 
-<img src="images/build/ReplacementDiagram.png" style="width: 75%;max-width: 75%;"> 
+<a href="images/explore/ReplacementDiagram.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in a new window</b></a>
+
+<img src="images/build/ReplacementDiagram.png" style="width:auto;height: auto;"/>
 
 
 
