@@ -20,7 +20,7 @@ Receivers of replacement documents **MUST** process the replacement document and
 When the new document cannot be processed then:
 
 - The receiver of the new document **SHOULD** mark the original and replacement document as null and void and report a error to the sender using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution/explore_response_codes.html) for further information. 
-- The sender of the new document **SHOULD** mark the original and replacement document as null and void once it recessives the ITK3 Response for the new document.
+- The sender of the new document **SHOULD** mark the original and replacement document as null and void once it receives the ITK3 Response indicating that the replacement document could not be processed.
 
 
 ## FHIR Elements Used for Replacement ##
@@ -33,7 +33,7 @@ When the new document cannot be processed then:
 
 ## Example of Use of relatesTo Element ##
 
-<img src="images/build/ReplacementDiagram.png" style="width: 75%;max-width: 75%;"> 
+<img src="images/build/ReplacementDiagram.png" style="width: 100%;max-width: 100%;"> 
 
 
 
