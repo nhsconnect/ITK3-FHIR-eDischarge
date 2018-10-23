@@ -33,7 +33,7 @@ When the new document cannot be processed then:
 
 ## Example of Use of relatesTo Element ##
 
-<img src="images/build/ReplacementDiagram.png" style="width: 120%;max-width: 120%;"> 
+<img src="images/build/ReplacementDiagram.png" style="width: 120%;max-width: 100%;"> 
 
 
 
