@@ -28,7 +28,6 @@ When the new document cannot be processed then:
 - Replacement documents **SHOULD** be sent within 24 hours of the original document. 
 
 
-
 ## FHIR Elements Used for Replacement##
 
 - Composition.identifier@value on old document - UUID of original document
