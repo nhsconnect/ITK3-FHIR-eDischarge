@@ -22,13 +22,21 @@ When the new document cannot be processed then:
 - The receiver of the new document **SHOULD** mark the original and replacement document as null and void and report a error to the sender using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution/explore_response_codes.html) for further information. 
 - The sender of the new document **SHOULD** mark the original and replacement document as null and void once it receives the ITK3 Response indicating that the replacement document could not be processed.
 
+**Points to Note about eDischarge Replacements**
 
-## FHIR Elements Used for Replacement ##
+- Replacements **MAY** be done more than once and the new document always refers to the previous document multiple replacements **SHOULD** be avoided due to complexity of maintaining the audit trail etc.
+- Replacement documents **SHOULD** be sent within 24 hours of the original document. 
+
+
+
+## FHIR Elements Used for Replacement##
 
 - Composition.identifier@value on old document - UUID of original document
 - Composition.identifier@value on new document - UUID of new document
-- Composition.relatesTo.code@value fixed value of "replaces"
-- Composition.relatesTo.targetIdentifier@value = UUID of original document
+- Composition.relatesTo.code@value fixed value of "replaces" - added to the new document 
+- Composition.relatesTo.targetIdentifier@value = UUID of original document - added to the new document 
+
+Replacements **MAY** be done more than once and the new document always refers to the previous document multiple replacements **SHOULD** be avoided due to complexity of maintaining the audit trail etc.
 
 
 ## Example of Use of relatesTo Element ##
