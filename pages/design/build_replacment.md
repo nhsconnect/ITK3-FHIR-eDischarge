@@ -24,7 +24,7 @@ When the new document cannot be processed then:
 
 **Points to Note about eDischarge Replacements**
 
-- Replacements **MAY** be done more than once and the new document always refers to the previous document multiple replacements **SHOULD** be avoided due to complexity of maintaining the audit trail etc.
+- Replacements **MAY** be done more than once and the new document always refers to the previous document, multiple replacements **SHOULD** be avoided due to complexity of maintaining the audit trail etc.
 - Replacement documents **SHOULD** be sent within 24 hours of the original document. 
 
 
@@ -34,9 +34,6 @@ When the new document cannot be processed then:
 - Composition.identifier@value on new document - UUID of new document
 - Composition.relatesTo.code@value fixed value of "replaces" - added to the new document 
 - Composition.relatesTo.targetIdentifier@value = UUID of original document - added to the new document 
-
-Replacements **MAY** be done more than once and the new document always refers to the previous document multiple replacements **SHOULD** be avoided due to complexity of maintaining the audit trail etc.
-
 
 ## Example of Use of relatesTo Element ##
 
