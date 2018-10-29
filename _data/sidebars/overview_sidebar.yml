@@ -191,7 +191,7 @@ entries:
       url: /build_replacement.html
       output: web
     - title: Use of MESH
-      url: /build_MESH.html
+      url: /build_mesh.html
       output: web
       subfolders:
       - title: Constructing Clinical Coded Structures
