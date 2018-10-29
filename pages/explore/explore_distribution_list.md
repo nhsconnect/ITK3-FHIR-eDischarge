@@ -49,7 +49,7 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>Names may be entered as the communication is being created or sourced from the hospital system. Patient names may be from the Patient Demographic Service. Text and carried in the FHIR element <b>Practitioner.name</b> or <b>Patient.name</b>. The identifier will be carried in the FHIR element <b>Practitioner.identifier</b> or <b>Patient.identifier.</b></td>
 		</tr>
 		<tr>
-			<td>Role</td> or 
+			<td>Role</td>
 			<td>If the communication is being sent to either a named individual, or to a non-named person with a specific role, then this is the role of the recipient.</td>
 			<td>0 to 1</td>
 			<td>R</td>
