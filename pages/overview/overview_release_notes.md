@@ -51,7 +51,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 **Additional Guidance**
 
-- Added guidance for population of GP Practice identifier(ODS Code) when using MESH look up see [xxx](xxxx)
+- Added guidance for population of GP Practice identifier(ODS Code) when using MESH look up [see](build_mesh.html#use-of-gp-look-up-on-mesh)
 - Added guidance for document replacement semantics [see](build_replacement.html#fhir-elements-used-for-replacement)  
 
 **Diagrams**
