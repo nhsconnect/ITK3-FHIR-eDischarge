@@ -28,7 +28,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 - CareConnect-ITK-AllergyIntolerance-1 Profile AllergyIntolerance.assertedDate element cardinality changed from 0..1 to 1..1. to align with MVP document and CareConnect base Profile 
 
 **Care Connect Profiles Changes that Impact ToC**
-- CareConnnect Profiles are now the latest "Active" versions minor version is increased +1 these are minor changes with very little impact on Toc known impact is list in this change history
+- CareConnnect Profiles are now the latest "Active" versions minor version is increased +1 these are minor changes with very little impact on Toc known impact is listed in this change history
 
 **CareConnect Value Set Changes that Impact ToC**
 - CareConnect-ListCode-1 value set display value="Allergies and adverse reaction" should be display value="Allergies and adverse reactions".
@@ -46,7 +46,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 **Message Definitions**
 
-- Updated to reflect changes to FHIR assets as document here
+- Updated to reflect changes to FHIR asset versions due to changes documented here.
 - Message definition URL aligned with NHS Digital FHIR policy naming by removing word instance
 
 **Additional Guidance**
