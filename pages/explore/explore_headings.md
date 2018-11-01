@@ -274,7 +274,7 @@ This diagram illustrates the sections used in eDischarge and which sections allo
 
 The text sections are carried in the FHIR Composition Resource. 
 
-This is profiled as the [ITK-EDIS-Composition](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1)
+This is profiled as the [CareConnect-ITK-EDIS-Composition](https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1)
 
 
 
