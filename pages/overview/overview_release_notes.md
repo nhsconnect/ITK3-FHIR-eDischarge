@@ -20,7 +20,8 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 - All Profiles are now "Active" status
 - Condition Profile has optional condition.note added to profile and minor version increased +1
 - Composition Profile has care-setting extension aligned with CareConnect results in a URL change but structure is identical
-- Composition Profile has document type value set aligned with CareConnect results in URL change but codes are identical  
+- Composition Profile has document type value set aligned with CareConnect results in URL change but codes are identical
+- Composition Profile, Medical and medical devices section entry cardinally change from 1..* to 0..* to allow for when medication cannot be coded    
 - Removal of Organization reference from Person Completing record Section as it was an incorrect reference
 - Removal of optional element verificationStatus from Composition Profile as no requirement to use for Transfer of Care
 - MedicationDispense Profile Identifier.system and Identifier.value cardinality changed from 0..1 to 1..1. to align with MVP document 
