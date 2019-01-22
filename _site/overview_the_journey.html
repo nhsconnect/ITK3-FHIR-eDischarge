@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The journey outlines the approach of developing FHIR ITK Messaging Solutions and the journey taken to define and mature the ITK Messaging Solution.">
+<meta name="description" content="The journey outlines the approach of developing FHIR ITK3 Messaging Solutions and the journey taken to define and mature the ITK3 Messaging Solution.">
 <meta name="keywords" content="explanation,  development,overview">
-<title>The Journey | ITK eDischarge</title>
+<title>The Journey | ITK3 eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK eDischarge | FHIR&reg;</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -719,7 +751,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The journey outlines the approach of developing FHIR ITK Messaging Solutions and the journey taken to define and mature the ITK Messaging Solution.</div>
+    <div class="summary">The journey outlines the approach of developing FHIR ITK3 Messaging Solutions and the journey taken to define and mature the ITK3 Messaging Solution.</div>
    
 
    
@@ -751,9 +783,7 @@ $('#toc').on('click', 'a', function() {
 
   <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> All phases outlined below are indicative and subject to on-going review.</div>
 
-<h2 id="what-is-the-journey-">What is the Journey ?</h2>
-
-<p>The Journey is a guide from imagination and exploring to developing local FHIR ITK Messaging Solutions using NHS Digital message profiles all the way to deploying a live FHIR ITK Messaging Solution.</p>
+<p>The Journey is a guide from imagination and exploring to developing local FHIR ITK3 Messaging Solutions using NHS Digital message profiles all the way to deploying a live FHIR ITK3 Messaging Solution.</p>
 
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generated by Microsoft Visio 11.0, SVG Export, v1.0 messaging_overview.svg Messaging overview -->
@@ -857,7 +887,7 @@ $('#toc').on('click', 'a', function() {
 			<v:textRect cx="45.2152" cy="210.127" width="90.44" height="73.5566" />
 			<rect x="0" y="173.349" width="90.4304" height="73.5566" class="st7" />
 			<text x="4" y="185.56" class="st8" v:langID="2057"><v:paragraph v:indentFirst="-0.71" v:indentLeft="0.71" v:bullet="1" /><v:tabList /><tspan class="st9" v:isBullet="true">·</tspan><tspan class="st10">Build Messaging </tspan><tspan x="4.71" dy="1.204em" class="st10">Solutions<v:newlineChar /></tspan><tspan x="4" dy="1.212em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Code<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Examples<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Validation Tools<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Security Examples</tspan></text>		</g>
-		<a xlink:href="test.html">
+	
 			<g id="shape5-55" v:mID="5" v:groupContext="shape" transform="translate(136.956,42.9479) rotate(-90)">
 				<title>Test</title>
 				<desc>Test</desc>
@@ -873,7 +903,6 @@ $('#toc').on('click', 'a', function() {
 				</g>
 				<path d="M0 225.99 L18.53 246.91 L37.06 225.99 L37.06 142.32 L18.53 163.24 L0 142.32 L0 225.99 Z" class="st6" />
 				<text x="187.5" y="-15.53" transform="rotate(90)" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Test</text>			</g>
-		</a>
 		<g id="shape13-60" v:mID="13" v:groupContext="shape" transform="translate(276.318,-139.384)">
 			<title>Rectangle.13</title>
 			<desc>Test Data Security Tests Reference Servers Secure Store Examp...</desc>
@@ -911,7 +940,6 @@ $('#toc').on('click', 'a', function() {
 			<v:textRect cx="45.8619" cy="204.709" width="91.73" height="84.3917" />
 			<rect x="0" y="162.514" width="91.7239" height="84.3917" class="st7" />
 			<text x="4" y="174.72" class="st8" v:langID="2057"><v:paragraph v:indentFirst="-0.71" v:indentLeft="0.71" v:bullet="1" /><v:tabList /><tspan class="st9" v:isBullet="true">·</tspan><tspan class="st10">Automated Tests<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Test Reports<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Test Evidence<v:newlineChar /></tspan><tspan x="4" dy="1.216em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Conformance </tspan><tspan x="4.71" dy="1.204em" class="st10">Reports<v:newlineChar /></tspan><tspan x="4" dy="1.212em" class="st9" v:isBullet="true">·</tspan><tspan class="st10">Assurance </tspan><tspan x="4.71" dy="1.204em" class="st10">Checklist</tspan></text>		</g>
-		<a xlink:href="deploy.html">
 			<g id="shape7-93" v:mID="7" v:groupContext="shape" transform="translate(312.982,42.7576) rotate(-90)">
 				<title>Deploy(Pilot)</title>
 				<desc>Deploy(Pilot)</desc>
@@ -927,7 +955,7 @@ $('#toc').on('click', 'a', function() {
 				</g>
 				<path d="M0 226.1 L18.44 246.91 L36.87 226.1 L36.87 142.86 L18.44 163.67 L0 142.86 L0 226.1 Z" class="st6" />
 				<text x="168.86" y="-15.44" transform="rotate(90)" class="st4" v:langID="2057"><v:paragraph v:horizAlign="1" /><v:tabList />Deploy(Pilot)</text>			</g>
-		</a>
+
 		<g id="shape10-98" v:mID="10" v:groupContext="shape" transform="translate(455.046,-139.384)">
 			<title>Rectangle.10</title>
 			<desc>Messaging Harness Warranted Environment IG / IS MESH</desc>
@@ -978,7 +1006,7 @@ $('#toc').on('click', 'a', function() {
 	</g>
 </svg>
 
-<p>The above steps outline a complete ITK Messaging Solution journey.</p>
+<p>The above steps outline a complete ITK3 Messaging Solution journey.</p>
 
 
 
@@ -1003,9 +1031,9 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

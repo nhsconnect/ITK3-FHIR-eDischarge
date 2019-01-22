@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Gives information about the patient's GP Practice">
 <meta name="keywords" content="fhirmessagingsection,  messaging, sections">
-<title>GP Practice Section | ITK eDischarge</title>
+<title>GP Practice Section | ITK3 eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK eDischarge | FHIR&reg;</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -751,40 +783,67 @@ $('#toc').on('click', 'a', function() {
 
   
 <div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> Please note: senders should not send the information for this AMoRC section heading as a FHIR Composition section. 
-The information must be sent using FHIR resources stated in the sections below. 
-Receivers must render this information from the resources under the appropriate heading when displaying the document for the human reader. 
-An exemplar style-sheet for rendering ITK FHIR documents is available called <a href="https://github.com/nhsconnect/ITK3-FHIR-Documents-Renderer/tree/develop">NHS_FHIR_Document_Renderer.xsl</a></div>
+<i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation should be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
 
-<h2 id="gp-practice-section-content">GP Practice Section Content</h2>
+<h2 id="gp-practice-section-content">GP Practice Section content</h2>
 
-<p>The GP Practice section is rendered from the careProvider reference in the patient resource. The resources used are:</p>
+<p>The GP practice section contains details of the patients GP practice. PRSB Elements should be formatted as subheadings in any HTML sent.</p>
 
-<ul>
-  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1">CareConnect-Practitioner-1</a></strong> - A CareConnect Profile for a practitioner. The Practitioner resource represents the healthcare professional directly or indirectly involved in the provision of healthcare related services.</li>
-  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1">CareConnect-PractitionerRole-1</a></strong> - A CareConnect Profile for a practitioner role.The PractitionerRole resource represents a specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.</li>
-  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1">CareConnect-Organization-1</a></strong> - 	A CareConnect Profile for Organization. The Organization resource represents the organisation that employs the healthcare professional.</li>
-</ul>
+<table style="width:100%;max-width: 100%;">
+	<thead>
+		<tr>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GP practice </td>
+			<td>Details of the GP practice where the patient is registered.</td>
+			<td>1 only</td>
+			<td>M</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
+		</tr>
+		<tr>
+			<th>PRSB Element</th>
+			<th>Description</th>
+			<th>Card.</th>
+			<th>MRO*</th>
+			<th>FHIR Target and Guidance</th>		
+		</tr>
+		<tr>
+			<td>GP name</td>
+			<td>Where the patient or patient's representative offers the name of a GP as their usual GP.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Patients are registered with GP Practices, so their usual GP name will be something volunteered by the patient or their representative. Text and carried in the FHIR element <b>Practitioner.name</b>.</td>
+		</tr>
+		<tr>
+			<td>GP practice details</td>
+			<td>Name and address of the patient's registered GP Practice.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact. Include details of the Practice name and address in text and carried in the FHIR elements <b>Organization.name</b> and <b>Organization.address</b>.</td>
+		</tr>
+		<tr>
+			<td>GP practice identifier</td>
+			<td>The identifier of the registered GP Practice. Note: this heading is defined as mandatory however the heading does not appear in the text but it is mandatory to populate the identifier in the Practitioner Resource.</td>
+			<td>1 only</td>
+			<td>M</td>
+			<td>This should be the Organisation Data Services (ODS) identifier for the practice which <b>MUST NOT</b> be in text but carried in the FHIR element <b>Organization.identifier</b>. This includes codes to use where there is no registered GP practice which should follow the <a href="https://www.datadictionary.nhs.uk/web_site_content/supporting_information/organisation_data_service_default_codes.asp?shownav=1">NHS Data Dictionary default codes</a>. When using the MESH GP look up facility [see](build_mesh.html) </td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
+		</tr>
+	</tbody>
+</table>
 
-<p>The GP Practice section must be rendered in a similar format to other sections. The following is a suggested format for rendering. Items in bold are suggested subheadings and should be formatted as such when rendered:</p>
+<h2 id="example-gp-practice-section">Example GP Practice Section</h2>
 
-<ul>
-<li><b>GP name</b></li>
-<li><b>GP practice details</b></li>
-<li><b>GP practice identifier</b></li>
-</ul>
-
-<p>The PractitionerRole resource is included to allow identification of the practitioner in the role of GP.</p>
-
-<h2 id="example-gp-practice-using-organization-resource">Example GP Practice Using Organization Resource</h2>
-
-<script src="https://gist.github.com/IOPS-DEV/96ebbfe2e8f8f58ca820c7fb0a278bd5.js"></script>
-
-<h2 id="example-gp-name-using-practitioner-resource">Example GP Name Using Practitioner Resource</h2>
-
-<p>Note: The GP is linked to the GP Practice by the Practitioner resource referencing the organization resource using the managingOrganization element. The PractitionerRole resource identifies the practitioner in the role of GP.</p>
-
-<script src="https://gist.github.com/IOPS-DEV/3f5d3d112a125a0d28f449964e0a26c5.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/0254c9b07fa77cd926dbe0b5a68ff4d8.js"></script>
 
 
 
@@ -815,9 +874,9 @@ An exemplar style-sheet for rendering ITK FHIR documents is available called <a 
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

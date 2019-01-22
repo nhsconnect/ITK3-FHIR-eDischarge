@@ -16,8 +16,6 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 **Profiles** 
 
-
-- All Profiles are now "Active" status
 - Condition Profile has optional condition.note added to profile and minor version increased +1
 - Composition Profile has care-setting extension aligned with CareConnect results in a URL change but structure is identical
 - Composition Profile has document type value set aligned with CareConnect results in URL change but codes are identical
@@ -27,9 +25,6 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 - MedicationDispense Profile Identifier.system and Identifier.value cardinality changed from 0..1 to 1..1. to align with MVP document 
 - CareConnect-ITK-AllergyIntolerance-1 added optional SNOMED CT Description Id extension to AllergyIntolerance.code element not used by ToC but added to future proof ITK Profiles
 - CareConnect-ITK-AllergyIntolerance-1 Profile AllergyIntolerance.assertedDate element cardinality changed from 0..1 to 1..1. to align with MVP document and CareConnect base Profile 
-
-**Care Connect Profiles Changes that Impact ToC**
-- CareConnnect Profiles are now the latest "Active" versions minor version is increased +1 these are minor changes with very little impact on Toc known impact is listed in this change history
 
 **CareConnect Value Set Changes that Impact ToC**
 - CareConnect-ListCode-1 value set display value="Allergies and adverse reaction" should be display value="Allergies and adverse reactions".
@@ -41,7 +36,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 - Organisation name element in Distribution List section changed from optional to required
 - Probability of recurrence element removed from Allergies and Adverse Reactions section
 
-**Vale Sets**
+**Value Sets**
 
 - See CareConnect Value Set 
 

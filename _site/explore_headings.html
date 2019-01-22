@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK3 FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -751,14 +783,11 @@ $('#toc').on('click', 'a', function() {
 
   
 <div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop ITK3 FHIR messaging and document solutions. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis.</div>
-
-<div class="alert alert-danger" role="alert">
-<i class="fa fa-exclamation-circle"></i> <b>Warning:</b> This site is provided for information only and is intended for those engaged with NHS Digital on the development of  ITK3 FHIR messaging and document solutions. It is advised not to develop against these specifications until a formal announcement has been made.</div>
+<i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation should be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
 
 <h2 id="overview">Overview</h2>
 
-<p>This section provides a list of the AMoRC headings used for text sections in the ITK3 FHIR eDischarge based on the “Standards for the clinical structure and content of patient records” documentation.</p>
+<p>This section provides a list of the PRSB headings used for text sections in the ITK3 FHIR eDischarge based on the “Standards for the clinical structure and content of patient records” documentation.</p>
 
 <p>This section lists the following</p>
 
@@ -770,51 +799,260 @@ $('#toc').on('click', 'a', function() {
 </ul>
 
 <h2 id="typical-text-section-content">Typical Text Section Content</h2>
-<p>This diagram shows a typical text section.
-Note: the examples of section HTML in this specification show only example html format such as tables. This is an exemplar format. There is no mandated format for the section HTML.</p>
+<p>This diagram shows the elements of a typical text section which is found in the FHIR Composition Resource.
+Note: the examples of section HTML in this specification show only example HTML format such as tables. This is an exemplar format. There is no mandated format for the section HTML.</p>
 
-<p><img src="images/explore/section_description.png" style="width:90%;max-width: 90%;" /></p>
+<p><img src="images/explore/section_description.png" style="width: 100%;max-width: 100%;" /></p>
+
+<h2 id="must-support-property">Must Support Property</h2>
+<p>Some elements in the Composition Resource used within ITK3 Transfer of Care documents have the must support property set to “true”.<br />
+These are :</p>
+<ul>
+  <li>Composition.extension(careSettingTypeExtension)</li>
+  <li>Composition.identifier</li>
+  <li>Composition.status</li>
+  <li>Composition.type</li>
+  <li>Composition.subject</li>
+  <li>Composition.encounter</li>
+  <li>Composition.date</li>
+  <li>Composition.author</li>
+  <li>Composition.title</li>
+  <li>Composition.custodian</li>
+  <li>Composition.relatesTo</li>
+  <li>Composition.section(slice) Where slice=The PRSB headings for the ITK3 Transfer of Care document type.</li>
+</ul>
+
+<p>The “must support” property has been added to all the elements that must be supported regardless of cardinality.  Whether the conformance of the element is mandatory or optional has no relevance for the “must support” property. This means that for sending or receiving systems to claim conformance to any ITK3 Transfer of Care Composition Profile the following MUST be true:</p>
+
+<ul>
+  <li>The sending system MUST support the creation and sending of all the elements in the list above.</li>
+  <li>The sending system MUST support the creation and sending of all Composition.section slices with the specified sub-elements and narrative.* See Note 1.</li>
+  <li>The receiving system MUST support the processing of all the elements in the list above.</li>
+  <li>The receiving system MUST support the display of all Composition.section slices with the specified sub-elements and narrative.</li>
+</ul>
+
+<p><strong>Note 1</strong> - There are rules around when sections are sent or not sent in a document. These are specified in the document headings sections.</p>
 
 <h2 id="headings-used-by-edischarge">Headings Used By eDischarge</h2>
 
 <table>
-<tr>
-<th>Section Name</th><th>SNOMED Concept</th><th>Associated Coded Profiles</th><th>Conformance</th></tr>
-<tr><td><a href="explore_admission_details.html">Admission details</a></td><td>886781000000108</td><td>1</td><td>O</td></tr>
-<tr><td><a href="explore_allergies_and_adverse_reactions.html">Allergies and adverse reactions</a></td><td>886921000000105</td><td>3</td><td>M</td></tr>
-<tr><td><a href="explore_assessment_scales.html">Assessment scales</a></td><td>887141000000103</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_clinical_summary.html">Clinical summary</a></td><td>887181000000106</td><td>0</td><td>M</td></tr>
-<tr><td><a href="explore_diagnosis.html">Diagnoses</a></td><td>887161000000102</td><td>1</td><td>M</td></tr>
-<tr><td><a href="explore_discharge_details.html">Discharge details</a></td><td>886811000000106</td><td>1</td><td>M</td></tr>
-<tr><td><a href="explore_distribution_list.html">Distribution list</a></td><td>N/A</td><td>0</td><td>M</td></tr>
-<tr><td><a href="explore_gp_practice.html">GP Practice</a></td><td>N/A</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_individual_reqs.html">Individual requirements</a></td><td>1052901000000109</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_information_given.html">Information and advice given</a></td><td>1052951000000105</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></td><td>1064471000000105</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_invest_results.html">Investigation results</a></td><td>1082101000000102</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_legal_info.html">Legal information</a></td><td>886961000000102</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_medication.html">Medications and medical devices</a></td><td>933361000000108</td><td>3</td><td>O</td></tr>
-<tr><td><a href="explore_part_research.html">Participation in research</a></td><td>886751000000102</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_patient_demographics.html">Patient demographics</a></td><td>N/A</td><td>0</td><td>M</td></tr>
-<tr><td><a href="explore_pat_care_concerns.html">Patient and carer concerns,expectations and wishes</a></td><td>1052941000000107</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_per_com_record.html">Person completing record</a></td><td>887231000000104</td><td>0</td><td>M</td></tr>
-<tr><td><a href="explore_plan_req_actions.html">Plan and requested actions</a></td><td>887201000000105</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_procedures.html">Procedures</a></td><td>887171000000109</td><td>1</td><td>O</td></tr>
-<tr><td><a href="explore_referrer.html">Referrer details</a></td><td>1052891000000108</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_safety_alerts.html">Safety alerts</a></td><td>886931000000107</td><td>0</td><td>O</td></tr>
-<tr><td><a href="explore_social_context.html">Social context</a></td><td>887051000000101</td><td>0</td><td>O</td></tr>
+	<tr>
+		<th width="40%">Section Name</th>
+		<th width="20%">SNOMED Concept</th>
+		<th width="13%">Cardinality</th>
+		<th width="13%">Conformance</th>
+		<th width="13%">Associated Coded Profiles</th>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_admission_details.html">Admission details</a>
+		</td>
+		<td>886781000000108</td>
+	    <td>0..1</td>
+		<td>Required</td>	
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_allergies_and_adverse_reactions.html">Allergies and adverse reactions</a>
+		</td>
+		<td>886921000000105</td>
+		<td>1..1</td>
+		<td>Mandatory</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_assessment_scales.html">Assessment scales</a>
+		</td>
+		<td>887141000000103</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_clinical_summary.html">Clinical summary</a>
+		</td>
+		<td>887181000000106</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_diagnoses.html">Diagnoses</a>
+		</td>
+		<td>887161000000102</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_discharge_details.html">Discharge details</a>
+		</td>
+		<td>886811000000106</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_distribution_list.html">Distribution list</a>
+		</td>
+		<td>887261000000109</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_gp_practice.html">GP practice</a>
+		</td>
+		<td>886711000000101</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_individual_reqs.html">Individual requirements</a>
+		</td>
+		<td>1078911000000106</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_information_given.html">Information and advice given</a>
+		</td>
+		<td>1052951000000105</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_invest_results.html">Investigation results</a>
+		</td>
+		<td>1082101000000102</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_legal_info.html">Legal information</a>
+		</td>
+		<td>886961000000102</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_medication.html">Medications and Medical Devices</a>
+		</td>
+		<td>933361000000108</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_part_research.html">Participation in research</a>
+		</td>
+		<td>886751000000102</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_patient_demographics.html">Patient demographics</a>
+		</td>
+		<td>886731000000109</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_pat_care_concerns.html">Patient and carer concerns, expectations and wishes</a>
+		</td>
+		<td>1052941000000107</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_per_com_record.html">Person completing record</a>
+		</td>
+		<td>887231000000104</td>
+    	<td>1..1</td>
+		<td>Mandatory</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_plan_req_actions.html">Plan and requested actions</a>
+		</td>
+		<td>887201000000105</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_procedures.html">Procedures</a>
+		</td>
+		<td>887171000000109</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_referrer_details.html">Referrer details</a>
+		</td>
+		<td>1052891000000108</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_safety_alerts.html">Safety alerts</a>
+		</td>
+		<td>886931000000107</td>
+    	<td>0..1</td>
+		<td>Required</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="explore_social_context.html">Social context</a>
+		</td>
+		<td>887051000000101</td>
+    	<td>0..1</td>
+		<td>Optional</td>
+		<td>0</td>
+	</tr>
 </table>
 
 <h2 id="overview-of-edischarge-sections-and-coded-profiles">Overview of eDischarge Sections and Coded profiles</h2>
 <p>This diagram illustrates the sections used in eDischarge and which sections allow coded representation of the section text.</p>
 
-<p><img src="images/explore/eDIS_composition_overview.png" style="height:90%;max-height: 90%;" /></p>
+<p><a href="images/explore/eDIS_composition_overview.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in a new window</b></a></p>
 
-<p>The text sections are carried in the FHIR composition resource. 
-This is profiled as the <a href="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-EDIS-Composition-1">ITK-EDIS-Composition</a></p>
+<p><img src="images/explore/eDIS_composition_overview.png" style="width:auto;height: auto;" /></p>
 
-<div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation should be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
+<p>The text sections are carried in the FHIR Composition Resource.</p>
+
+<p>This is profiled as the <a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1">CareConnect-ITK-EDIS-Composition</a></p>
 
 
 
@@ -843,9 +1081,9 @@ This is profiled as the <a href="https://fhir.nhs.uk/STU3/StructureDefinition/IT
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

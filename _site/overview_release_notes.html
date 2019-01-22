@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK3 FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -749,12 +781,147 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  
-<div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop ITK3 FHIR messaging and document solutions. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis.</div>
+  <h2 id="250-release-candidate">2.5.0-Release Candidate</h2>
 
-<div class="alert alert-danger" role="alert">
-<i class="fa fa-exclamation-circle"></i> <b>Warning:</b> This site is provided for information only and is intended for those engaged with NHS Digital on the development of  ITK3 FHIR messaging and document solutions. It is advised not to develop against these specifications until a formal announcement has been made.</div>
+<p><strong>General Page Issues</strong></p>
+
+<ul>
+  <li>Fixed broken links to CareConnect Profiles.</li>
+  <li>Fixed display issues with section pages displaying random ## characters</li>
+</ul>
+
+<p><strong>Profiles</strong></p>
+
+<ul>
+  <li>Condition Profile has optional condition.note added to profile and minor version increased +1</li>
+  <li>Composition Profile has care-setting extension aligned with CareConnect results in a URL change but structure is identical</li>
+  <li>Composition Profile has document type value set aligned with CareConnect results in URL change but codes are identical</li>
+  <li>Composition Profile, Medical and medical devices section entry cardinally change from 1..* to 0..* to allow for when medication cannot be coded</li>
+  <li>Removal of Organization reference from Person Completing record Section as it was an incorrect reference</li>
+  <li>Removal of optional element verificationStatus from Composition Profile as no requirement to use for Transfer of Care</li>
+  <li>MedicationDispense Profile Identifier.system and Identifier.value cardinality changed from 0..1 to 1..1. to align with MVP document</li>
+  <li>CareConnect-ITK-AllergyIntolerance-1 added optional SNOMED CT Description Id extension to AllergyIntolerance.code element not used by ToC but added to future proof ITK Profiles</li>
+  <li>CareConnect-ITK-AllergyIntolerance-1 Profile AllergyIntolerance.assertedDate element cardinality changed from 0..1 to 1..1. to align with MVP document and CareConnect base Profile</li>
+</ul>
+
+<p><strong>CareConnect Value Set Changes that Impact ToC</strong></p>
+<ul>
+  <li>CareConnect-ListCode-1 value set display value=”Allergies and adverse reaction” should be display value=”Allergies and adverse reactions”.</li>
+  <li>null flavor codes added to the ValueSet CareConnect-AllergyManifestation-1 used in element AllergyIntolerance.reaction.manifestation</li>
+</ul>
+
+<p><strong>PRSB Headings</strong></p>
+
+<ul>
+  <li>Specification has been aligned with the latest PRSB maintenance release</li>
+  <li>Organisation name element in Distribution List section changed from optional to required</li>
+  <li>Probability of recurrence element removed from Allergies and Adverse Reactions section</li>
+</ul>
+
+<p><strong>Value Sets</strong></p>
+
+<ul>
+  <li>See CareConnect Value Set</li>
+</ul>
+
+<p><strong>Message Definitions</strong></p>
+
+<ul>
+  <li>Updated to reflect changes to FHIR asset versions due to changes documented here.</li>
+  <li>Message definition URL aligned with NHS Digital FHIR policy naming by removing word instance</li>
+</ul>
+
+<p><strong>Additional Guidance</strong></p>
+
+<ul>
+  <li>Added guidance for population of GP Practice identifier(ODS Code) when using MESH look up <a href="build_mesh.html#use-of-gp-look-up-on-mesh">see</a></li>
+  <li>Added guidance for document replacement semantics <a href="build_replacement.html#fhir-elements-used-for-replacement">see</a></li>
+</ul>
+
+<p><strong>Diagrams</strong></p>
+
+<ul>
+  <li>Section overview diagram updated to remove reference to organization on Person Completing Record section</li>
+</ul>
+
+<h2 id="240-beta">2.4.0-beta</h2>
+
+<p><strong>Profiles</strong></p>
+
+<ul>
+  <li>New CareConnect-ITK-MedicationResponse-1 Profile added to support TTOs (To take outs)</li>
+  <li>Updated CareConnect-ITK-MedicationStatement-1 to support reference to CareConnect-ITK-MedicationResponse-1.</li>
+</ul>
+
+<p><strong>Specification Pages</strong></p>
+
+<ul>
+  <li>Updated Profile page to include the new Profile</li>
+  <li>Updated Message Definitions</li>
+  <li>Added new MedicationDispense referencing diagram</li>
+  <li>Updated MedicationStatement referencing diagram to include MedicationDispense Resource</li>
+  <li>Update “Build medication list” pages</li>
+</ul>
+
+<h2 id="230-beta">2.3.0-beta</h2>
+
+<p><strong>PRSB section tables</strong></p>
+
+<p>These have been updated to include mappings of the PRSB elements to the FHIR elements (where there are mappings).</p>
+
+<p><strong>Examples</strong></p>
+
+<p>Examples have been updated and corrected following further validation.</p>
+
+<p>All Coded entries are now done as lists. Medication is now two lists one for “Active” and one for “Discontinued”.</p>
+
+<p><strong>Constructing clinical coded structures section</strong></p>
+
+<p>Updated with new guidance derived from INTEROPen curation.</p>
+
+<h2 id="220-alpha">2.2.0-alpha</h2>
+
+<p><strong>Profiles</strong></p>
+
+<p>All profiles have been updated to align with CareConnect profiles following INTEROPen curation.</p>
+
+<p><strong>Examples</strong>
+All examples have been updated to align with CareConnect profiles following INTEROPen curation.</p>
+
+<p><strong>Section</strong></p>
+
+<p>The section Design &amp; Build/Constructing Clinical Coded Structures has been updated to reflect the change to the approach following 
+INTEROPen curation process.</p>
+
+<h2 id="210-alpha">2.1.0-alpha</h2>
+
+<p><strong>Infrastructure Changes</strong></p>
+
+<p>Changed to align with the ITK3 Messaging Distribution specification version 2.1.0-beta.</p>
+
+<p><strong>Messaging Architecture Changes</strong></p>
+
+<p>Interactions have been replaced by message definitions and new ITK3 Handling keys.</p>
+
+<p><strong>Value sets / Code Systems</strong></p>
+
+<p>The url for ValueSet-CareSettingType-1, has changed to <a href="https://fhir.nhs.uk/STU3/ValueSet/CareSettingType-1">https://fhir.nhs.uk/STU3/ValueSet/CareSettingType-1</a> so that it can be used across programs, also the internal version has changed to 1.0.0.</p>
+
+<p><strong>Composition Sections</strong></p>
+
+<p>The structure used for the Patient demographics , GP practice and Distribution list sections has been changed to have specific slices in the composition to align with all other PRSB sections. Descriptions and examples have been updated to suit.</p>
+
+<p><strong>Section Guidance</strong></p>
+
+<p>All PRSB headings and subheadings have been updated following release of the version 1.0 Final PRSB documentation. Descriptions and examples have been updated to suit.</p>
+
+<p><strong>New Profiles</strong></p>
+
+<p>Added Binary Resource Profile to allow support for attachments.</p>
+
+<p><strong>Specification Structure</strong></p>
+
+<p>Added new sub menus under Design and build section for “Use of Attachments” and “Rendering of Documents” these are place-holders for guidance to be issued in a later release.</p>
 
 <h2 id="200-alpha1">2.0.0-alpha.1</h2>
 <p>First version published using Jekyll</p>
@@ -784,9 +951,9 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

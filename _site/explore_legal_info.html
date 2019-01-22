@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Gives information about the Legal information section">
 <meta name="keywords" content="fhirmessagingsection,  messaging, sections">
-<title>Legal Information Section | ITK eDischarge</title>
+<title>Legal Information Section | ITK3 eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK eDischarge | FHIR&reg;</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -754,30 +786,94 @@ $('#toc').on('click', 'a', function() {
 <i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation should be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
 
 <h2 id="legal-information-section-content">Legal Information Section Content</h2>
+<p>The Legal information section carries information about legal information relevant to the patient. PRSB Elements should be formatted as subheadings in any HTML sent.</p>
 
-<ul><li><b>Consent for treatment record</b> - Whether consent has been obtained for the treatment. May include where record of record consent is located or record of consent.</li>
-<li><b>Mental capacity assessment</b> - Whether an assessment of the mental capacity of the (adult) patient has been undertaken, if so who carried it out, when and the outcome of the assessment. Also record best interests decision if patient lacks capacity.</li>
-<li><b>Advance decisions about treatment</b> - Three items:</li>
-<ol><li>whether there are written documents, completed and signed when a person is
-legally competent, that explain a person’s medical wishes in advance, allowing
-someone else to make treatment decisions on his or her behalf late in the disease
-process</li>
-<li>location of these documents</li>
-<li>may be copy of the document itself.</li></ol>
-<li><b>Lasting or enduring power of attorney or similar</b> - Record of individual involved in healthcare decision on behalf of the patient if the patient lacks capacity. This includes:</li>
-<ul><li>whether there is a person with lasting or enduring power of attorney, Independent Mental Capacity Advocate (IMCA), court appointed deputy</li>
-<li>name and contact details for person.</li>
-</ul>
-<li><b>Organ and tissue donation</b> - Two data items:</li>
-<ol><li>has the person given consent for organ and/or tissue donation (yes/no)?</li>
-<li>the location of the relevant information/documents.</li>
-</ol>
-<li><b>Consent relating to child</b> -  Consideration of age and competency, including Gillick competency.Record of person with parental responsibility or appointed guardian where child
-lacks competency.</li>
-<li><b>Consent to information sharing</b> - Record of consent to information sharing, including any restrictions on  sharing information with others, eg, family members, other healthcare professionals. Also use of identifiable information for research purposes.
-</li>
-<li><b>Safeguarding issues</b> - Any legal matters relating to safeguarding of a vulnerable child or adult, eg, child protection plan, child in need, protection of vulnerable adult.</li>
-</ul>
+<table style="width:100%;max-width: 100%;">
+	<thead>
+		<tr>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Legal information</td>
+			<td>Legal information captured relating to patient care, such as consent to treatment and mental capacity.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
+		</tr>
+		<tr>
+			<th>PRSB Element</th>
+			<th>Description</th>
+			<th>Card.</th>
+			<th>MRO*</th>
+			<th>FHIR Target and Guidance</th>		
+		</tr>
+		<tr>
+			<td>Consent for treatment record</td>
+			<td>Whether consent has been obtained for the treatment. May include where record of consent is located or record of consent.</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>A statement about the patient's consent to treatment. Text.</td>
+		</tr>
+		<tr>
+			<td>Consent for information sharing</td>
+			<td>This is a record of consent for information sharing. Where consent has been not been obtained or sought, the reason why must be provided. Include best interests decision where person lacks capacity.</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>This is a record of the person's consent to information sharing. Text only.</td>
+		</tr>
+		<tr>
+			<td>Consent relating to child</td>
+			<td>Consideration of age and competency. Record of person with parental responsibility or appointed guardian where child lacks competency.</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>The consent record relating to a child. Text only.</td>
+		</tr>
+		<tr>
+			<td>Mental capacity assessment</td>
+			<td>Whether an assessment of the mental capacity of the (adult) person has been undertaken, if so, what capacity the decision relates to, who carried it out, when and the outcome of the assessment. Also record best interests decision if person lacks capacity.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>The record of the assessment in free text.</td>
+		</tr>
+		<tr>
+			<td>Advance decision to refuse treatment (ADRT)</td>
+			<td>A record of an advance decision to refuse one or more specific types of future treatment, made by a person who had capacity at the time of recording the decision. The decision only applies when the person no longer has the capacity to consent to or refuse the specific treatment being considered. An ADRT must be in writing, signed and witnessed. If the ADRT is refusing life-sustaining treatment it must state specifically that the treatment is refused even if the person's life is at risk.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Text only. Location of ADRT should be recorded as free text. Where available a copy of the ADRT may be appended to the record as a <a href="build_attachments.html">FHIR attachment</a>. Where there has been a change in the ADRT this should be noted in the record in free text.</td>
+		</tr>
+		<tr>
+			<td>Lasting power of attorney  for personal welfare  or court-appointed deputy (or equivalent)</td>
+			<td>Record of one or more people who have been given power (LPA) by the person when they had capacity to make decisions about their health and welfare should they lose capacity to make those decisions. To be valid, an LPA must have been registered with the Court of Protection. If life-sustaining treatment is being considered the LPA document must state specifically that the attorney has been given power to consent to or refuse life-sustaining treatment. Details of any person (deputy) appointed by the court to make decisions about the person's health and welfare. A deputy does not have the power to refuse life-sustaining treatment.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Text to include the name of the LPA and the authority of the LPA. The contact details of the LPA should be recorded under the relevant contacts heading.</td>
+		</tr>
+		<tr>
+			<td>Organ and tissue donation</td>
+			<td>Whether the person has given consent for organ and/or tissue donation or opted out of automatic donation where applicable. The location of the relevant information/documents.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>This is information volunteered by the patient and/or relatives. Text only.</td>
+		</tr>
+		<tr>
+			<td>Safeguarding issues</td>
+			<td>Any legal matters relating to safeguarding of a vulnerable child or adult, e.g., child protection plan, protection of vulnerable adult.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Information obtained locally. Text only.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
+		</tr>
+	</tbody>
+</table>
 
 <h2 id="example-legal-information-section">Example Legal Information Section</h2>
 
@@ -788,7 +884,7 @@ lacks competency.</li>
 <p>This text section should be linked to the following FHIR Resources to provide the textual information in a coded format.</p>
 
 <ul>
-  <li>The ITK FHIR eDischarge does not currently support a coded clinical summary.</li>
+  <li>The ITK3 FHIR eDischarge does not currently support a coded clinical summary.</li>
 </ul>
 
 
@@ -820,9 +916,9 @@ lacks competency.</li>
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Gives information about the patient">
 <meta name="keywords" content="fhirmessagingsection,  messaging, sections">
-<title>Patient Demographics Section | ITK eDischarge</title>
+<title>Patient Demographics Section | ITK3 eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK eDischarge | FHIR&reg;</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -751,56 +783,115 @@ $('#toc').on('click', 'a', function() {
 
   
 <div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> Please note: senders should not send the information for this AMoRC section heading as a FHIR Composition section. 
-The information must be sent using FHIR resources stated in the sections below. 
-Receivers must render this information from the resources under the appropriate heading when displaying the document for the human reader. 
-An exemplar style-sheet for rendering ITK FHIR documents is available called <a href="https://github.com/nhsconnect/ITK3-FHIR-Documents-Renderer/tree/develop">NHS_FHIR_Document_Renderer.xsl</a></div>
+<i class="fa fa-warning"></i> <b>Important:</b> The latest version of the PRSB documentation should be consulted for further information regarding Section headings and content <a href="http://theprsb.org/" target="_blank">http://theprsb.org</a>  </div>
 
-<h2 id="patient-demographics-section-content">Patient Demographics Section Content</h2>
+<h2 id="patient-demographics-section-content">Patient Demographics Section content</h2>
+<p>The Patient demographics section contains information about the patient. PRSB Elements should be formatted as subheadings in any HTML sent.</p>
 
-<p>The Patient demographics section is rendered from the patient resource.The resource used is:</p>
+<table style="width:100%;max-width: 100%;">
+	<thead>
+		<tr>
+			<th width="15%">Section</th>
+			<th width="35%">Description</th>
+			<th width="5%">Card.</th>
+			<th width="5%">MRO*</th>
+			<th width="40%">FHIR Target and Guidance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Patient demographics</td>
+			<td>Patient details and contact information.</td>
+			<td>1 only</td>
+			<td>M</td>
+				<td>Carried in the CodeableConcept of <b>Composition.section.code</b> FHIR element.</td>
+		</tr>
+		<tr>
+			<th>PRSB Element</th>
+			<th>Description</th>
+			<th>Card.</th>
+			<th>MRO*</th>
+			<th>FHIR Target and Guidance</th>		
+		</tr>
+		<tr>
+			<td>Patient name</td>
+			<td>The full name of the patient</td>
+			<td>1 only</td>
+			<td>M</td>
+			<td>The legal name of the patient from the Patient Demographics Service (PDS), or the name volunteered by the patient in text and carried in the FHIR element <b>Patient.name</b> with the <b>Patient.name.use</b> containing the value "official".  </td>
+		</tr>
+		<tr>
+			<td>Patient preferred name</td>
+			<td>The name by which a patient wishes to be addressed.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>The preferred name volunteered by the patient and recorded on the Patient Administration System (PAS), or a preferred name given by PDS that the patient has asked to be called by in text and carried in <b>Patient.name</b> with the <b>Patient.name.use</b> containing the value "usual". </td>
+		</tr>
+		<tr>
+			<td>Date of birth</td>
+			<td>The date of birth of the patient.</td>
+			<td>1 only</td>
+			<td>M</td>
+			<td>The date of birth of the patient taken from PDS, or the date of birth volunteered by the patient (as recorded on the PAS (Patient Administration System). The date of birth will be as precise as possible but should at least contain a year. This will be in text and carried in the FHIR element <b>Patient.birthDate</b>.</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>The patient's gender.  As the patient wishes to portray themselves.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td>Text using the values of "Not known", "Male", "Female" or "Not specified" and mapped to the value carried in the FHIR element <b>Patient.gender.code</b> using the required FHIR ValueSet <a href="http://hl7.org/fhir/valueset-administrative-gender.html">administrative-gender</a></td>
+		</tr>
+		<tr>
+			<td>NHS number</td>
+			<td>The unique identifier for a patient within the NHS in England and Wales.</td>
+			<td>0 to 1</td> 
+			<td>R</td>
+			<td>Sent as text as per the NHS Data Dictionary NHS number. Traced NHS Numbers only should be used and the NHS number  <b>SHOULD</b> be carried in the FHIR element <b>Patient.identifier</b>.</td>
+		</tr>
+		<tr>
+			<td>Other identifier</td>
+			<td>Country specific or local identifier, e.g., Community Health Index (CHI) in Scotland. Two data items: type of identifier and identifier.</td>
+			<td>0 to many</td>
+			<td>R</td>
+			<td>Recorded as per: NHS Data Dictionary - local identifier. The assigning authority should also be supplied along with the country or local identifier. This is carried as text and also carried in the FHIR element <b>Patient.identifier</b>.</td>
+		</tr>
+		<tr>
+			<td>Patient address</td>
+			<td>Patient's usual place of residence.</td>
+			<td>1 only</td>
+			<td>M</td>
+			<td>Sent in accordance with the NHS Data Dictionary: patient usual address. May be auto generated from PDS, GP referral record, or from the local PAS. Text and also carried in the FHIR element <b>Patient.address</b></td>
+		</tr>
+		<tr>
+			<td>Patient email address</td>
+			<td>Email address of the patient</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>Set in accordance with the NHS Data Dictionary: contact email address (patient or lead contact). May be auto generated from PDS, GP referral record, or from the local PAS. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b>  containing the value "email".</td>
+		</tr>
+		<tr>
+			<td>Patient telephone number</td>
+			<td>Telephone contact details of the patient. To include, e.g., mobile, work and home number if available.</td>
+			<td>0 to many</td>
+			<td>O</td>
+			<td>Contact details may come from PDS, or those recorded on the local PAS.Both the actual contact number and its use (work number, home number, mobile number etc.) should be sent. Text and also carried in the FHIR element <b>Patient.telecom</b> with <b>Patient.telecom.code</b>  containing the value "phone".</td>
+		</tr>
+		<tr>
+			<td>Relevant contacts</td>
+			<td>Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependents, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc. Name, relationship, role (if formal role), contact details and availability, e.g. out of hours.</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>Details of relevant contacts, such as carers or family members, as recorded on the local system, or volunteered by the patient. This will be a free text list of relevant contacts.</td>
+		</tr>
+		<tr>
+		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
+		</tr>
+	</tbody>
+</table>
 
-<ul>
-  <li><strong><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1">CareConnect-Patient-1</a></strong> - A CareConnect Profile for patient. The Patient resource represents the patient involved in the provision of healthcare related services.</li>
-</ul>
+<h2 id="example-patient-demographics-section">Example Patient Demographics Section</h2>
 
-<p>Items in bold are subheadings and should be formatted as such when rendered:</p>
-
-<ul>
-<li><b>Patient name</b></li>
-The full name of the patient.
-Also patient preferred name: the name by which a patient wishes to be addressed.
-<li><b>Date of birth</b></li>
-The date of birth of the patient.
-<li><b>Patient sex</b></li>
-Sex at birth. Determines how the individual will be treated clinically.
-<li><b>Gender</b></li>
-As the patient wishes to portray themselves.
-<li><b>Ethnicity</b></li>
-The ethnicity of a person as specified by the person.
-<li><b>NHS number</b></li>
-The unique identifier for a patient within the NHS in England and Wales.
-<li><b>Other identifier</b></li>
-Country specific or local identifier, eg, Community Health Index (CHI) in Scotland.
-Two data items:
-<ol>
-<li>type of identifier</li>
-<li>identifier</li>
-</ol>
-<li><b>Patient address</b></li>
-Patient usual place of residence.
-<li><b>Patient telephone number</b></li>
-Telephone contact details of the person. To include, eg, mobile, work and home number if available.
-Two data items:
-<ol><li>type</li>
-<li>number</li>
-</ol>
-<li><b>Patient email address</b></li>
-Email address of the patient.</ul>
-
-<h2 id="example-patient-demographics-using-patient-resource">Example Patient Demographics Using Patient Resource</h2>
-
-<script src="https://gist.github.com/IOPS-DEV/af79cf398178936f11f5eb5c5d45c13c.js"></script>
+<script src="https://gist.github.com/IOPS-DEV/347fa1e99bc57ea46e426423f89491e5.js"></script>
 
 
 
@@ -831,9 +922,9 @@ Email address of the patient.</ul>
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

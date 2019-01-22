@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Design | ITK eDischarge</title>
+<title>Design | ITK3 eDischarge</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -36,7 +36,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ITK-FHIR-eDischarge" href="http://localhost:4005/feed.xml">
 
 
 
@@ -104,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK eDischarge | FHIR&reg;</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> ITK3 eDischarge | FHIR&reg;</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -171,7 +171,7 @@
     </p>
 
 
-    <li class="sidebarTitle">ITK FHIR eDischarge 2.0.0-alpha.1</li>
+    <li class="sidebarTitle">ITK3 eDischarge 2.5.0-RC</li>
     
     
     
@@ -246,13 +246,6 @@
             
             
             
-            <li><a href="explore_interactions.html">Interactions</a></li>
-            
-            
-            
-            
-            
-            
             <li><a href="explore_document_profiles.html">Document Profiles</a></li>
             
             
@@ -275,6 +268,29 @@
                     
                 </ul>
             </li>
+            
+            
+            
+            
+        </ul>
+     </li>
+       
+        
+    
+    <li>
+        <a href="#">Message Definitions</a>
+        <ul>
+            
+            
+            
+            <li><a href="explore_defs_overview.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="explore_eDischarge_def.html">eDischarge</a></li>
             
             
             
@@ -364,12 +380,6 @@
                     
                     
                     <li><a href="explore_information_given.html">Information and advice given</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="explore_invest_and_proc_req.html">Investigations and procedures requested</a></li>
                     
                     
                     
@@ -514,6 +524,34 @@
             
             
             
+            
+            
+            
+            <li><a href="build_attachments.html">Use of Attachments</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_rendering.html">Rendering Documents</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_replacement.html">Document Replacement</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="build_mesh.html">Use of MESH</a></li>
+            
+            
+            
             <li class="subfolders">
                 <a href="#">Constructing Clinical Coded Structures</a>
                 <ul>
@@ -538,19 +576,13 @@
                     
                     
                     
-                    <li><a href="build_conditions.html">Condition</a></li>
+                    <li><a href="build_conditions.html">Condition List</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="build_procedures.html">Procedure</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="build_observations.html">Observation</a></li>
+                    <li><a href="build_procedures.html">Procedure List</a></li>
                     
                     
                     
@@ -771,9 +803,19 @@ $('#toc').on('click', 'a', function() {
     
         
 
-        <tr><td><a href="build_conditions.html">Condition</a></td>
+        <tr><td><a href="build_attachments.html">Use of Attachments</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Constructing a condition </td>
+          <td> Use of Attachments in Transfer of Care Documents </td>
+        </tr>
+        
+     
+   
+    
+        
+
+        <tr><td><a href="build_conditions.html">Condition List</a></td>
+            <td><span class="label label-default">Page</span></td>
+          <td> Constructing a condition list </td>
         </tr>
         
      
@@ -783,7 +825,7 @@ $('#toc').on('click', 'a', function() {
 
         <tr><td><a href="build_overview.html">Overview</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Over of constructing coded clinical structures </td>
+          <td> Overview of constructing clinical coded structures </td>
         </tr>
         
      
@@ -793,7 +835,7 @@ $('#toc').on('click', 'a', function() {
 
         <tr><td><a href="build_data_mapping.html">Data Mapping</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Mapping of system data to ITK Message and Document resources </td>
+          <td> Mapping of system data to ITK3 Message and Document resources </td>
         </tr>
         
      
@@ -811,9 +853,9 @@ $('#toc').on('click', 'a', function() {
     
         
 
-        <tr><td><a href="build_observations.html">Observation</a></td>
+        <tr><td><a href="build_mesh.html">Use of MESH</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Constructing an observation </td>
+          <td> Using MESH withTransfer of Care Documents </td>
         </tr>
         
      
@@ -821,9 +863,29 @@ $('#toc').on('click', 'a', function() {
     
         
 
-        <tr><td><a href="build_procedures.html">Procedure</a></td>
+        <tr><td><a href="build_procedures.html">Procedure List</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Constructing a procedure </td>
+          <td> Constructing a procedure list </td>
+        </tr>
+        
+     
+   
+    
+        
+
+        <tr><td><a href="build_rendering.html">Rendering Documents</a></td>
+            <td><span class="label label-default">Page</span></td>
+          <td> Rendering Transfer of Care Documents </td>
+        </tr>
+        
+     
+   
+    
+        
+
+        <tr><td><a href="build_replacement.html">Document Replacement</a></td>
+            <td><span class="label label-default">Page</span></td>
+          <td> Replacement Semantics for Transfer of Care Documents </td>
         </tr>
         
      
@@ -845,19 +907,7 @@ $('#toc').on('click', 'a', function() {
 
         <tr><td><a href="design.html">Overview | Design &amp; Build</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Describes the steps required to design &amp; build an ITK Messaging Solution using the interactions and profiles described in Explore. </td>
-        </tr>
-        
-     
-        
-     
-   
-    
-        
-
-        <tr><td><a href="design_access.html">Overview | Design &amp; Build</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> Describes the steps required to design &amp; build an ITK Messaging Solution using the interactions and profiles described in Explore. </td>
+          <td> Describes components of a design &amp; build of an ITK3 Messaging Solution using profiles described in Explore. </td>
         </tr>
         
      
@@ -869,7 +919,7 @@ $('#toc').on('click', 'a', function() {
 
         <tr><td><a href="design_build.html">Build</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> The Access page shows developers and users of the ITK Messaging Solutions what is involved in providing a ITK Messaging Solution </td>
+          <td> The Access page shows developers and users of the ITK3 Messaging Solutions what is involved in providing an ITK3 Messaging Solution </td>
         </tr>
         
      
@@ -911,7 +961,7 @@ $('#toc').on('click', 'a', function() {
 
         <tr><td><a href="design_encounter.html">Overview | Design &amp; Build</a></td>
             <td><span class="label label-default">Page</span></td>
-          <td> Describes the steps required to design &amp; build an ITK Messaging Solution using the interactions and profiles described in Explore. </td>
+          <td> Describes the steps required to design &amp; build an ITK3 Messaging Solution using the interactions and profiles described in Explore. </td>
         </tr>
         
      
@@ -920,55 +970,11 @@ $('#toc').on('click', 'a', function() {
    
     
         
-
-        <tr><td><a href="design_exchange_patterns.html">Exchange Patterns</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> The Exchange Patterns introduce the messaging and documents. </td>
-        </tr>
-        
-     
-        
-     
-   
-    
-        
-
-        <tr><td><a href="design_patterns.html">Design Patterns / Topology</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> The Design Patterns / Topology demonstrates and describes how various design patterns can influence access, security and use of ITK Messaging Solutions. </td>
-        </tr>
-        
-     
-   
-    
-        
-     
-   
-    
-        
-
-        <tr><td><a href="design_security.html">Security</a></td>
-            <td><span class="label label-default">Page</span></td>
-          <td> The security page shows how to establish initial security credentials (where necessary) with the a ITK Messaging Solution </td>
-        </tr>
-        
      
    
     
-        
-     
-   
-    
-        
-     
         
      
-        
-     
-        
-     
-        
-     
    
     
         
@@ -977,14 +983,8 @@ $('#toc').on('click', 'a', function() {
      
         
      
-        
-     
-        
-     
    
     
-        
-     
         
      
         
@@ -997,16 +997,6 @@ $('#toc').on('click', 'a', function() {
      
         
      
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
    
     
         
@@ -1033,8 +1023,6 @@ $('#toc').on('click', 'a', function() {
      
    
     
-        
-     
         
      
         
@@ -1085,12 +1073,6 @@ $('#toc').on('click', 'a', function() {
      
         
      
-   
-    
-        
-     
-        
-     
         
      
    
@@ -1099,8 +1081,6 @@ $('#toc').on('click', 'a', function() {
      
         
      
-        
-     
    
     
         
@@ -1227,20 +1207,12 @@ $('#toc').on('click', 'a', function() {
      
    
     
-        
-     
         
      
-   
-    
-   
-    
         
      
    
     
-        
-     
    
     
         
@@ -1261,12 +1233,8 @@ $('#toc').on('click', 'a', function() {
     
         
      
-   
-    
    
     
-   
-    
         
      
    
@@ -1275,8 +1243,6 @@ $('#toc').on('click', 'a', function() {
      
    
     
-        
-     
    
     
         
@@ -1285,8 +1251,6 @@ $('#toc').on('click', 'a', function() {
     
         
      
-   
-    
    
     
    
@@ -1329,40 +1293,16 @@ $('#toc').on('click', 'a', function() {
     
    
     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
-        
-     
    
     
-        
-     
         
      
-   
-    
         
      
         
      
    
     
-        
-     
-        
-     
-        
-     
    
     
    
@@ -1396,9 +1336,9 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
-                    &copy;2017 NHS Digital<br />
-                     Site last generated: Nov 10, 2017 <br />
-                    0bf2547a53c6ffebb9ccb2a8d991d5899cf491b5<br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Jan 22, 2019 <br />
+                    d3620b0a369a687ace797749f62f71301aa6d0e6<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">
