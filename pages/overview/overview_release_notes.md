@@ -14,6 +14,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 - CareConnect-ITK-Condition-1 - Element `abatement` has been reinstated. Cardinality has been changed from 0..0 to 0..1.
 
 **Section Headings**
+
 Inconsistencies of section headings between pages have been rectified.
 
 ## 2.5.0-Release Candidate ##
