@@ -17,6 +17,10 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 Inconsistencies of section headings between pages have been rectified.
 
+**Examples**
+
+Rectification of the XML example inside *Example Scenarios*.
+
 ## 2.5.0-Release Candidate ##
 
 **General Page Issues**
