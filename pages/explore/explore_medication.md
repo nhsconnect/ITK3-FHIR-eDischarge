@@ -59,6 +59,13 @@ The Medications and medical devices section carries information about the patien
 			<td>Text and a SNOMED CT concept carried in the CodeableConcept of the FHIR element <b>MedicationStatement.medication[x].<br/>medicationReference.Medication.form</b>. See <a href="build_medication_lists.html#medicationform">medication.form</a> for further guidance.</td>
 		</tr>
 		<tr>
+			<td>Quantity supplied</td>
+			<td>The quantity of the medication (eg tablets, inhalers, etc.) provided to the patient on discharge.  This may be dispensed by the pharmacy or on the ward.</td>
+			<td>0 to 1</td>
+			<td>O</td>
+			<td>Text carried in the `quantity` element of <b>MedicationDispense.quantity.extension(quantityText).<br/></b> See <a href="build_medication_lists.html#quantity">quantity</a> for further guidance.</td>
+		</tr>
+		<tr>
 			<td>Route</td>
 			<td>Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube). Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the Site may be 'Left eye'.   Comment: e.g. "Oral", "Intraocular". Note that this element supports multiple Routes to allow a choice to be specified by the prescriber.</td>
 			<td>0 to many</td>

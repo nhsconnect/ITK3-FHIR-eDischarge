@@ -15,7 +15,8 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 **Section Headings**
 
-Inconsistencies of section headings between pages have been rectified.
+- Inconsistencies of section headings between pages have been rectified.
+- Addition of **_Quantity supplied_** heading which had been ommitted.
 
 **Examples**
 
