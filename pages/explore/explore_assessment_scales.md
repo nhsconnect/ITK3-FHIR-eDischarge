@@ -1,16 +1,16 @@
 ---
-title: Assessment Scales Section
+title: Assessment Scale Section
 keywords:  messaging, sections
 tags: [fhir,messaging,section]
 sidebar: foundations_sidebar
-permalink: explore_assessment_scales.html
-summary: "Gives information about the Assessment scales section"
+permalink: explore_assessment_scale.html
+summary: "Gives information about the Assessment scale section"
 ---
 
 {% include custom/section.warnbanner.html %}
 
-## Assessment Scales Section Content ##
-The Assessment scales section carries information about assessment scales used. PRSB Elements should be formatted as subheadings in any HTML sent.
+## Assessment Scale Section Content ##
+The Assessment scale section carries information about assessment scales used. PRSB Elements should be formatted as subheadings in any HTML sent.
 
 <table style="width:100%;max-width: 100%;">
 	<thead>
