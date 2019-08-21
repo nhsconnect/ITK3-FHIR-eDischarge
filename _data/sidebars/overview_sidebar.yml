@@ -1,7 +1,7 @@
 entries:
 - title: ITK3 eDischarge 
   product: ITK3 eDischarge
-  version: 2.5.0-beta 
+  version: 2.6.0-beta 
   levels: one
   folders:
 
@@ -83,8 +83,8 @@ entries:
         - title: Allergies and adverse reactions
           url: /explore_allergies_and_adverse_reactions.html
           output: web
-        - title: Assessment scales
-          url: /explore_assessment_scales.html
+        - title: Assessment scale
+          url: /explore_assessment_scale.html
           output: web
         - title: Clinical summary
           url: /explore_clinical_summary.html

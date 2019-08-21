@@ -45,5 +45,5 @@ In the afternoon Dr Paul Rastall discharges Richard and completes and sends an e
 Richard's wife arrives with their neighbour Peter, who has kindly agreed to pick him up from the hospital and take him home. 
 
 ## Example Instance of Scenario ##
-
-<script src="https://gist.github.com/IOPS-DEV/4c7978a769e995660c41c2c8479b9255.js"></script>
+<!-- toc-example-scenario-richard-smith.XML  -->
+<script src="https://gist.github.com/IOPS-DEV/f9d6be3e3c97e3df6d42c94afc193b2a.js"></script>

@@ -87,11 +87,11 @@ Note further guidance will be issues in a later release of the specification.</t
 			<td>Text - Currently not to be coded for Transfer of Care Documents</td>
 		</tr>
 		<tr>
-			<th>Discharge destination cluster</th>
-			<th>The destination of the patient on discharge. National codes. E.g., High Dependency Unit.</th>
-			<th>0 to 1</th>
-			<th>R</th>
-			<th></th>
+			<td>Discharge destination cluster</td>
+			<td>The destination of the patient on discharge. National codes. E.g., High Dependency Unit.</td>
+			<td>0 to 1</td>
+			<td>R</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>Discharge type</td>

@@ -6,6 +6,21 @@ sidebar: overview_sidebar
 permalink: overview_release_notes.html
 summary: Summary release notes of the versions released in ITK3 eDischarge Implementation Guide
 ---
+## 2.6.0-beta ##
+
+**Profiles**
+
+- CareConnect-ITK-EDIS-Composition-1 - The SNOMED CT bindings for the profile sections has been amended to fix validation errors.
+- CareConnect-ITK-Condition-1 - Element `abatement` has been reinstated. Cardinality has been changed from 0..0 to 0..1.
+
+**Section Headings**
+
+- Inconsistencies of section headings between pages have been rectified.
+- Addition of **_Quantity supplied_** heading which had been ommitted.
+
+**Examples**
+
+Rectification of the XML example inside *Example Scenarios*.
 
 ## 2.5.0-Release Candidate ##
 
