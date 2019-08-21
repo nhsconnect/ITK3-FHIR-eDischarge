@@ -22,7 +22,12 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 
 Rectification of the XML example inside *Example Scenarios*.
 
-## 2.5.0-Release Candidate ##
+**Message Definition**
+
+- MessageDefinition reference has been updated to [ITK-eDischarge-MessageDefinition-4](https://fhir.nhs.uk/STU3/MessageDefinition/ITK-eDischarge-MessageDefinition-4).
+
+
+## 2.5.0-beta ##
 
 **General Page Issues**
 
