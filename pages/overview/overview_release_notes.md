@@ -6,6 +6,10 @@ sidebar: overview_sidebar
 permalink: overview_release_notes.html
 summary: Summary release notes of the versions released in ITK3 eDischarge Implementation Guide
 ---
+## 2.7.0-public-beta ##
+
+- Specification upversioned to public beta
+
 ## 2.6.0-beta ##
 
 **Profiles**
