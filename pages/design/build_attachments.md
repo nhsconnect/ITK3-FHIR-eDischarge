@@ -19,8 +19,7 @@ Senders <b>MAY</b> include attachments within the Transfer of Care documents. Fo
 
 ## Format of Attachments ##
 
-Sender <b>SHOULD</b> send attachments as a PDF, but <b>MAY</b> use other formats by local agreement.
-This is the default attachment support format. However, senders can reasonably expect GP IT suppliers to provide support for at least the following additional extensions in the table below.
+Senders <b>SHOULD</b> send attachments as a PDF. This is the default attachment support format. However, senders can reasonably expect GP IT suppliers to provide support for at least the following extensions in the table below:-
 
 <table>
 	<tr>
@@ -68,6 +67,11 @@ This is the default attachment support format. However, senders can reasonably e
 		<td>tiff</td>
 	</tr>
 </table>
+
+<p>If attachments with extensions other than the above are needed, then this would need to be agreed locally and then raised with NHS Digital for consultation with GP IT suppliers.</p>
+<p>Attachments can only be expected to be converted if correctly referenced in the message.  If an attachment is delivered to a receiving system that does not support it, a negative ITK3 response code (20005) will be returned to the sender.</p>
+<p>When using attachments, senders are expected to conduct due diligence with regards to avoidance of macro use and insertion of URLs that direct to external locations.  Appropriate anti-malware measures are expected to be taken by both senders and receivers when using attachments
+</p>
 
 ## Receivers of Attachments ##
 
