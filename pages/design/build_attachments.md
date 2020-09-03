@@ -67,7 +67,7 @@ Senders <b>SHOULD</b> send attachments as a PDF. This is the default attachment 
 		<td>tiff</td>
 	</tr>
 </table>
-
+<br>
 <p>If attachments with extensions other than the above are needed, then this would need to be agreed locally and then raised with NHS Digital for consultation with GP IT suppliers.</p>
 <p>Attachments can only be expected to be converted if correctly referenced in the message.  If an attachment is delivered to a receiving system that does not support it, a negative ITK3 response code (20005) will be returned to the sender.</p>
 <p>When using attachments, senders are expected to conduct due diligence with regards to avoidance of macro use and insertion of URLs that direct to external locations.  Appropriate anti-malware measures are expected to be taken by both senders and receivers when using attachments
