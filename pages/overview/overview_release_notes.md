@@ -8,7 +8,7 @@ summary: Summary release notes of the versions released in ITK3 eDischarge Imple
 ---
 ## 2.7.0-public-beta ##
 
-- Specification upversioned to public beta
+- Updated information about attachments.
 
 ## 2.6.0-beta ##
 
