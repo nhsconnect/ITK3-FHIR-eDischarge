@@ -46,7 +46,7 @@ For a complete definition of the eDischarge document see the section on [message
 
 The diagram shows the referencing between the profiles in the bundle which make up the ITK3 eDischarge FHIR Document.
 
-When using ITK3 there is an outer bundle structure which is called the <a href="https://developer.nhs.uk/apis/itk3messagedistribution/explore_bundle_type.html" target="_blank">ITK3 Send Payload Bundle Structure</a>. for use with ITK3. 
+When using ITK3 there is an outer bundle structure which is called the <a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/explore_bundle_type.html" target="_blank">ITK3 Send Payload Bundle Structure</a>. for use with ITK3. 
 
 This diagram only goes to one level due to the complexity and size of the document Profile. Below is the key to the diagram.
 
