@@ -4,13 +4,13 @@ keywords: design, build,
 tags: [design]
 sidebar: foundations_sidebar
 permalink: build_mesh.html
-summary: "Using MESH withTransfer of Care Documents"
+summary: "Using MESH with Transfer of Care Documents"
 ---
 
 
 ## Overview ##
 
-The Transfer of Care documents should be sent using [ITK over MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/mesh.html) for further information.
+The Transfer of Care documents should be sent using [ITK over MESH](https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/mesh.html) .
 
 ## Use of GP look up on MESH ##
 
