@@ -6,6 +6,10 @@ sidebar: overview_sidebar
 permalink: overview_release_notes.html
 summary: Summary release notes of the versions released in ITK3 eDischarge Implementation Guide
 ---
+## 2.8.0-live ##
+
+- Updated to 2.8.0-live.
+
 ## 2.7.0-public-beta ##
 
 - Updated information about attachments.
