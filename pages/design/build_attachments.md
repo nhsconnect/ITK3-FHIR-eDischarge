@@ -73,6 +73,10 @@ Senders <b>SHOULD</b> send attachments as a PDF. This is the default attachment 
 <p>When using attachments, senders are expected to conduct due diligence with regards to avoidance of macro use and insertion of URLs that direct to external locations.  Appropriate anti-malware measures are expected to be taken by both senders and receivers when using attachments.
 </p>
 
+## Attachment Sizes ##
+
+When using attachments, message initiators are advised to restrict their overall message size to a maximum of 5MB.  This initial limit has been imposed to reduce the likelihood of any GP Foundation IT supplier having to manually intervene to stop processing delays or blocks in task execution because of excessive message file sizes. This limit will be reviewed as GP Practice infrastructure improves, and demand for multimedia files increase
+
 ## Receivers of Attachments ##
 
 Receivers <b>SHOULD</b> process attachments in-line with the rules stated in the <a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/explore_s_and_r.html" target="_blank">ITK3 Messaging Distribution Specification</a>. 
