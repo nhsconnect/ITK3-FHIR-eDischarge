@@ -14,6 +14,9 @@ This section details the referencing between resources.
 
 The diagrams only go to one level due to the complexity and size of the message. Below is the key to the diagrams.
 
+Note: The only extensions permitted for NHS Digital specifications are those sanctioned in CareConnect or ITK profiles.  
+
+
 <img src="images/explore/Key.png" style="width: 75%;max-width: 75%;"> 
 
 
