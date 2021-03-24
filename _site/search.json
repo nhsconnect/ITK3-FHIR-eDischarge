@@ -173,11 +173,11 @@
 
 	{
 		
-		"title": "Overview | Design &amp; Build",
+		"title": "Design &amp; Build Overview",
 		"tags": "designoverview",
-		"keywords": "design, build, access, security, overview",
+		"keywords": "design, build",
 		"url": "design.html",
-		"summary": "Describes components of a design &amp; build of an ITK3 Messaging Solution using profiles described in Explore.",
+		"summary": "Describes the components required to design and build an ITK3 Messaging Solution using the interactions and profiles described in Explore.",
 		"content": "<div class=\"alert alert-warning\" role=\"alert\"><i class=\"fa fa-warning\"></i> <b>Important:</b> All information provided below is indicative and subject to on-going review.</div>\n\n<h2 id=\"background\">Background</h2>\n\n<p>The Design &amp; Build section details items that will be useful when designing and building an ITK3 messaging solution.</p>\n\n<p>The subsections provide information, for example:</p>\n\n<ul>\n  <li>How the resources are linked</li>\n  <li>How attachments are used</li>\n  <li>Guidance on constructing and rendering the narrative of a document</li>\n  <li>How to construct the list for coded clinical resources</li>\n</ul>\n\n"
 		
 	}
@@ -227,18 +227,6 @@
 		"url": "design_distribution.html",
 		"summary": "The Access page shows developers and users of the API how to access and call the API",
 		"content": "<div class=\"alert alert-warning\" role=\"alert\"><i class=\"fa fa-warning\"></i> <b>Important:</b> All phases outlined below are indicative and subject to on-going review.</div>\n\n<h1 id=\"what-is-api-access\">What is API Access?</h1>\n\n<p>API access is the process of ensuring that calls to APIs with authenticated logins are able to access the APIs. API products are also a good way to control access to a specific bundle of resources/profiles or aspects of information.</p>\n\n<p>This implementation guide identifies the need to manage any exposed APIs. When access control and monitoring is combined while creating an API, this can empower API implementing organisations to improve, control, limit and deny access to APIs and therefore the underlying data in a consistent mechanism. When APIs are the central mechanism for authorization and access control to your APIs.</p>\n\n<p>API access control measures need to be defined alongside API creation and need to look for:</p>\n<ul>\n  <li>enforcement of authorisation</li>\n  <li>security of Payload and access</li>\n  <li>matching security with scope of use</li>\n  <li>access and approval for particular resources</li>\n</ul>\n\n<p>A possible mechanism for providing access to APIs is the provision of API keys for access to the APIs being provided. Please contribute for other common access methods and add to the <a href=\"/engage_case_studies.html\">Case Studies</a> to show various access mechanisms to APIs.</p>\n\n<h1 id=\"access-and-itk3-edischarges\">Access and ITK3 eDischarges</h1>\n\n<p>Access to APIs needs to considered at the design phase to include the process of managing and maintaing valid and consistant APIs. The following design considerations become increasingly important as an accessible API moves through Test to Assure to Deployed.</p>\n\n<ul>\n  <li>Endpoints</li>\n  <li>Report &amp; Monitoring</li>\n  <li>Traffic Management</li>\n  <li>Transformation</li>\n  <li>Versioning</li>\n</ul>\n\n<p>For more information on the wider design decisions involved in providing safe access to information please see:</p>\n\n<ul>\n  <li><a href=\"/engage_case_studies.html\">Case Studies</a> illustrates access decisions used to solve the challenges faced within the context and design patterns encountered.</li>\n</ul>\n\n<div class=\"alert contribute contribute-warning\" role=\"alert\"><i class=\"fa fa-warning\"></i> <b>Contribute:</b> Provide design patterns and API usage case studies by getting in touch with careconnect@interopen.org </div>\n\n"
-		
-	}
-	,
-
-	{
-		
-		"title": "Overview | Design &amp; Build",
-		"tags": "designoverview",
-		"keywords": "design, build, access, security, overview",
-		"url": "design_encounter.html",
-		"summary": "Describes the steps required to design &amp; build an ITK3 Messaging Solution using the interactions and profiles described in Explore.",
-		"content": "<div class=\"alert alert-warning\" role=\"alert\"><i class=\"fa fa-warning\"></i> <b>Important:</b> All information provided below is indicative and subject to on-going review.</div>\n\n<h2 id=\"background\">Background</h2>\n\n<p>The Design &amp; Build section contains descriptions of approaches and suggestions for building ITK3 Messaging Solutions using the ITK3 eDischarge components in conjunction with NHS Digital Payload specifications. The Payload specification must be consulted for specific domain or Payload information.</p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Page</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Design Patterns / Topology</td>\n      <td>Describes access patterns necessary which influence the access, security and use of ITK3 Messaging Solutions. Depending on the pattern or topology of the sending and receiving systems. The relationship between the sender and receiver influences the choice of access mechanism, security of Payload and access finally build of the system</td>\n    </tr>\n    <tr>\n      <td>Access</td>\n      <td>The access mechanism and of sending system is influenced by many factors. This section demonstrates the design decisions to consider</td>\n    </tr>\n    <tr>\n      <td>Security</td>\n      <td>The security of the FHIR Payload, access and data at rest are all important design decisions while building an ITK3 Messaging Solution.The specification for the Payload should also be consulted as well as this specification.</td>\n    </tr>\n    <tr>\n      <td>Build</td>\n      <td>A look at some tools and techniques to help build ITK3 Messaging Solutions using the interactions and Resources defined in Explore</td>\n    </tr>\n  </tbody>\n</table>\n\n"
 		
 	}
 	,
