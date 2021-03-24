@@ -4,7 +4,7 @@ keywords: assure, accredit
 tags: [overview]
 sidebar: foundations_sidebar
 permalink: assure.html
-summary: "These pages assist with requirements gathering and mapping stages of an ITK3 Messaging Solution development process."
+summary: "Provides the contact details for Solutions Assurance for implementers wanting to follow the path to conformance certification."
 ---
 
 ## Overview ##
