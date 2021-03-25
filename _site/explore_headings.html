@@ -834,6 +834,18 @@ These are :</p>
 
 <p><strong>Note 1</strong> - There are rules around when sections are sent or not sent in a document. These are specified in the document headings sections.</p>
 
+<h2 id="population-of-correspondence-document-type-values">Population of Correspondence Document Type values</h2>
+
+<p>Implementers are advised to populate the Correspondence Document Type values for all eDischarge use cases with the following member of the SNOMED Record composition type simple reference set (1127551000000109).</p>
+
+<ul>
+  <li>Discharge summary (preferred term) and 373942005 (ref. component ID)</li>
+</ul>
+
+<p>Implementers can choose the most appropriate option when selecting a correspondence care setting member from the Correspondence Care Setting type simple reference set (999000381000000107).<br />
+The title (of the document) held in the Composition profile should be formed from a concatenation of the human readable value for the Correspondence Care Setting and Correspondence Document Type. If a sender organisation wishes to deviate from this approach they should first discuss this with NHS Digital.<br />
+For illustration, the <a href="https://developer.nhs.uk/apis/itk3tocedischarge-2-8-0/engage_richard_smith.html">coded example</a> provided is already compliant with the outlined approach.</p>
+
 <h2 id="headings-used-by-edischarge">Headings Used By eDischarge</h2>
 
 <table>
@@ -1084,7 +1096,7 @@ These are :</p>
                     <br/>
                     &copy;2021 NHS Digital<br />
                      Site last generated: Mar 25, 2021 <br />
-                    ba7cde938a4cbd6a4bfbfb143c1105c65008dab1<br/>
+                    e583d5eb190cfa97f51fff77c95a6a14997cab4d<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

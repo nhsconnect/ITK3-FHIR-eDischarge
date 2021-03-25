@@ -52,6 +52,15 @@ The “must support” property has been added to all the elements that must be 
 
 **Note 1** - There are rules around when sections are sent or not sent in a document. These are specified in the document headings sections.
 
+## Population of Correspondence Document Type values ##
+
+Implementers are advised to populate the Correspondence Document Type values for all eDischarge use cases with the following member of the SNOMED Record composition type simple reference set (1127551000000109). 
+
+  - Discharge summary (preferred term) and 373942005 (ref. component ID)
+
+Implementers can choose the most appropriate option when selecting a correspondence care setting member from the Correspondence Care Setting type simple reference set (999000381000000107).  
+The title (of the document) held in the Composition profile should be formed from a concatenation of the human readable value for the Correspondence Care Setting and Correspondence Document Type. If a sender organisation wishes to deviate from this approach they should first discuss this with NHS Digital.  
+For illustration, the [coded example](https://developer.nhs.uk/apis/itk3tocedischarge-2-8-0/engage_richard_smith.html) provided is already compliant with the outlined approach.
 
 ## Headings Used By eDischarge ##
 
