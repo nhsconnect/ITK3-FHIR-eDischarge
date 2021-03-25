@@ -14,7 +14,8 @@ summary: A brief introduction to getting started with the ITK3 eDischarge.
 
 The Transfer of Care eDischarge  Specification supports the following care communications:
 
-**eDischarge (inpatient discharge summary) Document** – An ITK3 FHIR Document containing Transfer of Care information supporting an inpatient discharge typically between an acute hospital and GP practice.
+**eDischarge (inpatient discharge summary) Document** – An ITK3 FHIR Document containing Transfer of Care information supporting an inpatient discharge typically between an acute hospital and GP practice. Routine maternity discharges are not within the scope of this use case.
+
    
 FHIR Messaging components specified within this site have been developed by NHS Digital and use CareConnect profiles created in collaboration with the INTEROPen community.
 
