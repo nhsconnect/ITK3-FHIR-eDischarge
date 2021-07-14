@@ -19,7 +19,7 @@ Receivers of replacement documents **MUST** process the replacement document and
 
 When the new document cannot be processed then:
 
-- The receiver of the new document **SHOULD** mark the original and replacement document as null and void and report a error to the sender using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/explore_response_codes.html) for further information. 
+- The receiver of the new document **SHOULD** mark the original and replacement document as null and void and report a error to the sender using the ITK Response message and appropriate code see [ITK3 response codes](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/explore_response_codes.html) for further information. 
 - The sender of the new document **SHOULD** mark the original and replacement document as null and void once it receives the ITK3 Response indicating that the replacement document could not be processed.
 
 **Points to Note about eDischarge Replacements**

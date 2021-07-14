@@ -25,7 +25,7 @@ Note: The only extensions permitted for NHS Digital specifications are those san
 
 The diagram shows the referencing between the profiles in the bundle which make up the ITK3 eDischarge FHIR Document.
 
-When using ITK3 there is an outer bundle structure which is called the [ITK3 send Payload bundle structure](https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/explore_bundle_overview.html) for use with ITK3.
+When using ITK3 there is an outer bundle structure which is called the [ITK3 send Payload bundle structure](https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/explore_bundle_overview.html) for use with ITK3.
 
 <img src="images/explore/eDischarge_message_bundle.png" style="width: 75%;max-width: 75%;"> 
 

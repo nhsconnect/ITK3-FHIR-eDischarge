@@ -79,7 +79,7 @@ When using attachments, message initiators are advised to restrict their overall
 
 ## Receivers of Attachments ##
 
-Receivers <b>SHOULD</b> process attachments in-line with the rules stated in the <a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-8-0/explore_s_and_r.html" target="_blank">ITK3 Messaging Distribution Specification</a>. 
+Receivers <b>SHOULD</b> process attachments in-line with the rules stated in the <a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-9-0/explore_s_and_r.html" target="_blank">ITK3 Messaging Distribution Specification</a>. 
 
 ## Binary Resource ##
 
