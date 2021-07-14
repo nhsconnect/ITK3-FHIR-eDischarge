@@ -92,7 +92,7 @@ For illustration, the [coded example](https://developer.nhs.uk/apis/itk3tocedisc
 	</tr>
 	<tr>
 		<td>
-			<a href="explore_assessment_scales.html">Assessment scales</a>
+			<a href="explore_assessment_scale.html">Assessment scales</a>
 		</td>
 		<td>887141000000103</td>
     	<td>0..1</td>

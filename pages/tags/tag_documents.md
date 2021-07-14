@@ -2,7 +2,7 @@
 title: "Documents"
 tagName: documents
 search: exclude
-permalink: tag_document.html
+permalink: tag_documents.html
 sidebar: overview_sidebar
 folder: tags
 ---
