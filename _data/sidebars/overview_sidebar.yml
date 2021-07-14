@@ -302,8 +302,8 @@ entries:
     - title: Development
       url: /tag_development.html
       output: web
-    - title: Document
-      url: /tag_document.html
+    - title: Documents
+      url: /tag_documents.html
       output: web
     - title: Messaging
       url: /tag_messaging.html
