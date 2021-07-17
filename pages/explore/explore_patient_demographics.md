@@ -63,7 +63,7 @@ The Patient demographics section contains information about the patient. PRSB El
 			<td>The patient's gender.  As the patient wishes to portray themselves.</td>
 			<td>0 to 1</td>
 			<td>R</td>
-			<td>Text using the values of "Not known", "Male", "Female" or "Not specified" and mapped to the value carried in the FHIR element <b>Patient.gender.code</b> using the required FHIR ValueSet <a href="http://hl7.org/fhir/valueset-administrative-gender.html">administrative-gender</a></td>
+			<td>Text using the values of "Not known", "Male", "Female" or "Not specified" and mapped to the value carried in the FHIR element <b>Patient.gender.code</b> using the required FHIR ValueSet <a href="https://hl7.org/fhir/STU3/valueset-administrative-gender.html">administrative-gender</a></td>
 		</tr>
 		<tr>
 			<td>NHS number</td>

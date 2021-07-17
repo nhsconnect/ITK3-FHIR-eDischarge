@@ -42,7 +42,7 @@ The Investigation results section carries information about investigation result
 			<td>For each investigation, the result of the investigation (this includes the result value, with unit of observation and reference interval where applicable and date, and plans for acting upon investigation results.</td>
 			<td>0 to many</td>
 			<td>O</td>
-			<td>If possible, this should include only results which are important or relevant to communicate to the GP. Hence health professional may need to select them. Text only. (Note that work is underway to standardise recording of pathology investigation results, which will inform content under this heading.) Where the text is format from a actual report the HTML &lt;pre&gt; tag is used for indicating preformatted text. The code tag surrounds the code being marked up. HTML viewers normally render pre text in a fixed-pitched font, with whitespace intact, and without word wrap.</td>
+			<td>If possible, this should include only results which are important or relevant to communicate to the GP. Hence, health professionals may need to select them. Text only. (Note that work is underway to standardise recording of pathology investigation results, which will inform content under this heading.) Where the text is formatted from an actual report the HTML &lt;pre&gt; tag is used for indicating preformatted text. The code tag surrounds the code being marked up. HTML viewers normally render pre text in a fixed-pitched font, with whitespace intact, and without word wrap.</td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>

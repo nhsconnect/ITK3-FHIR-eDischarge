@@ -81,7 +81,7 @@ The document may be sent to any number of recipients, however all recipients sho
 			<td>The relationship of the receiver to the patient, where the receiver has a personal relationship to the patient, for example, carer or parent</td>
 			<td>0 to 1</td>
 			<td>O</td>
-			<td>Personal relationships as documented in the NHS Data Dictionary Person Relationship Type (This value set is now retired carried as text and where possible mapped to the FHIR ValueSet <a href="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype">relatedperson-relationshiptype</a> and carried a code in the FHIR element <b>RelatedPerson.relationship</b></td>
+			<td>Personal relationships as documented in the NHS Data Dictionary Person Relationship Type (This value set is now retired carried as text and where possible mapped to the FHIR ValueSet <a href="https://hl7.org/fhir/STU3/valueset-relatedperson-relationshiptype.html">relatedperson-relationshiptype</a> and carried a code in the FHIR element <b>RelatedPerson.relationship</b></td>
 		</tr>
 		<tr>
 		<td colspan="5"><b>* M=Mandatory R=Required O=Optional</b></td>
